@@ -13,11 +13,11 @@ When you sign up with us, we may ask for your contact information, including ite
 ### HOW WE USE YOUR INFORMATION
 
 We use the information we collect in various ways, including to:
-• Provide, operate, and maintain our website
-• Improve, personalize, and expand our website
-• To personalize your experience
-• Developnewproducts,services,features,andfunctionality
-• If you choose to provide your email address, we may use it to send you
+- Provide, operate, and maintain our website
+- Improve, personalize, and expand our website
+- To personalize your experience
+- Developnewproducts,services,features,andfunctionality
+- If you choose to provide your email address, we may use it to send you
 information and respond to inquiries.
 ### INFORMATION COLLECTED BY COOKIES
 
@@ -29,14 +29,14 @@ Cuesoft is based in Nigeria and the Personal Data we collect is governed by the 
 ### SHARING YOUR INFORMATION WITH THIRD PARTY
 
 Cuesoft may share User information with third-parties who help with certain parts of our services this includes:
-• Withlawenforcement,governmentofficials,orotherthirdpartiesintheevent of a subpoena, court order or similar legal procedure or where such disclosure is necessary to report suspected illegal activity or to protect Cuesoft’s legal right or property.
-• As permitted by applicable law or otherwise described in this Privacy Policy. YOUR RIGHTS
+- Withlawenforcement,governmentofficials,orotherthirdpartiesintheevent of a subpoena, court order or similar legal procedure or where such disclosure is necessary to report suspected illegal activity or to protect Cuesoft’s legal right or property.
+- As permitted by applicable law or otherwise described in this Privacy Policy. YOUR RIGHTS
 The Nigeria Data Protection Regulation (NDPR) gives you certain rights in respect of the Personal Data we hold about you; these rights include but are not limited to;
-• ArighttohavethePersonalDataweholdaboutyoucorrected,ifitisfactually inaccurate. You can contact us for this purpose.
-• A right to a copy of the Personal Data we hold about you, as well as the information about what we do with it, who we share it with and how long we hold it for. We may make a reasonable charge for additional copies of that data in the case of unfounded and excessive requests. Before we send you any Personal Information, we will ask you to provide proof of your identity. If you are unable to provide such proof, we reserve the right to refuse to send you any Personal Information.
-• A right to in some circumstances, have us delete or erase the personal information we hold about you.
-• A right to freely transfer your data received from us to any other party.
-• A right to ask us not to process your Personal Data for marketing purposes. We
+- ArighttohavethePersonalDataweholdaboutyoucorrected,ifitisfactually inaccurate. You can contact us for this purpose.
+- A right to a copy of the Personal Data we hold about you, as well as the information about what we do with it, who we share it with and how long we hold it for. We may make a reasonable charge for additional copies of that data in the case of unfounded and excessive requests. Before we send you any Personal Information, we will ask you to provide proof of your identity. If you are unable to provide such proof, we reserve the right to refuse to send you any Personal Information.
+- A right to in some circumstances, have us delete or erase the personal information we hold about you.
+- A right to freely transfer your data received from us to any other party.
+- A right to ask us not to process your Personal Data for marketing purposes. We
 will usually inform you (before collecting your data) if we intend to use
 your data for such purposes or if we intend to disclose your Personal Data to any third party for such purposes.
 For more information on your rights as it relates to your personal data, please refer to the NITDA’s website.
@@ -54,4 +54,4 @@ This online privacy policy applies only to information collected through our web
 We reserve the right to amend this Privacy Policy from time to time and the updated version shall apply and supersede any and all previous versions.
 ### CONTACT US
 
-If you have any questions about this Privacy Policy, please contact us at support@cuesoft.io.
+If you have any questions about this Privacy Policy, please contact us at [support@cuesoft.io](mailto:support@cuesoft.io).
