@@ -54,4 +54,4 @@ This online privacy policy applies only to information collected through our web
 We reserve the right to amend this Privacy Policy from time to time and the updated version shall apply and supersede any and all previous versions.
 ### CONTACT US
 
-If you have any questions about this Privacy Policy, please contact us at.
+If you have any questions about this Privacy Policy, please contact us at support@cuesoft.io.
