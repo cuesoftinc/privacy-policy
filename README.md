@@ -1,4 +1,4 @@
-# PRIVACY POLICY
+# PRIVACY POLICY TEST
 Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information when you visit our platform or use our services.
 
 ## CONSENT
