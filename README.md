@@ -14,6 +14,8 @@ We may also collect information you provide us including but not limited to info
 Cuesoft may use cookies, web beacons, and other tracking technologies to collect information about you automatically as you use our Website. This includes information sent to us by your computer, mobile phone, or other electronic access devices.
 The automatically collected information includes but is not limited to data about the pages you access, computer IP address, device ID or unique identifier, device type, geo-location information, computer and connection information, mobile network information, statistics on page views, traffic to and from the sites, referral URL, ad data, the dates and times of your use of the Website and standard web log data. We may combine this information with other information that we collect from you.
 
+## INFORMATION WE DO NOT COLLECT
+No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties
 
 ## DO WE USE COOKIES?
 Yes. A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added, and the cookie helps analyze web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual.
