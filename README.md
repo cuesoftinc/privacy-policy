@@ -7,9 +7,9 @@ Cuesoft is committed to ensuring that your privacy is protected. Should we ask y
 
 ## CONSENT
 When you provide us with details of your Personal Data or by clicking on the “accept” button, You accept this Policy and hereby give us consent to save, process, and use your Personal Data in compliance with applicable privacy laws, including:
-•	Nigeria Data Protection Act (NDPA) 2023
-•	Nigeria Data Protection Regulation (NDPR) 2019
-•	General Data Protection Regulation (GDPR – EU)
+*	Nigeria Data Protection Act (NDPA) 2023
+*	Nigeria Data Protection Regulation (NDPR) 2019
+*	General Data Protection Regulation (GDPR – EU)
 You may withdraw your consent at any time before, during, or after we process your Personal Data.
 
 ## INFORMATION WE COLLECT DIRECTLY FROM YOU
@@ -27,18 +27,18 @@ Yes. A cookie is a small file which asks permission to be placed on your compute
 
 ## HOW CUESOFT USES INFORMATION IT COLLECTS
 We may use your Personal Data, including non-public Personal Data as follows:
-•	We use the information to process your registration, fulfill your service order, maintain the quality of our service, generate statistics about Cuesoft Service (s) visitors, facilitate payment in respect of services rendered to you, customize and improve the content of our Service (s), fulfill any other request you have made, conduct research and generally enhance our service delivery to you.
-•	The information collected is also used to generate internal reports and to support our collaborations with current and potential partners. For example, in CueLABS, this data helps us connect skilled participants with companies looking for their expertise.
-•	Verify your identity and prevent fraud.
-•	Send you technical notices, updates, security alerts and support and administrative messages.
-•	Carry out any other purpose for which the Personal Data was collected.
-•	Communicate information about special features of Cuesoft Service (s) or any other service we think may be of interest to you. Occasionally, we might want to provide you with related information from third parties we think may be of interest to you. Your information could also be provided to selected third parties, our affiliates or subsidiaries whose services we believe may be of interest to you.
-•	Send you technical notices, updates, security alerts and support and administrative messages.
-•	Carry out any other purpose for which the Personal Data was collected.
+*	We use the information to process your registration, fulfill your service order, maintain the quality of our service, generate statistics about Cuesoft Service (s) visitors, facilitate payment in respect of services rendered to you, customize and improve the content of our Service (s), fulfill any other request you have made, conduct research and generally enhance our service delivery to you.
+*	The information collected is also used to generate internal reports and to support our collaborations with current and potential partners. For example, in CueLABS, this data helps us connect skilled participants with companies looking for their expertise.
+*	Verify your identity and prevent fraud.
+*	Send you technical notices, updates, security alerts and support and administrative messages.
+*	Carry out any other purpose for which the Personal Data was collected.
+*	Communicate information about special features of Cuesoft Service (s) or any other service we think may be of interest to you. Occasionally, we might want to provide you with related information from third parties we think may be of interest to you. Your information could also be provided to selected third parties, our affiliates or subsidiaries whose services we believe may be of interest to you.
+*	Send you technical notices, updates, security alerts and support and administrative messages.
+*	Carry out any other purpose for which the Personal Data was collected.
     
 ## SHARING YOUR INFORMATION WITH THIRD PARTIES
-•	We reserve the right to disclose information about you or your use of Cuesoft Service (s) in compliance with any legal process (i.e., any statutory demand, subpoena, warrant or court order) to protect against fraudulent, abusive, unlawful use of cuesoft Service (s), to protect our rights or property, to defend the personal safety of Users or when we believe in good faith that a situation involving danger or injury to any person requires disclosure.
-•	We sometimes hire other companies to provide services on our behalf e.g., performing statistical analysis of our service etc. We will only provide those companies with the information necessary to provide us with such services and we shall prohibit them from using that information for any other purpose.
+*	We reserve the right to disclose information about you or your use of Cuesoft Service (s) in compliance with any legal process (i.e., any statutory demand, subpoena, warrant or court order) to protect against fraudulent, abusive, unlawful use of cuesoft Service (s), to protect our rights or property, to defend the personal safety of Users or when we believe in good faith that a situation involving danger or injury to any person requires disclosure.
+*	We sometimes hire other companies to provide services on our behalf e.g., performing statistical analysis of our service etc. We will only provide those companies with the information necessary to provide us with such services and we shall prohibit them from using that information for any other purpose.
 Cuesoft shall not sell, share or offer information about you with third parties except in the manner described in this policy. Cuesoft is based in Nigeria and the information we collect is governed by the Nigeria Data Protection Act (NDPA) and Regulations made thereto and Nigeria Data Protection Regulation (NDPR) as well as other regulations made hereunder; (together “Nigeria Data Protection Laws"). By accessing or using the Services or otherwise providing information to us,you consent to the processing and transfer of information in and to Nigeria.
 
 ## HOW WE SECURE AND STORE YOUR PERSONAL DATA
@@ -46,13 +46,13 @@ Information collected will be held securely and will only be kept for as long as
 
 ## YOUR RIGHTS
 The Nigeria Data Protection Act (NDPA) 2023 and Nigeria Data Protection Regulation (NDPR) 2019 gives you certain rights in respect of the Personal Data we hold about you. Below is a highlight of some of those rights;
-•	The right to access - You have the right to request Nomba for copies of your personal data. We will respond to your access request within one-month of receiving your request. Where we are not able to provide this personal data to you within the One-Month timeline provided by the Nigerian Data Protection Laws, we will communicate same to you, and may request an additional time within which we will provide the information to you. Your Personal Data shall be provided to you in a structured, commonly used and machine-readable format. We may charge you a small fee for this service.
-•	The right to rectification - You have the right to request that Nomba correct any information you believe is inaccurate. You also have the right to request Nomba to complete information you believe is incomplete.
-•	The right to erasure — You have the right to request that Nomba erase your personal data, under certain conditions.
-•	The right to restrict processing - You have the right to request that Nomba restrict the processing of your personal data, under certain conditions
-•	The right to object to processing - You have the right to object to Nomba’s processing of your personal data, under certain conditions.
-•	The right to data portability - You have the right to request that Nomba transfer the data that we have collected to another organization, or directly to you, under certain conditions.
-•	The right to lodge complaint – You have a right to lodge a complaint about the handling of your Personal Data with the Nigeria Data Protection Commission (NDPC) at https://ndpc.gov.ng/
+*	The right to access - You have the right to request Nomba for copies of your personal data. We will respond to your access request within one-month of receiving your request. Where we are not able to provide this personal data to you within the One-Month timeline provided by the Nigerian Data Protection Laws, we will communicate same to you, and may request an additional time within which we will provide the information to you. Your Personal Data shall be provided to you in a structured, commonly used and machine-readable format. We may charge you a small fee for this service.
+*	The right to rectification - You have the right to request that Nomba correct any information you believe is inaccurate. You also have the right to request Nomba to complete information you believe is incomplete.
+*	The right to erasure — You have the right to request that Nomba erase your personal data, under certain conditions.
+*	The right to restrict processing - You have the right to request that Nomba restrict the processing of your personal data, under certain conditions
+*	The right to object to processing - You have the right to object to Nomba’s processing of your personal data, under certain conditions.
+*	The right to data portability - You have the right to request that Nomba transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+*	The right to lodge complaint – You have a right to lodge a complaint about the handling of your Personal Data with the Nigeria Data Protection Commission (NDPC) at https://ndpc.gov.ng/
 
 ## BREACH / PRIVACY VIOLATION
 In the event of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data, Cuesoft shall within 72 (Seventy-Two) hours of having knowledge of such breach report the details of the breach to the Nigeria Data Protection Commission (NDPC), as required by law.
