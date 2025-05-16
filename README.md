@@ -1,22 +1,22 @@
 # INTRODUCTION
 This Privacy Policy explains  how Cuesoft collects, uses, stores, shares, your data  when you visit our website and protects any personal information that you provide when you subscribe to any of our services.
 Cuesoft is an AI-driven company with two core branches:
-1. Cuesoft Talent Academy (CueTA) : An EdTech platform offering comprehensive courses in Artificial Intelligence (AI) and Machine Learning, enabling participants to build intelligent systems and predictive models.
-2. Cuesoft Devlabs (CueLABS): A collaborative community of expert programmers fostering innovation by connecting skilled engineers to work on AI technologies and open-source solutions. CueLabs also handles talent management, aiming to connect willing participants with companies that need their skills.
+1. Cuesoft Talent Academy (CueTA™) : An EdTech platform offering comprehensive courses in Artificial Intelligence (AI) and Machine Learning, enabling participants to build intelligent systems and predictive models.
+2. Cuesoft Devlabs (CueLABS™): A collaborative community of expert programmers fostering innovation by connecting skilled engineers to work on AI technologies and open-source solutions. CueLABS™ also handles talent management, aiming to connect willing participants with companies that need their skills.
 Cuesoft is committed to ensuring that your privacy is protected. Should we ask you to provide certain information when subscribing to our services, it will only be used in accordance with this Privacy Policy.
 
 ## CONSENT
 When you provide us with details of your Personal Data or by clicking on the “accept” button, You accept this Policy and hereby give us consent to save, process, and use your Personal Data in compliance with applicable privacy laws, including:
-*	Nigeria Data Protection Act (NDPA) 2023
-*	Nigeria Data Protection Regulation (NDPR) 2019
-*	General Data Protection Regulation (GDPR – EU)
+*	Nigeria Data Protection Act (NDPA) 2023.
+*	Nigeria Data Protection Regulation (NDPR) 2019.
+*	General Data Protection Regulation (GDPR – EU).
 You may withdraw your consent at any time before, during, or after we process your Personal Data.
 
 ## INFORMATION WE COLLECT DIRECTLY FROM YOU
 Cuesoft collects information when you subscribe to our services. The type of information collected depends on the service you require, including but not limited to:
-•	CueTA Participants: Information about you that is personally identifiable like your name , email, payment details, educational background, learning activity data
-•	CueLABS Members: Name, GitHub profile, skills, AI project contributions, Work preferences, employment history, professional portfolios. 
-•	General User Interactions: Web form submissions, account updates, customer service inquiries, surveys
+•	CueTA™ Participants: Information about you that is personally identifiable like your name , email, payment details, educational background, learning activity data.
+•	CueLABS™ Members: Name, GitHub profile, skills, AI project contributions, Work preferences, employment history, professional portfolios. 
+•	General User Interactions: Web form submissions, account updates, customer service inquiries, surveys.
 •	Personal Data that we obtain or learn, such as information about the browser or device you use to access this site, how you use this site and the pages you visit, traffic and location data.
 
 ## INFORMATION WE COLLECT AUTOMATICALLY
@@ -28,7 +28,7 @@ Yes. A cookie is a small file which asks permission to be placed on your compute
 ## HOW CUESOFT USES INFORMATION IT COLLECTS
 We may use your Personal Data, including non-public Personal Data as follows:
 *	We use the information to process your registration, fulfill your service order, maintain the quality of our service, generate statistics about Cuesoft Service (s) visitors, facilitate payment in respect of services rendered to you, customize and improve the content of our Service (s), fulfill any other request you have made, conduct research and generally enhance our service delivery to you.
-*	The information collected is also used to generate internal reports and to support our collaborations with current and potential partners. For example, in CueLABS, this data helps us connect skilled participants with companies looking for their expertise.
+*	The information collected is also used to generate internal reports and to support our collaborations with current and potential partners. For example, in CueLABS™, this data helps us connect skilled participants with companies looking for their expertise.
 *	Verify your identity and prevent fraud.
 *	Send you technical notices, updates, security alerts and support and administrative messages.
 *	Carry out any other purpose for which the Personal Data was collected.
@@ -49,10 +49,10 @@ The Nigeria Data Protection Act (NDPA) 2023 and Nigeria Data Protection Regulati
 *	The right to access - You have the right to request Nomba for copies of your personal data. We will respond to your access request within one-month of receiving your request. Where we are not able to provide this personal data to you within the One-Month timeline provided by the Nigerian Data Protection Laws, we will communicate same to you, and may request an additional time within which we will provide the information to you. Your Personal Data shall be provided to you in a structured, commonly used and machine-readable format. We may charge you a small fee for this service.
 *	The right to rectification - You have the right to request that Nomba correct any information you believe is inaccurate. You also have the right to request Nomba to complete information you believe is incomplete.
 *	The right to erasure — You have the right to request that Nomba erase your personal data, under certain conditions.
-*	The right to restrict processing - You have the right to request that Nomba restrict the processing of your personal data, under certain conditions
+*	The right to restrict processing - You have the right to request that Nomba restrict the processing of your personal data, under certain conditions.
 *	The right to object to processing - You have the right to object to Nomba’s processing of your personal data, under certain conditions.
 *	The right to data portability - You have the right to request that Nomba transfer the data that we have collected to another organization, or directly to you, under certain conditions.
-*	The right to lodge complaint – You have a right to lodge a complaint about the handling of your Personal Data with the Nigeria Data Protection Commission (NDPC) at https://ndpc.gov.ng/
+*	The right to lodge complaint – You have a right to lodge a complaint about the handling of your Personal Data with the Nigeria Data Protection Commission (NDPC) at https://ndpc.gov.ng/.
 
 ## BREACH / PRIVACY VIOLATION
 In the event of a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data, Cuesoft shall within 72 (Seventy-Two) hours of having knowledge of such breach report the details of the breach to the Nigeria Data Protection Commission (NDPC), as required by law.
@@ -70,4 +70,4 @@ We may change this Privacy Policy from time to time. If we make changes, we will
 We encourage you to review the Privacy Policy whenever you interact with us to stay informed about our information practices and the ways you can help protect your privacy.
 
 ## HOW TO CONTACT US
-If you have any questions about our privacy policy, the data we hold on you, or you would like to exercise one of your data protection rights, please do not hesitate to contact us via (mailto:support@cuesoft.io).
+If you have any questions about our privacy policy, the data we hold on you, or you would like to exercise one of your data protection rights, please do not hesitate to contact us via support@cuesoft.io.
