@@ -1,0 +1,472 @@
+/* Cuesoft legal & handbook sites — the family token system, spoken in plain
+   CSS. Four hues only (black, white, lime #BFFF72, blue #325EA6); every
+   "grey" is black or white at an opacity. Fustat is the only typeface.
+   Corners square except 3px chips. No gradients, glows or shadows —
+   separation comes from space and 1px hairlines. Faint ink stays ≥56% on
+   white and ≥55% on near-black (the WCAG AA floor for the opacity ladder). */
+
+/* Fustat, self-hosted (OFL): no font request leaves our infrastructure. */
+@font-face {
+  font-family: 'Fustat';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('fonts/fustat-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891,
+    U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41,
+    U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E,
+    U+10EC2-10EC4, U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F,
+    U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39,
+    U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F,
+    U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F,
+    U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77,
+    U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3,
+    U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+@font-face {
+  font-family: 'Fustat';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('fonts/fustat-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fustat';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('fonts/fustat-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --brand-blue: #325ea6;
+  --brand-lime: #bfff72;
+
+  --background: #ffffff;
+  --ink-heading: #000000;
+  --ink-strong: rgba(0, 0, 0, 0.92);
+  --ink-body: rgba(0, 0, 0, 0.7);
+  --ink-muted: rgba(0, 0, 0, 0.58);
+  --hairline: rgba(0, 0, 0, 0.12);
+  --hairline-strong: rgba(0, 0, 0, 0.22);
+  --surface-raised: #f6f8fa;
+  --accent-ink: var(--brand-blue);
+}
+
+:root.dark {
+    --background: #010409;
+    --ink-heading: #ffffff;
+    --ink-strong: rgba(255, 255, 255, 0.92);
+    --ink-body: rgba(255, 255, 255, 0.72);
+    --ink-muted: rgba(255, 255, 255, 0.6);
+    --hairline: rgba(255, 255, 255, 0.12);
+    --hairline-strong: rgba(255, 255, 255, 0.2);
+    --surface-raised: #0d1117;
+    --accent-ink: var(--brand-lime);
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink-body);
+  font-family: 'Fustat', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.shell {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--brand-lime);
+  color: #000;
+  padding: 10px 16px;
+  font-weight: 700;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent-ink);
+  outline-offset: 2px;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--hairline);
+  position: sticky;
+  top: 0;
+  background: var(--background);
+  z-index: 10;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  gap: 24px;
+}
+.lockup {
+  display: block;
+  height: 34px;
+  width: auto;
+}
+.lockup-dark {
+  display: none;
+}
+.dark .lockup-light {
+  display: none;
+}
+.dark .lockup-dark {
+  display: block;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.header-nav a {
+  color: var(--ink-body);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header-nav a:hover {
+  color: var(--ink-heading);
+}
+
+/* Layout */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
+  padding: 48px 0 72px;
+  min-height: 60vh;
+}
+/* Grid items never inherit their content's minimum width — wide tables
+   scroll inside their wrapper instead of widening the page. */
+.layout > * {
+  min-width: 0;
+}
+.layout.with-sidebar {
+  grid-template-columns: 250px minmax(0, 1fr);
+}
+@media (max-width: 860px) {
+  .layout.with-sidebar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  /* Content first on small screens; the full navigation follows it. */
+  .layout.with-sidebar .sidebar {
+    order: 2;
+    border-top: 1px solid var(--hairline);
+    padding-top: 28px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  font-size: 14px;
+}
+.sidebar .section {
+  margin-bottom: 22px;
+}
+.sidebar .section > span {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--hairline);
+}
+.sidebar li a {
+  display: block;
+  padding: 5px 0 5px 12px;
+  color: var(--ink-body);
+  text-decoration: none;
+  font-weight: 500;
+}
+.sidebar li a:hover {
+  color: var(--ink-heading);
+}
+.sidebar li a[aria-current='page'] {
+  color: var(--ink-heading);
+  font-weight: 700;
+  border-left: 3px solid var(--brand-lime);
+  margin-left: -2px;
+}
+
+/* Content */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+}
+.breadcrumb a {
+  color: var(--ink-muted);
+}
+.breadcrumb a:hover {
+  color: var(--ink-heading);
+}
+
+.accent-rule {
+  width: 60px;
+  height: 3px;
+  background: var(--brand-lime);
+  margin-bottom: 22px;
+}
+
+.content {
+  max-width: 74ch;
+}
+.content h1,
+.content h2,
+.content h3 {
+  color: var(--ink-heading);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  /* Anchored headings land clear of the sticky header. */
+  scroll-margin-top: 84px;
+}
+.content h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0 0 18px;
+  /* Domain-name titles may exceed a phone's width as single words. */
+  overflow-wrap: anywhere;
+}
+@media (max-width: 520px) {
+  .content h1 {
+    font-size: 30px;
+  }
+}
+.content h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 42px 0 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hairline);
+}
+.content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 28px 0 8px;
+}
+.content p,
+.content li {
+  color: var(--ink-body);
+}
+.content strong {
+  color: var(--ink-strong);
+}
+.content a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.content ul,
+.content ol {
+  padding-left: 24px;
+}
+.content li {
+  margin: 5px 0;
+}
+.content blockquote {
+  margin: 20px 0;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--brand-lime);
+  color: var(--ink-strong);
+}
+.content code {
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+.content pre {
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 14px 16px;
+  overflow-x: auto;
+}
+.content pre code {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 18px 0;
+}
+.content table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+.content th,
+.content td {
+  border: 1px solid var(--hairline);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.content th {
+  color: var(--ink-heading);
+  background: var(--surface-raised);
+}
+.content hr {
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 34px 0;
+}
+
+/* Auto table of contents (single-page sites) */
+.toc {
+  border: 1px solid var(--hairline);
+  background: var(--surface-raised);
+  padding: 18px 22px;
+  margin: 0 0 34px;
+}
+.toc > span {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 10px;
+}
+.toc ol {
+  margin: 0;
+  padding-left: 20px;
+}
+.toc a {
+  color: var(--ink-body);
+  text-decoration: none;
+  font-weight: 500;
+}
+.toc a:hover {
+  color: var(--accent-ink);
+}
+
+.updated {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline);
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--hairline);
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 22px 0;
+  font-size: 14px;
+  color: var(--ink-body);
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.footer-nav a {
+  color: var(--ink-body);
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-nav a:hover {
+  color: var(--ink-heading);
+}
+
+/* Theme toggle — hairline-separated from the links, centered on their line */
+.theme-toggle {
+  border: 0;
+  border-left: 1px solid var(--hairline);
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--ink-muted);
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 24px;
+  padding: 0 0 0 20px;
+  margin-left: 0;
+}
+.theme-toggle:hover {
+  color: var(--ink-heading);
+}
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+.theme-toggle .icon-sun {
+  display: none;
+}
+.dark .theme-toggle .icon-sun {
+  display: block;
+}
+.dark .theme-toggle .icon-moon {
+  display: none;
+}
+
+/* Small screens: the header wraps — lockup on its own line, nav beneath —
+   so every control stays on-canvas down to 320px. */
+@media (max-width: 520px) {
+  .header-row {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+    gap: 4px 12px;
+  }
+  .lockup {
+    height: 28px;
+  }
+  .header-nav {
+    gap: 14px;
+  }
+  .header-nav a {
+    font-size: 14px;
+  }
+  .theme-toggle {
+    width: 34px;
+    height: 22px;
+    padding-left: 14px;
+  }
+}
