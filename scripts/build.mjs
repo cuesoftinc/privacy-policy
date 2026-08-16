@@ -43,7 +43,16 @@ function descriptionOf(markdown) {
   const block = markdown
     .split(/\n\s*\n/)
     .map((chunk) => chunk.trim())
-    .find((chunk) => chunk && !chunk.startsWith('#') && !chunk.startsWith('|'));
+    .find(
+      (chunk) =>
+        chunk &&
+        !chunk.startsWith('#') &&
+        !chunk.startsWith('|') &&
+        // Skip formatting-only blocks (effective-date lines and the like)
+        // in favour of the first substantive paragraph.
+        !/^\*\*effective date/i.test(chunk) &&
+        chunk.length >= 60,
+    );
   if (!block) return DESCRIPTION;
   const text = block
     .split('\n')
@@ -238,8 +247,11 @@ for (const page of pages) {
     .replaceAll(
       '{{doc_title}}',
       // When the page title and site name overlap, the longer one stands
-      // alone — never "The Cuesoft Handbook | Cuesoft Handbook".
-      SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`,
+      // alone — never "The Cuesoft Handbook | Cuesoft Handbook". Escaped
+      // once for every context it lands in, including meta attributes.
+      escapeHtml(
+        SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`,
+      ),
     )
     .replaceAll('{{site}}', SITE)
     .replaceAll('{{description}}', description)
