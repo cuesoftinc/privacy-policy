@@ -2,12 +2,12 @@
 
 ## Application form
 
-**What:** name, email, phone number, and your programme intent.
-**Why:** to process your application, run your free consultation call and
-administer enrolment.
-**Where:** records are stored in Airtable, our forms database.
-**Legal basis:** steps at your request prior to a contract
-(GDPR Art. 6(1)(b)), and the equivalent contractual basis under the NDPA.
+- **What:** name, email, phone number, and your programme intent.
+- **Why:** to process your application, run your free consultation call
+  and administer enrolment.
+- **Where:** records are stored in Airtable, our forms database.
+- **Legal basis:** steps at your request prior to a contract
+  (GDPR Art. 6(1)(b)), and the equivalent contractual basis under the NDPA.
 
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.

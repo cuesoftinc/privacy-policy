@@ -2,12 +2,12 @@
 
 ## Application form
 
-**What:** name, email, phone, GitHub username, role interest and start
-availability.
-**Why:** to assess and process internship applications.
-**Where:** records are stored in Airtable, our forms database.
-**Legal basis:** steps at your request prior to a contract
-(GDPR Art. 6(1)(b)).
+- **What:** name, email, phone, GitHub username, role interest and start
+  availability.
+- **Why:** to assess and process internship applications.
+- **Where:** records are stored in Airtable, our forms database.
+- **Legal basis:** steps at your request prior to a contract
+  (GDPR Art. 6(1)(b)).
 
 Application decisions are made by humans.
 
