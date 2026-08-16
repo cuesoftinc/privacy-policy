@@ -381,3 +381,23 @@ body {
 .dark .theme-toggle .icon-moon {
   display: none;
 }
+
+/* Small screens: the header keeps every control on-canvas. */
+@media (max-width: 520px) {
+  .header-row {
+    gap: 12px;
+  }
+  .lockup {
+    height: 28px;
+  }
+  .header-nav {
+    gap: 12px;
+  }
+  .header-nav a {
+    font-size: 14px;
+  }
+  .theme-toggle {
+    width: 32px;
+    padding-left: 12px;
+  }
+}
