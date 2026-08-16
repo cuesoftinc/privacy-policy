@@ -49,6 +49,7 @@ licensee's data to that licensee, and help them answer it.
 
 For relationship data (licensee contacts, contracts, billing, support
 correspondence) and service telemetry, Cuesoft is the controller.
+
 **Legal bases:** performance of the licensing contract
 (GDPR Art. 6(1)(b)) and our legitimate interest in securing and improving
 the platform (Art. 6(1)(f)). Retention follows the

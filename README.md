@@ -54,8 +54,9 @@ version always lives at [privacy.cuesoft.io](https://privacy.cuesoft.io).
 
 ## Contact
 
-**Cuesoft Inc.** — 8 The Green, Suite 300, Dover, DE 19901, United States
-**Cuesoft Nigeria Limited** (RC1624434) — 39 Alfred Rewane Road, 3rd Floor
-Mulliner Towers, Ikoyi, Lagos, Nigeria
-[hello@cuesoft.io](mailto:hello@cuesoft.io) · +1 302 670 7551 (US) ·
-+234 915 880 1821 (Nigeria)
+- **Cuesoft Inc.** — 8 The Green, Suite 300, Dover, DE 19901, United
+  States
+- **Cuesoft Nigeria Limited** (RC1624434) — 39 Alfred Rewane Road, 3rd
+  Floor Mulliner Towers, Ikoyi, Lagos, Nigeria
+- [hello@cuesoft.io](mailto:hello@cuesoft.io) · +1 302 670 7551 (US) ·
+  +234 915 880 1821 (Nigeria)

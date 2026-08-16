@@ -25,6 +25,48 @@ const REDIRECTS = {};
 
 const template = readFileSync(path.join(ROOT, 'templates/page.html'), 'utf8');
 
+// The canonical origin comes from the CNAME file GitHub Pages already uses.
+const BASE = existsSync(path.join(ROOT, 'CNAME'))
+  ? `https://${readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}`
+  : '';
+
+const escapeHtml = (s) =>
+  s
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
+
+// A page describes itself: its first body paragraph, stripped of markdown,
+// clipped for the description and social-card tags.
+function descriptionOf(markdown) {
+  const block = markdown
+    .split(/\n\s*\n/)
+    .map((chunk) => chunk.trim())
+    .find(
+      (chunk) =>
+        chunk &&
+        !chunk.startsWith('#') &&
+        !chunk.startsWith('|') &&
+        // Skip formatting-only blocks (effective-date lines and the like)
+        // in favour of the first substantive paragraph.
+        !/^\*\*effective date/i.test(chunk) &&
+        chunk.length >= 60,
+    );
+  if (!block) return DESCRIPTION;
+  const text = block
+    .split('\n')
+    .map((line) => line.replace(/^\s*(?:[-*]|\d+\.)\s+/, '').trim())
+    .join(' ')
+    .replaceAll(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replaceAll(/[*_`]/g, '')
+    .replaceAll(/\s+/g, ' ')
+    .trim();
+  if (text.length <= 160) return text;
+  const cut = text.slice(0, 157);
+  return `${cut.slice(0, Math.max(cut.lastIndexOf(' '), 120))}…`;
+}
+
 /** Every directory that carries a README.md is a page. */
 function findPages(dir = ROOT, rel = '') {
   const pages = [];
@@ -111,17 +153,21 @@ function tocFor(html) {
   return `<nav class="toc" aria-label="Contents"><span>Contents</span><ol>${items}</ol></nav>`;
 }
 
-function lastUpdated(page) {
+function gitDate(page) {
   try {
     // Argument array, not a shell: page paths never reach an interpreter.
     const file = path.join(ROOT, page, 'README.md');
-    const date = execFileSync('git', ['log', '-1', '--format=%as', '--', file], { cwd: ROOT })
+    return execFileSync('git', ['log', '-1', '--format=%as', '--', file], { cwd: ROOT })
       .toString()
       .trim();
-    return date ? `Last updated ${date}.` : '';
   } catch {
     return '';
   }
+}
+
+function lastUpdated(page) {
+  const date = gitDate(page);
+  return date ? `Last updated ${date}.` : '';
 }
 
 marked.use({
@@ -157,6 +203,7 @@ for (const page of pages) {
   // Crumbs carry the same names the sidebar shows: a page's H1 where the
   // segment is a page, the section label otherwise — and only pages link.
   const crumbs = [`<a href="${root}">${SITE}</a>`];
+  const crumbList = [{ name: SITE, item: `${BASE}/` }];
   if (page) {
     const parts = page.split('/');
     parts.forEach((part, index) => {
@@ -168,18 +215,50 @@ for (const page of pages) {
           ? text
           : `<a href="${'../'.repeat(parts.length - 1 - index)}">${text}</a>`,
       );
+      if (isLast || meta.has(prefix)) crumbList.push({ name: text, item: `${BASE}/${prefix}/` });
     });
   }
+
+  const canonical = page ? `${BASE}/${page}/` : `${BASE}/`;
+  const description = escapeHtml(descriptionOf(markdown));
+  const jsonld = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        name: title,
+        url: canonical,
+        isPartOf: { '@type': 'WebSite', name: SITE, url: `${BASE}/` },
+        publisher: { '@type': 'Organization', name: 'Cuesoft Inc.', url: 'https://cuesoft.io' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: crumbList.map((crumb, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: crumb.name,
+          item: crumb.item,
+        })),
+      },
+    ],
+  });
 
   const html = template
     .replaceAll(
       '{{doc_title}}',
       // When the page title and site name overlap, the longer one stands
-      // alone — never "The Cuesoft Handbook | Cuesoft Handbook".
-      SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`,
+      // alone — never "The Cuesoft Handbook | Cuesoft Handbook". Escaped
+      // once for every context it lands in, including meta attributes.
+      escapeHtml(
+        SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`,
+      ),
     )
     .replaceAll('{{site}}', SITE)
-    .replaceAll('{{description}}', DESCRIPTION)
+    .replaceAll('{{description}}', description)
+    .replaceAll('{{canonical}}', canonical)
+    .replaceAll('{{base}}', BASE)
+    .replaceAll('{{og_type}}', page ? 'article' : 'website')
+    .replaceAll('{{jsonld}}', jsonld)
     .replaceAll('{{root}}', root)
     .replaceAll('{{layout_class}}', hasSidebar ? 'with-sidebar' : 'single')
     .replaceAll('{{sidebar}}', hasSidebar ? sidebarFor(page) : '')
@@ -197,6 +276,19 @@ for (const page of pages) {
   mkdirSync(path.dirname(target), { recursive: true });
   writeFileSync(target, html);
 }
+
+// Crawlers get the same map readers do.
+writeFileSync(
+  path.join(OUT, 'sitemap.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages
+    .map((page) => {
+      const loc = page ? `${BASE}/${page}/` : `${BASE}/`;
+      const date = gitDate(page);
+      return `  <url><loc>${loc}</loc>${date ? `<lastmod>${date}</lastmod>` : ''}</url>`;
+    })
+    .join('\n')}\n</urlset>\n`,
+);
+writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
 
 for (const [from, to] of Object.entries(REDIRECTS)) {
   const target = path.join(OUT, from, 'index.html');
