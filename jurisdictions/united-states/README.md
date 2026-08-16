@@ -17,18 +17,24 @@ In CCPA/CPRA terms:
   with the advertising platforms
   [listed on the CueTA™ page](../../collection/cueta/) for cross-context
   behavioral advertising. You can opt out of further sharing at any time
-  via the **Cookie preferences** link. The tags never load without your
-  opt-in — so if your browser sends an opt-out preference signal (such as
-  **Global Privacy Control**) and you have not opted in, nothing is
-  shared.
-- **Categories collected:** identifiers (name, email, phone) and internet
-  or network activity (as described on the
-  [collection pages](../../collection/all-sites/)) — from you directly and
-  from your browser. **Purposes:** processing applications and enquiries,
-  running and securing the websites, and (opt-in only) advertising
-  measurement. **Disclosed to:** the service providers on the
-  [processors page](../../handling/processors/), under contracts limiting
-  their use of it.
+  via the **Cookie preferences** link.
+- **Opt-out preference signals.** We treat **Global Privacy Control** as a
+  valid opt-out of sharing, and it **overrides a stored opt-in**: if your
+  browser sends GPC, the advertising tags do not load — even if you
+  previously pressed Accept — for as long as the signal is present. With
+  no prior opt-in, nothing was ever shared to begin with.
+- **Categories collected:** identifiers (name, email, phone); internet or
+  network activity; and, depending on the form you use,
+  professional or employment-related and commercial information (role
+  interest and availability on CueLABS™, company and project briefs on
+  CueHIRE™, programme intent on CueTA™) — all described on the
+  [collection pages](../../collection/all-sites/), collected from you
+  directly and from your browser. **Purposes:** processing applications
+  and enquiries, running and securing the websites, and (opt-in only)
+  advertising measurement. **Disclosed to:** the service providers on the
+  [processors page](../../handling/processors/) under contracts limiting
+  their use of it, and — only on opt-in — the advertising platforms, as
+  independent businesses.
 - We do **not** collect or use sensitive personal information beyond what
   is necessary to provide the services, and we do not use it to infer
   characteristics.
@@ -63,5 +69,6 @@ breach-notification law of each affected resident's state — see
 
 Our sites run no cross-site tracking to disable, and the CueTA™
 advertising tags are opt-in — the state Do Not Track signals were designed
-for is our default state. Global Privacy Control is treated as stated in
-the California section above.
+for is our default state. Global Privacy Control is honoured as a valid
+opt-out that overrides a stored opt-in, as the California section above
+states.

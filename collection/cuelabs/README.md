@@ -15,9 +15,12 @@ Application decisions are made by humans.
 
 The site displays contributors to our open-source products using GitHub's
 public API — information those contributors have already made public on
-GitHub, shown with attribution. If you want your public GitHub activity
-removed from our contributor displays, email
-[hello@cuesoft.io](mailto:hello@cuesoft.io).
+GitHub, shown with attribution. **Purpose:** crediting contributors and
+showing the provenance of our open-source work. **Legal basis:** our
+legitimate interest in accurate attribution (GDPR Art. 6(1)(f)). You may
+[object](../../rights/your-rights/) — email
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and we will remove your public
+GitHub activity from our contributor displays.
 
 ## Programme communication
 

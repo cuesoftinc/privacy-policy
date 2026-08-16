@@ -9,11 +9,12 @@ It is issued by **Cuesoft Inc.** (8 The Green, Suite 300, Dover, DE 19901,
 United States) and **Cuesoft Nigeria Limited** (RC1624434, 39 Alfred Rewane
 Road, 3rd Floor Mulliner Towers, Ikoyi, Lagos, Nigeria) — together
 "Cuesoft", "we", "us" — who act as joint data controllers for the websites
-below. Under our joint-controller arrangement, Cuesoft Nigeria Limited is
-the responsible entity and primary contact for processing subject to
-Nigerian law, and Cuesoft Inc. for processing subject to US law; you may
-exercise your rights against either entity through
-[hello@cuesoft.io](mailto:hello@cuesoft.io).
+below. The essence of our joint-controller arrangement: **Cuesoft Nigeria
+Limited** leads compliance for processing subject to Nigerian law **and to
+the EU/UK GDPR** (transparency, rights handling, security); **Cuesoft
+Inc.** leads for processing subject to US law; and regardless of the
+split, you may exercise your rights against either entity through the
+single contact point [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
 Signed engagements — offers of admission, internship, contractor and client
 agreements, Cueprise™ licences — carry their own data terms, which govern

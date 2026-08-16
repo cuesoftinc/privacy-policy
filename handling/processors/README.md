@@ -8,14 +8,22 @@ its data processing agreement to process data only on our instructions:
 | Provider | What it does for us |
 | --- | --- |
 | Cloudflare | Edge delivery, security, cookieless analytics |
-| Google | Firebase App Hosting infrastructure; Google Fonts on the documentation sites; the Google Ads tag on CueTA™ after consent |
+| Google (infrastructure role) | Firebase App Hosting — serving the websites |
 | Airtable | Form records (applications and enquiries) |
 | GitHub | Hosting for the documentation sites; public API for the contributors display |
 | AI platform provider | Generating Ace's answers — the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
 
-Only where you opt in on CueTA™ do **Meta, LinkedIn and X** (advertising
-tags) receive anything, and only if you click the player does **Spotify**
-(the click-to-load embed on cuesoft.io) load at all.
+## Advertising platforms are not processors
+
+The advertising platforms behind CueTA™'s opt-in tags — **Google Ads,
+Meta, LinkedIn and X** — act as **independent businesses under their own
+policies**, not as our processors, once your opt-in lets their tags load.
+Google therefore wears two hats, and we treat them separately: its
+infrastructure role is restricted processing on our instructions; its
+advertising role is the consent-gated disclosure described as "sharing" on
+the [United States page](../../jurisdictions/united-states/). None of them
+receives anything unless you opt in on CueTA™ — and **Spotify** (the
+click-to-load embed on cuesoft.io) loads only if you click the player.
 
 **We do not sell personal data to anyone.**
 

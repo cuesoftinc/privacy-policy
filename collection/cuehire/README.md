@@ -5,9 +5,10 @@
 **What:** name, work email, company, and your brief.
 **Why:** to respond to your enquiry and scope a potential engagement.
 **Where:** records are stored in Airtable, our forms database.
-**Legal basis:** steps at your request prior to a contract
-(GDPR Art. 6(1)(b)); our legitimate interest in responding to business
-enquiries (Art. 6(1)(f)).
+**Legal basis:** our legitimate interest in responding to and scoping the
+business enquiry you sent us (GDPR Art. 6(1)(f)) — you may
+[object](../../rights/your-rights/) at any time. Once an engagement is
+signed, processing under it rests on the contract (Art. 6(1)(b)).
 
 Engagement data under a signed agreement is governed by that agreement's
 data terms.

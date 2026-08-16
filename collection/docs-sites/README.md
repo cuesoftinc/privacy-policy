@@ -8,6 +8,5 @@ infrastructure logs apply, per
 - **No forms** and **no cookies set by us**.
 - Your **theme preference** (light or dark) is stored locally in your own
   browser and never sent to us.
-- Fonts are loaded from Google Fonts; Google's
-  [Fonts privacy notes](https://developers.google.com/fonts/faq/privacy)
-  describe what a font request involves.
+- Fonts are **self-hosted**: viewing these pages sends no request to any
+  font service.

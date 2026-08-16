@@ -1,7 +1,11 @@
 # European Union, EEA and United Kingdom — GDPR / UK GDPR
 
 If you are in the EU/EEA or UK, the GDPR or UK GDPR applies to our
-processing of your personal data as described in this policy.
+processing of your personal data as described in this policy. Under the
+joint-controller arrangement on the [main page](../../), **Cuesoft Nigeria
+Limited leads GDPR/UK GDPR compliance** — transparency, rights handling
+and security — and you may nonetheless exercise your rights against
+either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
 ## Legal bases, per activity
 
@@ -12,6 +16,7 @@ processing of your personal data as described in this policy.
 | Cookieless aggregate analytics | Legitimate interest in understanding site usage — Art. 6(1)(f), no cookies or identifiers involved |
 | Ace, the assistant | Legitimate interest in providing the assistant you choose to use — Art. 6(1)(f) |
 | CueTA™ advertising tags | Consent — Art. 6(1)(a), withdrawable at any time |
+| Contributor display on CueLABS™ (public GitHub data) | Legitimate interest in accurate attribution — Art. 6(1)(f), objection honoured on request |
 | Programme administration under a signed agreement | Contract — Art. 6(1)(b) |
 
 Where we rely on legitimate interests, we have balanced them against your
