@@ -16,9 +16,9 @@ const OUT = path.join(ROOT, '_site');
 const SITE = process.env.SITE_TITLE || 'Cuesoft Privacy Policy';
 const DESCRIPTION =
   process.env.SITE_DESCRIPTION ||
-  'What each Cuesoft website collects, why, and your rights under Nigerian, EU/UK and US law.';
+  'What each Cuesoft website collects, why, and your rights under Nigerian, EU/UK and US law — plus the Cueprise™ Privacy Notice.';
 // Sections in reading order; anything not listed sorts after, alphabetically.
-const SECTION_ORDER = ['general', 'people', 'engineering', 'policies', 'leadership', 'credits'];
+const SECTION_ORDER = ['collection', 'cueprise', 'handling', 'rights', 'jurisdictions'];
 
 const template = readFileSync(path.join(ROOT, 'templates/page.html'), 'utf8');
 
@@ -63,10 +63,12 @@ function sidebarFor(current) {
     if (!sections.has(section)) sections.set(section, []);
     sections.get(section).push(page);
   }
-  // Top-level single pages (e.g. leadership/) group under their own name.
+  // Top-level pages group under their own name; a section's own index page
+  // leads its section (e.g. policies/ atop the Policies group).
   for (const page of pages) {
     if (!page || page.includes('/')) continue;
-    if (!sections.has(page)) sections.set(page, [page]);
+    if (sections.has(page)) sections.get(page).unshift(page);
+    else sections.set(page, [page]);
   }
   if (sections.size === 0) return '';
 
