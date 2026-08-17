@@ -89,7 +89,7 @@ processing chain:
 | Provider | Role in the platform | Personal data it touches |
 | --- | --- | --- |
 | Google Cloud | Hosting, file storage, staff sign-in | Everything the deployment stores; for sign-in, the staff member's Google profile |
-| Paystack | Online payments | Payer email, amount, order reference |
+| Paystack | Online payments | From the platform: payer email, amount, order reference. On Paystack's own hosted page, the shopper additionally enters card or other payment details, which never enter Cueprise™ and are handled under Paystack's own policy |
 | Brevo | Transactional email | Recipient name and email |
 | Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp | Recipient phone number |
 | Cloudinary | Media storage, where the licensee's deployment is configured to use it | Uploaded files |
@@ -102,9 +102,13 @@ Because Cuesoft is the controller of that telemetry, Datadog acts there as
 
 For **relationship data**, the licensee contacts, contracts, invoices and
 support correspondence involved in running the licensing relationship,
-Cuesoft is the controller. **Legal basis:** performance of the licensing
-contract (GDPR Art. 6(1)(b)) and, for records kept beyond the
-relationship, compliance with legal obligations (Art. 6(1)(c)).
+Cuesoft is the controller. **Legal basis:** where the licensee is an
+individual, performance of the licensing contract (GDPR Art. 6(1)(b));
+for the staff and representatives of an organisational licensee, who are
+usually not parties to the contract themselves, our legitimate interest
+in managing the relationship their organisation entered into
+(Art. 6(1)(f)); and, for records kept beyond the relationship, compliance
+with legal obligations (Art. 6(1)(c)).
 
 Cuesoft is also the controller of the **service telemetry** needed to run
 and secure the platform.
@@ -130,9 +134,12 @@ we do not rely on contract performance for this processing; the
 legitimate-interest balance is struck by the sampling, the scrubbing and
 the admin-only scope described above.
 
-Retention for both follows the [retention page](../handling/retention/)
-and the agreement; the [jurisdiction pages](../jurisdictions/nigeria/)
-apply to this data as they do to website data.
+Service telemetry, including session-replay samples, is kept for
+**30 days**, the same period the [retention page](../handling/retention/)
+sets for infrastructure and security logs. Relationship data follows the
+retention page and the agreement. The
+[jurisdiction pages](../jurisdictions/nigeria/) apply to this data as they
+do to website data.
 
 ## Security and breach
 
