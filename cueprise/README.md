@@ -77,9 +77,13 @@ instructions**, under the data terms of the licensing agreement:
 **If your data is inside a licensee's Cueprise™ deployment**, for
 example you are an employee of an organisation that runs Cueprise™, or a
 customer who bought from a store it powers, **the organisation's own
-privacy notice governs, and rights requests go to that organisation.** We
-refer any request we receive about a licensee's data to that licensee, and
-help them answer it.
+privacy notice governs the platform records about you, and rights requests
+about them go to that organisation.** We refer any request we receive
+about a licensee's data to that licensee, and help them answer it. The
+exception is the data Cuesoft controls itself, relationship data and the
+service telemetry described below: rights requests about those come to
+Cuesoft directly at [hello@cuesoft.io](mailto:hello@cuesoft.io), because
+the licensee cannot act on data it does not control.
 
 ## Sub-processors
 
@@ -134,10 +138,12 @@ we do not rely on contract performance for this processing; the
 legitimate-interest balance is struck by the sampling, the scrubbing and
 the admin-only scope described above.
 
-Service telemetry, including session-replay samples, is kept for
-**30 days**, the same period the [retention page](../handling/retention/)
-sets for infrastructure and security logs. Relationship data follows the
-retention page and the agreement. The
+Service telemetry, including session-replay samples and any IP addresses
+appearing in request logs, is kept for **30 days**, the same period the
+[retention page](../handling/retention/) sets for infrastructure and
+security logs. The rate-limiting counters themselves are shorter-lived
+still: they hold an IP only for the minutes their sliding window covers.
+Relationship data follows the retention page and the agreement. The
 [jurisdiction pages](../jurisdictions/nigeria/) apply to this data as they
 do to website data.
 
