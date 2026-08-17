@@ -91,7 +91,7 @@ processing chain:
 | Google Cloud | Hosting, file storage, staff sign-in | Everything the deployment stores; for sign-in, the staff member's Google profile |
 | Paystack | Online payments | From the platform: payer email, amount, order reference. On Paystack's own hosted page, the shopper additionally enters card or other payment details, which never enter Cueprise™ and are handled under Paystack's own policy |
 | Brevo | Transactional email | Recipient name and email |
-| Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp | Recipient phone number |
+| Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp | Recipient phone number and the message body: the one-time code being delivered, or the invitation's details |
 | Cloudinary | Media storage, where the licensee's deployment is configured to use it | Uploaded files |
 
 Separately, **Datadog** processes the service telemetry described below.
