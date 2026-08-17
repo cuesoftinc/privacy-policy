@@ -41,5 +41,6 @@ happen on WhatsApp under an engagement's terms.
 
 ## Cueprise™
 
-Sub-processors for the licensed platform are listed in each licensing
-agreement — see the [Cueprise™ Privacy Notice](../../cueprise/).
+Sub-processors for the licensed platform are named in the
+[Cueprise™ Privacy Notice](../../cueprise/), and each licensing agreement
+confirms which are active for that deployment.
