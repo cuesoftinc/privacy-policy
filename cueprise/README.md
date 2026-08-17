@@ -17,8 +17,10 @@ Google Cloud infrastructure unless the licensing agreement provides
 otherwise.
 
 A deployment periodically verifies its licence key against Cuesoft's
-licensing service. That check carries the licence key and nothing else: no
-personal data leaves the deployment for licensing.
+licensing service. The request payload carries the licence key and nothing
+else; like any web request it also reveals its source IP address, which the
+licensing service processes transiently for rate limiting, as described
+under [service telemetry](#service-telemetry) below.
 
 ## Roles
 
@@ -81,6 +83,9 @@ help them answer it.
 
 ## Sub-processors
 
+These providers process **licensee data** in the licensee-to-Cuesoft
+processing chain:
+
 | Provider | Role in the platform | Personal data it touches |
 | --- | --- | --- |
 | Google Cloud | Hosting, file storage, staff sign-in | Everything the deployment stores; for sign-in, the staff member's Google profile |
@@ -88,12 +93,23 @@ help them answer it.
 | Brevo | Transactional email | Recipient name and email |
 | Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp | Recipient phone number |
 | Cloudinary | Media storage, where the licensee's deployment is configured to use it | Uploaded files |
-| Datadog | Performance and error telemetry | The service telemetry described below |
 
-## Service telemetry
+Separately, **Datadog** processes the service telemetry described below.
+Because Cuesoft is the controller of that telemetry, Datadog acts there as
+**Cuesoft's own processor**, not as a sub-processor of licensee data.
 
-Cuesoft is the controller of the telemetry needed to run and secure the
-platform, and this is what it consists of:
+## When Cuesoft is the controller
+
+For **relationship data**, the licensee contacts, contracts, invoices and
+support correspondence involved in running the licensing relationship,
+Cuesoft is the controller. **Legal basis:** performance of the licensing
+contract (GDPR Art. 6(1)(b)) and, for records kept beyond the
+relationship, compliance with legal obligations (Art. 6(1)(c)).
+
+Cuesoft is also the controller of the **service telemetry** needed to run
+and secure the platform.
+
+### Service telemetry
 
 - **Server-side**: request traces, error reports and operational logs from
   each deployment's services.
@@ -107,12 +123,16 @@ platform, and this is what it consists of:
   sign-in and licensing endpoints and to attribute traffic through our
   edge protection.
 
-**Legal bases:** performance of the licensing contract
-(GDPR Art. 6(1)(b)) and our legitimate interest in securing and improving
-the platform (Art. 6(1)(f)). Retention follows the
-[retention page](../handling/retention/) and the agreement; the
-[jurisdiction pages](../jurisdictions/nigeria/) apply to this data as they
-do to website data.
+**Legal basis:** our legitimate interest in securing, supporting and
+improving the platform (Art. 6(1)(f)). Licensee staff whose sessions
+appear in telemetry are usually not parties to the licensing contract, so
+we do not rely on contract performance for this processing; the
+legitimate-interest balance is struck by the sampling, the scrubbing and
+the admin-only scope described above.
+
+Retention for both follows the [retention page](../handling/retention/)
+and the agreement; the [jurisdiction pages](../jurisdictions/nigeria/)
+apply to this data as they do to website data.
 
 ## Security and breach
 
