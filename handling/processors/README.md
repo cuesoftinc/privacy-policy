@@ -10,6 +10,7 @@ its data processing agreement to process data only on our instructions:
 | Cloudflare | Edge delivery, security, cookieless analytics |
 | Google (infrastructure role) | Firebase App Hosting — serving the websites |
 | Airtable | Form records (applications and enquiries) |
+| Brevo | Sending the form acknowledgement email, and recording when it is opened and its links clicked |
 | GitHub | Hosting for the documentation sites; public API for the contributors display |
 | AI platform provider | Generating Ace's answers — the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
 

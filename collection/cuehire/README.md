@@ -9,6 +9,9 @@
   the business enquiry you sent us (GDPR Art. 6(1)(f)) — you may
   [object](../../rights/your-rights/) at any time. Once an engagement is
   signed, processing under it rests on the contract (Art. 6(1)(b)).
+- **Confirmation:** we email you a receipt, copied to
+  [cuehire@cuesoft.io](mailto:cuehire@cuesoft.io) — see
+  [what every site collects](../all-sites/).
 
 Engagement data under a signed agreement is governed by that agreement's
 data terms.

@@ -34,6 +34,30 @@ platform provider to generate an answer.
 - **Legal basis:** our legitimate interest in providing the assistant you
   choose to use (GDPR Art. 6(1)(f)).
 
+## Form acknowledgement email
+
+Submit a form on **CueTA™**, **CueLABS™** or **CueHIRE™** and we email you
+a confirmation. It is copied to the department that will handle it, and
+replies go there too, because the message is sent from an address nobody
+reads.
+
+We send it through **Brevo**, our email provider, which receives your name
+and email address for that purpose — and on CueLABS™ the CV you attached,
+which travels with the message.
+
+Brevo also records **when you open the message and which links in it you
+click**. We use that to tell whether confirmations are arriving and being
+read.
+
+- **Legal basis:** sending the confirmation rests on the same basis as the
+  form itself, set out on each site's page. The open and click measurement
+  rests on our legitimate interest in knowing our own mail reaches people
+  (GDPR Art. 6(1)(f)) — you may
+  [object](../../rights/your-rights/) at any time.
+- The message loads images from our sites and from Brevo. Blocking remote
+  images in your mail client prevents the open measurement.
+- **Retention:** see [retention](../../handling/retention/).
+
 ## What no site does
 
 Except as stated on the per-site pages, the websites set **no cookies**

@@ -2,12 +2,17 @@
 
 ## Application form
 
-- **What:** name, email, phone, GitHub username, role interest and start
-  availability.
+- **What:** name, email, phone, GitHub username, portfolio link, the
+  discipline and duration you applied for, university, course, level,
+  country, start availability, your reasons for applying, and the CV you
+  upload.
 - **Why:** to assess and process internship applications.
 - **Where:** records are stored in Airtable, our forms database.
 - **Legal basis:** steps at your request prior to a contract
   (GDPR Art. 6(1)(b)).
+- **Confirmation:** we email you a receipt with your CV attached, copied
+  to [cuelabs@cuesoft.io](mailto:cuelabs@cuesoft.io) — see
+  [what every site collects](../all-sites/).
 
 Application decisions are made by humans.
 
