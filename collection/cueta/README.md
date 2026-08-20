@@ -8,6 +8,9 @@
 - **Where:** records are stored in Airtable, our forms database.
 - **Legal basis:** steps at your request prior to a contract
   (GDPR Art. 6(1)(b)), and the equivalent contractual basis under the NDPA.
+- **Confirmation:** we email you a receipt, copied to
+  [cueta@cuesoft.io](mailto:cueta@cuesoft.io) — see
+  [what every site collects](../all-sites/).
 
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.
