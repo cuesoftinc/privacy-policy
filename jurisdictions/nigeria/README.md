@@ -53,7 +53,15 @@ provisions and the NDPC's implementing instruments — see
 
 ## Registration status
 
-We monitor the GAID thresholds for **data controllers of major
-importance** and will register with the NDPC, and designate a data
-protection officer, if and when our processing meets them. Questions about
-our current status: [hello@cuesoft.io](mailto:hello@cuesoft.io).
+The NDPC designates a **data controller of major importance** on any one of
+three independent grounds: processing the personal data of more than 200
+data subjects in six months; carrying out commercial ICT services on a
+device that holds another person's data; or processing personal data as an
+organisation or service provider in one of thirteen named sectors. Those
+sectors include education, and the Commission's own classification of
+designated entities names corporate training service providers.
+
+Whether Cuesoft is designated on any of those grounds is under review. This
+page will state the outcome, and where designation applies it will name our
+registration and our designated data protection officer. Questions in the
+meantime: [hello@cuesoft.io](mailto:hello@cuesoft.io).
