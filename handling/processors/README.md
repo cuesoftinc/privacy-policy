@@ -11,6 +11,7 @@ process data only on our instructions:
 | Cloudflare | Edge delivery, security, cookieless analytics |
 | Google (infrastructure role) | Firebase App Hosting — serving the websites |
 | Google (Classroom) | Google Classroom: course material for enrolled CueTA™ learners, and the coursework they submit |
+| Google (Workspace) | Mail for `cuesoft.io`, including `hello@cuesoft.io`, the address this policy names for exercising your rights |
 | Airtable | Form records (applications and enquiries) |
 | Brevo | Sending the form acknowledgement email, and recording when it is opened and its links clicked |
 | Lark | Mail hosting for our talent.cuesoft.io work addresses, so it carries the messages sent to and from them |
@@ -23,7 +24,7 @@ process data only on our instructions:
 The advertising platforms behind CueTA™'s opt-in tags — **Google Ads,
 Meta, LinkedIn and X** — act as **independent businesses under their own
 policies**, not as our processors, once your opt-in lets their tags load.
-Google therefore wears two kinds of hat, and we treat them separately: its
+Google therefore wears more than one kind of hat, and we treat them separately: its
 infrastructure and classroom roles are restricted processing on our
 instructions; its advertising role is the consent-gated disclosure
 described as "sharing" on the
