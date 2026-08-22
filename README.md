@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: 17 August 2026**
+**Effective date: 22 August 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
 and the rights you have over it — under Nigerian, EU/UK and US law.
