@@ -2,7 +2,11 @@
 
 ## Contact form
 
-- **What:** name, work email, company, and your brief.
+- **What:** name, work email, company, and your brief. We also record the
+  country Cloudflare's edge places you in: derived from your IP address as
+  you submit rather than asked for on the form, and stored as the country
+  name, not the address itself. It tells us where an enquiry is coming from
+  when we scope a response.
 - **Why:** to respond to your enquiry and scope a potential engagement.
 - **Where:** records are stored in Airtable, our forms database.
 - **Legal basis:** our legitimate interest in responding to and scoping

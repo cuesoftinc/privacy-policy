@@ -10,6 +10,7 @@ requires, then delete or anonymise it.
 | Acknowledgement email | Delivery log: **1 month**, then deleted. Message preview: **never stored** — the provider keeps no copy of what the message said. Open and click records: retained by the provider **without a fixed period**. We copy none of it into our own systems |
 | Ace conversations | Held in your browser session; server-side processing is transient |
 | Cohort/programme communication | For the life of the programme relationship, then per the signed agreement |
+| Personnel records (contractors, interns and staff) | The engagement, then **six years** from its end: the record-keeping window Nigerian tax and company law set. Set out in the [personnel privacy notice](https://handbook.cuesoft.io/policies/personnel-privacy/) |
 | Data under signed engagements (including Cueprise™ licensee data) | Per the engagement's terms and applicable law |
 
 Verified deletion requests are honoured sooner — see

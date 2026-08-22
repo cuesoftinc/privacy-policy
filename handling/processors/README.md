@@ -2,15 +2,19 @@
 
 ## Our processors
 
-We use a small set of service providers to run the websites, each bound by
-its data processing agreement to process data only on our instructions:
+We use a small set of service providers to run the websites and the
+programmes behind them, each bound by its data processing agreement to
+process data only on our instructions:
 
 | Provider | What it does for us |
 | --- | --- |
 | Cloudflare | Edge delivery, security, cookieless analytics |
 | Google (infrastructure role) | Firebase App Hosting — serving the websites |
+| Google (Classroom) | Google Classroom: course material for enrolled CueTA™ learners, and the coursework they submit |
 | Airtable | Form records (applications and enquiries) |
 | Brevo | Sending the form acknowledgement email, and recording when it is opened and its links clicked |
+| Lark | Mail hosting for our talent.cuesoft.io work addresses, so it carries the messages sent to and from them |
+| Certifier | Issuing CueTA™ credentials: the certificate a graduate receives, and the public page that verifies it |
 | GitHub | Hosting for the documentation sites; public API for the contributors display |
 | AI platform provider | Generating Ace's answers — the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
 
@@ -19,10 +23,11 @@ its data processing agreement to process data only on our instructions:
 The advertising platforms behind CueTA™'s opt-in tags — **Google Ads,
 Meta, LinkedIn and X** — act as **independent businesses under their own
 policies**, not as our processors, once your opt-in lets their tags load.
-Google therefore wears two hats, and we treat them separately: its
-infrastructure role is restricted processing on our instructions; its
-advertising role is the consent-gated disclosure described as "sharing" on
-the [United States page](../../jurisdictions/united-states/). None of them
+Google therefore wears two kinds of hat, and we treat them separately: its
+infrastructure and classroom roles are restricted processing on our
+instructions; its advertising role is the consent-gated disclosure
+described as "sharing" on the
+[United States page](../../jurisdictions/united-states/). None of them
 receives anything unless you opt in on CueTA™ — and **Spotify** (the
 click-to-load embed on cuesoft.io) loads only if you click the player.
 

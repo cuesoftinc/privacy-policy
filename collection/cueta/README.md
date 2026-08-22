@@ -2,15 +2,25 @@
 
 ## Application form
 
-- **What:** name, email, phone number, and your programme intent.
+- **What:** name, email, phone number, country of residence, the track you
+  applied for, your programme intent, and your answer to the mailing-list
+  box.
 - **Why:** to process your application, run your free consultation call
   and administer enrolment.
 - **Where:** records are stored in Airtable, our forms database.
 - **Legal basis:** steps at your request prior to a contract
   (GDPR Art. 6(1)(b)), and the equivalent contractual basis under the NDPA.
+  The mailing-list box is the one exception: ticking it is **consent**
+  (GDPR Art. 6(1)(a)). Leave it unticked and your application and its
+  confirmation are unaffected; tick it and you can withdraw at any time by
+  emailing [hello@cuesoft.io](mailto:hello@cuesoft.io).
 - **Confirmation:** we email you a receipt, copied to
   [cueta@cuesoft.io](mailto:cueta@cuesoft.io) — see
   [what every site collects](../all-sites/).
+
+The country select arrives pre-filled with the country Cloudflare's edge
+places you in, which is a guess from your IP address. You can change it
+before you submit, and what we store is your answer, not the guess.
 
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.
