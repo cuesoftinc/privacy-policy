@@ -29,7 +29,7 @@ banner. None of them loads, and no cookie is set, until you press
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
-| Google Analytics | Traffic and journey measurement, including linking your visits across devices where you are signed in to Google (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| Google Analytics | Traffic and journey measurement; building remarketing audiences that are shared with our Google Ads account; and, where you are signed in to Google, linking your visits to that account (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
 | LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
