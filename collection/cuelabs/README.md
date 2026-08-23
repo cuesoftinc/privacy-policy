@@ -45,10 +45,12 @@ banner. Nothing loads and no cookie is set until you press **Accept**:
 | LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
 | X (Twitter) | Ad measurement | [x.com/en/privacy](https://x.com/en/privacy) |
 
-- **What they receive:** a cookie or device identifier, your IP address
-  (which Google Analytics truncates before storing), the page URLs you
-  visit on this site and the referring URL, plus basic device and browser
-  metadata and the page-view events themselves. Google Analytics keeps
+- **What they receive:** a cookie or device identifier, your IP address,
+  the page URLs you visit on this site and the referring URL, plus basic
+  device and browser metadata and the page-view events themselves. Google
+  Analytics uses the IP address in passing to derive an approximate
+  location and then discards it: the address itself is not stored, and the
+  location is what is kept. Google Analytics keeps
   this for **14 months** — see [retention](../../handling/retention/). We
   do not send your form contents to any of them.
 - **Decline and none of them load.** The site works identically either
