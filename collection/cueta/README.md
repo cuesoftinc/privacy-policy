@@ -44,9 +44,13 @@ press **Accept** does the site load them:
   way.
 - **Withdraw any time** via the site's **Cookie preferences** link.
   Withdrawal stops the tags loading from that point on; it does not delete
-  cookies the platforms already set (you can clear those in your
-  browser), and data those platforms already collected is governed by
-  their own policies.
+  cookies already set (you can clear those in your browser). What happens
+  to data already collected differs by provider: Google Analytics holds it
+  as our **processor**, on our instructions, so the
+  [rights page](../../rights/your-rights/) reaches it, while the four
+  advertising platforms hold what they collected as **independent
+  businesses** under their own policies — see
+  [processors and platforms](../../handling/processors/).
 - We do **not** send your form contents (email, phone) to these
   advertising platforms.
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on

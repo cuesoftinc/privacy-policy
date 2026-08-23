@@ -53,8 +53,10 @@ In CCPA/CPRA terms:
 Residents of states with comprehensive privacy laws (Virginia, Colorado,
 Connecticut, Utah, Texas, Oregon, Montana and others) hold comparable
 rights of access, correction, deletion, portability and opt-out of
-targeted advertising. The CueTA™ consent banner is our opt-in mechanism
-for targeted advertising everywhere — the default is off in every state —
+targeted advertising. Each website's own consent banner is our opt-in
+mechanism for targeted advertising everywhere, and a choice made on one
+site does not carry to another — the default is off on every site in
+every state —
 and the [rights page](../../rights/your-rights/) is the single door for
 every request. Where a state grants an appeal right for refused requests,
 tell us you are appealing and a different reviewer will decide; if we
