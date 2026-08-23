@@ -53,7 +53,8 @@ Cookie preferences stops any further transfer from the moment you withdraw,
 but it cannot recall what was already sent: that data stays with those
 platforms under their own policies, which is why the choice is off by
 default and why we ask before loading anything. Google Analytics is
-different again: it acts as our processor, so it is covered by the clauses
+different again: for our measurement it acts as our processor, so that is
+covered by the clauses
 above and a deletion request through the
 [rights page](../../rights/your-rights/) reaches it.
 

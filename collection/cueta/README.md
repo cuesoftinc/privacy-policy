@@ -34,7 +34,7 @@ press **Accept** does the site load them:
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
-| Google Analytics | Traffic and journey measurement | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| Google Analytics | Traffic and journey measurement, including linking your visits across devices where you are signed in to Google (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
 | LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
@@ -47,6 +47,17 @@ press **Accept** does the site load them:
   location and then discards it: the address itself is not stored, and the
   location is what is kept. Google Analytics keeps
   this for **14 months** — see [retention](../../handling/retention/).
+- **If you are signed in to Google:** we have Google signals switched on,
+  so where you are signed in to a Google account that has Ads
+  Personalisation enabled, Google may connect this visit to that account.
+  That is what lets us see one person arriving on a phone and returning on
+  a laptop rather than two unrelated visitors, and it lets Google use the
+  visit for its own ads personalisation as well as for our measurement.
+  You control it on Google's side, independently of us, at
+  [myadcenter.google.com](https://myadcenter.google.com) and
+  [Google's activity controls](https://myaccount.google.com/activitycontrols)
+  — switching Ads Personalisation off there stops it for every site, not
+  just ours. Declining our banner also prevents it.
 - **Decline and none of them load.** The site works identically either
   way.
 - **Withdraw any time** via the site's **Cookie preferences** link.
@@ -54,9 +65,12 @@ press **Accept** does the site load them:
   cookies already set (you can clear those in your browser). What happens
   to data already collected differs by provider: Google Analytics holds it
   as our **processor**, on our instructions, so the
-  [rights page](../../rights/your-rights/) reaches it, while the four
-  advertising platforms hold what they collected as **independent
-  businesses** under their own policies — see
+  [rights page](../../rights/your-rights/) reaches it. The exception is what
+  Google signals feeds into Google's own ads personalisation, which Google
+  controls rather than us: manage that in your
+  [Google account](https://myadcenter.google.com). The four advertising
+  platforms hold what they collected as **independent businesses** under
+  their own policies — see
   [processors and platforms](../../handling/processors/).
 - We do **not** send your form contents (email, phone) to these
   advertising platforms.

@@ -17,7 +17,10 @@ In CCPA/CPRA terms:
   opt in through that site's consent banner, we "share" identifiers and
   internet-activity data with the advertising platforms
   [listed on each collection page](../../collection/all-sites/) for
-  cross-context behavioral advertising. The documentation sites carry no
+  cross-context behavioral advertising. **Google signals** is part of that
+  sharing: with it switched on, a visit made while you are signed in to
+  Google with Ads Personalisation enabled can be connected to your Google
+  account and used by Google for its own ads personalisation. The documentation sites carry no
   advertising tags and nothing is shared from them. You can opt out of further sharing at any time
   via the **Cookie preferences** link.
 - **Opt-out preference signals.** We treat **Global Privacy Control** as a
@@ -26,7 +29,9 @@ In CCPA/CPRA terms:
   previously pressed Accept — for as long as the signal is present. With
   no prior opt-in, nothing was ever shared to begin with.
 - **Categories collected:** identifiers (name, email, phone); internet or
-  network activity; approximate geolocation — a country derived at the edge
+  network activity; a cross-device identifier, where Google signals
+  connects an opted-in visit to your signed-in Google account;
+  approximate geolocation — a country derived at the edge
   by Cloudflare and stored with a form submission whether or not you opt
   in, and, if you do opt in, a coarse location Google Analytics derives
   from your IP address before discarding the address itself; and,
