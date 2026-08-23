@@ -60,7 +60,17 @@ read.
 
 ## What no site does
 
-Except as stated on the per-site pages, the websites set **no cookies**
-and load **no advertising scripts and no third-party analytics** beyond
-the cookieless Cloudflare measurement above. No website ever asks for
-payment data — see the [Terms of Service](https://terms.cuesoft.io).
+The four public websites — CueTA™, CueLABS™, CueHIRE™ and cuesoft.io —
+carry analytics and advertising tags, and on every one of them those tags
+are **gated behind a consent banner**: until you press
+Accept, the site sets **no cookies** and loads **no advertising scripts
+and no third-party analytics** beyond the cookieless Cloudflare
+measurement above. One exception, on cuesoft.io only: the Spotify player
+for The CueShow™ loads if you click it and may then set Spotify's own
+cookies, which the banner does not govern — see
+[cuesoft.io](../cuesoft/). Each website's own page lists exactly which tags it
+loads and who receives the data: [CueTA™](../cueta/),
+[CueLABS™](../cuelabs/), [CueHIRE™](../cuehire/) and
+[cuesoft.io](../cuesoft/). The [documentation sites](../docs-sites/) carry
+none. No website ever asks for payment data — see the
+[Terms of Service](https://terms.cuesoft.io).

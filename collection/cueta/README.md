@@ -25,26 +25,39 @@ before you submit, and what we store is your answer, not the guess.
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.
 
-## Advertising tags — opt-in only
+## Analytics and advertising tags — opt-in only
 
-CueTA™ is the **only** Cuesoft site that uses advertising tags, and they
-are gated behind a consent banner. Only if you press **Accept** does the
-site load them:
+All four Cuesoft websites — CueTA™, CueLABS™, CueHIRE™ and cuesoft.io —
+use analytics and advertising tags, and on all of them the tags are gated
+behind a consent banner. The documentation sites carry none. Only if you
+press **Accept** does the site load them:
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
+| Google Analytics | Traffic and journey measurement | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
 | LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
 | X (Twitter) | Ad measurement | [x.com/en/privacy](https://x.com/en/privacy) |
 
+- **What they receive:** a cookie or device identifier, your IP address,
+  the page URLs you visit on this site and the referring URL, plus basic
+  device and browser metadata and the page-view events themselves. Google
+  Analytics uses the IP address in passing to derive an approximate
+  location and then discards it: the address itself is not stored, and the
+  location is what is kept. Google Analytics keeps
+  this for **14 months** — see [retention](../../handling/retention/).
 - **Decline and none of them load.** The site works identically either
   way.
 - **Withdraw any time** via the site's **Cookie preferences** link.
   Withdrawal stops the tags loading from that point on; it does not delete
-  cookies the platforms already set (you can clear those in your
-  browser), and data those platforms already collected is governed by
-  their own policies.
+  cookies already set (you can clear those in your browser). What happens
+  to data already collected differs by provider: Google Analytics holds it
+  as our **processor**, on our instructions, so the
+  [rights page](../../rights/your-rights/) reaches it, while the four
+  advertising platforms hold what they collected as **independent
+  businesses** under their own policies — see
+  [processors and platforms](../../handling/processors/).
 - We do **not** send your form contents (email, phone) to these
   advertising platforms.
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on

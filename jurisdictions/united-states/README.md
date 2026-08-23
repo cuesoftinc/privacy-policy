@@ -12,11 +12,13 @@ In CCPA/CPRA terms:
 
 - **We do not sell personal information**, and we have not sold it in the
   preceding 12 months.
-- **"Sharing":** on cueta.cuesoft.io only, and only if you opt in through
-  the consent banner, we "share" identifiers and internet-activity data
-  with the advertising platforms
-  [listed on the CueTA™ page](../../collection/cueta/) for cross-context
-  behavioral advertising. You can opt out of further sharing at any time
+- **"Sharing":** on our four websites (cueta.cuesoft.io,
+  cuelabs.cuesoft.io, cuehire.cuesoft.io and cuesoft.io), and only if you
+  opt in through that site's consent banner, we "share" identifiers and
+  internet-activity data with the advertising platforms
+  [listed on each collection page](../../collection/all-sites/) for
+  cross-context behavioral advertising. The documentation sites carry no
+  advertising tags and nothing is shared from them. You can opt out of further sharing at any time
   via the **Cookie preferences** link.
 - **Opt-out preference signals.** We treat **Global Privacy Control** as a
   valid opt-out of sharing, and it **overrides a stored opt-in**: if your
@@ -24,7 +26,11 @@ In CCPA/CPRA terms:
   previously pressed Accept — for as long as the signal is present. With
   no prior opt-in, nothing was ever shared to begin with.
 - **Categories collected:** identifiers (name, email, phone); internet or
-  network activity; and, depending on the form you use,
+  network activity; approximate geolocation — a country derived at the edge
+  by Cloudflare and stored with a form submission whether or not you opt
+  in, and, if you do opt in, a coarse location Google Analytics derives
+  from your IP address before discarding the address itself; and,
+  depending on the form you use,
   professional or employment-related and commercial information (role
   interest and availability on CueLABS™, company and project briefs on
   CueHIRE™, programme intent on CueTA™) — all described on the
@@ -51,8 +57,10 @@ In CCPA/CPRA terms:
 Residents of states with comprehensive privacy laws (Virginia, Colorado,
 Connecticut, Utah, Texas, Oregon, Montana and others) hold comparable
 rights of access, correction, deletion, portability and opt-out of
-targeted advertising. The CueTA™ consent banner is our opt-in mechanism
-for targeted advertising everywhere — the default is off in every state —
+targeted advertising. Each website's own consent banner is our opt-in
+mechanism for targeted advertising everywhere, and a choice made on one
+site does not carry to another — the default is off on every site in
+every state —
 and the [rights page](../../rights/your-rights/) is the single door for
 every request. Where a state grants an appeal right for refused requests,
 tell us you are appealing and a different reviewer will decide; if we
@@ -67,8 +75,11 @@ breach-notification law of each affected resident's state — see
 
 ## Do Not Track and preference signals
 
-Our sites run no cross-site tracking to disable, and the CueTA™
-advertising tags are opt-in — the state Do Not Track signals were designed
-for is our default state. Global Privacy Control is honoured as a valid
+By default our sites run no cross-site tracking to disable: the analytics
+and advertising tags on all four websites are opt-in, so the state Do Not
+Track signals were designed for is where every visit starts. If you do
+accept, the advertising tags are used for remarketing, which is
+cross-context behavioural advertising and is the "sharing" described in
+the California section above; the **Cookie preferences** link ends it. Global Privacy Control is honoured as a valid
 opt-out that overrides a stored opt-in, as the California section above
 states.

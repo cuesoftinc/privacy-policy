@@ -15,13 +15,14 @@ process data only on our instructions:
 | Airtable | Form records (applications and enquiries) |
 | Brevo | Sending the form acknowledgement email, and recording when it is opened and its links clicked |
 | Lark | Mail hosting for our talent.cuesoft.io work addresses, so it carries the messages sent to and from them |
+| Google Analytics | Measuring traffic and journeys on the websites, on our instructions, once you opt in |
 | Certifier | Issuing CueTA™ credentials: the certificate a graduate receives, and the public page that verifies it |
 | GitHub | Hosting for the documentation sites; public API for the contributors display |
 | AI platform provider | Generating Ace's answers — the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
 
 ## Advertising platforms are not processors
 
-The advertising platforms behind CueTA™'s opt-in tags — **Google Ads,
+The advertising platforms behind the websites' opt-in tags — **Google Ads,
 Meta, LinkedIn and X** — act as **independent businesses under their own
 policies**, not as our processors, once your opt-in lets their tags load.
 Google therefore wears more than one kind of hat, and we treat them separately: its
@@ -29,7 +30,7 @@ infrastructure and classroom roles are restricted processing on our
 instructions; its advertising role is the consent-gated disclosure
 described as "sharing" on the
 [United States page](../../jurisdictions/united-states/). None of them
-receives anything unless you opt in on CueTA™ — and **Spotify** (the
+receives anything unless you opt in on the site you are visiting — and **Spotify** (the
 click-to-load embed on cuesoft.io) loads only if you click the player.
 
 **We do not sell personal data to anyone.**

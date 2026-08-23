@@ -16,6 +16,47 @@ rely on:
 3. for transfers between Cuesoft Inc. and Cuesoft Nigeria Limited, our
    intra-group arrangement applying the same safeguards.
 
+The advertising platforms are the exception, and deliberately so. Google
+Ads, Meta, LinkedIn and X receive data as **independent businesses under
+their own policies**, not as our processors, so the clauses above are not
+the mechanism and we cannot offer them on those companies' behalf — see
+[processors and platforms](../processors/). Those disclosures happen only
+where you have opted in through a site's consent banner.
+
+Which mechanism applies depends on the recipient, and the distinction
+matters because one of them is ordinary and the other is exceptional:
+
+- **Where the platform is certified under the EU–US Data Privacy
+  Framework** and the transfer falls inside its certification, the
+  transfer rests on the European Commission's **adequacy decision** for
+  the Framework (Art. 45). Nothing exceptional is involved, and the
+  platform's certification is what makes it available. You can check any
+  company's current status on the
+  [Data Privacy Framework list](https://www.dataprivacyframework.gov/list).
+  **If the UK GDPR applies to you**, the Commission's decision is not the
+  one that counts: the transfer relies on the UK's **data bridge**, and
+  the recipient has to participate in the **UK Extension** to the
+  Framework specifically. Certification for the EU alone does not carry a
+  UK transfer, and where the recipient is not in the UK Extension the
+  consent route below is what applies.
+- **Otherwise**, the transfer rests on your explicit consent
+  (Art. 49(1)(a)), which is a derogation rather than a safeguard. That
+  article allows it only once you have been told the risks, so plainly:
+  **there is no adequacy decision and no Article 46 safeguard we can offer
+  on that company's behalf.** Your data may reach a country whose law
+  gives you weaker protection than the GDPR, where an authority may be
+  able to access it, and where you may have no equivalent route to a
+  remedy or to a supervisory authority.
+
+**Decline and no such transfer happens at all.** Withdrawing through
+Cookie preferences stops any further transfer from the moment you withdraw,
+but it cannot recall what was already sent: that data stays with those
+platforms under their own policies, which is why the choice is off by
+default and why we ask before loading anything. Google Analytics is
+different again: it acts as our processor, so it is covered by the clauses
+above and a deletion request through the
+[rights page](../../rights/your-rights/) reaches it.
+
 You can ask for information about the safeguards applied to a specific
 transfer via [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
