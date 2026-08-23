@@ -12,7 +12,7 @@ to:
 | **Restriction** | Pausing processing while a dispute about it is resolved |
 | **Objection** | Objecting to processing based on legitimate interests |
 | **Portability** | Your data in a structured, commonly used, machine-readable format |
-| **Withdraw consent** | At any time, without affecting prior lawful processing — for example via CueTA™'s Cookie preferences link |
+| **Withdraw consent** | At any time, without affecting prior lawful processing — use the **Cookie preferences** link in the footer of the site where you accepted, since a choice does not carry between sites |
 | **Complain** | To your supervisory authority — named per jurisdiction |
 
 ## How to exercise them

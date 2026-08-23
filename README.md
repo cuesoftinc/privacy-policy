@@ -29,8 +29,8 @@ those relationships alongside this policy.
   CueHIRE™ and cuesoft.io) use Google Analytics and advertising tags, and
   only if you opt in through each site's consent banner. Separately, and on
   every site whatever you choose, we measure aggregate traffic with
-  Cloudflare's **cookieless** analytics, which stores nothing on your device
-  and identifies nobody — see the
+  Cloudflare's **cookieless** analytics on those same four sites, which
+  stores nothing on your device and identifies nobody — see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
   means. The documentation sites carry no such tags.
