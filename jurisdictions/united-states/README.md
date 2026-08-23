@@ -44,7 +44,10 @@ In CCPA/CPRA terms:
   [collection pages](../../collection/all-sites/), collected from you
   directly and from your browser. **Purposes:** processing applications
   and enquiries, running and securing the websites, and (opt-in only)
-  advertising measurement. **Disclosed to:** the service providers on the
+  advertising measurement, cross-context behavioural advertising, and
+  (where Google signals connects the visit to your signed-in Google
+  account) Google's own ads personalisation. **Disclosed to:** the
+  service providers on the
   [processors page](../../handling/processors/) under contracts limiting
   their use of it, and — only on opt-in — the advertising platforms, as
   independent businesses.
