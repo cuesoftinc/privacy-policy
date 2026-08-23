@@ -34,7 +34,7 @@ press **Accept** does the site load them:
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
-| Google Analytics | Traffic and journey measurement; building remarketing audiences that are shared with our Google Ads account; and, where you are signed in to Google, linking your visits to that account (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| Google Analytics | Traffic and journey measurement; building remarketing audiences that are shared with our Google Ads account; and, where you are signed in to Google, age, gender and interest reporting plus cross-device advertising audiences for Google Ads (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
 | LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
@@ -49,7 +49,9 @@ press **Accept** does the site load them:
   this for **14 months** — see [retention](../../handling/retention/).
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
-  Personalisation enabled, Google may connect this visit to that account.
+  Personalisation enabled, Google may connect this visit to that account
+  and combine it with what Google already holds there: location, search
+  history, YouTube history and activity on sites that partner with Google.
   What that does, precisely: it lets us see age, gender and interest
   summaries, and it lets Google build advertising audiences that can reach
   you across your devices. It does **not** merge your devices together in
