@@ -26,7 +26,9 @@ In CCPA/CPRA terms:
   previously pressed Accept — for as long as the signal is present. With
   no prior opt-in, nothing was ever shared to begin with.
 - **Categories collected:** identifiers (name, email, phone); internet or
-  network activity; and, depending on the form you use,
+  network activity; approximate geolocation, where you opt in to the tags
+  (Google Analytics derives a coarse location from your IP address and
+  discards the address itself); and, depending on the form you use,
   professional or employment-related and commercial information (role
   interest and availability on CueLABS™, company and project briefs on
   CueHIRE™, programme intent on CueTA™) — all described on the
@@ -71,8 +73,11 @@ breach-notification law of each affected resident's state — see
 
 ## Do Not Track and preference signals
 
-Our sites run no cross-site tracking to disable, and the analytics and
-advertising tags on all four websites are opt-in — the state Do Not Track
-signals were designed for is our default state. Global Privacy Control is honoured as a valid
+By default our sites run no cross-site tracking to disable: the analytics
+and advertising tags on all four websites are opt-in, so the state Do Not
+Track signals were designed for is where every visit starts. If you do
+accept, the advertising tags are used for remarketing, which is
+cross-context behavioural advertising and is the "sharing" described in
+the California section above; the **Cookie preferences** link ends it. Global Privacy Control is honoured as a valid
 opt-out that overrides a stored opt-in, as the California section above
 states.
