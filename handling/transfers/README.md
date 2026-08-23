@@ -24,15 +24,26 @@ the mechanism and we cannot offer them on those companies' behalf — see
 where you have opted in through a site's consent banner, and your explicit
 consent is the transfer mechanism (GDPR Art. 49(1)(a)).
 
-That article lets consent carry a transfer only once you have been told
-the risks, so plainly: **these transfers are not covered by an adequacy
-decision or by Article 46 safeguards that we can offer on those companies'
-behalf.** Your data may reach countries whose law gives you weaker
-protection than the GDPR, where an authority may be able to access it and
-where you may have no equivalent route to a remedy or to a supervisory
-authority. Each platform applies whatever safeguards its own policy sets
-out, and several are certified under the EU–US Data Privacy Framework in
-their own right, but that is their commitment rather than ours.
+Which mechanism applies depends on the recipient, and the distinction
+matters because one of them is ordinary and the other is exceptional:
+
+- **Where the platform is certified under the EU–US Data Privacy
+  Framework** and the transfer falls inside its certification, the
+  transfer rests on the European Commission's **adequacy decision** for
+  the Framework (Art. 45). Nothing exceptional is involved, and the
+  platform's certification is what makes it available. You can check any
+  company's current status on the
+  [Data Privacy Framework list](https://www.dataprivacyframework.gov/list).
+- **Otherwise**, the transfer rests on your explicit consent
+  (Art. 49(1)(a)), which is a derogation rather than a safeguard. That
+  article allows it only once you have been told the risks, so plainly:
+  **there is no adequacy decision and no Article 46 safeguard we can offer
+  on that company's behalf.** Your data may reach a country whose law
+  gives you weaker protection than the GDPR, where an authority may be
+  able to access it, and where you may have no equivalent route to a
+  remedy or to a supervisory authority.
+
+Either way, declining or withdrawing means the transfer does not happen.
 **Decline, or withdraw through Cookie preferences, and no such transfer
 happens.** Google Analytics is different again: it acts as our processor,
 so it is covered by the clauses above.

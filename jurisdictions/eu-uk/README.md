@@ -55,9 +55,12 @@ detailed on [international transfers](../../handling/transfers/).
 
 ## Cookies and ePrivacy
 
-The only consent-requiring storage we use is the analytics and
-advertising setup on our four websites, which is off until you accept and
-listed provider-by-provider on each site's
-[collection page](../../collection/all-sites/). The documentation sites store
+Two things we use require consent. The analytics and advertising setup on
+our four websites is off until you accept and listed provider-by-provider
+on each site's [collection page](../../collection/all-sites/). Separately,
+on cuesoft.io the Spotify player for The CueShow™ loads only if you click
+it and may then set Spotify's own cookies under Spotify's policy; the
+click is the consent, and the site's banner does not govern it — see
+[cuesoft.io](../../collection/cuesoft/). The documentation sites store
 a theme preference locally; it identifies nothing and leaves your browser
 never.
