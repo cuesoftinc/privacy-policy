@@ -23,7 +23,9 @@ data terms.
 ## Analytics and advertising tags — opt-in only
 
 This site uses analytics and advertising tags, gated behind a consent
-banner. Nothing loads and no cookie is set until you press **Accept**:
+banner. None of them loads, and no cookie is set, until you press
+**Accept** — the cookieless Cloudflare measurement described in
+[what every site collects](../all-sites/) is separate and runs either way:
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
