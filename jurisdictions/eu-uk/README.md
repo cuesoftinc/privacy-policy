@@ -49,9 +49,15 @@ name a representative if our processing ever grows past the exemption.
 
 ## Transfers
 
-Transfers out of the EU/EEA and UK are safeguarded by SCCs (with UK
-Addendum/IDTA) and the EU–US Data Privacy Framework where applicable —
-detailed on [international transfers](../../handling/transfers/).
+Transfers of data handled by our **processors** are safeguarded by SCCs
+(with UK Addendum/IDTA) and, where the processor is certified, the EU–US
+Data Privacy Framework. The **advertising platforms are not processors**,
+so those clauses are not what covers them: a transfer to a certified
+recipient rests on the Framework's adequacy decision, and one to any other
+platform rests on your explicit consent as a derogation, with the risks
+that carries spelled out on
+[international transfers](../../handling/transfers/). Declining means no
+such transfer happens at all.
 
 ## Cookies and ePrivacy
 
