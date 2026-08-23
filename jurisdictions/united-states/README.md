@@ -71,8 +71,8 @@ breach-notification law of each affected resident's state — see
 
 ## Do Not Track and preference signals
 
-Our sites run no cross-site tracking to disable, and the CueTA™
-advertising tags are opt-in — the state Do Not Track signals were designed
-for is our default state. Global Privacy Control is honoured as a valid
+Our sites run no cross-site tracking to disable, and the analytics and
+advertising tags on all four websites are opt-in — the state Do Not Track
+signals were designed for is our default state. Global Privacy Control is honoured as a valid
 opt-out that overrides a stored opt-in, as the California section above
 states.

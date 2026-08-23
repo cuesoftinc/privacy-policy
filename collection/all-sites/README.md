@@ -64,6 +64,9 @@ Every website carries analytics and advertising tags, and on every one of
 them those tags are **gated behind a consent banner**: until you press
 Accept, the site sets **no cookies** and loads **no advertising scripts
 and no third-party analytics** beyond the cookieless Cloudflare
-measurement above. The per-site pages list exactly which tags each one
-loads. No website ever asks for payment data — see the
+measurement above. Each website's own page lists exactly which tags it
+loads and who receives the data: [CueTA™](../cueta/),
+[CueLABS™](../cuelabs/), [CueHIRE™](../cuehire/) and
+[cuesoft.io](../cuesoft/). The [documentation sites](../docs-sites/) carry
+none. No website ever asks for payment data — see the
 [Terms of Service](https://terms.cuesoft.io).
