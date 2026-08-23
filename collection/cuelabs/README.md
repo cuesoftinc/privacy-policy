@@ -54,6 +54,8 @@ banner. Nothing loads and no cookie is set until you press **Accept**:
   their own policies.
 - An opt-out preference signal (**Global Privacy Control**) overrides a
   stored opt-in for as long as your browser sends it.
+- **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
+  the [United States page](../../jurisdictions/united-states/).
 
 ## What this site does not do
 

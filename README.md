@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: 22 August 2026**
+**Effective date: 23 August 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
 and the rights you have over it — under Nigerian, EU/UK and US law.
@@ -25,11 +25,12 @@ those relationships alongside this policy.
 - We collect only what each website needs to do its job — mostly what you
   type into an application or contact form.
 - **No payment data, ever**: our websites take no payments.
-- **We do not sell personal data.** One site (CueTA™) uses advertising
-  tags, and only if you opt in through its consent banner — see
-  [cueta.cuesoft.io](collection/cueta/) and the
+- **We do not sell personal data.** Our four websites (CueTA™, CueLABS™,
+  CueHIRE™ and cuesoft.io) use analytics and advertising tags, and only if
+  you opt in through each site's consent banner — see the
+  [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
-  means.
+  means. The documentation sites carry no such tags.
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don't type sensitive personal information into a chat box.
 - You can exercise your rights — access, correction, deletion and more —

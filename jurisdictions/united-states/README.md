@@ -12,11 +12,13 @@ In CCPA/CPRA terms:
 
 - **We do not sell personal information**, and we have not sold it in the
   preceding 12 months.
-- **"Sharing":** on cueta.cuesoft.io only, and only if you opt in through
-  the consent banner, we "share" identifiers and internet-activity data
-  with the advertising platforms
-  [listed on the CueTA™ page](../../collection/cueta/) for cross-context
-  behavioral advertising. You can opt out of further sharing at any time
+- **"Sharing":** on our four websites (cueta.cuesoft.io,
+  cuelabs.cuesoft.io, cuehire.cuesoft.io and cuesoft.io), and only if you
+  opt in through that site's consent banner, we "share" identifiers and
+  internet-activity data with the advertising platforms
+  [listed on each collection page](../../collection/all-sites/) for
+  cross-context behavioral advertising. The documentation sites carry no
+  advertising tags and nothing is shared from them. You can opt out of further sharing at any time
   via the **Cookie preferences** link.
 - **Opt-out preference signals.** We treat **Global Privacy Control** as a
   valid opt-out of sharing, and it **overrides a stored opt-in**: if your

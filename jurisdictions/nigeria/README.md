@@ -18,7 +18,7 @@ public interest and legitimate interest as lawful bases (NDPA s. 25). We
 state the basis for each collection on the
 [collection pages](../../collection/all-sites/): forms rest on contract
 (steps at your request prior to one), infrastructure and Ace on legitimate
-interest, and CueTA™ advertising tags on consent — which you can withdraw
+interest, and website analytics and advertising tags on consent — which you can withdraw
 as easily as you gave it.
 
 ## Your rights under the NDPA

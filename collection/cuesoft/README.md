@@ -1,7 +1,7 @@
 # cuesoft.io — the Corporate Site
 
-- **No forms.** The site collects nothing you don't type into
-  [Ace](../all-sites/).
+- **No forms.** Apart from the opt-in tags described below, the site
+  collects nothing you don't type into [Ace](../all-sites/).
 - **Click-to-load media.** The media section offers a Spotify player for
   The CueShow™ that loads **only if you click it**; once loaded, Spotify
   may set its own cookies under
@@ -33,5 +33,7 @@ banner. Nothing loads and no cookie is set until you press **Accept**:
   their own policies.
 - An opt-out preference signal (**Global Privacy Control**) overrides a
   stored opt-in for as long as your browser sends it.
+- **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
+  the [United States page](../../jurisdictions/united-states/).
 - The Spotify player above is separate: it loads only on click and is not
   covered by this banner.

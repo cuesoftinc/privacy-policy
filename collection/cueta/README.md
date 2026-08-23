@@ -27,9 +27,10 @@ decisions with legal or similarly significant effects.
 
 ## Analytics and advertising tags — opt-in only
 
-Every Cuesoft website uses analytics and advertising tags, and on all of
-them the tags are gated behind a consent banner. Only if you press
-**Accept** does the site load them:
+All four Cuesoft websites — CueTA™, CueLABS™, CueHIRE™ and cuesoft.io —
+use analytics and advertising tags, and on all of them the tags are gated
+behind a consent banner. The documentation sites carry none. Only if you
+press **Accept** does the site load them:
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
