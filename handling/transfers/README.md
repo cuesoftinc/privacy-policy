@@ -48,13 +48,22 @@ matters because one of them is ordinary and the other is exceptional:
   able to access it, and where you may have no equivalent route to a
   remedy or to a supervisory authority.
 
+Where **Google signals** lets Google use a visit for its own ads
+personalisation, Google is not acting on our instructions for that part, so
+it takes the same route as the advertising platforms above: Google LLC's
+certification under the Data Privacy Framework, and the UK Extension for UK
+visitors, which means that transfer rests on adequacy rather than on the
+consent derogation. Check its current status on the
+[Data Privacy Framework list](https://www.dataprivacyframework.gov/list).
+
 **Decline and no such transfer happens at all.** Withdrawing through
 Cookie preferences stops any further transfer from the moment you withdraw,
 but it cannot recall what was already sent: that data stays with those
 platforms under their own policies, which is why the choice is off by
 default and why we ask before loading anything. Google Analytics is
-different again: for our measurement it acts as our processor, so that is
-covered by the clauses
+different again, and now sits on both sides of this line. For our
+measurement it acts as our processor, so that part is covered by the
+clauses
 above and a deletion request through the
 [rights page](../../rights/your-rights/) reaches it.
 

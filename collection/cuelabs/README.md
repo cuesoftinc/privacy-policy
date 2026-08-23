@@ -58,14 +58,18 @@ banner. None of them loads, and no cookie is set, until you press
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account.
-  That is what lets us see one person arriving on a phone and returning on
-  a laptop rather than two unrelated visitors, and it lets Google use the
-  visit for its own ads personalisation as well as for our measurement.
-  You control it on Google's side, independently of us, at
+  What that does, precisely: it lets us see age, gender and interest
+  summaries, and it lets Google build advertising audiences that can reach
+  you across your devices. It does **not** merge your devices together in
+  our own reports — since February 2024 Google signals is not part of how
+  Analytics counts users — so we do not see your phone and your laptop as
+  one person. And Google uses the visit for its own ads personalisation as
+  well as for our measurement. You control it on Google's side,
+  independently of us, at
   [myadcenter.google.com](https://myadcenter.google.com) and
   [Google's activity controls](https://myaccount.google.com/activitycontrols)
   — switching Ads Personalisation off there stops it for every site, not
-  just ours. Declining our banner also prevents it.
+  just ours. Declining our banner prevents it entirely.
 - **Decline and none of them load.** The site works identically either
   way.
 - **Withdraw any time** via the site's **Cookie preferences** link.

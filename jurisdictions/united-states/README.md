@@ -25,7 +25,9 @@ In CCPA/CPRA terms:
   via the **Cookie preferences** link.
 - **Opt-out preference signals.** We treat **Global Privacy Control** as a
   valid opt-out of sharing, and it **overrides a stored opt-in**: if your
-  browser sends GPC, the advertising tags do not load — even if you
+  browser sends GPC, **no tag loads at all** — not the advertising tags and
+  not Google Analytics, so the Google signals sharing described above stops
+  with them — even if you
   previously pressed Accept — for as long as the signal is present. With
   no prior opt-in, nothing was ever shared to begin with.
 - **Categories collected:** identifiers (name, email, phone); internet or
