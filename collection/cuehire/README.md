@@ -20,8 +20,33 @@
 Engagement data under a signed agreement is governed by that agreement's
 data terms.
 
+## Analytics and advertising tags — opt-in only
+
+This site uses analytics and advertising tags, gated behind a consent
+banner. Nothing loads and no cookie is set until you press **Accept**:
+
+| Provider | Purpose | Their policy |
+| --- | --- | --- |
+| Google Analytics | Traffic and journey measurement | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
+| Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
+| LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
+| X (Twitter) | Ad measurement | [x.com/en/privacy](https://x.com/en/privacy) |
+
+- **Decline and none of them load.** The site works identically either
+  way.
+- **Withdraw any time** via the site's **Cookie preferences** link.
+  Withdrawal stops the tags loading from that point on; it does not delete
+  cookies the platforms already set (you can clear those in your
+  browser), and data those platforms already collected is governed by
+  their own policies.
+- An opt-out preference signal (**Global Privacy Control**) overrides a
+  stored opt-in for as long as your browser sends it.
+
 ## What this site does not do
 
-No cookies, no advertising, and no third-party analytics scripts beyond
-the cookieless Cloudflare measurement described in
-[what every site collects](../all-sites/) — and no consent banner.
+No payment data is ever requested — see the
+[Terms of Service](https://terms.cuesoft.io). Nothing loads before you
+accept, and the cookieless Cloudflare measurement described in
+[what every site collects](../all-sites/) stays outside the consent gate
+because it sets no cookie.

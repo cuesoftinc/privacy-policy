@@ -60,7 +60,10 @@ read.
 
 ## What no site does
 
-Except as stated on the per-site pages, the websites set **no cookies**
-and load **no advertising scripts and no third-party analytics** beyond
-the cookieless Cloudflare measurement above. No website ever asks for
-payment data — see the [Terms of Service](https://terms.cuesoft.io).
+Every website carries analytics and advertising tags, and on every one of
+them those tags are **gated behind a consent banner**: until you press
+Accept, the site sets **no cookies** and loads **no advertising scripts
+and no third-party analytics** beyond the cookieless Cloudflare
+measurement above. The per-site pages list exactly which tags each one
+loads. No website ever asks for payment data — see the
+[Terms of Service](https://terms.cuesoft.io).

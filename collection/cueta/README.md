@@ -25,14 +25,15 @@ before you submit, and what we store is your answer, not the guess.
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.
 
-## Advertising tags — opt-in only
+## Analytics and advertising tags — opt-in only
 
-CueTA™ is the **only** Cuesoft site that uses advertising tags, and they
-are gated behind a consent banner. Only if you press **Accept** does the
-site load them:
+Every Cuesoft website uses analytics and advertising tags, and on all of
+them the tags are gated behind a consent banner. Only if you press
+**Accept** does the site load them:
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
+| Google Analytics | Traffic and journey measurement | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
 | Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
 | LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
