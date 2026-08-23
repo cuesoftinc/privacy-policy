@@ -17,16 +17,23 @@ In CCPA/CPRA terms:
   opt in through that site's consent banner, we "share" identifiers and
   internet-activity data with the advertising platforms
   [listed on each collection page](../../collection/all-sites/) for
-  cross-context behavioral advertising. The documentation sites carry no
+  cross-context behavioral advertising. **Google signals** is part of that
+  sharing: with it switched on, a visit made while you are signed in to
+  Google with Ads Personalisation enabled can be connected to your Google
+  account and used by Google for its own ads personalisation. The documentation sites carry no
   advertising tags and nothing is shared from them. You can opt out of further sharing at any time
   via the **Cookie preferences** link.
 - **Opt-out preference signals.** We treat **Global Privacy Control** as a
   valid opt-out of sharing, and it **overrides a stored opt-in**: if your
-  browser sends GPC, the advertising tags do not load — even if you
+  browser sends GPC, **no tag loads at all** — not the advertising tags and
+  not Google Analytics, so the Google signals sharing described above stops
+  with them — even if you
   previously pressed Accept — for as long as the signal is present. With
   no prior opt-in, nothing was ever shared to begin with.
 - **Categories collected:** identifiers (name, email, phone); internet or
-  network activity; approximate geolocation — a country derived at the edge
+  network activity; a cross-device identifier, where Google signals
+  connects an opted-in visit to your signed-in Google account;
+  approximate geolocation — a country derived at the edge
   by Cloudflare and stored with a form submission whether or not you opt
   in, and, if you do opt in, a coarse location Google Analytics derives
   from your IP address before discarding the address itself; and,
@@ -37,7 +44,10 @@ In CCPA/CPRA terms:
   [collection pages](../../collection/all-sites/), collected from you
   directly and from your browser. **Purposes:** processing applications
   and enquiries, running and securing the websites, and (opt-in only)
-  advertising measurement. **Disclosed to:** the service providers on the
+  advertising measurement, cross-context behavioural advertising, and
+  (where Google signals connects the visit to your signed-in Google
+  account) Google's own ads personalisation. **Disclosed to:** the
+  service providers on the
   [processors page](../../handling/processors/) under contracts limiting
   their use of it, and — only on opt-in — the advertising platforms, as
   independent businesses.

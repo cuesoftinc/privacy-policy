@@ -15,7 +15,7 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | Infrastructure and security logs | Legitimate interest in operating secure websites — Art. 6(1)(f) |
 | Cookieless aggregate analytics | Legitimate interest in understanding site usage — Art. 6(1)(f), no cookies or identifiers involved |
 | Ace, the assistant | Legitimate interest in providing the assistant you choose to use — Art. 6(1)(f) |
-| Website analytics and advertising tags | Consent — Art. 6(1)(a), withdrawable at any time |
+| Website analytics and advertising tags, including Google signals | Consent — Art. 6(1)(a), withdrawable at any time |
 | Contributor display on CueLABS™ (public GitHub data) | Legitimate interest in accurate attribution — Art. 6(1)(f), objection honoured on request |
 | Programme administration under a signed agreement | Contract — Art. 6(1)(b) |
 
