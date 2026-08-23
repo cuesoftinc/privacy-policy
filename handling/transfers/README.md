@@ -16,6 +16,19 @@ rely on:
 3. for transfers between Cuesoft Inc. and Cuesoft Nigeria Limited, our
    intra-group arrangement applying the same safeguards.
 
+The advertising platforms are the exception, and deliberately so. Google
+Ads, Meta, LinkedIn and X receive data as **independent businesses under
+their own policies**, not as our processors, so the clauses above are not
+the mechanism and we cannot offer them on those companies' behalf — see
+[processors and platforms](../processors/). Those disclosures happen only
+where you have opted in through a site's consent banner, and your explicit
+consent is the transfer mechanism (GDPR Art. 49(1)(a)); each platform then
+applies whatever safeguards its own policy sets out, several of them being
+certified under the EU–US Data Privacy Framework in their own right.
+**Decline, or withdraw through Cookie preferences, and no such transfer
+happens.** Google Analytics is different again: it acts as our processor,
+so it is covered by the clauses above.
+
 You can ask for information about the safeguards applied to a specific
 transfer via [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
