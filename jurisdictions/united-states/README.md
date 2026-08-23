@@ -26,9 +26,11 @@ In CCPA/CPRA terms:
   previously pressed Accept — for as long as the signal is present. With
   no prior opt-in, nothing was ever shared to begin with.
 - **Categories collected:** identifiers (name, email, phone); internet or
-  network activity; approximate geolocation, where you opt in to the tags
-  (Google Analytics derives a coarse location from your IP address and
-  discards the address itself); and, depending on the form you use,
+  network activity; approximate geolocation — a country derived at the edge
+  by Cloudflare and stored with a form submission whether or not you opt
+  in, and, if you do opt in, a coarse location Google Analytics derives
+  from your IP address before discarding the address itself; and,
+  depending on the form you use,
   professional or employment-related and commercial information (role
   interest and availability on CueLABS™, company and project briefs on
   CueHIRE™, programme intent on CueTA™) — all described on the

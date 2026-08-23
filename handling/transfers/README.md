@@ -22,9 +22,17 @@ their own policies**, not as our processors, so the clauses above are not
 the mechanism and we cannot offer them on those companies' behalf — see
 [processors and platforms](../processors/). Those disclosures happen only
 where you have opted in through a site's consent banner, and your explicit
-consent is the transfer mechanism (GDPR Art. 49(1)(a)); each platform then
-applies whatever safeguards its own policy sets out, several of them being
-certified under the EU–US Data Privacy Framework in their own right.
+consent is the transfer mechanism (GDPR Art. 49(1)(a)).
+
+That article lets consent carry a transfer only once you have been told
+the risks, so plainly: **these transfers are not covered by an adequacy
+decision or by Article 46 safeguards that we can offer on those companies'
+behalf.** Your data may reach countries whose law gives you weaker
+protection than the GDPR, where an authority may be able to access it and
+where you may have no equivalent route to a remedy or to a supervisory
+authority. Each platform applies whatever safeguards its own policy sets
+out, and several are certified under the EU–US Data Privacy Framework in
+their own right, but that is their commitment rather than ours.
 **Decline, or withdraw through Cookie preferences, and no such transfer
 happens.** Google Analytics is different again: it acts as our processor,
 so it is covered by the clauses above.
