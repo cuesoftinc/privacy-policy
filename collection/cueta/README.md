@@ -49,10 +49,11 @@ press **Accept** does the site load them:
   this for **14 months** — see [retention](../../handling/retention/).
 - **One event beyond page views:**
   when you submit an application,
-  each platform is told that it happened, so it can credit the ad you
-  arrived from. The event records the fact of the application and
-  nothing else: not your name, not your email, not your phone number,
-  and not what you wrote.
+  **Google Ads, Meta, LinkedIn and X** are told that it happened, so
+  they can credit the ad you arrived from. Google Analytics is not: it
+  receives the page views described above and nothing more. The event
+  records the fact of the application and nothing else: not your name, not
+  your email, not your phone number, and not what you wrote.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account
