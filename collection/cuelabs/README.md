@@ -55,6 +55,12 @@ banner. None of them loads, and no cookie is set, until you press
   location is what is kept. Google Analytics keeps
   this for **14 months** — see [retention](../../handling/retention/). We
   do not send your form contents to any of them.
+- **One event beyond page views:**
+  when you submit an application,
+  each platform is told that it happened, so it can credit the ad you
+  arrived from. The event records the fact of the application and
+  nothing else: not your name, not your email, not your phone number,
+  and not what you wrote.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account
