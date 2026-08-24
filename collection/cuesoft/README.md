@@ -1,7 +1,9 @@
 # cuesoft.io — the Corporate Site
 
 - **No forms.** Apart from the opt-in tags described below, the site
-  collects nothing you don't type into [Ace](../all-sites/).
+  collects nothing you don't type into [Ace](../all-sites/). If you have
+  opted in, the advertising platforms are told that you used Ace, though
+  never what you said: see below.
 - **Click-to-load media.** The media section offers a Spotify player for
   The CueShow™ that loads **only if you click it**; once loaded, Spotify
   may set its own cookies under
@@ -34,6 +36,13 @@ banner. None of them loads, and no cookie is set, until you press
   location is what is kept. Google Analytics keeps
   this for **14 months** — see [retention](../../handling/retention/). We
   do not send your form contents to any of them.
+- **One event beyond page views:**
+  when Ace answers a question you asked it,
+  **Google Ads, Meta, LinkedIn and X** are told that it happened, so
+  they can credit the ad you arrived from. Google Analytics is not: it
+  receives the page views described above and nothing more. The event
+  records the fact of the conversation and nothing else: not your name, not
+  your email, not your phone number, and not what you wrote.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account
