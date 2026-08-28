@@ -17,7 +17,8 @@ the [Cueprise™ privacy notice](../../cueprise/).
   for.
 - **Where:** records are stored in Airtable, our forms database.
 - **Legal basis:** our legitimate interest in responding to the business
-  enquiry you sent us (GDPR Art. 6(1)(f)) — you may
+  enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent legitimate-
+  interest basis under the NDPA — you may
   [object](../../rights/your-rights/) at any time. Cueprise™ is licensed to
   organisations rather than to people, so the licence that may follow is
   between Cuesoft and your business: you are usually not a party to it, and
