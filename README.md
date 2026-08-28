@@ -45,7 +45,7 @@ those relationships alongside this policy.
 
 | Section | What it covers |
 | --- | --- |
-| Collection | [What every site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](collection/cueprise-website/) and the [documentation sites](collection/docs-sites/). |
+| Collection | [What every site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](cueprise/) and the [documentation sites](collection/docs-sites/). |
 | [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller. |
 | Handling | [Processors and platforms](handling/processors/), [international transfers](handling/transfers/), [retention](handling/retention/), [security](handling/security/) and [breach notification](handling/breach/). |
 | Rights | [Your rights and how to exercise them](rights/your-rights/), and [children](rights/children/). |
