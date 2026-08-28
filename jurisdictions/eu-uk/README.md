@@ -62,7 +62,7 @@ such transfer happens at all.
 ## Cookies and ePrivacy
 
 Two things we use require consent. The analytics and advertising setup on
-our four websites is off until you accept and listed provider-by-provider
+our five websites is off until you accept and listed provider-by-provider
 on each site's [collection page](../../collection/all-sites/). Separately,
 on cuesoft.io the Spotify player for The CueShow™ loads only if you click
 it and may then set Spotify's own cookies under Spotify's policy; the
