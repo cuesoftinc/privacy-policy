@@ -12,6 +12,7 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | Processing | Legal basis |
 | --- | --- |
 | Application and contact forms | Steps at your request prior to a contract — Art. 6(1)(b) |
+| Cueprise™ demo requests | Legitimate interest in answering a business enquiry — Art. 6(1)(f). The licence that may follow is with your organisation, not with you, so contract performance cannot cover your own details — see [cueprise.cuesoft.io](../../cueprise/) |
 | Infrastructure and security logs | Legitimate interest in operating secure websites — Art. 6(1)(f) |
 | Cookieless aggregate analytics | Legitimate interest in understanding site usage — Art. 6(1)(f), no cookies or identifiers involved |
 | Ace, the assistant | Legitimate interest in providing the assistant you choose to use — Art. 6(1)(f) |
@@ -62,8 +63,11 @@ such transfer happens at all.
 ## Cookies and ePrivacy
 
 Two things we use require consent. The analytics and advertising setup on
-our four websites is off until you accept and listed provider-by-provider
-on each site's [collection page](../../collection/all-sites/). Separately,
+our five websites — [CueTA™](../../collection/cueta/),
+[CueLABS™](../../collection/cuelabs/), [CueHIRE™](../../collection/cuehire/),
+[Cueprise™](../../cueprise/) and
+[cuesoft.io](../../collection/cuesoft/) — is off until you accept and listed
+provider-by-provider on each site's collection page. Separately,
 on cuesoft.io the Spotify player for The CueShow™ loads only if you click
 it and may then set Spotify's own cookies under Spotify's policy; the
 click is the consent, and the site's banner does not govern it — see

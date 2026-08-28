@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: 24 August 2026**
+**Effective date: 28 August 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
 and the rights you have over it — under Nigerian, EU/UK and US law.
@@ -25,11 +25,12 @@ those relationships alongside this policy.
 - We collect only what each website needs to do its job — mostly what you
   type into an application or contact form.
 - **No payment data, ever**: our websites take no payments.
-- **We do not sell personal data.** Our four websites (CueTA™, CueLABS™,
-  CueHIRE™ and cuesoft.io) use Google Analytics and advertising tags, and
+- **We do not sell personal data.** Our five websites (CueTA™, CueLABS™,
+  CueHIRE™, Cueprise™ and cuesoft.io) use Google Analytics and advertising
+  tags, and
   only if you opt in through each site's consent banner. Separately, and on
   every site whatever you choose, we measure aggregate traffic with
-  Cloudflare's **cookieless** analytics on those same four sites, which
+  Cloudflare's **cookieless** analytics on those same five sites, which
   stores nothing on your device and identifies nobody — see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
@@ -44,7 +45,7 @@ those relationships alongside this policy.
 
 | Section | What it covers |
 | --- | --- |
-| Collection | [What every site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/) and the [documentation sites](collection/docs-sites/). |
+| Collection | [What every site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](cueprise/) and the [documentation sites](collection/docs-sites/). |
 | [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller. |
 | Handling | [Processors and platforms](handling/processors/), [international transfers](handling/transfers/), [retention](handling/retention/), [security](handling/security/) and [breach notification](handling/breach/). |
 | Rights | [Your rights and how to exercise them](rights/your-rights/), and [children](rights/children/). |
