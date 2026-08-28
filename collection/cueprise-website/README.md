@@ -16,10 +16,10 @@ the [Cueprise™ privacy notice](../../cueprise/).
 - **Why:** to reply to your request and arrange the walkthrough you asked
   for.
 - **Where:** records are stored in Airtable, our forms database.
-- **Legal basis:** our legitimate interest in responding to the business
-  enquiry you sent us (GDPR Art. 6(1)(f)) — you may
-  [object](../../rights/your-rights/) at any time. Once a licence is signed,
-  processing under it rests on the contract (Art. 6(1)(b)).
+- **Legal basis:** steps at your request prior to a contract
+  (GDPR Art. 6(1)(b)), and the equivalent contractual basis under the NDPA.
+  Asking to be shown the product is the first of those steps. Once a licence
+  is signed, processing under it rests on the same contractual basis.
 - **Confirmation:** we email you a receipt, copied to
   [cueprise@cuesoft.io](mailto:cueprise@cuesoft.io) — see
   [what every site collects](../all-sites/).

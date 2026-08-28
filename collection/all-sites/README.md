@@ -37,8 +37,8 @@ platform provider to generate an answer.
 
 ## Form acknowledgement email
 
-Submit a form on **CueTA™**, **CueLABS™** or **CueHIRE™** and we email you
-a confirmation. It is copied to the department that will handle it, and
+Submit a form on **CueTA™**, **CueLABS™**, **CueHIRE™** or **Cueprise™** and
+we email you a confirmation. It is copied to the department that will handle it, and
 replies go there too, because the message is sent from an address nobody
 reads.
 
@@ -61,8 +61,8 @@ read.
 
 ## What no site does
 
-The four public websites — CueTA™, CueLABS™, CueHIRE™ and cuesoft.io —
-carry analytics and advertising tags, and on every one of them those tags
+The five public websites — CueTA™, CueLABS™, CueHIRE™, Cueprise™ and
+cuesoft.io — carry analytics and advertising tags, and on every one of them those tags
 are **gated behind a consent banner**: until you press
 Accept, the site sets **no cookies** and loads **no advertising scripts
 and no third-party analytics** beyond the cookieless Cloudflare

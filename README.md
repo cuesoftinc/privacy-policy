@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: 24 August 2026**
+**Effective date: 28 August 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
 and the rights you have over it — under Nigerian, EU/UK and US law.
@@ -26,7 +26,8 @@ those relationships alongside this policy.
   type into an application or contact form.
 - **No payment data, ever**: our websites take no payments.
 - **We do not sell personal data.** Our five websites (CueTA™, CueLABS™,
-  CueHIRE™ and cuesoft.io) use Google Analytics and advertising tags, and
+  CueHIRE™, Cueprise™ and cuesoft.io) use Google Analytics and advertising
+  tags, and
   only if you opt in through each site's consent banner. Separately, and on
   every site whatever you choose, we measure aggregate traffic with
   Cloudflare's **cookieless** analytics on those same five sites, which
