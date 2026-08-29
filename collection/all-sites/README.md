@@ -61,8 +61,8 @@ read.
 
 ## What no site does
 
-The five public websites — CueTA™, CueLABS™, CueHIRE™, Cueprise™ and
-cuesoft.io — carry analytics and advertising tags, and on every one of them those tags
+The six public websites — CueTA™, CueLABS™, CueHIRE™, Cueprise™,
+Storefront™ and cuesoft.io — carry analytics and advertising tags, and on every one of them those tags
 are **gated behind a consent banner**: until you press
 Accept, the site sets **no cookies** and loads **no advertising scripts
 and no third-party analytics** beyond the cookieless Cloudflare
