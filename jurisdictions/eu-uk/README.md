@@ -13,6 +13,7 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | --- | --- |
 | Application and contact forms | Steps at your request prior to a contract — Art. 6(1)(b) |
 | Cueprise™ demo requests | Legitimate interest in answering a business enquiry — Art. 6(1)(f). The licence that may follow is with your organisation, not with you, so contract performance cannot cover your own details — see [cueprise.cuesoft.io](../../cueprise/) |
+| Storefront™ enquiries | Legitimate interest in answering a business enquiry — Art. 6(1)(f). The engagement that may follow is with your organisation, not with you, so contract performance cannot cover your own details — see [storefront.cuesoft.io](../../collection/storefront/) |
 | Infrastructure and security logs | Legitimate interest in operating secure websites — Art. 6(1)(f) |
 | Cookieless aggregate analytics | Legitimate interest in understanding site usage — Art. 6(1)(f), no cookies or identifiers involved |
 | Ace, the assistant | Legitimate interest in providing the assistant you choose to use — Art. 6(1)(f) |

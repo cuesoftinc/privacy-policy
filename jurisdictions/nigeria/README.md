@@ -17,7 +17,10 @@ The NDPA recognises consent, contract, legal obligation, vital interest,
 public interest and legitimate interest as lawful bases (NDPA s. 25). We
 state the basis for each collection on the
 [collection pages](../../collection/all-sites/): forms rest on contract
-(steps at your request prior to one), infrastructure and Ace on legitimate
+(steps at your request prior to one), except Cueprise™ demo requests and
+Storefront™ enquiries, which rest on legitimate interest because the
+agreement that may follow is with your organisation rather than with you;
+infrastructure and Ace on legitimate
 interest, and website analytics and advertising tags on consent — which you can withdraw
 as easily as you gave it.
 
