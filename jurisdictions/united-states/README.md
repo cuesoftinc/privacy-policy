@@ -12,9 +12,9 @@ In CCPA/CPRA terms:
 
 - **We do not sell personal information**, and we have not sold it in the
   preceding 12 months.
-- **"Sharing":** on our five websites (cueta.cuesoft.io,
-  cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io and
-  cuesoft.io), and only if you
+- **"Sharing":** on our six websites (cueta.cuesoft.io,
+  cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io,
+  storefront.cuesoft.io and cuesoft.io), and only if you
   opt in through that site's consent banner, we "share" identifiers and
   internet-activity data with the advertising platforms
   [listed on each collection page](../../collection/all-sites/) for
@@ -87,7 +87,7 @@ breach-notification law of each affected resident's state — see
 ## Do Not Track and preference signals
 
 By default our sites run no cross-site tracking to disable: the analytics
-and advertising tags on all five websites are opt-in, so the state Do Not
+and advertising tags on all six websites are opt-in, so the state Do Not
 Track signals were designed for is where every visit starts. If you do
 accept, the advertising tags are used for remarketing, which is
 cross-context behavioural advertising and is the "sharing" described in

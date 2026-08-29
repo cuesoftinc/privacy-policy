@@ -63,9 +63,9 @@ such transfer happens at all.
 ## Cookies and ePrivacy
 
 Two things we use require consent. The analytics and advertising setup on
-our five websites — [CueTA™](../../collection/cueta/),
+our six websites — [CueTA™](../../collection/cueta/),
 [CueLABS™](../../collection/cuelabs/), [CueHIRE™](../../collection/cuehire/),
-[Cueprise™](../../cueprise/) and
+[Cueprise™](../../cueprise/), [Storefront™](../../collection/storefront/) and
 [cuesoft.io](../../collection/cuesoft/) — is off until you accept and listed
 provider-by-provider on each site's collection page. Separately,
 on cuesoft.io the Spotify player for The CueShow™ loads only if you click

@@ -1,8 +1,8 @@
 # What Every Site Collects
 
 The following applies to **cuesoft.io**, **cueta.cuesoft.io**,
-**cuelabs.cuesoft.io**, **cuehire.cuesoft.io** and
-**cueprise.cuesoft.io** alike.
+**cuelabs.cuesoft.io**, **cuehire.cuesoft.io**, **cueprise.cuesoft.io** and
+**storefront.cuesoft.io** alike.
 
 ## Server and security logs
 

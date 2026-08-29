@@ -6,9 +6,13 @@ where you can read about it and ask for one.
 
 A storefront we have built for somebody else is a different matter: it is
 that business's own website, they are the controller of whatever their
-customers enter on it, and this policy does not describe it. What Cuesoft
-holds as their processor is set out in the
-[Cueprise™ privacy notice](../../cueprise/) and in the agreement behind it.
+customers enter on it, and this policy does not describe it. Where that
+storefront runs on a licensed Cueprise™ deployment, what Cuesoft holds as
+their processor is set out in the
+[Cueprise™ privacy notice](../../cueprise/). Where it was built as a
+CueHIRE™ engagement against their own back office instead, that notice does
+not reach it and the engagement's own data terms govern what we hold and for
+how long.
 
 ## Enquiry form
 
@@ -25,8 +29,12 @@ holds as their processor is set out in the
 - **Legal basis:** our legitimate interest in responding to the business
   enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent
   legitimate-interest basis under the NDPA — you may
-  [object](../../rights/your-rights/) at any time. Once an engagement is
-  signed, processing under it rests on that contract (Art. 6(1)(b)).
+  [object](../../rights/your-rights/) at any time. An engagement that follows
+  is between Cuesoft and your business rather than with you: if you enquired
+  as an employee or representative you are usually not a party to it, so
+  contract performance cannot become the basis for your own name and work
+  email. Where an engagement is signed with you as an individual, processing
+  under it rests on that contract (Art. 6(1)(b)).
 - **Confirmation:** we email you a receipt, copied to
   [storefront@cuesoft.io](mailto:storefront@cuesoft.io) — see
   [what every site collects](../all-sites/).
