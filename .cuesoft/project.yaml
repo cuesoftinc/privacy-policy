@@ -1,0 +1,14 @@
+schemaVersion: 1
+name: privacy-policy
+profile: base
+
+surfaces:
+  static-docs: active
+
+capabilities:
+  mitLicense: active
+
+deployment:
+  static-docs: github-pages
+
+deviations: []
