@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: 29 August 2026**
+**Effective date: 30 August 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
 and the rights you have over it — under Nigerian, EU/UK and US law.
@@ -25,7 +25,7 @@ those relationships alongside this policy.
 - We collect only what each website needs to do its job — mostly what you
   type into an application or contact form.
 - **No payment data, ever**: our websites take no payments.
-- **We do not sell personal data.** Our six websites (CueTA™, CueLABS™,
+- **We do not sell personal data.** Our six marketing websites (CueTA™, CueLABS™,
   CueHIRE™, Cueprise™, Storefront™ and cuesoft.io) use Google Analytics and
   advertising tags, and
   only if you opt in through each site's consent banner. Separately, and on
@@ -34,7 +34,10 @@ those relationships alongside this policy.
   stores nothing on your device and identifies nobody — see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
-  means. The documentation sites carry no such tags.
+  means. Cuesoft Client Work is an informational case-study site with its
+  own [collection notice](collection/clients/) and Google Analytics only after
+  its own consent banner accepts it; the documentation sites carry no such
+  tags.
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don't type sensitive personal information into a chat box.
 - You can exercise your rights — access, correction, deletion and more —
@@ -45,7 +48,7 @@ those relationships alongside this policy.
 
 | Section | What it covers |
 | --- | --- |
-| Collection | [What every site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](cueprise/), [storefront.cuesoft.io](collection/storefront/) and the [documentation sites](collection/docs-sites/). |
+| Collection | [What every marketing site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](cueprise/), [storefront.cuesoft.io](collection/storefront/), [clients.cuesoft.io](collection/clients/) and the [documentation sites](collection/docs-sites/). |
 | [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller. |
 | Handling | [Processors and platforms](handling/processors/), [international transfers](handling/transfers/), [retention](handling/retention/), [security](handling/security/) and [breach notification](handling/breach/). |
 | Rights | [Your rights and how to exercise them](rights/your-rights/), and [children](rights/children/). |
