@@ -1,4 +1,4 @@
-# clients.cuesoft.io — Cuesoft Client Work
+# clients.cuesoft.io — Client Work
 
 This is Cuesoft's public case-study site. It describes selected deliveries and
 links to client websites and public open-source repositories. It is an

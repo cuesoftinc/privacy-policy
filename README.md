@@ -34,10 +34,11 @@ those relationships alongside this policy.
   stores nothing on your device and identifies nobody — see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
-  means. Cuesoft Client Work is an informational case-study site with its
-  own [collection notice](collection/clients/) and Google Analytics only after
-  its own consent banner accepts it; the documentation sites carry no such
-  tags.
+  means. **Client Work** at
+  [clients.cuesoft.io](collection/clients/) is an informational case-study site
+  with its own [collection notice](collection/clients/) and Google Analytics
+  only after its own consent banner accepts it; the documentation sites carry
+  no such tags.
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don't type sensitive personal information into a chat box.
 - You can exercise your rights — access, correction, deletion and more —
