@@ -13,6 +13,8 @@ Releases before 1.1.0 predate this file.
 - An llms.txt in the family shape.
 - Pull requests run the build, the design-system check and the link check.
 - A collection notice for cuelearn.cuesoft.io.
+- The build fails on any em dash in source or output.
+- Datadog RUM loads on the live host with the release version.
 
 ### Changed
 
@@ -22,3 +24,6 @@ Releases before 1.1.0 predate this file.
 - The browser icons follow the family set.
 - The site counts and lists include cuelearn.cuesoft.io.
 - The effective date moves to 29 September 2026.
+- Em dashes are replaced with colons, commas and parentheses.
+- LinkedIn joins the Cuelearn demo-request conversions in the notice.
+- The documentation sites notice discloses Datadog monitoring.
