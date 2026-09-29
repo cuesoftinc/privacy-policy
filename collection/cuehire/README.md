@@ -23,9 +23,11 @@ data terms.
 ## Analytics and advertising tags: opt-in only
 
 This site uses analytics and advertising tags, gated behind a consent
-banner. None of them loads, and no cookie is set, until you press
+banner. None of them loads, and none of their cookies is set, until you press
 **Accept** (the cookieless Cloudflare measurement described in
-[what every site collects](../all-sites/) is separate and runs either way):
+[what every site collects](../all-sites/) and the
+[performance and error monitoring](#performance-and-error-monitoring) below are
+separate and run either way):
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
@@ -86,10 +88,40 @@ banner. None of them loads, and no cookie is set, until you press
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
+## Performance and error monitoring
+
+This site loads **Datadog**'s browser monitoring. It is operational
+telemetry, so it does not wait for the consent banner, and declining the
+banner does not stop it: it measures how quickly a page loads and records
+the errors it hits, so that we can keep the pages working.
+
+- **What Datadog receives:** the page addresses you visit and the page
+  that referred you, load and resource timings, your clicks (which
+  element, never anything you type), script errors and failed requests,
+  your browser, device and operating system, and your IP address, from
+  which it derives an approximate location. Nothing links a session to
+  your name or email. No session is recorded as a replay, with one
+  exception: if a page fails to render correctly, Datadog records that
+  session as a replay so we can see what went wrong. A replay shows the
+  page as it appeared to you, and the contents of form fields are masked.
+- **Cookie:** one first-party session cookie, `_dd_s_v2`, holding a random
+  session identifier that lapses after 15 minutes of inactivity (4 hours
+  at most).
+- **Role and retention:** Datadog acts as our **processor**, on our
+  instructions, and keeps the data in the United States for no more than
+  **30 days**, under the safeguards on the
+  [transfers page](../../handling/transfers/); see
+  [processors and platforms](../../handling/processors/) and
+  [retention](../../handling/retention/).
+- **Legal basis:** our legitimate interest in keeping the pages working
+  (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
+  time.
+
 ## What this site does not do
 
 No payment data is ever requested: see the
-[Terms of Service](https://terms.cuesoft.io). Nothing loads before you
-accept, and the cookieless Cloudflare measurement described in
-[what every site collects](../all-sites/) stays outside the consent gate
+[Terms of Service](https://terms.cuesoft.io). Apart from the
+[performance and error monitoring](#performance-and-error-monitoring) above, nothing
+loads before you accept, and the cookieless Cloudflare measurement described
+in [what every site collects](../all-sites/) stays outside the consent gate
 because it sets no cookie.

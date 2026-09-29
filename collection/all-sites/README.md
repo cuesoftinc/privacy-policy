@@ -22,6 +22,29 @@ uses **no cookies**, no persistent identifiers, no fingerprinting and no
 cross-site tracking. It tells us page views and performance, not who you
 are.
 
+## Performance and error monitoring
+
+Every website loads **Datadog**'s browser monitoring: the seven above,
+[clients.cuesoft.io](../clients/) and account.cuesoft.io. It is operational
+telemetry, so it does not wait for the consent banner, and declining the
+banner does not stop it: it measures how quickly a page loads and records
+the errors it hits, so that we can keep the pages working. Each site's own
+page states what Datadog receives there, the one cookie it sets, how long the
+data is kept and the legal basis:
+[CueTA™](../cueta/#performance-and-error-monitoring),
+[CueLABS™](../cuelabs/#performance-and-error-monitoring),
+[CueHIRE™](../cuehire/#performance-and-error-monitoring),
+[Cueprise™](../../cueprise/#performance-and-error-monitoring),
+[Storefront™](../storefront/#performance-and-error-monitoring),
+[Cuelearn™](../cuelearn/#performance-and-error-monitoring),
+[cuesoft.io](../cuesoft/#performance-and-error-monitoring) and
+[Client Work](../clients/#performance-and-error-monitoring).
+
+account.cuesoft.io has no page of its own: it has no forms, and it keeps the
+settings you change in your own browser. Apart from the server logs and the
+cookieless analytics above, the monitoring described on those pages is all it
+collects.
+
 ## Ace, the assistant
 
 If you chat with Ace, the messages you type are processed by our AI
@@ -64,9 +87,10 @@ read.
 The seven public websites (CueTA™, CueLABS™, CueHIRE™, Cueprise™,
 Storefront™, Cuelearn™ and cuesoft.io) carry analytics and advertising tags, and on every one of them those tags
 are **gated behind a consent banner**: until you press
-Accept, the site sets **no cookies** and loads **no advertising scripts
-and no third-party analytics** beyond the cookieless Cloudflare
-measurement above. One exception, on cuesoft.io only: the Spotify player
+Accept, the site sets **no advertising or analytics cookies** and loads
+**no advertising scripts and no third-party analytics** beyond the cookieless
+Cloudflare measurement and the performance and error monitoring above. One
+further exception, on cuesoft.io only: the Spotify player
 for The CueShow™ loads if you click it and may then set Spotify's own
 cookies, which the banner does not govern: see
 [cuesoft.io](../cuesoft/). Each website's own page lists exactly which tags it

@@ -34,7 +34,10 @@ those relationships alongside this policy.
   stores nothing on your device and identifies nobody: see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
-  means. **Client Work** at
+  means. Every website, the account site at account.cuesoft.io included,
+  also loads Datadog's performance and error monitoring whatever you choose:
+  see [what every site collects](collection/all-sites/#performance-and-error-monitoring).
+  **Client Work** at
   [clients.cuesoft.io](collection/clients/) is an informational case-study site
   with its own [collection notice](collection/clients/) and Google Analytics
   only after its own consent banner accepts it; the documentation sites carry
