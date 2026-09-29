@@ -222,6 +222,24 @@ function lastUpdated(page) {
   return date ? `Last updated ${date}.` : '';
 }
 
+const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: '\u00a0' };
+const decodeEntities = (text) =>
+  text.replaceAll(/&(?:#(\d+)|#x([0-9a-f]+)|([a-z]+));/gi, (whole, dec, hex, name) =>
+    dec ? String.fromCodePoint(Number(dec)) : hex ? String.fromCodePoint(parseInt(hex, 16)) : (ENTITIES[name] ?? whole),
+  );
+
+// A page's own headings for the rail beside it: every h2 and h3 with the id the
+// heading renderer gave it. A page with a single heading has nothing to list.
+const MIN_RAIL_HEADINGS = 2;
+function headingsOf(html) {
+  const headings = [...html.matchAll(/<h([23]) id="([^"]+)">([\s\S]*?)<\/h\1>/g)].map(([, depth, id, inner]) => ({
+    label: decodeEntities(inner.replaceAll(/<[^>]+>/g, '')).trim(),
+    href: `#${id}`,
+    depth: Number(depth),
+  }));
+  return headings.length >= MIN_RAIL_HEADINGS ? headings : [];
+}
+
 marked.use({
   renderer: {
     heading({ tokens, depth }) {
@@ -377,6 +395,7 @@ for (const page of pages) {
       effectiveDate: effective ? '@@EFFECTIVE@@' : undefined,
       lede: opening ? '@@LEDE@@' : undefined,
       sections: hasSidebar ? sectionsFor(page) : [],
+      onThisPage: headingsOf(body),
       updated: lastUpdated(page) || undefined,
       children: '@@BODY@@',
     }),
