@@ -296,13 +296,17 @@ for (const page of pages) {
   const { markdown, title } = meta.get(page);
   const parsed = marked.parse(markdown);
 
-  // The document's first heading is the shell's title and the bold effective
-  // date under it is the shell's date; everything after is the document.
+  // The document's first heading is the shell's title, the bold effective date
+  // under it is the shell's date and the opening paragraph is its lede;
+  // everything after is the document.
   const heading = parsed.match(/^<h1 id="([^"]*)">([\s\S]*?)<\/h1>\n/);
   if (!heading) throw new Error(`${page || 'README.md'} does not open with a level-one heading`);
   let rest = parsed.slice(heading[0].length);
   const effective = rest.match(/^<p><strong>(Effective date:[^<]*)<\/strong><\/p>\n/);
   if (effective) rest = rest.slice(effective[0].length);
+  // The opening paragraph is the shell's lede, set larger under the title.
+  const opening = rest.match(/^<p>([\s\S]*?)<\/p>\n/);
+  if (opening) rest = rest.slice(opening[0].length);
   // Tables scroll inside a wrapper instead of widening the page on phones.
   const body = rest.replaceAll('<table>', '<div class="table-wrap"><table>').replaceAll('</table>', '</table></div>');
 
@@ -333,6 +337,7 @@ for (const page of pages) {
       breadcrumb: crumbs,
       title: '@@TITLE@@',
       effectiveDate: effective ? '@@EFFECTIVE@@' : undefined,
+      lede: opening ? '@@LEDE@@' : undefined,
       sections: hasSidebar ? sectionsFor(page) : [],
       updated: lastUpdated(page) || undefined,
       children: '@@BODY@@',
@@ -341,6 +346,7 @@ for (const page of pages) {
     .replace('<h1 ', () => `<h1 id="${heading[1]}" `)
     .replace('@@TITLE@@', () => heading[2])
     .replace('@@EFFECTIVE@@', () => (effective ? effective[1] : ''))
+    .replace('@@LEDE@@', () => (opening ? opening[1] : ''))
     .replace('@@BODY@@', () => body);
 
   const canonical = page ? `${BASE}/${page}/` : `${BASE}/`;

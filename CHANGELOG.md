@@ -17,6 +17,7 @@ Releases before 1.1.0 predate this file.
 ### Changed
 
 - Pages render in the design system's document shell, header and legal strip.
+- The opening paragraph is set as the lede under the title.
 - Pages use the design system's stylesheet, fonts and lockups.
 - The browser icons follow the family set.
 - The site counts and lists include cuelearn.cuesoft.io.
