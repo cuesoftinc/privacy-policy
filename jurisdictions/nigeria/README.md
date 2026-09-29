@@ -20,8 +20,8 @@ state the basis for each collection on the
 (steps at your request prior to one), except Cueprise™ demo requests,
 Storefront™ enquiries and Cuelearn™ demo requests, which rest on legitimate interest because the
 agreement that may follow is with your organisation rather than with you;
-infrastructure and Ace on legitimate
-interest, and website analytics and advertising tags on consent, which you can withdraw
+infrastructure, Ace and the documentation sites' performance and error
+monitoring on legitimate interest, and website analytics and advertising tags on consent, which you can withdraw
 as easily as you gave it.
 
 ## Your rights under the NDPA

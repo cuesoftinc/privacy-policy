@@ -30,8 +30,10 @@ decisions with legal or similarly significant effects.
 All seven Cuesoft websites (CueTA™, CueLABS™, CueHIRE™, Cueprise™,
 Storefront™, Cuelearn™ and cuesoft.io)
 use analytics and advertising tags, and on all of them the tags are gated
-behind a consent banner. The documentation sites carry none. Only if you
-press **Accept** does the site load them:
+behind a consent banner. The documentation sites carry none of them, only
+the performance and error monitoring described on
+[their page](../docs-sites/). Only if you press **Accept** does the site
+load them:
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |

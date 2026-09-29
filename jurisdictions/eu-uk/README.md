@@ -16,6 +16,7 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | Storefront™ enquiries | Legitimate interest in answering a business enquiry: Art. 6(1)(f). The engagement that may follow is with your organisation, not with you, so contract performance cannot cover your own details: see [storefront.cuesoft.io](../../collection/storefront/) |
 | Cuelearn™ demo requests | Legitimate interest in answering a business enquiry: Art. 6(1)(f). The agreement that may follow is with your institution, not with you, so contract performance cannot cover your own details: see [cuelearn.cuesoft.io](../../collection/cuelearn/) |
 | Infrastructure and security logs | Legitimate interest in operating secure websites: Art. 6(1)(f) |
+| Performance and error monitoring on the documentation sites | Legitimate interest in keeping the pages working: Art. 6(1)(f), objection honoured on request |
 | Cookieless aggregate analytics | Legitimate interest in understanding site usage: Art. 6(1)(f), no cookies or identifiers involved |
 | Ace, the assistant | Legitimate interest in providing the assistant you choose to use: Art. 6(1)(f) |
 | Website analytics and advertising tags, including Google signals | Consent: Art. 6(1)(a), withdrawable at any time |
@@ -76,4 +77,5 @@ it and may then set Spotify's own cookies under Spotify's policy; the
 click is the consent, and the site's banner does not govern it: see
 [cuesoft.io](../../collection/cuesoft/). The documentation sites store
 a theme preference locally; it identifies nothing and leaves your browser
-never.
+never. They also load Datadog's performance and error monitoring, which the
+banner does not govern: see the [documentation sites](../../collection/docs-sites/).

@@ -73,5 +73,6 @@ cookies, which the banner does not govern: see
 loads and who receives the data: [CueTA™](../cueta/),
 [CueLABS™](../cuelabs/), [CueHIRE™](../cuehire/) and
 [cuesoft.io](../cuesoft/). The [documentation sites](../docs-sites/) carry
-none. No website ever asks for payment data: see the
+none of them, only the performance and error monitoring described on their
+page. No website ever asks for payment data: see the
 [Terms of Service](https://terms.cuesoft.io).
