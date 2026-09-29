@@ -7,10 +7,12 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "prebuild": "cuesoft-design-assets assets/design-system",
-    "postbuild": "node scripts/check-dashes.mjs",
+    "postbuild": "node scripts/check-dashes.mjs && node scripts/check-og-card.mjs",
+    "og": "node scripts/generate-og-image.mjs",
     "check:dashes": "node scripts/check-dashes.mjs",
     "check:design-system": "cuesoft-design-check corporate",
     "check:links": "node scripts/check-links.mjs",
+    "check:og": "node scripts/check-og-card.mjs",
     "lint": "npm run check:design-system"
   },
   "dependencies": {
@@ -19,5 +21,8 @@
     "marked": "^14.1.4",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
   }
 }

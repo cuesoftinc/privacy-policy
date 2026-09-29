@@ -24,6 +24,8 @@ import {
 } from '@cuesoftinc/design-system/corporate';
 import { marked } from 'marked';
 
+import CARD from './og-card.config.mjs';
+
 const ROOT = path.join(import.meta.dirname, '..');
 const OUT = path.join(ROOT, '_site');
 
@@ -416,6 +418,7 @@ for (const page of pages) {
     // context it lands in, including meta attributes.
     doc_title: escapeHtml(SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`),
     site: SITE,
+    og_alt: escapeHtml(CARD.alt),
     description: escapeHtml(descriptionOf(markdown)),
     canonical,
     base: BASE,

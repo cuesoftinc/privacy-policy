@@ -15,6 +15,7 @@ npm ci
 npm run build       # writes _site/, then fails on any em dash
 npm run lint        # cuesoft-design-check corporate
 npm run check:links # every link, image, font and #fragment in _site resolves
+npm run og          # redraws assets/og-card.png; the build fails if the card is out of date
 ```
 
 Without that access you can still edit the Markdown and open a pull request;
@@ -37,7 +38,8 @@ from `node_modules` at build time.
 ## Shared files
 
 `scripts/build.mjs` (bar the knob block at its top), `scripts/check-links.mjs`,
-`scripts/check-dashes.mjs`, `templates/page.html`, `templates/rum.js`,
+`scripts/check-dashes.mjs`, `scripts/generate-og-image.mjs`, `scripts/check-og-card.mjs`,
+`templates/page.html`, `templates/rum.js`,
 `.github/workflows/pages.yml`, `.npmrc` and the browser icons under `assets/`
 are identical in handbook, terms and privacy-policy. Change one, change all
 three.

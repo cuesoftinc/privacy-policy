@@ -1,0 +1,29 @@
+{
+  "name": "Cuesoft Privacy Policy",
+  "short_name": "Privacy",
+  "description": "What each Cuesoft website collects, why, and your rights under Nigerian, EU/UK and US law, plus the Cueprise™ Privacy Notice.",
+  "icons": [
+    {
+      "src": "/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#325EA6",
+  "background_color": "#325EA6",
+  "display": "standalone",
+  "start_url": "/"
+}
