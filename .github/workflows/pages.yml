@@ -36,6 +36,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
       - name: Build
         run: npm run build
+      - name: Dash check
+        run: npm run check:dashes
       - name: Design-system check
         run: npm run lint
       - name: Link check

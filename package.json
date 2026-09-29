@@ -7,6 +7,8 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "prebuild": "cuesoft-design-assets assets/design-system",
+    "postbuild": "node scripts/check-dashes.mjs",
+    "check:dashes": "node scripts/check-dashes.mjs",
     "check:design-system": "cuesoft-design-check corporate",
     "check:links": "node scripts/check-links.mjs",
     "lint": "npm run check:design-system"
