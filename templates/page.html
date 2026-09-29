@@ -1,16 +1,12 @@
 <!doctype html>
 <html lang="en">
-  <!-- Pre-paint theme: stored choice wins, then the system preference. Both
-       this script and the toggle key off prefers-color-scheme: dark, so the
-       icon and the page can never disagree. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{doc_title}}</title>
     <meta name="description" content="{{description}}" />
     <link rel="canonical" href="{{canonical}}" />
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#010409" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#325EA6" />
     <meta property="og:site_name" content="{{site}}" />
     <meta property="og:type" content="{{og_type}}" />
     <meta property="og:title" content="{{doc_title}}" />
@@ -27,95 +23,45 @@
     <script type="application/ld+json">
       {{jsonld}}
     </script>
-    <link rel="icon" type="image/png" sizes="32x32" href="{{root}}assets/favicon-32x32.png" />
-    <link
-      rel="preload"
-      href="{{root}}assets/fonts/fustat-latin.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="stylesheet" href="{{root}}assets/style.css" />
-    <script>
-      (function () {
-        try {
-          var stored = localStorage.getItem('cuesoft-theme');
-          var dark = stored
-            ? stored === 'dark'
-            : window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (dark) document.documentElement.classList.add('dark');
-        } catch (e) {}
-      })();
-    </script>
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="preload" href="/assets/design-system/fonts/Fustat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/assets/design-system.css" />
+    <style>
+      .table-wrap {
+        overflow-x: auto;
+      }
+    </style>
+    <script data-cuesoft-theme-prepaint="cuesoft-theme">(function(){try{var d=document.documentElement,t=null;try{t=localStorage.getItem("cuesoft-theme")}catch(e){}var c=t==='dark'||t==='light';var m=window.matchMedia('(prefers-color-scheme: dark)');var k=c?t==='dark':m.matches;if(k)d.classList.add("dark");if(c)d.setAttribute('data-theme',t);else if(m.addEventListener)m.addEventListener('change',function(e){if(!d.hasAttribute('data-theme'))d.classList.toggle("dark",e.matches)})}catch(e){}})()</script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <header class="site-header">
-      <div class="shell header-row">
-        <a href="https://cuesoft.io" aria-label="Cuesoft home">
-          <img
-            class="lockup lockup-light"
-            src="{{root}}assets/cuesoft-lockup-primary.png"
-            alt="Cuesoft — reimagine software"
-            height="34"
-          />
-          <img
-            class="lockup lockup-dark"
-            src="{{root}}assets/cuesoft-lockup-white.png"
-            alt="Cuesoft — reimagine software"
-            height="34"
-          />
-        </a>
-        <nav aria-label="Cuesoft properties" class="header-nav">
-          <a href="https://handbook.cuesoft.io">Handbook</a>
-          <a href="https://privacy.cuesoft.io">Privacy</a>
-          <a href="https://terms.cuesoft.io">Terms</a>
-          <button type="button" class="theme-toggle" aria-label="Switch theme">
-            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          </button>
-        </nav>
-      </div>
-    </header>
-
-    <div class="shell layout {{layout_class}}">
-      {{sidebar}}
-      <main id="main" tabindex="-1">
-        <nav class="breadcrumb" aria-label="Breadcrumb">{{breadcrumb}}</nav>
-        <div class="accent-rule" aria-hidden="true"></div>
-        <article class="content">{{content}}</article>
-        <p class="updated">{{updated}}</p>
-      </main>
-    </div>
-
-    <footer class="site-footer">
-      <div class="shell footer-row">
-        <span>&copy; Cuesoft Inc. {{year}}. All Rights Reserved.</span>
-        <nav aria-label="Footer" class="footer-nav">
-          <a href="https://cuesoft.io">cuesoft.io</a>
-          <a href="https://cueta.cuesoft.io">CueTA&trade;</a>
-          <a href="https://cuelabs.cuesoft.io">CueLABS&trade;</a>
-          <a href="https://cuehire.cuesoft.io">CueHIRE&trade;</a>
-          <a href="mailto:hello@cuesoft.io">hello@cuesoft.io</a>
-        </nav>
-      </div>
-    </footer>
+    {{skip}}
+    {{header}}
+    <main id="main" tabindex="-1">{{shell}}</main>
+    <footer>{{legal}}</footer>
     <script>
       (function () {
-        var button = document.querySelector('.theme-toggle');
+        var button = document.querySelector('.ds-theme-toggle');
         if (!button) return;
-        function label() {
-          var dark = document.documentElement.classList.contains('dark');
-          button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+        var root = document.documentElement;
+        function show() {
+          var dark = root.classList.contains('dark');
+          button.setAttribute('aria-pressed', String(dark));
+          button.querySelector('[data-theme-mark="moon"]').hidden = dark;
+          button.querySelector('[data-theme-mark="sun"]').hidden = !dark;
         }
         button.addEventListener('click', function () {
-          var dark = document.documentElement.classList.toggle('dark');
+          var next = root.classList.contains('dark') ? 'light' : 'dark';
+          root.classList.toggle('dark', next === 'dark');
+          root.setAttribute('data-theme', next);
           try {
-            localStorage.setItem('cuesoft-theme', dark ? 'dark' : 'light');
+            localStorage.setItem('cuesoft-theme', next);
           } catch (e) {}
-          label();
+          show();
         });
-        label();
+        show();
       })();
     </script>
   </body>

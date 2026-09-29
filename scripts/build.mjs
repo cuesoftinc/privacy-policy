@@ -1,12 +1,27 @@
 // Static site generator for the Cuesoft legal & handbook sites: every folder
-// with a README.md becomes a route, rendered into the brand template. One
-// script, vendored identically across handbook, terms and privacy-policy —
-// the same parity rule the website repos live by.
+// with a README.md becomes a route. The markdown is rendered with marked; the
+// page around it is the design system's DocShell, rendered to static HTML with
+// react-dom/server, and the package's own stylesheet is written into _site.
+// One script, vendored identically across handbook, terms and privacy-policy:
+// only the knob block below differs.
 //
 //   node scripts/build.mjs      → writes _site/
 import { execFileSync } from 'node:child_process';
 import { cpSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { createElement as h } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import {
+  DocHeader,
+  DocLegal,
+  DocShell,
+  Icon,
+  Lockup,
+  SkipLink,
+  ThemeToggle,
+  themePrepaintElement,
+} from '@cuesoftinc/design-system/corporate';
 import { marked } from 'marked';
 
 const ROOT = path.join(import.meta.dirname, '..');
@@ -23,7 +38,41 @@ const SECTION_ORDER = ['collection', 'cueprise', 'handling', 'rights', 'jurisdic
 // bookmarks and inbound links keep landing.
 const REDIRECTS = {};
 
+const THEME_KEY = 'cuesoft-theme';
+const ASSETS = '/assets/design-system';
+const LOCKUP = {
+  light: `${ASSETS}/logos-official/cuesoft-horizontal-light-trim.png`,
+  dark: `${ASSETS}/logos-official/cuesoft-horizontal-white-trim.png`,
+  alt: 'Cuesoft, reimagine software',
+};
+// The documents on the bar; the one whose address is this site's is current.
+const DOCUMENTS = [
+  { label: 'Handbook', href: 'https://handbook.cuesoft.io' },
+  { label: 'Privacy', href: 'https://privacy.cuesoft.io' },
+  { label: 'Terms', href: 'https://terms.cuesoft.io' },
+];
+const LEGAL_LINKS = [
+  { label: 'cuesoft.io', href: 'https://cuesoft.io' },
+  { label: 'CueTA™', href: 'https://cueta.cuesoft.io' },
+  { label: 'CueLABS™', href: 'https://cuelabs.cuesoft.io' },
+  { label: 'CueHIRE™', href: 'https://cuehire.cuesoft.io' },
+  { label: 'hello@cuesoft.io', href: 'mailto:hello@cuesoft.io' },
+];
+// Of the package assets the copy step writes under assets/design-system, the
+// pages publish the fonts the stylesheet names and the two lockups the bar draws.
+const PUBLISHED = [
+  /^design-system$/,
+  /^design-system\/fonts(?:\/|$)/,
+  /^design-system\/logos-official$/,
+  /^design-system\/logos-official\/cuesoft-horizontal-(?:light|white)-trim\.png$/,
+];
+
 const template = readFileSync(path.join(ROOT, 'templates/page.html'), 'utf8');
+if (!template.includes(themePrepaintElement({ storageKey: THEME_KEY }))) {
+  throw new Error(
+    `templates/page.html must inline the pre-paint script the pinned package renders: themePrepaintElement({ storageKey: '${THEME_KEY}' })`,
+  );
+}
 
 // The canonical origin comes from the CNAME file GitHub Pages already uses.
 const BASE = existsSync(path.join(ROOT, 'CNAME'))
@@ -100,7 +149,13 @@ const meta = new Map(
   }),
 );
 
-function sidebarFor(current) {
+function relLink(from, to) {
+  const up = from ? '../'.repeat(from.split('/').length) : '';
+  return to === '' ? `${up}` : `${up}${to}/`;
+}
+
+/** The sections in reading order, each with its pages. */
+function groups() {
   const sections = new Map();
   for (const page of pages) {
     if (!page || !page.includes('/')) continue;
@@ -115,42 +170,21 @@ function sidebarFor(current) {
     if (sections.has(page)) sections.get(page).unshift(page);
     else sections.set(page, [page]);
   }
-  if (sections.size === 0) return '';
 
   const ordered = [...sections.keys()].sort((a, b) => {
     const [ia, ib] = [SECTION_ORDER.indexOf(a), SECTION_ORDER.indexOf(b)];
     return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || a.localeCompare(b);
   });
 
-  const groups = ordered
-    .map((section) => {
-      const items = sections
-        .get(section)
-        .sort()
-        .map((page) => {
-          const href = relLink(current, page);
-          const mark = page === current ? " aria-current='page'" : '';
-          return `<li><a href="${href}"${mark}>${meta.get(page).title}</a></li>`;
-        })
-        .join('');
-      return `<div class="section"><span>${label(section)}</span><ul>${items}</ul></div>`;
-    })
-    .join('');
-  return `<nav class="sidebar" aria-label="Handbook sections">${groups}</nav>`;
+  return ordered.map((section) => ({ section, pages: sections.get(section).sort() }));
 }
 
-function relLink(from, to) {
-  const up = from ? '../'.repeat(from.split('/').length) : '';
-  return to === '' ? `${up}` : `${up}${to}/`;
-}
-
-function tocFor(html) {
-  const headings = [...html.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)];
-  if (headings.length < 4) return '';
-  const items = headings
-    .map(([, id, text]) => `<li><a href="#${id}">${text.replace(/<[^>]+>/g, '')}</a></li>`)
-    .join('');
-  return `<nav class="toc" aria-label="Contents"><span>Contents</span><ol>${items}</ol></nav>`;
+/** The contents down the side: one group per section, the page itself marked current. */
+function sectionsFor(current) {
+  return groups().map(({ section, pages: members }) => ({
+    heading: label(section),
+    links: members.map((page) => ({ label: meta.get(page).title, href: relLink(current, page), current: page === current })),
+  }));
 }
 
 function gitDate(page) {
@@ -185,24 +219,97 @@ marked.use({
   },
 });
 
+/**
+ * The package stylesheet as one file. styles.css is a chain of @imports whose
+ * fonts sit beside the package; the copy step publishes them under ASSETS, so
+ * the chain is resolved here and the font URLs point at the published copy.
+ */
+function packageStylesheet() {
+  const entry = fileURLToPath(import.meta.resolve('@cuesoftinc/design-system/styles.css'));
+  const inline = (file) =>
+    readFileSync(file, 'utf8').replaceAll(/@import\s+['"]([^'"]+)['"]\s*;/g, (_, spec) =>
+      inline(path.resolve(path.dirname(file), spec)),
+    );
+  const css = inline(entry).replaceAll("url('../assets/fonts/", `url('${ASSETS}/fonts/`);
+  if (/@import/.test(css)) throw new Error('the package stylesheet has an @import the build does not resolve');
+  if (/url\(['"]?\.\.?\//.test(css)) throw new Error('the package stylesheet has a relative url() the build does not publish');
+  return css;
+}
+
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
-cpSync(path.join(ROOT, 'assets'), path.join(OUT, 'assets'), { recursive: true });
+cpSync(path.join(ROOT, 'assets'), path.join(OUT, 'assets'), {
+  recursive: true,
+  filter: (source) => {
+    const rel = path.relative(path.join(ROOT, 'assets'), source).split(path.sep).join('/');
+    return !rel.startsWith('design-system') || PUBLISHED.some((pattern) => pattern.test(rel));
+  },
+});
+writeFileSync(path.join(OUT, 'assets/design-system.css'), packageStylesheet());
 if (existsSync(path.join(ROOT, 'CNAME'))) cpSync(path.join(ROOT, 'CNAME'), path.join(OUT, 'CNAME'));
+if (existsSync(path.join(ROOT, 'llms.txt'))) {
+  // The family's llms.txt is plain ASCII: marks spelled (TM), a spaced dash a colon.
+  const plain = (text) => text.replaceAll('™', '(TM)').replaceAll(' — ', ': ');
+  const listed = [...(pages.includes('') ? [''] : []), ...groups().flatMap(({ pages: members }) => members)];
+  const list = listed
+    .map((page) => `- [${plain(meta.get(page).title)}](${BASE}/${page ? `${page}/` : ''})`)
+    .join('\n');
+  writeFileSync(
+    path.join(OUT, 'llms.txt'),
+    readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').replace('{{pages}}', () => list),
+  );
+}
+cpSync(path.join(ROOT, 'assets/favicon.ico'), path.join(OUT, 'favicon.ico'));
 writeFileSync(path.join(OUT, '.nojekyll'), '');
+
+// The static markup carries no client code, so the theme control ships both
+// marks and the page script shows the one that applies.
+const themeToggle = h(ThemeToggle, {
+  storageKey: THEME_KEY,
+  icon: h(
+    'span',
+    { className: 'theme-marks' },
+    h('span', { 'data-theme-mark': 'moon' }, h(Icon, { name: 'moon' })),
+    h('span', { 'data-theme-mark': 'sun', hidden: true }, h(Icon, { name: 'sun' })),
+  ),
+});
+
+// React hoists an image preload for each lockup art ahead of the markup; both
+// arts are already in the page, so the preloads only repeat them.
+const render = (element) => renderToStaticMarkup(element).replace(/^(?:<link rel="preload" as="image"[^>]*\/>)+/, '');
+
+const header = render(
+  h(DocHeader, {
+    brand: h(Lockup, { ...LOCKUP, height: 30 }),
+    brandHref: 'https://cuesoft.io',
+    links: DOCUMENTS.map((document) => ({ ...document, current: document.href === BASE })),
+    tools: themeToggle,
+  }),
+);
+const skip = render(h(SkipLink, { href: '#main' }));
+const legal = render(
+  h(DocLegal, { copyright: { owner: 'Cuesoft Inc.', year: new Date().getFullYear() }, links: LEGAL_LINKS }),
+);
 
 const hasSidebar = pages.some((p) => p !== '');
 for (const page of pages) {
   const { markdown, title } = meta.get(page);
+  const parsed = marked.parse(markdown);
+
+  // The document's first heading is the shell's title and the bold effective
+  // date under it is the shell's date; everything after is the document.
+  const heading = parsed.match(/^<h1 id="([^"]*)">([\s\S]*?)<\/h1>\n/);
+  if (!heading) throw new Error(`${page || 'README.md'} does not open with a level-one heading`);
+  let rest = parsed.slice(heading[0].length);
+  const effective = rest.match(/^<p><strong>(Effective date:[^<]*)<\/strong><\/p>\n/);
+  if (effective) rest = rest.slice(effective[0].length);
   // Tables scroll inside a wrapper instead of widening the page on phones.
-  const body = marked
-    .parse(markdown)
-    .replaceAll('<table>', '<div class="table-wrap"><table>')
-    .replaceAll('</table>', '</table></div>');
-  const root = page ? '../'.repeat(page.split('/').length) : './';
+  const body = rest.replaceAll('<table>', '<div class="table-wrap"><table>').replaceAll('</table>', '</table></div>');
+
   // Crumbs carry the same names the sidebar shows: a page's H1 where the
   // segment is a page, the section label otherwise — and only pages link.
-  const crumbs = [`<a href="${root}">${SITE}</a>`];
+  const root = page ? '../'.repeat(page.split('/').length) : './';
+  const crumbs = [{ label: SITE, href: root }];
   const crumbList = [{ name: SITE, item: `${BASE}/` }];
   if (page) {
     const parts = page.split('/');
@@ -211,16 +318,32 @@ for (const page of pages) {
       const text = meta.has(prefix) ? meta.get(prefix).title : label(part);
       const isLast = index === parts.length - 1;
       crumbs.push(
-        isLast || !meta.has(prefix)
-          ? text
-          : `<a href="${'../'.repeat(parts.length - 1 - index)}">${text}</a>`,
+        isLast
+          ? { label: text, current: true }
+          : meta.has(prefix)
+            ? { label: text, href: '../'.repeat(parts.length - 1 - index) }
+            : { label: text },
       );
       if (isLast || meta.has(prefix)) crumbList.push({ name: text, item: `${BASE}/${prefix}/` });
     });
   }
 
+  const shell = renderToStaticMarkup(
+    h(DocShell, {
+      breadcrumb: crumbs,
+      title: '@@TITLE@@',
+      effectiveDate: effective ? '@@EFFECTIVE@@' : undefined,
+      sections: hasSidebar ? sectionsFor(page) : [],
+      updated: lastUpdated(page) || undefined,
+      children: '@@BODY@@',
+    }),
+  )
+    .replace('<h1 ', () => `<h1 id="${heading[1]}" `)
+    .replace('@@TITLE@@', () => heading[2])
+    .replace('@@EFFECTIVE@@', () => (effective ? effective[1] : ''))
+    .replace('@@BODY@@', () => body);
+
   const canonical = page ? `${BASE}/${page}/` : `${BASE}/`;
-  const description = escapeHtml(descriptionOf(markdown));
   const jsonld = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': [
@@ -229,7 +352,7 @@ for (const page of pages) {
         name: title,
         url: canonical,
         isPartOf: { '@type': 'WebSite', name: SITE, url: `${BASE}/` },
-        publisher: { '@type': 'Organization', name: 'Cuesoft Inc.', url: 'https://cuesoft.io' },
+        publisher: { '@type': 'Organization', name: 'Cuesoft', url: 'https://cuesoft.io' },
       },
       {
         '@type': 'BreadcrumbList',
@@ -243,34 +366,26 @@ for (const page of pages) {
     ],
   });
 
-  const html = template
-    .replaceAll(
-      '{{doc_title}}',
-      // When the page title and site name overlap, the longer one stands
-      // alone — never "The Cuesoft Handbook | Cuesoft Handbook". Escaped
-      // once for every context it lands in, including meta attributes.
-      escapeHtml(
-        SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`,
-      ),
-    )
-    .replaceAll('{{site}}', SITE)
-    .replaceAll('{{description}}', description)
-    .replaceAll('{{canonical}}', canonical)
-    .replaceAll('{{base}}', BASE)
-    .replaceAll('{{og_type}}', page ? 'article' : 'website')
-    .replaceAll('{{jsonld}}', jsonld)
-    .replaceAll('{{root}}', root)
-    .replaceAll('{{layout_class}}', hasSidebar ? 'with-sidebar' : 'single')
-    .replaceAll('{{sidebar}}', hasSidebar ? sidebarFor(page) : '')
-    .replaceAll('{{breadcrumb}}', crumbs.join(' <span aria-hidden="true">/</span> '))
-    .replaceAll(
-      '{{content}}',
-      // Single-page sites get a table of contents after the title and its
-      // opening line, not above them.
-      page === '' && !hasSidebar ? body.replace('</p>', `</p>\n${tocFor(body)}`) : body,
-    )
-    .replaceAll('{{updated}}', lastUpdated(page))
-    .replaceAll('{{year}}', String(new Date().getFullYear()));
+  const values = {
+    // When the page title and site name overlap, the longer one stands alone —
+    // never "The Cuesoft Handbook | Cuesoft Handbook". Escaped once for every
+    // context it lands in, including meta attributes.
+    doc_title: escapeHtml(SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`),
+    site: SITE,
+    description: escapeHtml(descriptionOf(markdown)),
+    canonical,
+    base: BASE,
+    og_type: page ? 'article' : 'website',
+    jsonld,
+    skip,
+    header,
+    shell,
+    legal,
+  };
+  const html = template.replaceAll(/\{\{(\w+)\}\}/g, (_, key) => {
+    if (!(key in values)) throw new Error(`templates/page.html names {{${key}}}, which the build does not fill`);
+    return values[key];
+  });
 
   const target = path.join(OUT, page, 'index.html');
   mkdirSync(path.dirname(target), { recursive: true });

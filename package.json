@@ -5,9 +5,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "prebuild": "cuesoft-design-assets assets/design-system",
+    "check:design-system": "cuesoft-design-check corporate",
+    "check:links": "node scripts/check-links.mjs",
+    "lint": "npm run check:design-system"
   },
   "dependencies": {
-    "marked": "^14.1.4"
+    "@cuesoftinc/design-system": "1.39.1",
+    "marked": "^14.1.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   }
 }
