@@ -54,9 +54,9 @@ banner. None of them loads, and no cookie is set, until you press
   this for **14 months**; see [retention](../../handling/retention/). We
   do not send your form contents to any of them.
 - **One event beyond page views:** when you send a demo request,
-  **Google Ads, Meta and X** are told that it happened, so they can credit
-  the ad you arrived from. Google Analytics and LinkedIn are not: they
-  receive the page views described above and nothing more. The event
+  **Google Ads, Meta, LinkedIn and X** are told that it happened, so they
+  can credit the ad you arrived from. Google Analytics is not: it
+  receives the page views described above and nothing more. The event
   records the fact of the request and nothing else: not your name, not your
   email, and not what you wrote.
 - **If you are signed in to Google:** we have Google signals switched on,
