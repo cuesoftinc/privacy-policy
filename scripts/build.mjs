@@ -228,12 +228,26 @@ const decodeEntities = (text) =>
     dec ? String.fromCodePoint(Number(dec)) : hex ? String.fromCodePoint(parseInt(hex, 16)) : (ENTITIES[name] ?? whole),
   );
 
+// The text of an HTML fragment: everything outside a tag. It is scanned rather
+// than matched, so a tag split by another (`<scr<b>ipt>`) cannot survive it the
+// way it survives a single replace.
+function plainText(html) {
+  let out = '';
+  let open = 0;
+  for (const char of html) {
+    if (char === '<') open += 1;
+    else if (char === '>' && open > 0) open -= 1;
+    else if (open === 0) out += char;
+  }
+  return out;
+}
+
 // A page's own headings for the rail beside it: every h2 and h3 with the id the
 // heading renderer gave it. A page with a single heading has nothing to list.
 const MIN_RAIL_HEADINGS = 2;
 function headingsOf(html) {
   const headings = [...html.matchAll(/<h([23]) id="([^"]+)">([\s\S]*?)<\/h\1>/g)].map(([, depth, id, inner]) => ({
-    label: decodeEntities(inner.replaceAll(/<[^>]+>/g, '')).trim(),
+    label: decodeEntities(plainText(inner)).trim(),
     href: `#${id}`,
     depth: Number(depth),
   }));
