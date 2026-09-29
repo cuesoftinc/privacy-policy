@@ -6,6 +6,12 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.1.2] - 2026-09-30
+
+### Added
+
+- Each page lists its own headings in a rail beside it.
+
 ## [1.1.1] - 2026-09-29
 
 ### Added
