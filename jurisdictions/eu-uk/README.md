@@ -14,6 +14,7 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | Application and contact forms | Steps at your request prior to a contract — Art. 6(1)(b) |
 | Cueprise™ demo requests | Legitimate interest in answering a business enquiry — Art. 6(1)(f). The licence that may follow is with your organisation, not with you, so contract performance cannot cover your own details — see [cueprise.cuesoft.io](../../cueprise/) |
 | Storefront™ enquiries | Legitimate interest in answering a business enquiry — Art. 6(1)(f). The engagement that may follow is with your organisation, not with you, so contract performance cannot cover your own details — see [storefront.cuesoft.io](../../collection/storefront/) |
+| Cuelearn™ demo requests | Legitimate interest in answering a business enquiry — Art. 6(1)(f). The agreement that may follow is with your institution, not with you, so contract performance cannot cover your own details — see [cuelearn.cuesoft.io](../../collection/cuelearn/) |
 | Infrastructure and security logs | Legitimate interest in operating secure websites — Art. 6(1)(f) |
 | Cookieless aggregate analytics | Legitimate interest in understanding site usage — Art. 6(1)(f), no cookies or identifiers involved |
 | Ace, the assistant | Legitimate interest in providing the assistant you choose to use — Art. 6(1)(f) |
@@ -64,9 +65,10 @@ such transfer happens at all.
 ## Cookies and ePrivacy
 
 Two things we use require consent. The analytics and advertising setup on
-our six websites — [CueTA™](../../collection/cueta/),
+our seven websites — [CueTA™](../../collection/cueta/),
 [CueLABS™](../../collection/cuelabs/), [CueHIRE™](../../collection/cuehire/),
-[Cueprise™](../../cueprise/), [Storefront™](../../collection/storefront/) and
+[Cueprise™](../../cueprise/), [Storefront™](../../collection/storefront/),
+[Cuelearn™](../../collection/cuelearn/) and
 [cuesoft.io](../../collection/cuesoft/) — is off until you accept and listed
 provider-by-provider on each site's collection page. Separately,
 on cuesoft.io the Spotify player for The CueShow™ loads only if you click

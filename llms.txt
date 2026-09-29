@@ -24,10 +24,11 @@ the United States.
 Three divisions, in sequence: CueTA(TM) trains engineers on live AI work,
 CueLABS(TM) proves them in public on open-source products, and CueHIRE(TM),
 Cuesoft's talent and project management agency, delivers them to companies
-through end-to-end delivery, managed engineers and referral hiring. Two
+through end-to-end delivery, managed engineers and referral hiring. Three
 products: Cueprise(TM), a business management system licensed per business and
-deployed on the client's own cloud, and Storefront(TM), the website a business
-puts in front of its customers.
+deployed on the client's own cloud, Storefront(TM), the website a business puts
+in front of its customers, and Cuelearn(TM), a learning platform Cuesoft sells
+to institutions.
 
 ## Contact
 
