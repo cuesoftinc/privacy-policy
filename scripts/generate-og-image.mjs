@@ -180,7 +180,7 @@ export async function cardHtml() {
     -webkit-font-smoothing: antialiased; }
   .furniture { position: absolute; left: ${MARGIN}px; right: ${MARGIN}px; top: ${MARK.top}px; height: ${MARK.height}px;
     display: flex; align-items: center; justify-content: space-between; }
-  .eyebrow { font-size: ${EYEBROW_SIZE}px; line-height: 1; color: ${ACCENT}; ${eyebrow.style} }
+  .eyebrow { max-width: ${COLUMN}px; text-wrap: balance; font-size: ${EYEBROW_SIZE}px; line-height: 1; color: ${ACCENT}; ${eyebrow.style} }
   .brand { display: flex; align-items: center; gap: 20px; }
   .lockup { height: ${MARK.height}px; }
   .label { padding-left: 20px; border-left: 1px solid rgb(255 255 255 / 0.2); font-family: ${mono}; font-size: 20px; line-height: 1; color: rgb(255 255 255 / 0.84); ${eyebrow.style} }
@@ -195,7 +195,7 @@ export async function cardHtml() {
   .button { flex: none; white-space: nowrap; padding: 20px 32px; font-size: ${BUTTON_SIZE}px; line-height: 1; border-radius: ${RADIUS}; background: ${BUTTON}; color: ${product ? WHITE : BLACK}; ${cta.style} }
   .destination { font-family: ${product ? mono : 'Fustat, sans-serif'}; font-size: ${EYEBROW_SIZE}px; line-height: 1; ${eyebrow.style} }
 </style></head>
-<body data-headlines="${headlines.map((step) => step.join('/')).join(' ')}" data-subs="${SUB_STEPS.map((step) => step.join('/')).join(' ')}" data-headline-floor="${HEADLINE_FLOOR}" data-sub-floor="${SUB_FLOOR}">
+<body data-headlines="${headlines.map((step) => step.join('/')).join(' ')}" data-subs="${SUB_STEPS.map((step) => step.join('/')).join(' ')}" data-limit="${MARGIN + COLUMN}" data-headline-floor="${HEADLINE_FLOOR}" data-sub-floor="${SUB_FLOOR}">
   ${ground}
   <div class="furniture">
     ${left}
@@ -291,13 +291,28 @@ async function render() {
       const stage = document.querySelector('.stage');
       const h1 = document.querySelector('h1');
       const sub = document.querySelector('.sub');
+      const inkRight = () => {
+        let right = 0;
+        for (const el of document.querySelectorAll(
+          '.eyebrow, .kicker, h1, .sub, .button, .label',
+        )) {
+          const range = document.createRange();
+          range.selectNodeContents(el);
+          for (const box of range.getClientRects()) {
+            right = Math.max(right, box.right);
+          }
+        }
+        return right;
+      };
       const fits = () => {
         const used = [...stage.children].reduce(
           (sum, child) => sum + child.getBoundingClientRect().height,
           0,
         );
         const gap = Number.parseFloat(getComputedStyle(stage).rowGap);
-        return used + gap * (stage.children.length - 1) <= stage.clientHeight;
+        const tall =
+          used + gap * (stage.children.length - 1) <= stage.clientHeight;
+        return tall && inkRight() <= Number(document.body.dataset.limit);
       };
       const { headlineFloor, subFloor } = document.body.dataset;
       const passes = [
