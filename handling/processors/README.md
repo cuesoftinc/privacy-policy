@@ -14,7 +14,7 @@ process data only on our instructions:
 | Google (Workspace) | Mail for `cuesoft.io`, including `hello@cuesoft.io`, the address this policy names for exercising your rights |
 | Airtable | Form records (applications and enquiries) |
 | Brevo | Sending the form acknowledgement email, and recording when it is opened and its links clicked |
-| Datadog | Measuring page performance and recording page errors on the documentation sites, on our instructions |
+| Datadog | Measuring page performance and recording page errors on the websites and the documentation sites, on our instructions |
 | Lark | Mail hosting for our talent.cuesoft.io work addresses, so it carries the messages sent to and from them |
 | Google Analytics | Measuring traffic and journeys on the websites, on our instructions, once you opt in. **Google signals is a partial exception:** where you are signed in to Google with Ads Personalisation on, Google also uses the visit for its own ads personalisation, and for that use it is not acting solely on our instructions: see the [advertising platforms](#advertising-platforms-are-not-processors) note below |
 | Certifier | Issuing CueTA™ credentials: the certificate a graduate receives, and the public page that verifies it |

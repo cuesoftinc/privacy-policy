@@ -6,6 +6,19 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.1.1] - 2026-09-29
+
+### Added
+
+- A Datadog monitoring section on each website's collection notice.
+- The account site is named in the monitoring disclosure.
+
+### Changed
+
+- The Cueprise notice effective date moves to 29 September 2026.
+- Processors, retention and jurisdiction pages cover the websites' monitoring.
+- Consent statements name the monitoring as an exception.
+
 ## [1.1.0] - 2026-09-29
 
 ### Added
