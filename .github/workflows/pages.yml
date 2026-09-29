@@ -36,6 +36,10 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
       - name: Build
         run: npm run build
+        env:
+          # Public by design: the RUM application id and client token.
+          NEXT_PUBLIC_DD_APPLICATION_ID: ${{ secrets.NEXT_PUBLIC_DD_APPLICATION_ID }}
+          NEXT_PUBLIC_DD_CLIENT_TOKEN: ${{ secrets.NEXT_PUBLIC_DD_CLIENT_TOKEN }}
       - name: Dash check
         run: npm run check:dashes
       - name: Design-system check

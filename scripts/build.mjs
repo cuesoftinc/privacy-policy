@@ -79,6 +79,24 @@ const BASE = existsSync(path.join(ROOT, 'CNAME'))
   ? `https://${readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}`
   : '';
 
+// Datadog browser RUM: operational telemetry, on the live host only. The
+// application id and client token are public by design and arrive from the
+// workflow as NEXT_PUBLIC_DD_*. A build without both (a fork's pull request, a
+// local run) ships no RUM and says so. The SDK is the exact pin in
+// package.json, copied from node_modules, so pages load no third-party script.
+const PACKAGE = JSON.parse(readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
+const RUM_SDK = path.join(ROOT, 'node_modules/@datadog/browser-rum/bundle/datadog-rum.js');
+const RUM = {
+  applicationId: (process.env.NEXT_PUBLIC_DD_APPLICATION_ID ?? '').trim(),
+  clientToken: (process.env.NEXT_PUBLIC_DD_CLIENT_TOKEN ?? '').trim(),
+};
+const rumOn = Boolean(RUM.applicationId && RUM.clientToken && BASE);
+if (!rumOn) {
+  const note =
+    'Datadog RUM is not in this build: NEXT_PUBLIC_DD_APPLICATION_ID and NEXT_PUBLIC_DD_CLIENT_TOKEN are not both set';
+  console.log(process.env.GITHUB_ACTIONS === 'true' ? `::warning::${note}` : note);
+}
+
 const escapeHtml = (s) =>
   s
     .replaceAll('&', '&amp;')
@@ -246,6 +264,26 @@ cpSync(path.join(ROOT, 'assets'), path.join(OUT, 'assets'), {
   },
 });
 writeFileSync(path.join(OUT, 'assets/design-system.css'), packageStylesheet());
+if (rumOn) {
+  if (!existsSync(RUM_SDK)) throw new Error('@datadog/browser-rum is not installed; run npm ci');
+  mkdirSync(path.join(OUT, 'assets/vendor'), { recursive: true });
+  cpSync(RUM_SDK, path.join(OUT, 'assets/vendor/datadog-rum.js'));
+  cpSync(path.join(ROOT, 'templates/rum.js'), path.join(OUT, 'assets/rum.js'));
+}
+const rumTags = rumOn
+  ? [
+      `<script id="dd-rum-config" type="application/json">${JSON.stringify({
+        applicationId: RUM.applicationId,
+        clientToken: RUM.clientToken,
+        site: 'datadoghq.com',
+        service: PACKAGE.name,
+        version: PACKAGE.version,
+        host: new URL(BASE).hostname,
+      }).replaceAll('<', '\\u003c')}</script>`,
+      '<script src="/assets/vendor/datadog-rum.js" defer></script>',
+      '<script src="/assets/rum.js" defer></script>',
+    ].join('\n    ')
+  : '';
 if (existsSync(path.join(ROOT, 'CNAME'))) cpSync(path.join(ROOT, 'CNAME'), path.join(OUT, 'CNAME'));
 if (existsSync(path.join(ROOT, 'llms.txt'))) {
   // The family's llms.txt is plain ASCII: marks spelled (TM).
@@ -387,6 +425,7 @@ for (const page of pages) {
     header,
     shell,
     legal,
+    rum: rumTags,
   };
   const html = template.replaceAll(/\{\{(\w+)\}\}/g, (_, key) => {
     if (!(key in values)) throw new Error(`templates/page.html names {{${key}}}, which the build does not fill`);
