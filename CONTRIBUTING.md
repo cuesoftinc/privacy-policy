@@ -12,7 +12,7 @@ Packages, while this repository is public. Building needs read access to the
 
 ```bash
 npm ci
-npm run build       # writes _site/
+npm run build       # writes _site/, then fails on any em dash
 npm run lint        # cuesoft-design-check corporate
 npm run check:links # every link, image, font and #fragment in _site resolves
 ```
@@ -20,12 +20,27 @@ npm run check:links # every link, image, font and #fragment in _site resolves
 Without that access you can still edit the Markdown and open a pull request;
 a maintainer builds it.
 
+## Punctuation
+
+No em dashes in the Markdown, the templates or the built pages: write a
+colon, a comma or parentheses. `npm run build` and CI fail on one
+(`scripts/check-dashes.mjs`).
+
+## Monitoring
+
+Pages on the live host report page performance and errors to Datadog RUM. The
+build reads `NEXT_PUBLIC_DD_APPLICATION_ID` and `NEXT_PUBLIC_DD_CLIENT_TOKEN`
+(Actions secrets) and ships no monitoring without them, so a local build
+sends nothing. The script is the exact `@datadog/browser-rum` pin, copied
+from `node_modules` at build time.
+
 ## Shared files
 
 `scripts/build.mjs` (bar the knob block at its top), `scripts/check-links.mjs`,
-`templates/page.html`, `.github/workflows/pages.yml`, `.npmrc` and the
-browser icons under `assets/` are identical in handbook, terms and
-privacy-policy. Change one, change all three.
+`scripts/check-dashes.mjs`, `templates/page.html`, `templates/rum.js`,
+`.github/workflows/pages.yml`, `.npmrc` and the browser icons under `assets/`
+are identical in handbook, terms and privacy-policy. Change one, change all
+three.
 
 ## Commits
 
