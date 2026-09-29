@@ -1,6 +1,6 @@
 # handbook.cuesoft.io, privacy.cuesoft.io, terms.cuesoft.io
 
-The documentation sites — the company handbook and these legal pages — are
+The documentation sites (the company handbook and these legal pages) are
 static documentation served via **GitHub Pages**, so GitHub's
 infrastructure logs apply, per
 [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).

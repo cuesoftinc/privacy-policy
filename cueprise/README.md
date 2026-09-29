@@ -27,7 +27,7 @@ controller** of the data the platform holds.
 - **Where:** records are stored in Airtable, our forms database.
 - **Legal basis:** our legitimate interest in responding to the business
   enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent legitimate-
-  interest basis under the NDPA — you may
+  interest basis under the NDPA: you may
   [object](../rights/your-rights/) at any time. Cueprise™ is licensed to
   organisations rather than to people, so the licence that may follow is
   between Cuesoft and your business: you are usually not a party to it, and
@@ -36,18 +36,18 @@ controller** of the data the platform holds.
   and representatives of a licensee, below. Where a licence is signed with you as an
   individual, processing under it rests on that contract (Art. 6(1)(b)).
 - **Confirmation:** we email you a receipt, copied to
-  [cueprise@cuesoft.io](mailto:cueprise@cuesoft.io) — see
+  [cueprise@cuesoft.io](mailto:cueprise@cuesoft.io): see
   [what every site collects](../collection/all-sites/).
 
 Data inside a licensed Cueprise™ deployment is governed by that licence's
 data terms and by the rest of this notice.
 
-### Analytics and advertising tags — opt-in only
+### Analytics and advertising tags: opt-in only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and no cookie is set, until you press
-**Accept** — the cookieless Cloudflare measurement described in
-[what every site collects](../collection/all-sites/) is separate and runs either way:
+**Accept** (the cookieless Cloudflare measurement described in
+[what every site collects](../collection/all-sites/) is separate and runs either way):
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ banner. None of them loads, and no cookie is set, until you press
   device and browser metadata and the page-view events themselves. Google
   Analytics uses the IP address in passing to derive an approximate
   location and then discards it: the address itself is not stored, and the
-  location is what is kept. Google Analytics keeps this for **14 months** —
+  location is what is kept. Google Analytics keeps this for **14 months**:
   see [retention](../handling/retention/). We do not send your form
   contents to any of them.
 - **One event beyond page views:** when you request a demo, **Meta** is
@@ -80,14 +80,14 @@ banner. None of them loads, and no cookie is set, until you press
   What that does, precisely: it lets us see age, gender and interest
   summaries, and it lets Google build advertising audiences that can reach
   you across your devices. It does **not** merge your devices together in
-  our own reports — since February 2024 Google signals is not part of how
-  Analytics counts users — so we do not see your phone and your laptop as
+  our own reports (since February 2024 Google signals is not part of how
+  Analytics counts users), so we do not see your phone and your laptop as
   one person. And Google uses the visit for its own ads personalisation as
   well as for our measurement. You control it on Google's side,
   independently of us, at
   [myadcenter.google.com](https://myadcenter.google.com) and
-  [Google's activity controls](https://myaccount.google.com/activitycontrols)
-  — switching Ads Personalisation off there stops it for every site, not
+  [Google's activity controls](https://myaccount.google.com/activitycontrols):
+  switching Ads Personalisation off there stops it for every site, not
   just ours. Declining our banner prevents it entirely.
 - **Decline and none of them load.** The site works identically either
   way.
@@ -101,7 +101,7 @@ banner. None of them loads, and no cookie is set, until you press
   controls rather than us: manage that in your
   [Google account](https://myadcenter.google.com). The four advertising
   platforms hold what they collected as **independent businesses** under
-  their own policies — see
+  their own policies: see
   [processors and platforms](../handling/processors/).
 - An opt-out preference signal (**Global Privacy Control**) overrides a
   stored opt-in for as long as your browser sends it.
@@ -110,7 +110,7 @@ banner. None of them loads, and no cookie is set, until you press
 
 ### What this site does not do
 
-No payment data is ever requested, and no fee is quoted here — a Cueprise™
+No payment data is ever requested, and no fee is quoted here: a Cueprise™
 licence is priced after a conversation. See the
 [Cueprise™ Terms](https://terms.cuesoft.io/cueprise/). Nothing loads before you
 accept, and the cookieless Cloudflare measurement described in
@@ -139,10 +139,10 @@ under [service telemetry](#service-telemetry) below.
 
 | Data | Controller | Processor |
 | --- | --- | --- |
-| Licensee data — records, files and people data inside the platform, including the licensee's customers and storefront shoppers | The licensee | Cuesoft |
-| Account and administration data — named users, roles, authentication records | The licensee | Cuesoft |
-| Relationship data — licensee contacts, contracts, invoices, support correspondence | Cuesoft | — |
-| Service telemetry — operational logs and usage metrics needed to run and secure the platform | Cuesoft | — |
+| Licensee data: records, files and people data inside the platform, including the licensee's customers and storefront shoppers | The licensee | Cuesoft |
+| Account and administration data: named users, roles, authentication records | The licensee | Cuesoft |
+| Relationship data: licensee contacts, contracts, invoices, support correspondence | Cuesoft | |
+| Service telemetry: operational logs and usage metrics needed to run and secure the platform | Cuesoft | |
 
 ### What the platform holds
 
@@ -266,10 +266,10 @@ The platform is operated under the safeguards on the
 [security page](../handling/security/), plus the platform-specific
 measures stated in each licensing agreement. Security incidents affecting
 licensee data are notified to the affected licensee without undue delay,
-with the detail the licensee needs for its own legal obligations — see
+with the detail the licensee needs for its own legal obligations: see
 [breach notification](../handling/breach/).
 
 ## Contact
 
-Cueprise™ privacy questions — licensees and data subjects alike:
+Cueprise™ privacy questions (licensees and data subjects alike):
 [hello@cuesoft.io](mailto:hello@cuesoft.io).

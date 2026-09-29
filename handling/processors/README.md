@@ -9,28 +9,28 @@ process data only on our instructions:
 | Provider | What it does for us |
 | --- | --- |
 | Cloudflare | Edge delivery, security, cookieless analytics |
-| Google (infrastructure role) | Firebase App Hosting — serving the websites |
+| Google (infrastructure role) | Firebase App Hosting: serving the websites |
 | Google (Classroom) | Google Classroom: course material for enrolled CueTA™ learners, and the coursework they submit |
 | Google (Workspace) | Mail for `cuesoft.io`, including `hello@cuesoft.io`, the address this policy names for exercising your rights |
 | Airtable | Form records (applications and enquiries) |
 | Brevo | Sending the form acknowledgement email, and recording when it is opened and its links clicked |
 | Lark | Mail hosting for our talent.cuesoft.io work addresses, so it carries the messages sent to and from them |
-| Google Analytics | Measuring traffic and journeys on the websites, on our instructions, once you opt in. **Google signals is a partial exception:** where you are signed in to Google with Ads Personalisation on, Google also uses the visit for its own ads personalisation, and for that use it is not acting solely on our instructions — see the [advertising platforms](#advertising-platforms-are-not-processors) note below |
+| Google Analytics | Measuring traffic and journeys on the websites, on our instructions, once you opt in. **Google signals is a partial exception:** where you are signed in to Google with Ads Personalisation on, Google also uses the visit for its own ads personalisation, and for that use it is not acting solely on our instructions: see the [advertising platforms](#advertising-platforms-are-not-processors) note below |
 | Certifier | Issuing CueTA™ credentials: the certificate a graduate receives, and the public page that verifies it |
 | GitHub | Hosting for the documentation sites; public API for the contributors display |
-| AI platform provider | Generating Ace's answers — the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
+| AI platform provider | Generating Ace's answers: the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
 
 ## Advertising platforms are not processors
 
-The advertising platforms behind the websites' opt-in tags — **Google Ads,
-Meta, LinkedIn and X** — act as **independent businesses under their own
+The advertising platforms behind the websites' opt-in tags (**Google Ads,
+Meta, LinkedIn and X**) act as **independent businesses under their own
 policies**, not as our processors, once your opt-in lets their tags load.
 Google therefore wears more than one kind of hat, and we treat them separately: its
 infrastructure and classroom roles are restricted processing on our
 instructions; its advertising role is the consent-gated disclosure
 described as "sharing" on the
 [United States page](../../jurisdictions/united-states/). None of them
-receives anything unless you opt in on the site you are visiting — and **Spotify** (the
+receives anything unless you opt in on the site you are visiting, and **Spotify** (the
 click-to-load embed on cuesoft.io) loads only if you click the player.
 
 **We do not sell personal data to anyone.**
@@ -41,8 +41,8 @@ Programme coordination happens on **WhatsApp** (CueTA™ cohorts) and
 **Discord** (CueLABS™ interns), and client-representative discussion may
 happen on WhatsApp under an engagement's terms.
 
-- Joining a group makes your profile name — and on WhatsApp, your phone
-  number — visible to other group members.
+- Joining a group makes your profile name (and on WhatsApp, your phone
+  number) visible to other group members.
 - Your use of those platforms is governed by their own privacy policies.
 - Participation in a given channel is part of how the programme runs; tell
   us if you need an alternative arrangement.

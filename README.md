@@ -3,12 +3,12 @@
 **Effective date: 29 September 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
-and the rights you have over it — under Nigerian, EU/UK and US law.
+and the rights you have over it, under Nigerian, EU/UK and US law.
 
 It is issued by **Cuesoft Inc.** (8 The Green, Suite 300, Dover, DE 19901,
 United States) and **Cuesoft Nigeria Limited** (RC1624434, 39 Alfred Rewane
-Road, 3rd Floor Mulliner Towers, Ikoyi, Lagos, Nigeria) — together
-"Cuesoft", "we", "us" — who act as joint data controllers for the websites
+Road, 3rd Floor Mulliner Towers, Ikoyi, Lagos, Nigeria), together
+"Cuesoft", "we", "us", who act as joint data controllers for the websites
 below. The essence of our joint-controller arrangement: **Cuesoft Nigeria
 Limited** leads compliance for processing subject to Nigerian law **and to
 the EU/UK GDPR** (transparency, rights handling, security); **Cuesoft
@@ -16,13 +16,13 @@ Inc.** leads for processing subject to US law; and regardless of the
 split, you may exercise your rights against either entity through the
 single contact point [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
-Signed engagements — offers of admission, internship, contractor and client
-agreements, Cueprise™ licences — carry their own data terms, which govern
+Signed engagements (offers of admission, internship, contractor and client
+agreements, Cueprise™ licences) carry their own data terms, which govern
 those relationships alongside this policy.
 
 ## The short version
 
-- We collect only what each website needs to do its job — mostly what you
+- We collect only what each website needs to do its job: mostly what you
   type into an application or contact form.
 - **No payment data, ever**: our websites take no payments.
 - **We do not sell personal data.** Our seven marketing websites (CueTA™, CueLABS™,
@@ -31,7 +31,7 @@ those relationships alongside this policy.
   only if you opt in through each site's consent banner. Separately, and on
   every site whatever you choose, we measure aggregate traffic with
   Cloudflare's **cookieless** analytics on those same seven sites, which
-  stores nothing on your device and identifies nobody — see the
+  stores nothing on your device and identifies nobody: see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
   means. **Client Work** at
@@ -41,7 +41,7 @@ those relationships alongside this policy.
   no such tags.
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don't type sensitive personal information into a chat box.
-- You can exercise your rights — access, correction, deletion and more —
+- You can exercise your rights (access, correction, deletion and more)
   by emailing [hello@cuesoft.io](mailto:hello@cuesoft.io); see
   [your rights](rights/your-rights/).
 
@@ -63,9 +63,9 @@ version always lives at [privacy.cuesoft.io](https://privacy.cuesoft.io).
 
 ## Contact
 
-- **Cuesoft Inc.** — 8 The Green, Suite 300, Dover, DE 19901, United
+- **Cuesoft Inc.**: 8 The Green, Suite 300, Dover, DE 19901, United
   States
-- **Cuesoft Nigeria Limited** (RC1624434) — 39 Alfred Rewane Road, 3rd
+- **Cuesoft Nigeria Limited** (RC1624434): 39 Alfred Rewane Road, 3rd
   Floor Mulliner Towers, Ikoyi, Lagos, Nigeria
 - [hello@cuesoft.io](mailto:hello@cuesoft.io) · +1 302 670 7551 (US) ·
   +234 915 880 1821 (Nigeria)

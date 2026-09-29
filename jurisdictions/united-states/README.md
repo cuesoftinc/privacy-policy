@@ -26,22 +26,22 @@ In CCPA/CPRA terms:
   via the **Cookie preferences** link.
 - **Opt-out preference signals.** We treat **Global Privacy Control** as a
   valid opt-out of sharing, and it **overrides a stored opt-in**: if your
-  browser sends GPC, **no tag loads at all** — not the advertising tags and
+  browser sends GPC, **no tag loads at all**: not the advertising tags and
   not Google Analytics, so the Google signals sharing described above stops
-  with them — even if you
-  previously pressed Accept — for as long as the signal is present. With
+  with them (even if you
+  previously pressed Accept) for as long as the signal is present. With
   no prior opt-in, nothing was ever shared to begin with.
 - **Categories collected:** identifiers (name, email, phone); internet or
   network activity; a cross-device identifier, where Google signals
   connects an opted-in visit to your signed-in Google account;
-  approximate geolocation — a country derived at the edge
+  approximate geolocation: a country derived at the edge
   by Cloudflare and stored with a form submission whether or not you opt
   in, and, if you do opt in, a coarse location Google Analytics derives
   from your IP address before discarding the address itself; and,
   depending on the form you use,
   professional or employment-related and commercial information (role
   interest and availability on CueLABS™, company and project briefs on
-  CueHIRE™, programme intent on CueTA™) — all described on the
+  CueHIRE™, programme intent on CueTA™), all described on the
   [collection pages](../../collection/all-sites/), collected from you
   directly and from your browser. **Purposes:** processing applications
   and enquiries, running and securing the websites, and (opt-in only)
@@ -50,14 +50,14 @@ In CCPA/CPRA terms:
   account) Google's own ads personalisation. **Disclosed to:** the
   service providers on the
   [processors page](../../handling/processors/) under contracts limiting
-  their use of it, and — only on opt-in — the advertising platforms, as
+  their use of it, and, only on opt-in, the advertising platforms, as
   independent businesses.
 - We do **not** collect or use sensitive personal information beyond what
   is necessary to provide the services, and we do not use it to infer
   characteristics.
 - **Your CCPA rights:** to know/access, to correct, to delete, to opt out
   of sale/sharing, to limit use of sensitive personal information, and to
-  **non-discrimination** — we will never deny services, charge different
+  **non-discrimination**: we will never deny services, charge different
   prices or degrade quality because you exercised a privacy right.
 - **Authorised agents** may submit requests on your behalf; we verify the
   agent's authority and your identity, as the
@@ -70,8 +70,8 @@ Connecticut, Utah, Texas, Oregon, Montana and others) hold comparable
 rights of access, correction, deletion, portability and opt-out of
 targeted advertising. Each website's own consent banner is our opt-in
 mechanism for targeted advertising everywhere, and a choice made on one
-site does not carry to another — the default is off on every site in
-every state —
+site does not carry to another (the default is off on every site in
+every state)
 and the [rights page](../../rights/your-rights/) is the single door for
 every request. Where a state grants an appeal right for refused requests,
 tell us you are appealing and a different reviewer will decide; if we
@@ -81,7 +81,7 @@ still refuse, we will point you to your state attorney general.
 
 Where a breach affects US residents, we notify affected individuals and,
 where required, state authorities and consumer-reporting agencies, per the
-breach-notification law of each affected resident's state — see
+breach-notification law of each affected resident's state: see
 [breach notification](../../handling/breach/).
 
 ## Do Not Track and preference signals

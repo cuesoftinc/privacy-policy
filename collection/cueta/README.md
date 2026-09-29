@@ -1,4 +1,4 @@
-# cueta.cuesoft.io — Cuesoft Talent Academy
+# cueta.cuesoft.io: Cuesoft Talent Academy
 
 ## Application form
 
@@ -15,7 +15,7 @@
   confirmation are unaffected; tick it and you can withdraw at any time by
   emailing [hello@cuesoft.io](mailto:hello@cuesoft.io).
 - **Confirmation:** we email you a receipt, copied to
-  [cueta@cuesoft.io](mailto:cueta@cuesoft.io) — see
+  [cueta@cuesoft.io](mailto:cueta@cuesoft.io): see
   [what every site collects](../all-sites/).
 
 The country select arrives pre-filled with the country Cloudflare's edge
@@ -25,10 +25,10 @@ before you submit, and what we store is your answer, not the guess.
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.
 
-## Analytics and advertising tags — opt-in only
+## Analytics and advertising tags: opt-in only
 
-All seven Cuesoft websites — CueTA™, CueLABS™, CueHIRE™, Cueprise™,
-Storefront™, Cuelearn™ and cuesoft.io —
+All seven Cuesoft websites (CueTA™, CueLABS™, CueHIRE™, Cueprise™,
+Storefront™, Cuelearn™ and cuesoft.io)
 use analytics and advertising tags, and on all of them the tags are gated
 behind a consent banner. The documentation sites carry none. Only if you
 press **Accept** does the site load them:
@@ -47,7 +47,7 @@ press **Accept** does the site load them:
   Analytics uses the IP address in passing to derive an approximate
   location and then discards it: the address itself is not stored, and the
   location is what is kept. Google Analytics keeps
-  this for **14 months** — see [retention](../../handling/retention/).
+  this for **14 months**: see [retention](../../handling/retention/).
 - **One event beyond page views:**
   when you submit an application,
   **Google Ads, Meta, LinkedIn and X** are told that it happened, so
@@ -63,14 +63,14 @@ press **Accept** does the site load them:
   What that does, precisely: it lets us see age, gender and interest
   summaries, and it lets Google build advertising audiences that can reach
   you across your devices. It does **not** merge your devices together in
-  our own reports — since February 2024 Google signals is not part of how
-  Analytics counts users — so we do not see your phone and your laptop as
+  our own reports (since February 2024 Google signals is not part of how
+  Analytics counts users), so we do not see your phone and your laptop as
   one person. And Google uses the visit for its own ads personalisation as
   well as for our measurement. You control it on Google's side,
   independently of us, at
   [myadcenter.google.com](https://myadcenter.google.com) and
-  [Google's activity controls](https://myaccount.google.com/activitycontrols)
-  — switching Ads Personalisation off there stops it for every site, not
+  [Google's activity controls](https://myaccount.google.com/activitycontrols):
+  switching Ads Personalisation off there stops it for every site, not
   just ours. Declining our banner prevents it entirely.
 - **Decline and none of them load.** The site works identically either
   way.
@@ -84,7 +84,7 @@ press **Accept** does the site load them:
   controls rather than us: manage that in your
   [Google account](https://myadcenter.google.com). The four advertising
   platforms hold what they collected as **independent businesses** under
-  their own policies — see
+  their own policies: see
   [processors and platforms](../../handling/processors/).
 - We do **not** send your form contents (email, phone) to these
   advertising platforms.
@@ -94,7 +94,7 @@ press **Accept** does the site load them:
 ## Cohort communication
 
 Enrolled learners are contacted about their cohort via the details they
-provided, including WhatsApp groups for cohort coordination — see
+provided, including WhatsApp groups for cohort coordination: see
 [processors and platforms](../../handling/processors/) for what joining a
 group exposes.
 

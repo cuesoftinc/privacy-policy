@@ -1,4 +1,4 @@
-# storefront.cuesoft.io — Storefront™
+# storefront.cuesoft.io: Storefront™
 
 Storefront™ is the shop, booking page or landing page we build for a
 business. This page covers the **marketing site** at storefront.cuesoft.io,
@@ -24,11 +24,11 @@ how long.
   answer you.
 - **Why:** to reply to your enquiry and scope the site you are asking for.
 - **Where:** records are stored in Airtable, our forms database, in the same
-  table as CueHIRE™ enquiries — building a storefront is a CueHIRE
+  table as CueHIRE™ enquiries: building a storefront is a CueHIRE
   engagement, so it is one pipeline rather than two.
 - **Legal basis:** our legitimate interest in responding to the business
   enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent
-  legitimate-interest basis under the NDPA — you may
+  legitimate-interest basis under the NDPA: you may
   [object](../../rights/your-rights/) at any time. An engagement that follows
   is between Cuesoft and your business rather than with you: if you enquired
   as an employee or representative you are usually not a party to it, so
@@ -36,15 +36,15 @@ how long.
   email. Where an engagement is signed with you as an individual, processing
   under it rests on that contract (Art. 6(1)(b)).
 - **Confirmation:** we email you a receipt, copied to
-  [storefront@cuesoft.io](mailto:storefront@cuesoft.io) — see
+  [storefront@cuesoft.io](mailto:storefront@cuesoft.io): see
   [what every site collects](../all-sites/).
 
-## Analytics and advertising tags — opt-in only
+## Analytics and advertising tags: opt-in only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and no cookie is set, until you press
-**Accept** — the cookieless Cloudflare measurement described in
-[what every site collects](../all-sites/) is separate and runs either way:
+**Accept** (the cookieless Cloudflare measurement described in
+[what every site collects](../all-sites/) is separate and runs either way):
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ banner. None of them loads, and no cookie is set, until you press
   Analytics uses the IP address in passing to derive an approximate
   location and then discards it: the address itself is not stored, and the
   location is what is kept. Google Analytics keeps
-  this for **14 months** — see [retention](../../handling/retention/). We
+  this for **14 months**: see [retention](../../handling/retention/). We
   do not send your form contents to any of them.
 - **One event beyond page views:**
   when you send us a brief,
@@ -77,14 +77,14 @@ banner. None of them loads, and no cookie is set, until you press
   What that does, precisely: it lets us see age, gender and interest
   summaries, and it lets Google build advertising audiences that can reach
   you across your devices. It does **not** merge your devices together in
-  our own reports — since February 2024 Google signals is not part of how
-  Analytics counts users — so we do not see your phone and your laptop as
+  our own reports (since February 2024 Google signals is not part of how
+  Analytics counts users), so we do not see your phone and your laptop as
   one person. And Google uses the visit for its own ads personalisation as
   well as for our measurement. You control it on Google's side,
   independently of us, at
   [myadcenter.google.com](https://myadcenter.google.com) and
-  [Google's activity controls](https://myaccount.google.com/activitycontrols)
-  — switching Ads Personalisation off there stops it for every site, not
+  [Google's activity controls](https://myaccount.google.com/activitycontrols):
+  switching Ads Personalisation off there stops it for every site, not
   just ours. Declining our banner prevents it entirely.
 - **Decline and none of them load.** The site works identically either
   way.
@@ -98,7 +98,7 @@ banner. None of them loads, and no cookie is set, until you press
   controls rather than us: manage that in your
   [Google account](https://myadcenter.google.com). The four advertising
   platforms hold what they collected as **independent businesses** under
-  their own policies — see
+  their own policies: see
   [processors and platforms](../../handling/processors/).
 - An opt-out preference signal (**Global Privacy Control**) overrides a
   stored opt-in for as long as your browser sends it.
