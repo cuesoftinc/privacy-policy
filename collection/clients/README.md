@@ -1,4 +1,4 @@
-# clients.cuesoft.io — Client Work
+# clients.cuesoft.io: Client Work
 
 This is Cuesoft's public case-study site. It describes selected deliveries and
 links to client websites and public open-source repositories. It is an
@@ -8,16 +8,16 @@ payments** on clients.cuesoft.io.
 ## Server and Security Logs
 
 The site is delivered through Cloudflare and Google Firebase App Hosting.
-Standard technical data — IP address, browser, requested page and timestamp —
+Standard technical data (IP address, browser, requested page and timestamp)
 appears in short-lived infrastructure logs for security, abuse prevention and
 reliability.
 
 - **Legal basis:** our legitimate interest in operating a secure website
   (GDPR Art. 6(1)(f)).
-- **Retention:** no more than 30 days — see
+- **Retention:** no more than 30 days: see
   [retention](../../handling/retention/).
 
-## Analytics and Cookies — Opt-In Only
+## Analytics and Cookies: Opt-In Only
 
 This site uses **Google Analytics** for aggregate traffic and journey
 measurement. It does not load advertising pixels. Google Analytics does not
@@ -28,7 +28,7 @@ banner. Declining leaves the case studies and every link usable in full.
   IP address, page URLs, referring URL and basic browser/device metadata.
   Google uses the IP address in passing to derive approximate location and
   then discards it; it does not store the address itself.
-- **Retention:** Google Analytics keeps this data for **14 months** — see
+- **Retention:** Google Analytics keeps this data for **14 months**: see
   [retention](../../handling/retention/).
 - **Withdraw:** use **Cookie preferences** in the site footer at any time.
   This stops future loading; browser controls clear any analytics cookies that

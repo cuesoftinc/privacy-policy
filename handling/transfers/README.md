@@ -19,7 +19,7 @@ rely on:
 The advertising platforms are the exception, and deliberately so. Google
 Ads, Meta, LinkedIn and X receive data as **independent businesses under
 their own policies**, not as our processors, so the clauses above are not
-the mechanism and we cannot offer them on those companies' behalf — see
+the mechanism and we cannot offer them on those companies' behalf: see
 [processors and platforms](../processors/). Those disclosures happen only
 where you have opted in through a site's consent banner.
 
@@ -73,10 +73,10 @@ transfer via [hello@cuesoft.io](mailto:hello@cuesoft.io).
 ## Nigerian data
 
 Where the NDPA applies, transfers out of Nigeria follow its adequacy and
-safeguard provisions and the NDPC's implementing instruments — see the
+safeguard provisions and the NDPC's implementing instruments: see the
 [Nigeria page](../../jurisdictions/nigeria/).
 
 ## Cueprise™
 
-Transfer terms for licensee data are stated in each licensing agreement —
+Transfer terms for licensee data are stated in each licensing agreement:
 see the [Cueprise™ Privacy Notice](../../cueprise/).

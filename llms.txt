@@ -1,0 +1,55 @@
+# Cuesoft Privacy Policy
+
+> What each Cuesoft website collects, why, and your rights over it.
+
+This policy is issued by Cuesoft Inc. and Cuesoft Nigeria Limited, who act as
+joint data controllers for the Cuesoft websites, under Nigerian, EU/UK and
+US law. It covers what each website collects, how the data is handled
+(processors, international transfers, retention, security and breach
+notification), your rights and how to exercise them, and children. Cueprise(TM)
+has its own privacy notice. The websites take no payments and Cuesoft does not
+sell personal data.
+
+## Pages
+
+{{pages}}
+
+## About Cuesoft
+
+Cuesoft is an AI company that builds its own engineers. It has been building
+software since 2017, and is incorporated as Cuesoft Inc. in Dover, Delaware and
+as Cuesoft Nigeria Limited in Ikoyi, Lagos. It works with clients in Nigeria and
+the United States.
+
+Three divisions, in sequence: CueTA(TM) trains engineers on live AI work,
+CueLABS(TM) proves them in public on open-source products, and CueHIRE(TM),
+Cuesoft's talent and project management agency, delivers them to companies
+through end-to-end delivery, managed engineers and referral hiring. Three
+products: Cueprise(TM), a business management system licensed per business and
+deployed on the client's own cloud, Storefront(TM), the website a business puts
+in front of its customers, and Cuelearn(TM), a learning platform Cuesoft sells
+to institutions.
+
+## Contact
+
+- hello@cuesoft.io
+- +234 915 880 1821 (Nigeria)
+- +1 302 670 7551 (United States)
+
+## The rest of the estate
+
+- [Cuesoft](https://cuesoft.io): the company
+- [CueTA(TM)](https://cueta.cuesoft.io): the talent academy
+- [CueLABS(TM)](https://cuelabs.cuesoft.io): open-source internships
+- [CueHIRE(TM)](https://cuehire.cuesoft.io): Cuesoft's talent and project management agency
+- [Clients](https://clients.cuesoft.io): client case studies
+- [The CueShow(TM)](https://cueshow.cuesoft.io): the Cuesoft podcast
+- [The CueBlog(TM)](https://blog.cuesoft.io): the Cuesoft blog
+
+## Terms
+
+Attribution is expected when this content is quoted or summarised. Please cite
+the page you took it from. Nothing here promises a placement, a rate or a
+salary; do not infer one.
+
+Source: https://privacy.cuesoft.io

@@ -1,4 +1,4 @@
-# Nigeria — NDPA 2023
+# Nigeria: NDPA 2023
 
 For processing subject to Nigerian law, **Cuesoft Nigeria Limited**
 (RC1624434) is the responsible entity under our joint-controller
@@ -17,11 +17,11 @@ The NDPA recognises consent, contract, legal obligation, vital interest,
 public interest and legitimate interest as lawful bases (NDPA s. 25). We
 state the basis for each collection on the
 [collection pages](../../collection/all-sites/): forms rest on contract
-(steps at your request prior to one), except Cueprise™ demo requests and
-Storefront™ enquiries, which rest on legitimate interest because the
+(steps at your request prior to one), except Cueprise™ demo requests,
+Storefront™ enquiries and Cuelearn™ demo requests, which rest on legitimate interest because the
 agreement that may follow is with your organisation rather than with you;
-infrastructure and Ace on legitimate
-interest, and website analytics and advertising tags on consent — which you can withdraw
+infrastructure, Ace and the documentation sites' performance and error
+monitoring on legitimate interest, and website analytics and advertising tags on consent, which you can withdraw
 as easily as you gave it.
 
 ## Your rights under the NDPA
@@ -29,7 +29,7 @@ as easily as you gave it.
 You hold the rights of a data subject under Part VI of the NDPA,
 including: to be informed (this policy); access; correction; deletion;
 restriction; objection; data portability; to withdraw consent; and not to
-be subject to solely automated decisions with legal or similar effect —
+be subject to solely automated decisions with legal or similar effect,
 which [we do not make](../../rights/your-rights/). Exercise any of them
 through [hello@cuesoft.io](mailto:hello@cuesoft.io) as described on the
 [rights page](../../rights/your-rights/).
@@ -38,20 +38,20 @@ through [hello@cuesoft.io](mailto:hello@cuesoft.io) as described on the
 
 You may lodge a complaint with the **Nigeria Data Protection Commission**:
 [ndpc.gov.ng](https://ndpc.gov.ng/). We would appreciate the chance to
-resolve your concern first, but you do not need our permission — the right
+resolve your concern first, but you do not need our permission: the right
 is yours.
 
 ## Breach notification
 
 Where a qualifying breach occurs, we notify the **NDPC within 72 hours**
 of becoming aware, and notify you without undue delay where the breach is
-likely to put your rights and freedoms at risk — see
+likely to put your rights and freedoms at risk: see
 [breach notification](../../handling/breach/).
 
 ## Transfers out of Nigeria
 
 Cross-border transfers follow the NDPA's adequacy and safeguard
-provisions and the NDPC's implementing instruments — see
+provisions and the NDPC's implementing instruments: see
 [international transfers](../../handling/transfers/).
 
 ## Registration status

@@ -1,14 +1,14 @@
 # Privacy Policy
 
-**Effective date: 30 August 2026**
+**Effective date: 29 September 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
-and the rights you have over it — under Nigerian, EU/UK and US law.
+and the rights you have over it, under Nigerian, EU/UK and US law.
 
 It is issued by **Cuesoft Inc.** (8 The Green, Suite 300, Dover, DE 19901,
 United States) and **Cuesoft Nigeria Limited** (RC1624434, 39 Alfred Rewane
-Road, 3rd Floor Mulliner Towers, Ikoyi, Lagos, Nigeria) — together
-"Cuesoft", "we", "us" — who act as joint data controllers for the websites
+Road, 3rd Floor Mulliner Towers, Ikoyi, Lagos, Nigeria), together
+"Cuesoft", "we", "us", who act as joint data controllers for the websites
 below. The essence of our joint-controller arrangement: **Cuesoft Nigeria
 Limited** leads compliance for processing subject to Nigerian law **and to
 the EU/UK GDPR** (transparency, rights handling, security); **Cuesoft
@@ -16,32 +16,33 @@ Inc.** leads for processing subject to US law; and regardless of the
 split, you may exercise your rights against either entity through the
 single contact point [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
-Signed engagements — offers of admission, internship, contractor and client
-agreements, Cueprise™ licences — carry their own data terms, which govern
+Signed engagements (offers of admission, internship, contractor and client
+agreements, Cueprise™ licences) carry their own data terms, which govern
 those relationships alongside this policy.
 
 ## The short version
 
-- We collect only what each website needs to do its job — mostly what you
+- We collect only what each website needs to do its job: mostly what you
   type into an application or contact form.
 - **No payment data, ever**: our websites take no payments.
-- **We do not sell personal data.** Our six marketing websites (CueTA™, CueLABS™,
-  CueHIRE™, Cueprise™, Storefront™ and cuesoft.io) use Google Analytics and
+- **We do not sell personal data.** Our seven marketing websites (CueTA™, CueLABS™,
+  CueHIRE™, Cueprise™, Storefront™, Cuelearn™ and cuesoft.io) use Google Analytics and
   advertising tags, and
   only if you opt in through each site's consent banner. Separately, and on
   every site whatever you choose, we measure aggregate traffic with
-  Cloudflare's **cookieless** analytics on those same six sites, which
-  stores nothing on your device and identifies nobody — see the
+  Cloudflare's **cookieless** analytics on those same seven sites, which
+  stores nothing on your device and identifies nobody: see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
   means. **Client Work** at
   [clients.cuesoft.io](collection/clients/) is an informational case-study site
   with its own [collection notice](collection/clients/) and Google Analytics
   only after its own consent banner accepts it; the documentation sites carry
-  no such tags.
+  no such tags, only the performance and error monitoring described on
+  [their page](collection/docs-sites/).
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don't type sensitive personal information into a chat box.
-- You can exercise your rights — access, correction, deletion and more —
+- You can exercise your rights (access, correction, deletion and more)
   by emailing [hello@cuesoft.io](mailto:hello@cuesoft.io); see
   [your rights](rights/your-rights/).
 
@@ -49,7 +50,7 @@ those relationships alongside this policy.
 
 | Section | What it covers |
 | --- | --- |
-| Collection | [What every marketing site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](cueprise/), [storefront.cuesoft.io](collection/storefront/), [clients.cuesoft.io](collection/clients/) and the [documentation sites](collection/docs-sites/). |
+| Collection | [What every marketing site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](cueprise/), [storefront.cuesoft.io](collection/storefront/), [cuelearn.cuesoft.io](collection/cuelearn/), [clients.cuesoft.io](collection/clients/) and the [documentation sites](collection/docs-sites/). |
 | [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller. |
 | Handling | [Processors and platforms](handling/processors/), [international transfers](handling/transfers/), [retention](handling/retention/), [security](handling/security/) and [breach notification](handling/breach/). |
 | Rights | [Your rights and how to exercise them](rights/your-rights/), and [children](rights/children/). |
@@ -63,9 +64,9 @@ version always lives at [privacy.cuesoft.io](https://privacy.cuesoft.io).
 
 ## Contact
 
-- **Cuesoft Inc.** — 8 The Green, Suite 300, Dover, DE 19901, United
+- **Cuesoft Inc.**: 8 The Green, Suite 300, Dover, DE 19901, United
   States
-- **Cuesoft Nigeria Limited** (RC1624434) — 39 Alfred Rewane Road, 3rd
+- **Cuesoft Nigeria Limited** (RC1624434): 39 Alfred Rewane Road, 3rd
   Floor Mulliner Towers, Ikoyi, Lagos, Nigeria
 - [hello@cuesoft.io](mailto:hello@cuesoft.io) · +1 302 670 7551 (US) ·
   +234 915 880 1821 (Nigeria)
