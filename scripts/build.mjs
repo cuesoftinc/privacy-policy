@@ -162,6 +162,40 @@ const label = (slug) =>
     .map((w) => w[0].toUpperCase() + w.slice(1))
     .join(' ');
 
+// Title Case for the <title> and share titles, so a page heading keeps the case it is written in.
+// Every word is capitalised but these connectives, which stay lower case unless one opens or
+// closes a title or a clause; both parts of a hyphenated compound are capitalised; acronyms,
+// marks and the first word of a trade mark (The CueBlog™) stay as written.
+const MINOR_WORDS = new Set(['a', 'an', 'the', 'and', 'but', 'or', 'nor', 'for', 'so', 'yet', 'as', 'at', 'by', 'in', 'of', 'on', 'to', 'up', 'via', 'per', 'vs']);
+function titleCase(text) {
+  const tokens = text.split(/(\s+)/);
+  const words = tokens.filter((token) => token && !/^\s+$/.test(token));
+  let index = -1;
+  return tokens
+    .map((token) => {
+      if (!token || /^\s+$/.test(token)) return token;
+      index += 1;
+      const previous = words[index - 1] ?? '';
+      const edge =
+        index === 0 || index === words.length - 1 || /[:?!.]$/.test(previous) || !/[\p{L}\p{N}]/u.test(previous);
+      const markLead = words[index + 1]?.includes('™') ?? false;
+      const parts = token.split(/([-/])/);
+      return parts
+        .map((part) => {
+          const [, lead, core, tail] = part.match(/^([^\p{L}\p{N}]*)(.*?)([^\p{L}\p{N}]*)$/su);
+          if (!/^\p{L}/u.test(core) || /[.@]/.test(core)) return part;
+          if (parts.length === 1 && MINOR_WORDS.has(core.toLowerCase())) {
+            if (!edge && markLead) return part;
+            return lead + (edge ? core[0].toUpperCase() + core.slice(1) : core.toLowerCase()) + tail;
+          }
+          const first = core[0];
+          return first === first.toLowerCase() && !/\p{Lu}/u.test(core.slice(1)) ? lead + first.toUpperCase() + core.slice(1) + tail : part;
+        })
+        .join('');
+    })
+    .join('');
+}
+
 // Pre-read every page so the sidebar can use real titles.
 const meta = new Map(
   pages.map((page) => {
@@ -461,7 +495,7 @@ for (const page of pages) {
     // When the page title and site name overlap, the longer one stands alone:
     // never "The Cuesoft Handbook | Cuesoft Handbook". Escaped once for every
     // context it lands in, including meta attributes.
-    doc_title: escapeHtml(SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`),
+    doc_title: escapeHtml(titleCase(SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`)),
     site: SITE,
     og_alt: escapeHtml(CARD.alt),
     description: escapeHtml(descriptionOf(markdown)),
@@ -487,7 +521,7 @@ for (const page of pages) {
 // band: no contents or rails, one way back to the root, kept out of the index.
 {
   const home = DOCUMENTS.find((document) => document.href === BASE)?.label ?? SITE;
-  const title = 'Page not found';
+  const title = 'Page Not Found';
   const canonical = `${BASE}/404.html`;
   const description = `That page is not here. Go back to the ${SITE} home page.`;
   writeFileSync(
