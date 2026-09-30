@@ -11,6 +11,18 @@ Releases before 1.1.0 predate this file.
 ### Added
 
 - Each page lists its own headings in a rail beside it.
+- The rail marks the heading the reader has reached.
+- A button at the top of the contents folds them away.
+- Below 1280 pixels the page's headings fold out above the document.
+- The contents list the home page first and mark it current.
+- A web manifest with the family icons.
+- The build fails when the share card is older than the design system.
+
+### Changed
+
+- The share card is redrawn in the family design at 1200 by 628.
+- The share tags describe the card with alt text and size.
+- Pages are built on design system 1.40.0.
 
 ## [1.1.1] - 2026-09-29
 
