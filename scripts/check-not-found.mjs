@@ -20,7 +20,7 @@ const html = readFileSync(FILE, 'utf8');
 const problems = [];
 
 if (html.includes(EM_DASH) || /&mdash;|&#0*8212;|&#x0*2014;/i.test(html)) problems.push('carries an em dash');
-if (!/<title>Page not found \| [^<]+<\/title>/.test(html)) problems.push('title is not "Page not found | <site>"');
+if (!/<title>Page Not Found \| [^<]+<\/title>/.test(html)) problems.push('title is not "Page Not Found | <site>"');
 if (!/<meta name="robots" content="[^"]*\bnoindex\b[^"]*"/.test(html)) problems.push('is not marked noindex');
 if (!/<h1\b[^>]*>That page is not here\.<\/h1>/.test(html)) problems.push('has no "That page is not here." heading');
 const actions = [...html.matchAll(/<a\b[^>]*\bclass="[^"]*\bds-notfound__action\b[^"]*"[^>]*>/g)];
