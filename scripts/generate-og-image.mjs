@@ -2,8 +2,8 @@
  * Renders the link card, the 1200x628 image that WhatsApp, LinkedIn, X and Slack
  * unfurl, from scripts/og-card.config.mjs and the installed
  * @cuesoftinc/design-system, and records what it was rendered from in
- * scripts/og-image.manifest.json. This file is byte-identical in every Cuesoft
- * site; only the config differs.
+ * scripts/og-image.manifest.json. The Cuesoft sites share this file; only the
+ * config differs.
  *
  *   node scripts/generate-og-image.mjs
  *
@@ -152,12 +152,18 @@ export async function cardHtml() {
     );
   }
 
+  // publisher: false drops the corner mark; a logo file name swaps it for that lockup at the mark's height.
+  const lockupMark = typeof CARD.publisher === 'string';
   const mark = await dataUri(
-    'assets/logos-official/cuesoft-icon-white.png',
+    `assets/logos-official/${lockupMark ? CARD.publisher : 'cuesoft-icon-white.png'}`,
     'image/png',
   );
+  // corner: text in the top-left corner in place of the lockup, set in the corporate eyebrow role.
+  const cornerText = typeof CARD.corner === 'string';
   let left;
-  if (product) {
+  if (cornerText) {
+    left = `<span class="corner">${CARD.corner}</span>`;
+  } else if (product) {
     const lockup = await dataUri(
       `assets/logos-official/${CARD.lockup}`,
       'image/png',
@@ -170,6 +176,9 @@ export async function cardHtml() {
   }
 
   const mono = "'JetBrains Mono', ui-monospace, monospace";
+  const cornerCss = cornerText
+    ? `\n  .corner { font-family: Fustat, sans-serif; font-size: ${EYEBROW_SIZE}px; line-height: 1; color: ${ACCENT}; ${role(type, 'eyebrow').style} }`
+    : '';
   return `<!doctype html>
 <html><head><meta charset="utf-8"><style>
   ${fontFaces.join('\n  ')}
@@ -180,7 +189,7 @@ export async function cardHtml() {
     -webkit-font-smoothing: antialiased; }
   .furniture { position: absolute; left: ${MARGIN}px; right: ${MARGIN}px; top: ${MARK.top}px; height: ${MARK.height}px;
     display: flex; align-items: center; justify-content: space-between; }
-  .eyebrow { max-width: ${COLUMN}px; text-wrap: balance; font-size: ${EYEBROW_SIZE}px; line-height: 1; color: ${ACCENT}; ${eyebrow.style} }
+  .eyebrow { max-width: ${COLUMN}px; text-wrap: balance; font-size: ${EYEBROW_SIZE}px; line-height: 1; color: ${ACCENT}; ${eyebrow.style} }${cornerCss}
   .brand { display: flex; align-items: center; gap: 20px; }
   .lockup { height: ${MARK.height}px; }
   .label { padding-left: 20px; border-left: 1px solid rgb(255 255 255 / 0.2); font-family: ${mono}; font-size: 20px; line-height: 1; color: rgb(255 255 255 / 0.84); ${eyebrow.style} }
@@ -199,7 +208,7 @@ export async function cardHtml() {
   ${ground}
   <div class="furniture">
     ${left}
-    ${CARD.publisher === false ? '' : `<img class="mark" src="${mark}" alt="">`}
+    ${CARD.publisher === false ? '' : `<img class="mark"${lockupMark ? ' style="width: auto"' : ''} src="${mark}" alt="">`}
   </div>
   <div class="stage">
     <div class="copy">
@@ -294,7 +303,7 @@ async function render() {
       const inkRight = () => {
         let right = 0;
         for (const el of document.querySelectorAll(
-          '.eyebrow, .kicker, h1, .sub, .button, .label',
+          '.eyebrow, .corner, .kicker, h1, .sub, .button, .label',
         )) {
           const range = document.createRange();
           range.selectNodeContents(el);

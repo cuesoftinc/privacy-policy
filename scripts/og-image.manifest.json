@@ -1,7 +1,7 @@
 {
   "package": "@cuesoftinc/design-system",
-  "version": "1.39.1",
-  "generator": "07e4ebae84370062d5cef2325148096c1b5985b78ebc1fb7673be8cdd4d87225",
+  "version": "1.40.0",
+  "generator": "c43f97d8e4c3cf2127ee37010b57c404a4d3ab593ffa01ae4974e6d2115167b2",
   "html": "33c401c7ee11109f60e78e26a0abad4552ef5f5cbf237eb52ce3948a00b961fe",
   "image": "856c96d6302e48f0800228e875b17e4bc56bb986795a9d4bdc5f35e32b8451e1",
   "fit": {
