@@ -199,12 +199,16 @@ function groups() {
   return ordered.map((section) => ({ section, pages: sections.get(section).sort() }));
 }
 
-/** The contents down the side: one group per section, the page itself marked current. */
+/** The contents down the side: the home page, then one group per section, the page itself marked current. */
 function sectionsFor(current) {
-  return groups().map(({ section, pages: members }) => ({
-    heading: label(section),
-    links: members.map((page) => ({ label: meta.get(page).title, href: relLink(current, page), current: page === current })),
-  }));
+  const home = { label: meta.get('').title, href: relLink(current, '') || './', current: current === '' };
+  return [
+    { links: [home] },
+    ...groups().map(({ section, pages: members }) => ({
+      heading: label(section),
+      links: members.map((page) => ({ label: meta.get(page).title, href: relLink(current, page), current: page === current })),
+    })),
+  ];
 }
 
 function gitDate(page) {
