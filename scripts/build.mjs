@@ -18,6 +18,7 @@ import {
   DocShell,
   Icon,
   Lockup,
+  NotFound,
   SkipLink,
   ThemeToggle,
   themePrepaintElement,
@@ -367,6 +368,13 @@ const legal = render(
   h(DocLegal, { copyright: { owner: 'Cuesoft Inc.', year: new Date().getFullYear() }, links: LEGAL_LINKS }),
 );
 
+/** The template with its {{slots}} filled; a slot the build does not fill is an error. */
+const fill = (values) =>
+  template.replaceAll(/\{\{(\w+)\}\}/g, (_, key) => {
+    if (!(key in values)) throw new Error(`templates/page.html names {{${key}}}, which the build does not fill`);
+    return values[key];
+  });
+
 const hasSidebar = pages.some((p) => p !== '');
 for (const page of pages) {
   const { markdown, title } = meta.get(page);
@@ -462,19 +470,54 @@ for (const page of pages) {
     og_type: page ? 'article' : 'website',
     jsonld,
     skip,
+    robots: '',
     header,
     shell,
     legal,
     rum: rumTags,
   };
-  const html = template.replaceAll(/\{\{(\w+)\}\}/g, (_, key) => {
-    if (!(key in values)) throw new Error(`templates/page.html names {{${key}}}, which the build does not fill`);
-    return values[key];
-  });
 
   const target = path.join(OUT, page, 'index.html');
   mkdirSync(path.dirname(target), { recursive: true });
-  writeFileSync(target, html);
+  writeFileSync(target, fill(values));
+}
+
+// GitHub Pages serves a root 404.html, with a 404 status, for any address the
+// site does not hold. It is the same page around the design system's not-found
+// band: no contents or rails, one way back to the root, kept out of the index.
+{
+  const home = DOCUMENTS.find((document) => document.href === BASE)?.label ?? SITE;
+  const title = 'Page not found';
+  const canonical = `${BASE}/404.html`;
+  const description = `That page is not here. Go back to the ${SITE} home page.`;
+  writeFileSync(
+    path.join(OUT, '404.html'),
+    fill({
+      doc_title: escapeHtml(`${title} | ${SITE}`),
+      site: SITE,
+      og_alt: escapeHtml(CARD.alt),
+      description: escapeHtml(description),
+      canonical,
+      base: BASE,
+      og_type: 'website',
+      jsonld: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: title,
+        url: canonical,
+        isPartOf: { '@type': 'WebSite', name: SITE, url: `${BASE}/` },
+        publisher: { '@type': 'Organization', name: 'Cuesoft', url: 'https://cuesoft.io' },
+      }),
+      robots: '\n    <meta name="robots" content="noindex, follow" />',
+      skip,
+      header,
+      shell: renderToStaticMarkup(
+        h(NotFound, { eyebrow: 'Not found', title: 'That page is not here.', action: { label: `Back to ${home}`, href: '/' } }),
+      ),
+      legal,
+      rum: rumTags,
+    }),
+  );
 }
 
 // Crawlers get the same map readers do.
@@ -500,4 +543,4 @@ for (const [from, to] of Object.entries(REDIRECTS)) {
   );
 }
 
-console.log(`built ${pages.length} page(s) into _site/ (+${Object.keys(REDIRECTS).length} redirect stub(s))`);
+console.log(`built ${pages.length} page(s) and 404.html into _site/ (+${Object.keys(REDIRECTS).length} redirect stub(s))`);

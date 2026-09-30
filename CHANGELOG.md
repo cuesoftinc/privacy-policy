@@ -6,6 +6,12 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.1.3] - 2026-09-30
+
+### Added
+
+- Missing addresses show a branded not-found page instead of GitHub's.
+
 ## [1.1.2] - 2026-09-30
 
 ### Added
