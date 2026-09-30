@@ -24,6 +24,8 @@ import {
 } from '@cuesoftinc/design-system/corporate';
 import { marked } from 'marked';
 
+import CARD from './og-card.config.mjs';
+
 const ROOT = path.join(import.meta.dirname, '..');
 const OUT = path.join(ROOT, '_site');
 
@@ -197,12 +199,16 @@ function groups() {
   return ordered.map((section) => ({ section, pages: sections.get(section).sort() }));
 }
 
-/** The contents down the side: one group per section, the page itself marked current. */
+/** The contents down the side: the home page, then one group per section, the page itself marked current. */
 function sectionsFor(current) {
-  return groups().map(({ section, pages: members }) => ({
-    heading: label(section),
-    links: members.map((page) => ({ label: meta.get(page).title, href: relLink(current, page), current: page === current })),
-  }));
+  const home = { label: meta.get('').title, href: relLink(current, '') || './', current: current === '' };
+  return [
+    { links: [home] },
+    ...groups().map(({ section, pages: members }) => ({
+      heading: label(section),
+      links: members.map((page) => ({ label: meta.get(page).title, href: relLink(current, page), current: page === current })),
+    })),
+  ];
 }
 
 function gitDate(page) {
@@ -220,6 +226,38 @@ function gitDate(page) {
 function lastUpdated(page) {
   const date = gitDate(page);
   return date ? `Last updated ${date}.` : '';
+}
+
+const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: '\u00a0' };
+const decodeEntities = (text) =>
+  text.replaceAll(/&(?:#(\d+)|#x([0-9a-f]+)|([a-z]+));/gi, (whole, dec, hex, name) =>
+    dec ? String.fromCodePoint(Number(dec)) : hex ? String.fromCodePoint(parseInt(hex, 16)) : (ENTITIES[name] ?? whole),
+  );
+
+// The text of an HTML fragment: everything outside a tag. It is scanned rather
+// than matched, so a tag split by another (`<scr<b>ipt>`) cannot survive it the
+// way it survives a single replace.
+function plainText(html) {
+  let out = '';
+  let open = 0;
+  for (const char of html) {
+    if (char === '<') open += 1;
+    else if (char === '>' && open > 0) open -= 1;
+    else if (open === 0) out += char;
+  }
+  return out;
+}
+
+// A page's own headings for the rail beside it: every h2 and h3 with the id the
+// heading renderer gave it. A page with a single heading has nothing to list.
+const MIN_RAIL_HEADINGS = 2;
+function headingsOf(html) {
+  const headings = [...html.matchAll(/<h([23]) id="([^"]+)">([\s\S]*?)<\/h\1>/g)].map(([, depth, id, inner]) => ({
+    label: decodeEntities(plainText(inner)).trim(),
+    href: `#${id}`,
+    depth: Number(depth),
+  }));
+  return headings.length >= MIN_RAIL_HEADINGS ? headings : [];
 }
 
 marked.use({
@@ -377,6 +415,7 @@ for (const page of pages) {
       effectiveDate: effective ? '@@EFFECTIVE@@' : undefined,
       lede: opening ? '@@LEDE@@' : undefined,
       sections: hasSidebar ? sectionsFor(page) : [],
+      onThisPage: headingsOf(body),
       updated: lastUpdated(page) || undefined,
       children: '@@BODY@@',
     }),
@@ -416,6 +455,7 @@ for (const page of pages) {
     // context it lands in, including meta attributes.
     doc_title: escapeHtml(SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`),
     site: SITE,
+    og_alt: escapeHtml(CARD.alt),
     description: escapeHtml(descriptionOf(markdown)),
     canonical,
     base: BASE,
