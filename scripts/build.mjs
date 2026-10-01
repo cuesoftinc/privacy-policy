@@ -258,9 +258,16 @@ function gitDate(page) {
   }
 }
 
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+function britishDate(iso) {
+  const [year, month, day] = iso.split('-').map(Number);
+  return `${day} ${MONTHS[month - 1]} ${year}`;
+}
+
 function lastUpdated(page) {
   const date = gitDate(page);
-  return date ? `Last updated ${date}.` : '';
+  return date ? `Last updated ${britishDate(date)}.` : '';
 }
 
 const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: '\u00a0' };
