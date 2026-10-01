@@ -1,6 +1,6 @@
 # clients.cuesoft.io: Client Work
 
-This is Cuesoft's public case-study site. It describes selected deliveries and
+This is Cuesoft’s public case-study site. It describes selected deliveries and
 links to client websites and public open-source repositories. It is an
 informational site: there are **no accounts, contact forms, uploads or
 payments** on clients.cuesoft.io.
@@ -41,7 +41,7 @@ banner. Declining leaves the case studies and every link usable in full.
 
 ## Performance and error monitoring
 
-This site loads **Datadog**'s browser monitoring. It is operational
+This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
 banner does not stop it: it measures how quickly a page loads and records
 the errors it hits, so that we can keep the pages working.
@@ -70,7 +70,7 @@ the errors it hits, so that we can keep the pages working.
 
 ## Links to Other Sites
 
-Case studies may link to a client's live website or to a public GitHub
+Case studies may link to a client’s live website or to a public GitHub
 repository. Once you follow one of those links, that independent site or
 service controls its own processing under its own privacy terms.
 

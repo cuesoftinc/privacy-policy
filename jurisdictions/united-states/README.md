@@ -4,7 +4,7 @@ If you are in the United States, the privacy laws of your state may grant
 you rights of access, correction, deletion and portability. **We honour
 these requests from any US resident through
 [hello@cuesoft.io](mailto:hello@cuesoft.io), regardless of whether a
-statute's thresholds technically apply to us.**
+statute’s thresholds technically apply to us.**
 
 ## California (CCPA/CPRA)
 
@@ -15,7 +15,7 @@ In CCPA/CPRA terms:
 - **"Sharing":** on our seven websites (cueta.cuesoft.io,
   cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io,
   storefront.cuesoft.io, cuelearn.cuesoft.io and cuesoft.io), and only if you
-  opt in through that site's consent banner, we "share" identifiers and
+  opt in through that site’s consent banner, we "share" identifiers and
   internet-activity data with the advertising platforms
   [listed on each collection page](../../collection/all-sites/) for
   cross-context behavioral advertising. **Google signals** is part of that
@@ -47,7 +47,7 @@ In CCPA/CPRA terms:
   and enquiries, running and securing the websites, and (opt-in only)
   advertising measurement, cross-context behavioural advertising, and
   (where Google signals connects the visit to your signed-in Google
-  account) Google's own ads personalisation. **Disclosed to:** the
+  account) Google’s own ads personalisation. **Disclosed to:** the
   service providers on the
   [processors page](../../handling/processors/) under contracts limiting
   their use of it, and, only on opt-in, the advertising platforms, as
@@ -60,7 +60,7 @@ In CCPA/CPRA terms:
   **non-discrimination**: we will never deny services, charge different
   prices or degrade quality because you exercised a privacy right.
 - **Authorised agents** may submit requests on your behalf; we verify the
-  agent's authority and your identity, as the
+  agent’s authority and your identity, as the
   [rights page](../../rights/your-rights/) describes.
 
 ## Other state privacy laws
@@ -68,7 +68,7 @@ In CCPA/CPRA terms:
 Residents of states with comprehensive privacy laws (Virginia, Colorado,
 Connecticut, Utah, Texas, Oregon, Montana and others) hold comparable
 rights of access, correction, deletion, portability and opt-out of
-targeted advertising. Each website's own consent banner is our opt-in
+targeted advertising. Each website’s own consent banner is our opt-in
 mechanism for targeted advertising everywhere, and a choice made on one
 site does not carry to another (the default is off on every site in
 every state)
@@ -81,7 +81,7 @@ still refuse, we will point you to your state attorney general.
 
 Where a breach affects US residents, we notify affected individuals and,
 where required, state authorities and consumer-reporting agencies, per the
-breach-notification law of each affected resident's state: see
+breach-notification law of each affected resident’s state: see
 [breach notification](../../handling/breach/).
 
 ## Do Not Track and preference signals

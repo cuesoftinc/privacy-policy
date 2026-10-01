@@ -8,7 +8,7 @@ arrangement.
 
 Our processing is governed by the **Nigeria Data Protection Act 2023**
 (NDPA) and its subsidiary instruments, including the Nigeria Data
-Protection Commission's **General Application and Implementation Directive
+Protection Commission’s **General Application and Implementation Directive
 (GAID) 2025**.
 
 ## Lawful bases
@@ -20,7 +20,7 @@ state the basis for each collection on the
 (steps at your request prior to one), except Cueprise™ demo requests,
 Storefront™ enquiries and Cuelearn™ demo requests, which rest on legitimate interest because the
 agreement that may follow is with your organisation rather than with you;
-infrastructure, Ace and the websites' and documentation sites' performance and error
+infrastructure, Ace and the websites’ and documentation sites’ performance and error
 monitoring on legitimate interest, and website analytics and advertising tags on consent, which you can withdraw
 as easily as you gave it.
 
@@ -50,8 +50,8 @@ likely to put your rights and freedoms at risk: see
 
 ## Transfers out of Nigeria
 
-Cross-border transfers follow the NDPA's adequacy and safeguard
-provisions and the NDPC's implementing instruments: see
+Cross-border transfers follow the NDPA’s adequacy and safeguard
+provisions and the NDPC’s implementing instruments: see
 [international transfers](../../handling/transfers/).
 
 ## Registration status
@@ -59,9 +59,9 @@ provisions and the NDPC's implementing instruments: see
 The NDPC designates a **data controller of major importance** on any one of
 three independent grounds: processing the personal data of more than 200
 data subjects in six months; carrying out commercial ICT services on a
-device that holds another person's data; or processing personal data as an
+device that holds another person’s data; or processing personal data as an
 organisation or service provider in one of thirteen named sectors. Those
-sectors include education, and the Commission's own classification of
+sectors include education, and the Commission’s own classification of
 designated entities names corporate training service providers.
 
 Whether Cuesoft is designated on any of those grounds is under review. This

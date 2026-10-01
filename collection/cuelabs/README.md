@@ -18,7 +18,7 @@ Application decisions are made by humans.
 
 ## Public GitHub data
 
-The site displays contributors to our open-source products using GitHub's
+The site displays contributors to our open-source products using GitHub’s
 public API: information those contributors have already made public on
 GitHub, shown with attribution. **Purpose:** crediting contributors and
 showing the provenance of our open-source work. **Legal basis:** our
@@ -75,21 +75,21 @@ separate and run either way):
   our own reports (since February 2024 Google signals is not part of how
   Analytics counts users), so we do not see your phone and your laptop as
   one person. And Google uses the visit for its own ads personalisation as
-  well as for our measurement. You control it on Google's side,
+  well as for our measurement. You control it on Google’s side,
   independently of us, at
   [myadcenter.google.com](https://myadcenter.google.com) and
-  [Google's activity controls](https://myaccount.google.com/activitycontrols):
+  [Google’s activity controls](https://myaccount.google.com/activitycontrols):
   switching Ads Personalisation off there stops it for every site, not
   just ours. Declining our banner prevents it entirely.
 - **Decline and none of them load.** The site works identically either
   way.
-- **Withdraw any time** via the site's **Cookie preferences** link.
+- **Withdraw any time** via the site’s **Cookie preferences** link.
   Withdrawal stops the tags loading from that point on; it does not delete
   cookies already set (you can clear those in your browser). What happens
   to data already collected differs by provider: Google Analytics holds it
   as our **processor**, on our instructions, so the
   [rights page](../../rights/your-rights/) reaches it. The exception is what
-  Google signals feeds into Google's own ads personalisation, which Google
+  Google signals feeds into Google’s own ads personalisation, which Google
   controls rather than us: manage that in your
   [Google account](https://myadcenter.google.com). The four advertising
   platforms hold what they collected as **independent businesses** under
@@ -102,7 +102,7 @@ separate and run either way):
 
 ## Performance and error monitoring
 
-This site loads **Datadog**'s browser monitoring. It is operational
+This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
 banner does not stop it: it measures how quickly a page loads and records
 the errors it hits, so that we can keep the pages working.

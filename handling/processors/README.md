@@ -19,11 +19,11 @@ process data only on our instructions:
 | Google Analytics | Measuring traffic and journeys on the websites, on our instructions, once you opt in. **Google signals is a partial exception:** where you are signed in to Google with Ads Personalisation on, Google also uses the visit for its own ads personalisation, and for that use it is not acting solely on our instructions: see the [advertising platforms](#advertising-platforms-are-not-processors) note below |
 | Certifier | Issuing CueTA™ credentials: the certificate a graduate receives, and the public page that verifies it |
 | GitHub | Hosting for the documentation sites; public API for the contributors display |
-| AI platform provider | Generating Ace's answers: the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
+| AI platform provider | Generating Ace’s answers: the provider may change, and we will name the current one on request via [hello@cuesoft.io](mailto:hello@cuesoft.io) |
 
 ## Advertising platforms are not processors
 
-The advertising platforms behind the websites' opt-in tags (**Google Ads,
+The advertising platforms behind the websites’ opt-in tags (**Google Ads,
 Meta, LinkedIn and X**) act as **independent businesses under their own
 policies**, not as our processors, once your opt-in lets their tags load.
 Google therefore wears more than one kind of hat, and we treat them separately: its
@@ -40,7 +40,7 @@ click-to-load embed on cuesoft.io) loads only if you click the player.
 
 Programme coordination happens on **WhatsApp** (CueTA™ cohorts) and
 **Discord** (CueLABS™ interns), and client-representative discussion may
-happen on WhatsApp under an engagement's terms.
+happen on WhatsApp under an engagement’s terms.
 
 - Joining a group makes your profile name (and on WhatsApp, your phone
   number) visible to other group members.
