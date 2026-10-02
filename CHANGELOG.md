@@ -6,6 +6,21 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.3.0] - 2026-10-02
+
+### Changed
+
+- Design system updated to 1.46.0.
+
+### Added
+
+- A collection page for account.cuesoft.io.
+
+### Fixed
+
+- Client Work and account disclose their advertising tags.
+- Cookieless analytics is disclosed on every site, the docs sites included.
+
 ## [1.2.1] - 2026-10-02
 
 ### Changed
