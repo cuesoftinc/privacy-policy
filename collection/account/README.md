@@ -1,30 +1,19 @@
-# clients.cuesoft.io: Client Work
+# account.cuesoft.io: Account Site
 
-This is Cuesoft’s public case-study site. It describes selected deliveries and
-links to client websites and public open-source repositories. It is an
-informational site: there are **no accounts, contact forms, uploads or
-payments** on clients.cuesoft.io.
-
-## Server and Security Logs
-
-The site is delivered through Cloudflare and Google Firebase App Hosting.
-Standard technical data (IP address, browser, requested page and timestamp)
-appears in short-lived infrastructure logs for security, abuse prevention and
-reliability.
-
-- **Legal basis:** our legitimate interest in operating a secure website
-  (GDPR Art. 6(1)(f)).
-- **Retention:** no more than 30 days: see
-  [retention](../../handling/retention/).
+This is the Cuesoft sign-in page. It has **no forms of its own and no payments**,
+and it keeps the settings you change in your own browser. Apart from the
+server logs and cookieless analytics described in
+[what every site collects](../all-sites/), the tags and monitoring below are
+all it collects.
 
 ## Analytics and advertising tags: opt-in only
 
 This site uses analytics and advertising tags on its live address, gated
 behind a consent banner. None of them loads, and none of their cookies is
-set, until you press **Accept** (the
-[performance and error monitoring](#performance-and-error-monitoring) below is
-separate and runs either way). Declining leaves the case studies and every link
-usable in full:
+set, until you press **Accept** (the cookieless Cloudflare measurement
+described in [what every site collects](../all-sites/) and the
+[performance and error monitoring](#performance-and-error-monitoring) below are
+separate and run either way):
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
@@ -40,14 +29,10 @@ usable in full:
   Analytics uses the IP address in passing to derive an approximate
   location and then discards it: the address itself is not stored, and the
   location is what is kept. Google Analytics keeps
-  this for **14 months**: see [retention](../../handling/retention/). There
-  are no forms on this site, so no form contents reach any of them.
-- **One event beyond page views:**
-  when you click through from a case study to the CueHIRE contact page,
-  **Meta** is told that it happened, so it can credit the ad you arrived
-  from. The other platforms receive page views and nothing more. The event
-  records the fact of the click and nothing else: not your name, not your
-  email, and not your phone number.
+  this for **14 months**: see [retention](../../handling/retention/). We
+  do not send what you type on this site to any of them.
+- **Page views only:** this site sends no conversion events. The platforms
+  are told which pages are viewed and nothing about what you do on them.
 - **Matching switched off:** we turn off Meta’s automatic matching and
   automatic event detection and X’s automatic advanced matching, so those
   platforms do not read details from the page to identify you.
@@ -116,14 +101,11 @@ the errors it hits, so that we can keep the pages working.
   (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
   time.
 
-## Links to Other Sites
+## What this site does not do
 
-Case studies may link to a client’s live website or to a public GitHub
-repository. Once you follow one of those links, that independent site or
-service controls its own processing under its own privacy terms.
-
-## Your Rights
-
-You can exercise the rights described in our
-[Privacy Policy](https://privacy.cuesoft.io), including access, correction,
-deletion and objection, through [hello@cuesoft.io](mailto:hello@cuesoft.io).
+No payment data is ever requested: see the
+[Terms of Service](https://terms.cuesoft.io). Apart from the
+[performance and error monitoring](#performance-and-error-monitoring) above, nothing
+loads before you accept, and the cookieless Cloudflare measurement described
+in [what every site collects](../all-sites/) stays outside the consent gate
+because it sets no cookie.

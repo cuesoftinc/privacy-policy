@@ -6,6 +6,18 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.3.0] - 2026-10-02
+
+### Added
+
+- Collection notice for account.cuesoft.io.
+- Advertising tags disclosed for Client Work and the account site.
+
+### Changed
+
+- Site counts now name the nine sites carrying advertising tags.
+- Effective date is 2 October 2026.
+
 ## [1.2.1] - 2026-10-02
 
 ### Changed

@@ -2,7 +2,9 @@
 
 The following applies to **cuesoft.io**, **cueta.cuesoft.io**,
 **cuelabs.cuesoft.io**, **cuehire.cuesoft.io**, **cueprise.cuesoft.io**,
-**storefront.cuesoft.io** and **cuelearn.cuesoft.io** alike.
+**storefront.cuesoft.io** and **cuelearn.cuesoft.io** alike. The monitoring
+and advertising tags sections below also cover
+[clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/).
 
 ## Server and security logs
 
@@ -25,7 +27,7 @@ are.
 ## Performance and error monitoring
 
 Every website loads **Datadog**’s browser monitoring: the seven above,
-[clients.cuesoft.io](../clients/) and account.cuesoft.io. It is operational
+[clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/). It is operational
 telemetry, so it does not wait for the consent banner, and declining the
 banner does not stop it: it measures how quickly a page loads and records
 the errors it hits, so that we can keep the pages working. Each site’s own
@@ -37,13 +39,9 @@ data is kept and the legal basis:
 [Cueprise™](../../cueprise/#performance-and-error-monitoring),
 [Storefront™](../storefront/#performance-and-error-monitoring),
 [Cuelearn™](../cuelearn/#performance-and-error-monitoring),
-[cuesoft.io](../cuesoft/#performance-and-error-monitoring) and
-[Client Work](../clients/#performance-and-error-monitoring).
-
-account.cuesoft.io has no page of its own: it has no forms, and it keeps the
-settings you change in your own browser. Apart from the server logs and the
-cookieless analytics above, the monitoring described on those pages is all it
-collects.
+[cuesoft.io](../cuesoft/#performance-and-error-monitoring),
+[Client Work](../clients/#performance-and-error-monitoring) and
+[account.cuesoft.io](../account/#performance-and-error-monitoring).
 
 ## Ace, the assistant
 
@@ -84,8 +82,8 @@ read.
 
 ## What no site does
 
-The seven public websites (CueTA™, CueLABS™, CueHIRE™, Cueprise™,
-Storefront™, Cuelearn™ and cuesoft.io) carry analytics and advertising tags, and on every one of them those tags
+Nine websites (CueTA™, CueLABS™, CueHIRE™, Cueprise™, Storefront™,
+Cuelearn™, cuesoft.io, clients.cuesoft.io and account.cuesoft.io) carry analytics and advertising tags, and on every one of them those tags
 are **gated behind a consent banner**: until you press
 Accept, the site sets **no advertising or analytics cookies** and loads
 **no advertising scripts and no third-party analytics** beyond the cookieless
@@ -95,8 +93,10 @@ for The CueShow™ loads if you click it and may then set Spotify’s own
 cookies, which the banner does not govern: see
 [cuesoft.io](../cuesoft/). Each website’s own page lists exactly which tags it
 loads and who receives the data: [CueTA™](../cueta/),
-[CueLABS™](../cuelabs/), [CueHIRE™](../cuehire/) and
-[cuesoft.io](../cuesoft/). The [documentation sites](../docs-sites/) carry
+[CueLABS™](../cuelabs/), [CueHIRE™](../cuehire/),
+[Cueprise™](../../cueprise/), [Storefront™](../storefront/),
+[Cuelearn™](../cuelearn/), [cuesoft.io](../cuesoft/),
+[Client Work](../clients/) and [account.cuesoft.io](../account/). The [documentation sites](../docs-sites/) carry
 none of them, only the performance and error monitoring described on their
 page. No website ever asks for payment data: see the
 [Terms of Service](https://terms.cuesoft.io).

@@ -66,11 +66,13 @@ such transfer happens at all.
 ## Cookies and ePrivacy
 
 Two things we use require consent. The analytics and advertising setup on
-our seven websites ([CueTA™](../../collection/cueta/),
+our nine websites with these tags ([CueTA™](../../collection/cueta/),
 [CueLABS™](../../collection/cuelabs/), [CueHIRE™](../../collection/cuehire/),
 [Cueprise™](../../cueprise/), [Storefront™](../../collection/storefront/),
-[Cuelearn™](../../collection/cuelearn/) and
-[cuesoft.io](../../collection/cuesoft/)) is off until you accept and listed
+[Cuelearn™](../../collection/cuelearn/),
+[cuesoft.io](../../collection/cuesoft/),
+[Client Work](../../collection/clients/) and
+[account.cuesoft.io](../../collection/account/)) is off until you accept and listed
 provider-by-provider on each site’s collection page. Separately,
 on cuesoft.io the Spotify player for The CueShow™ loads only if you click
 it and may then set Spotify’s own cookies under Spotify’s policy; the
