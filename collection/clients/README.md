@@ -21,9 +21,10 @@ reliability.
 
 This site uses analytics and advertising tags on its live address, gated
 behind a consent banner. None of them loads, and none of their cookies is
-set, until you press **Accept** (the
-[performance and error monitoring](#performance-and-error-monitoring) below is
-separate and runs either way). Declining leaves the case studies and every link
+set, until you press **Accept** (the cookieless Cloudflare measurement
+described in [what every site collects](../all-sites/) and the
+[performance and error monitoring](#performance-and-error-monitoring) below are
+separate and run either way). Declining leaves the case studies and every link
 usable in full:
 
 | Provider | Purpose | Their policy |

@@ -31,7 +31,7 @@ those relationships alongside this policy.
   advertising tags, and
   only if you opt in through each site’s consent banner. Separately, and on
   every site whatever you choose, we measure aggregate traffic with
-  Cloudflare’s **cookieless** analytics on the seven marketing sites among them, which
+  Cloudflare’s **cookieless** analytics on every website, the documentation sites included, which
   stores nothing on your device and identifies nobody: see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
@@ -42,8 +42,8 @@ those relationships alongside this policy.
   and the account site at [account.cuesoft.io](collection/account/) is the
   sign-in page; each has its own collection notice and loads its tags only
   after its own consent banner accepts them; the documentation sites carry
-  no such tags, only the performance and error monitoring described on
-  [their page](collection/docs-sites/).
+  no such tags, only the cookieless analytics and the performance and error
+  monitoring described on [their page](collection/docs-sites/).
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don’t type sensitive personal information into a chat box.
 - You can exercise your rights (access, correction, deletion and more)

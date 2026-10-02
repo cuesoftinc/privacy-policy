@@ -2,8 +2,8 @@
 
 The following applies to **cuesoft.io**, **cueta.cuesoft.io**,
 **cuelabs.cuesoft.io**, **cuehire.cuesoft.io**, **cueprise.cuesoft.io**,
-**storefront.cuesoft.io** and **cuelearn.cuesoft.io** alike. The monitoring
-and advertising tags sections below also cover
+**storefront.cuesoft.io** and **cuelearn.cuesoft.io** alike. The cookieless
+analytics, monitoring and advertising tags sections below also cover
 [clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/).
 
 ## Server and security logs
@@ -19,7 +19,9 @@ infrastructure logs used for security, abuse prevention and reliability.
 
 ## Cookieless analytics
 
-We measure aggregate traffic with Cloudflare Web Analytics, a script that
+On every website, the [documentation sites](../docs-sites/),
+[clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/)
+included, we measure aggregate traffic with Cloudflare Web Analytics, a script that
 uses **no cookies**, no persistent identifiers, no fingerprinting and no
 cross-site tracking. It tells us page views and performance, not who you
 are.
@@ -97,6 +99,6 @@ loads and who receives the data: [CueTA™](../cueta/),
 [Cueprise™](../../cueprise/), [Storefront™](../storefront/),
 [Cuelearn™](../cuelearn/), [cuesoft.io](../cuesoft/),
 [Client Work](../clients/) and [account.cuesoft.io](../account/). The [documentation sites](../docs-sites/) carry
-none of them, only the performance and error monitoring described on their
-page. No website ever asks for payment data: see the
+none of them, only the cookieless analytics above and the performance and
+error monitoring described on their page. No website ever asks for payment data: see the
 [Terms of Service](https://terms.cuesoft.io).

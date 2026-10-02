@@ -7,6 +7,10 @@ infrastructure logs apply, per
 
 - **No forms**, and none of the analytics and advertising tags described on
   [what every site collects](../all-sites/).
+- **Cookieless analytics.** These sites also use Cloudflare Web Analytics,
+  as described on [what every site collects](../all-sites/#cookieless-analytics):
+  no cookies, no persistent identifiers, no fingerprinting and no cross-site
+  tracking, and it runs whatever you choose.
 - **Performance and error monitoring.** On their live addresses these sites
   load **Datadog**’s browser monitoring. It is operational telemetry, so it
   does not wait for a consent banner: it measures how quickly a page loads
