@@ -28,7 +28,7 @@ rights, and you may [object](../../rights/your-rights/) at any time.
 
 ## Your rights
 
-You hold every right in Arts. 15–21 GDPR: access, rectification, erasure,
+You hold every right in Arts. 15 to 21 GDPR: access, rectification, erasure,
 restriction, portability, and objection, including an unconditional right
 to object to direct marketing, and the right to withdraw consent under
 Art. 7(3) as easily as you gave it. The
@@ -54,7 +54,7 @@ name a representative if our processing ever grows past the exemption.
 ## Transfers
 
 Transfers of data handled by our **processors** are safeguarded by SCCs
-(with UK Addendum/IDTA) and, where the processor is certified, the EU–US
+(with UK Addendum/IDTA) and, where the processor is certified, the EU-US
 Data Privacy Framework. The **advertising platforms are not processors**,
 so those clauses are not what covers them: a transfer to a certified
 recipient rests on the Framework’s adequacy decision, and one to any other

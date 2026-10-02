@@ -11,7 +11,7 @@ rely on:
 1. the **EU Standard Contractual Clauses** (with the **UK Addendum** or
    **IDTA** where the UK GDPR applies) incorporated into our processors’
    data processing agreements;
-2. the **EU–US Data Privacy Framework**, where a processor is certified
+2. the **EU-US Data Privacy Framework**, where a processor is certified
    under it; and
 3. for transfers between Cuesoft Inc. and Cuesoft Nigeria Limited, our
    intra-group arrangement applying the same safeguards.
@@ -26,7 +26,7 @@ where you have opted in through a site’s consent banner.
 Which mechanism applies depends on the recipient, and the distinction
 matters because one of them is ordinary and the other is exceptional:
 
-- **Where the platform is certified under the EU–US Data Privacy
+- **Where the platform is certified under the EU-US Data Privacy
   Framework** and the transfer falls inside its certification, the
   transfer rests on the European Commission’s **adequacy decision** for
   the Framework (Art. 45). Nothing exceptional is involved, and the

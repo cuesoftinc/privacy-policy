@@ -1,6 +1,6 @@
-// Fails when an em dash (U+2014), or an en dash (U+2013) set between spaces as
-// a dash, appears in any source text file or in the built _site. Write a colon,
-// a comma or parentheses. The package stylesheet's comments are not copy, so
+// Fails when an em dash (U+2014) or an en dash (U+2013) appears in any source
+// text file or in the built _site. Write a colon, a comma or parentheses, and
+// "to" for a range. The package stylesheet's comments are not copy, so
 // CSS is checked with its comments removed, and assets/vendor holds third-party
 // scripts. Runs after every build (postbuild) and in CI.
 //
@@ -12,7 +12,7 @@ import path from 'node:path';
 const ROOT = path.join(import.meta.dirname, '..');
 const SITE = path.join(ROOT, '_site');
 const EM_DASH = String.fromCharCode(0x2014);
-const SPACED_EN_DASH = ` ${String.fromCharCode(0x2013)} `;
+const EN_DASH = String.fromCharCode(0x2013);
 const SKIPPED_DIRECTORIES = new Set(['.git', 'node_modules', '_site']);
 
 const walk = (dir) =>
@@ -49,7 +49,7 @@ function scan(file, { skipVendor = false } = {}) {
   // Comments become blank lines, so the reported line numbers stay true.
   if (file.endsWith('.css')) text = text.replaceAll(/\/\*[\s\S]*?\*\//g, (comment) => comment.replaceAll(/[^\n]/g, ''));
   text.split('\n').forEach((line, index) => {
-    if (line.includes(EM_DASH) || line.includes(SPACED_EN_DASH)) {
+    if (line.includes(EM_DASH) || line.includes(EN_DASH)) {
       problems.push(`${relative}:${index + 1}: ${line.trim().slice(0, 100)}`);
     }
   });
@@ -60,10 +60,10 @@ const source = sourceFiles().filter((file) => scan(file));
 const built = existsSync(SITE) ? walk(SITE).filter((file) => scan(file, { skipVendor: true })) : [];
 
 if (problems.length) {
-  console.error(`check-dashes: ${problems.length} dash(es); write a colon, a comma or parentheses instead`);
+  console.error(`check-dashes: ${problems.length} dash(es); write a colon, a comma or parentheses, and "to" for a range`);
   for (const problem of problems.slice(0, 40)) console.error(`  ${problem}`);
   process.exit(1);
 }
 console.log(
-  `check-dashes: ${source.length} source file(s)${built.length ? ` and ${built.length} built file(s)` : ' (no _site to check)'}, no em dash`,
+  `check-dashes: ${source.length} source file(s)${built.length ? ` and ${built.length} built file(s)` : ' (no _site to check)'}, no em or en dash`,
 );
