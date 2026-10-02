@@ -1,40 +1,19 @@
-# cueta.cuesoft.io: Cuesoft Talent Academy
+# account.cuesoft.io: Account Site
 
-## Application form
-
-- **What:** name, email, phone number, country of residence, the track you
-  applied for, your programme intent, and your answer to the mailing-list
-  box.
-- **Why:** to process your application, run your free consultation call
-  and administer enrolment.
-- **Where:** records are stored in Airtable, our forms database.
-- **Legal basis:** steps at your request prior to a contract
-  (GDPR Art. 6(1)(b)), and the equivalent contractual basis under the NDPA.
-  The mailing-list box is the one exception: ticking it is **consent**
-  (GDPR Art. 6(1)(a)). Leave it unticked and your application and its
-  confirmation are unaffected; tick it and you can withdraw at any time by
-  emailing [hello@cuesoft.io](mailto:hello@cuesoft.io).
-- **Confirmation:** we email you a receipt, copied to
-  [cueta@cuesoft.io](mailto:cueta@cuesoft.io): see
-  [what every site collects](../all-sites/).
-
-The country select arrives pre-filled with the country Cloudflare’s edge
-places you in, which is a guess from your IP address. You can change it
-before you submit, and what we store is your answer, not the guess.
-
-Application decisions are made by humans; we do not make solely automated
-decisions with legal or similarly significant effects.
+This is the Cuesoft sign-in page. It has **no forms of its own and no payments**,
+and it keeps the settings you change in your own browser. Apart from the
+server logs and cookieless analytics described in
+[what every site collects](../all-sites/), the tags and monitoring below are
+all it collects.
 
 ## Analytics and advertising tags: opt-in only
 
-All nine Cuesoft websites that carry them (CueTA™, CueLABS™, CueHIRE™,
-Cueprise™, Storefront™, Cuelearn™, cuesoft.io, clients.cuesoft.io and
-account.cuesoft.io)
-use analytics and advertising tags, and on all of them the tags are gated
-behind a consent banner. The documentation sites carry none of them, only
-the performance and error monitoring described on
-[their page](../docs-sites/). Only if you press **Accept** does the site
-load them:
+This site uses analytics and advertising tags on its live address, gated
+behind a consent banner. None of them loads, and none of their cookies is
+set, until you press **Accept** (the cookieless Cloudflare measurement
+described in [what every site collects](../all-sites/) and the
+[performance and error monitoring](#performance-and-error-monitoring) below are
+separate and run either way):
 
 | Provider | Purpose | Their policy |
 | --- | --- | --- |
@@ -50,14 +29,13 @@ load them:
   Analytics uses the IP address in passing to derive an approximate
   location and then discards it: the address itself is not stored, and the
   location is what is kept. Google Analytics keeps
-  this for **14 months**: see [retention](../../handling/retention/).
-- **One event beyond page views:**
-  when you submit an application,
-  **Google Ads, Meta, LinkedIn and X** are told that it happened, so
-  they can credit the ad you arrived from. Google Analytics is not: it
-  receives the page views described above and nothing more. The event
-  records the fact of the application and nothing else: not your name, not
-  your email, not your phone number, and not what you wrote.
+  this for **14 months**: see [retention](../../handling/retention/). We
+  do not send what you type on this site to any of them.
+- **Page views only:** this site sends no conversion events. The platforms
+  are told which pages are viewed and nothing about what you do on them.
+- **Matching switched off:** we turn off Meta’s automatic matching and
+  automatic event detection and X’s automatic advanced matching, so those
+  platforms do not read details from the page to identify you.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account
@@ -89,8 +67,8 @@ load them:
   platforms hold what they collected as **independent businesses** under
   their own policies: see
   [processors and platforms](../../handling/processors/).
-- We do **not** send your form contents (email, phone) to these
-  advertising platforms.
+- An opt-out preference signal (**Global Privacy Control**) overrides a
+  stored opt-in for as long as your browser sends it.
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
@@ -123,11 +101,11 @@ the errors it hits, so that we can keep the pages working.
   (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
   time.
 
-## Cohort communication
+## What this site does not do
 
-Enrolled learners are contacted about their cohort via the details they
-provided, including WhatsApp groups for cohort coordination: see
-[processors and platforms](../../handling/processors/) for what joining a
-group exposes.
-
-Everything on [what every site collects](../all-sites/) applies.
+No payment data is ever requested: see the
+[Terms of Service](https://terms.cuesoft.io). Apart from the
+[performance and error monitoring](#performance-and-error-monitoring) above, nothing
+loads before you accept, and the cookieless Cloudflare measurement described
+in [what every site collects](../all-sites/) stays outside the consent gate
+because it sets no cookie.
