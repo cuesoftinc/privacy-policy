@@ -1,14 +1,14 @@
 # handbook.cuesoft.io, privacy.cuesoft.io, terms.cuesoft.io
 
 The documentation sites (the company handbook and these legal pages) are
-static documentation served via **GitHub Pages**, so GitHub's
+static documentation served via **GitHub Pages**, so GitHub’s
 infrastructure logs apply, per
-[GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
+[GitHub’s privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
 - **No forms**, and none of the analytics and advertising tags described on
   [what every site collects](../all-sites/).
 - **Performance and error monitoring.** On their live addresses these sites
-  load **Datadog**'s browser monitoring. It is operational telemetry, so it
+  load **Datadog**’s browser monitoring. It is operational telemetry, so it
   does not wait for a consent banner: it measures how quickly a page loads
   and records the errors it hits, so that we can keep the pages working.
   - **What Datadog receives:** the page addresses you visit and the page

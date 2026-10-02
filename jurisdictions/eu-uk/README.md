@@ -39,7 +39,7 @@ our response times, which follow Art. 12.
 
 You may lodge a complaint with your local supervisory authority (the
 list is at [edpb.europa.eu](https://www.edpb.europa.eu/about-edpb/about-edpb/members_en))
-or, in the UK, with the **Information Commissioner's Office**
+or, in the UK, with the **Information Commissioner’s Office**
 ([ico.org.uk](https://ico.org.uk/)). You may also seek a judicial remedy.
 We would appreciate the chance to resolve your concern first.
 
@@ -57,7 +57,7 @@ Transfers of data handled by our **processors** are safeguarded by SCCs
 (with UK Addendum/IDTA) and, where the processor is certified, the EU–US
 Data Privacy Framework. The **advertising platforms are not processors**,
 so those clauses are not what covers them: a transfer to a certified
-recipient rests on the Framework's adequacy decision, and one to any other
+recipient rests on the Framework’s adequacy decision, and one to any other
 platform rests on your explicit consent as a derogation, with the risks
 that carries spelled out on
 [international transfers](../../handling/transfers/). Declining means no
@@ -71,13 +71,13 @@ our seven websites ([CueTA™](../../collection/cueta/),
 [Cueprise™](../../cueprise/), [Storefront™](../../collection/storefront/),
 [Cuelearn™](../../collection/cuelearn/) and
 [cuesoft.io](../../collection/cuesoft/)) is off until you accept and listed
-provider-by-provider on each site's collection page. Separately,
+provider-by-provider on each site’s collection page. Separately,
 on cuesoft.io the Spotify player for The CueShow™ loads only if you click
-it and may then set Spotify's own cookies under Spotify's policy; the
-click is the consent, and the site's banner does not govern it: see
+it and may then set Spotify’s own cookies under Spotify’s policy; the
+click is the consent, and the site’s banner does not govern it: see
 [cuesoft.io](../../collection/cuesoft/). The documentation sites store
 a theme preference locally; it identifies nothing and leaves your browser
-never. The websites and the documentation sites also load Datadog's
+never. The websites and the documentation sites also load Datadog’s
 performance and error monitoring, which the banner does not govern: see
 [what every site collects](../../collection/all-sites/#performance-and-error-monitoring)
 and the [documentation sites](../../collection/docs-sites/).

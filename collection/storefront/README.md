@@ -5,20 +5,20 @@ business. This page covers the **marketing site** at storefront.cuesoft.io,
 where you can read about it and ask for one.
 
 A storefront we have built for somebody else is a different matter: it is
-that business's own website, they are the controller of whatever their
+that business’s own website, they are the controller of whatever their
 customers enter on it, and this policy does not describe it. Where that
 storefront runs on a licensed Cueprise™ deployment, what Cuesoft holds as
 their processor is set out in the
 [Cueprise™ privacy notice](../../cueprise/). Where it was built as a
 CueHIRE™ engagement against their own back office instead, that notice does
-not reach it and the engagement's own data terms govern what we hold and for
+not reach it and the engagement’s own data terms govern what we hold and for
 how long.
 
 ## Enquiry form
 
 - **What:** your name, work email, business name, the sector you picked from
   the list, and anything you added in the message box. We also record the
-  country Cloudflare's edge places you in: derived from your IP address as
+  country Cloudflare’s edge places you in: derived from your IP address as
   you submit rather than asked for on the form, and stored as the country
   name, not the address itself. It tells us which of our two entities should
   answer you.
@@ -82,21 +82,21 @@ separate and run either way):
   our own reports (since February 2024 Google signals is not part of how
   Analytics counts users), so we do not see your phone and your laptop as
   one person. And Google uses the visit for its own ads personalisation as
-  well as for our measurement. You control it on Google's side,
+  well as for our measurement. You control it on Google’s side,
   independently of us, at
   [myadcenter.google.com](https://myadcenter.google.com) and
-  [Google's activity controls](https://myaccount.google.com/activitycontrols):
+  [Google’s activity controls](https://myaccount.google.com/activitycontrols):
   switching Ads Personalisation off there stops it for every site, not
   just ours. Declining our banner prevents it entirely.
 - **Decline and none of them load.** The site works identically either
   way.
-- **Withdraw any time** via the site's **Cookie preferences** link.
+- **Withdraw any time** via the site’s **Cookie preferences** link.
   Withdrawal stops the tags loading from that point on; it does not delete
   cookies already set (you can clear those in your browser). What happens
   to data already collected differs by provider: Google Analytics holds it
   as our **processor**, on our instructions, so the
   [rights page](../../rights/your-rights/) reaches it. The exception is what
-  Google signals feeds into Google's own ads personalisation, which Google
+  Google signals feeds into Google’s own ads personalisation, which Google
   controls rather than us: manage that in your
   [Google account](https://myadcenter.google.com). The four advertising
   platforms hold what they collected as **independent businesses** under
@@ -109,7 +109,7 @@ separate and run either way):
 
 ## Performance and error monitoring
 
-This site loads **Datadog**'s browser monitoring. It is operational
+This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
 banner does not stop it: it measures how quickly a page loads and records
 the errors it hits, so that we can keep the pages working.

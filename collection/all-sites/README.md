@@ -24,11 +24,11 @@ are.
 
 ## Performance and error monitoring
 
-Every website loads **Datadog**'s browser monitoring: the seven above,
+Every website loads **Datadog**’s browser monitoring: the seven above,
 [clients.cuesoft.io](../clients/) and account.cuesoft.io. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
 banner does not stop it: it measures how quickly a page loads and records
-the errors it hits, so that we can keep the pages working. Each site's own
+the errors it hits, so that we can keep the pages working. Each site’s own
 page states what Datadog receives there, the one cookie it sets, how long the
 data is kept and the legal basis:
 [CueTA™](../cueta/#performance-and-error-monitoring),
@@ -74,7 +74,7 @@ click**. We use that to tell whether confirmations are arriving and being
 read.
 
 - **Legal basis:** sending the confirmation rests on the same basis as the
-  form itself, set out on each site's page. The open and click measurement
+  form itself, set out on each site’s page. The open and click measurement
   rests on our legitimate interest in knowing our own mail reaches people
   (GDPR Art. 6(1)(f)): you may
   [object](../../rights/your-rights/) at any time.
@@ -91,9 +91,9 @@ Accept, the site sets **no advertising or analytics cookies** and loads
 **no advertising scripts and no third-party analytics** beyond the cookieless
 Cloudflare measurement and the performance and error monitoring above. One
 further exception, on cuesoft.io only: the Spotify player
-for The CueShow™ loads if you click it and may then set Spotify's own
+for The CueShow™ loads if you click it and may then set Spotify’s own
 cookies, which the banner does not govern: see
-[cuesoft.io](../cuesoft/). Each website's own page lists exactly which tags it
+[cuesoft.io](../cuesoft/). Each website’s own page lists exactly which tags it
 loads and who receives the data: [CueTA™](../cueta/),
 [CueLABS™](../cuelabs/), [CueHIRE™](../cuehire/) and
 [cuesoft.io](../cuesoft/). The [documentation sites](../docs-sites/) carry

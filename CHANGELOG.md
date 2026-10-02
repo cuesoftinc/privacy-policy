@@ -6,6 +6,18 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.2.0] - 2026-10-02
+
+### Changed
+
+- Design system updated to 1.42.0.
+
+### Fixed
+
+- Use curly apostrophes in legal copy.
+- Section names in the organised table are the links.
+- Last updated line uses a British date.
+
 ## [1.1.6] - 2026-10-01
 
 ### Changed

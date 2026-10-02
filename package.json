@@ -1,6 +1,6 @@
 {
   "name": "privacy-policy",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "Cuesoft Privacy Policy: markdown source, built into the brand template.",
   "private": true,
   "type": "module",
@@ -18,7 +18,7 @@
     "lint": "npm run check:design-system"
   },
   "dependencies": {
-    "@cuesoftinc/design-system": "1.41.0",
+    "@cuesoftinc/design-system": "1.42.0",
     "@datadog/browser-rum": "7.14.0",
     "marked": "^14.1.4",
     "react": "^19.3.0",

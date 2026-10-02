@@ -28,14 +28,14 @@ those relationships alongside this policy.
 - **We do not sell personal data.** Our seven marketing websites (CueTA™, CueLABS™,
   CueHIRE™, Cueprise™, Storefront™, Cuelearn™ and cuesoft.io) use Google Analytics and
   advertising tags, and
-  only if you opt in through each site's consent banner. Separately, and on
+  only if you opt in through each site’s consent banner. Separately, and on
   every site whatever you choose, we measure aggregate traffic with
-  Cloudflare's **cookieless** analytics on those same seven sites, which
+  Cloudflare’s **cookieless** analytics on those same seven sites, which
   stores nothing on your device and identifies nobody: see the
   [collection pages](collection/all-sites/) and the
   [United States page](jurisdictions/united-states/) for exactly what that
   means. Every website, the account site at account.cuesoft.io included,
-  also loads Datadog's performance and error monitoring whatever you choose:
+  also loads Datadog’s performance and error monitoring whatever you choose:
   see [what every site collects](collection/all-sites/#performance-and-error-monitoring).
   **Client Work** at
   [clients.cuesoft.io](collection/clients/) is an informational case-study site
@@ -44,7 +44,7 @@ those relationships alongside this policy.
   no such tags, only the performance and error monitoring described on
   [their page](collection/docs-sites/).
 - Our AI assistant (Ace) processes what you type to it in order to answer;
-  don't type sensitive personal information into a chat box.
+  don’t type sensitive personal information into a chat box.
 - You can exercise your rights (access, correction, deletion and more)
   by emailing [hello@cuesoft.io](mailto:hello@cuesoft.io); see
   [your rights](rights/your-rights/).
@@ -53,11 +53,11 @@ those relationships alongside this policy.
 
 | Section | What it covers |
 | --- | --- |
-| Collection | [What every marketing site collects](collection/all-sites/), then site by site: [cuesoft.io](collection/cuesoft/), [cueta.cuesoft.io](collection/cueta/), [cuelabs.cuesoft.io](collection/cuelabs/), [cuehire.cuesoft.io](collection/cuehire/), [cueprise.cuesoft.io](cueprise/), [storefront.cuesoft.io](collection/storefront/), [cuelearn.cuesoft.io](collection/cuelearn/), [clients.cuesoft.io](collection/clients/) and the [documentation sites](collection/docs-sites/). |
+| [Collection](collection/all-sites/) | What every marketing site collects, then site by site: cuesoft.io, cueta.cuesoft.io, cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io, storefront.cuesoft.io, cuelearn.cuesoft.io, clients.cuesoft.io and the documentation sites. |
 | [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller. |
-| Handling | [Processors and platforms](handling/processors/), [international transfers](handling/transfers/), [retention](handling/retention/), [security](handling/security/) and [breach notification](handling/breach/). |
-| Rights | [Your rights and how to exercise them](rights/your-rights/), and [children](rights/children/). |
-| Jurisdictions | The detail per regime: [Nigeria](jurisdictions/nigeria/), [EU/EEA and UK](jurisdictions/eu-uk/), [United States](jurisdictions/united-states/). |
+| [Handling](handling/processors/) | Processors and platforms, international transfers, retention, security and breach notification. |
+| [Rights](rights/your-rights/) | Your rights and how to exercise them, and children. |
+| [Jurisdictions](jurisdictions/eu-uk/) | The detail per regime: Nigeria, EU/EEA and UK, United States. |
 
 ## Changes to this policy
 
