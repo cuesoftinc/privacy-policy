@@ -10,7 +10,7 @@ Releases before 1.1.0 predate this file.
 
 ### Changed
 
-- Design system updated to 1.46.7.
+- Design system updated to 1.46.8.
 
 ## [1.3.4] - 2026-10-03
 
