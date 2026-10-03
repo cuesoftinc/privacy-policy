@@ -18,7 +18,7 @@
     "lint": "npm run check:design-system"
   },
   "dependencies": {
-    "@cuesoftinc/design-system": "1.46.8",
+    "@cuesoftinc/design-system": "1.46.9",
     "@datadog/browser-rum": "7.14.0",
     "marked": "^14.1.4",
     "react": "^19.3.0",
