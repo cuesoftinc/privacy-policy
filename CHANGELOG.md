@@ -6,6 +6,20 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.3.7] - 2026-10-03
+
+### Added
+
+- Twitter and locale tags on every page.
+
+### Changed
+
+- Estate list includes Cueprise, Storefront and Cuelearn.
+
+### Fixed
+
+- Page descriptions end on a whole sentence.
+
 ## [1.3.6] - 2026-10-03
 
 ### Changed
