@@ -107,8 +107,42 @@ const escapeHtml = (s) =>
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;');
 
+const DESCRIPTION_LIMIT = 160;
+// twitter:description holds 200 characters.
+const DESCRIPTION_CEILING = 200;
+// A boundary after an initial, a dotted abbreviation or one of these words is not a sentence end.
+const ABBREVIATION = /^(?:\p{L}\.)*\p{L}$|^(?:etc|vs|cf|inc|ltd|art|approx)$/iu;
+
+// The text's sentences, each ending in . ! or ?; an unfinished tail is dropped.
+function sentencesOf(text) {
+  const sentences = [];
+  let start = 0;
+  for (const match of text.matchAll(/[.!?]+["')\]’”]*(?=\s(?!\p{Ll})|$)/gu)) {
+    const word = text.slice(start, match.index).split(' ').pop().replace(/^[^\p{L}\p{N}]+/u, '');
+    if (ABBREVIATION.test(word)) continue;
+    const end = match.index + match[0].length;
+    sentences.push(text.slice(start, end).trim());
+    start = end;
+  }
+  return sentences;
+}
+
+// Whole sentences only, never a clipped one: the longest leading run within the limit, else the first sentence within the ceiling, else the site description.
+function clipDescription(text) {
+  if (text.length <= DESCRIPTION_LIMIT) return text;
+  const sentences = sentencesOf(text);
+  let run = '';
+  for (const sentence of sentences) {
+    const next = run ? `${run} ${sentence}` : sentence;
+    if (next.length > DESCRIPTION_LIMIT) break;
+    run = next;
+  }
+  if (run) return run;
+  return sentences.length > 0 && sentences[0].length <= DESCRIPTION_CEILING ? sentences[0] : DESCRIPTION;
+}
+
 // A page describes itself: its first body paragraph, stripped of markdown,
-// clipped for the description and social-card tags.
+// cut at a sentence end for the description and social-card tags.
 function descriptionOf(markdown) {
   const block = markdown
     .split(/\n\s*\n/)
@@ -132,9 +166,7 @@ function descriptionOf(markdown) {
     .replaceAll(/[*_`]/g, '')
     .replaceAll(/\s+/g, ' ')
     .trim();
-  if (text.length <= 160) return text;
-  const cut = text.slice(0, 157);
-  return `${cut.slice(0, Math.max(cut.lastIndexOf(' '), 120))}…`;
+  return clipDescription(text);
 }
 
 /** Every directory that carries a README.md is a page. */

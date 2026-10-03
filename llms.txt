@@ -26,9 +26,9 @@ CueLABS(TM) proves them in public on open-source products, and CueHIRE(TM),
 Cuesoft's talent and project management agency, delivers them to companies
 through end-to-end delivery, managed engineers and referral hiring. Three
 products: Cueprise(TM), a business management system licensed per business and
-deployed on the client's own cloud, Storefront(TM), the website a business puts
-in front of its customers, and Cuelearn(TM), a learning platform Cuesoft sells
-to institutions.
+deployed on the client's own cloud, Storefront(TM), the website a business
+puts in front of its customers, and Cuelearn(TM), the learning platform Cuesoft
+sells to institutions.
 
 ## Contact
 
@@ -42,6 +42,9 @@ to institutions.
 - [CueTA(TM)](https://cueta.cuesoft.io): the talent academy
 - [CueLABS(TM)](https://cuelabs.cuesoft.io): open-source internships
 - [CueHIRE(TM)](https://cuehire.cuesoft.io): Cuesoft's talent and project management agency
+- [Cueprise(TM)](https://cueprise.cuesoft.io): business management software on the client's own cloud
+- [Storefront(TM)](https://storefront.cuesoft.io): e-commerce, booking and landing page sites, built free
+- [Cuelearn(TM)](https://cuelearn.cuesoft.io): AI-powered learning for institutions
 - [Clients](https://clients.cuesoft.io): client case studies
 - [The CueShow(TM)](https://cueshow.cuesoft.io): the Cuesoft podcast
 - [The CueBlog(TM)](https://blog.cuesoft.io): the Cuesoft blog

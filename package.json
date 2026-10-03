@@ -7,9 +7,10 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "prebuild": "cuesoft-design-assets assets/design-system",
-    "postbuild": "node scripts/check-dashes.mjs && node scripts/check-og-card.mjs && node scripts/check-not-found.mjs && node scripts/check-titles.mjs",
+    "postbuild": "node scripts/check-dashes.mjs && node scripts/check-og-card.mjs && node scripts/check-not-found.mjs && node scripts/check-titles.mjs && node scripts/check-descriptions.mjs",
     "og": "node scripts/generate-og-image.mjs",
     "check:dashes": "node scripts/check-dashes.mjs",
+    "check:descriptions": "node scripts/check-descriptions.mjs",
     "check:design-system": "cuesoft-design-check corporate",
     "check:links": "node scripts/check-links.mjs",
     "check:og": "node scripts/check-og-card.mjs",
