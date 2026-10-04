@@ -1,6 +1,6 @@
 {
   "name": "privacy-policy",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "description": "Cuesoft Privacy Policy: markdown source, built into the brand template.",
   "private": true,
   "type": "module",

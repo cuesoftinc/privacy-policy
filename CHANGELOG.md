@@ -6,12 +6,11 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
-## [Unreleased]
+## [1.3.9] - 2026-10-04
 
 ### Fixed
 
-- Theme initialisation survives formatted document templates.
-- Formatting checks enforce consistent repository layout.
+- Repository formatting is enforced in CI.
 
 ## [1.3.8] - 2026-10-03
 

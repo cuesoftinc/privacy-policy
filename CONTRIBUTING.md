@@ -16,6 +16,7 @@ npm run build       # writes _site/, then fails on any em dash or a missing 404.
 npm run lint        # cuesoft-design-check corporate
 npm run check:links # every link, image, font and #fragment in _site resolves
 npm run og          # redraws assets/og-card.png; the build fails if the card is out of date
+npm run format:check # Prettier over the whole repository, as CI runs it
 ```
 
 Without that access you can still edit the Markdown and open a pull request;
@@ -41,7 +42,7 @@ from `node_modules` at build time.
 `scripts/check-dashes.mjs`, `scripts/generate-og-image.mjs`, `scripts/check-og-card.mjs`,
 `scripts/check-not-found.mjs`, `scripts/check-titles.mjs`, `scripts/check-descriptions.mjs`,
 `templates/page.html`, `templates/rum.js`,
-`.github/workflows/pages.yml`, `.npmrc` and the browser icons under `assets/`
+`.github/workflows/pages.yml`, `.npmrc`, `.prettierrc.json`, `.prettierignore` and the browser icons under `assets/`
 are identical in handbook, terms and privacy-policy. Change one, change all
 three.
 
