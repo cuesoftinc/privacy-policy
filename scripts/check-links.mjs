@@ -18,7 +18,9 @@ if (!existsSync(SITE)) {
 
 const walk = (dir) =>
   readdirSync(dir, { withFileTypes: true }).flatMap((entry) =>
-    entry.isDirectory() ? walk(path.join(dir, entry.name)) : [path.join(dir, entry.name)],
+    entry.isDirectory()
+      ? walk(path.join(dir, entry.name))
+      : [path.join(dir, entry.name)],
   );
 
 const files = walk(SITE);
@@ -37,7 +39,10 @@ const decode = (value) => {
 const idsIn = (file) => {
   if (!idsOf.has(file)) {
     const html = readFileSync(file, 'utf8');
-    idsOf.set(file, new Set([...html.matchAll(/\sid="([^"]*)"/g)].map((match) => match[1])));
+    idsOf.set(
+      file,
+      new Set([...html.matchAll(/\sid="([^"]*)"/g)].map((match) => match[1])),
+    );
   }
   return idsOf.get(file);
 };
@@ -55,7 +60,8 @@ let checked = 0;
 for (const page of pages) {
   const rel = path.relative(SITE, page);
   const html = readFileSync(page, 'utf8');
-  if (/\{\{\w+\}\}/.test(html)) problems.push(`${rel}: an unfilled {{placeholder}}`);
+  if (/\{\{\w+\}\}/.test(html))
+    problems.push(`${rel}: an unfilled {{placeholder}}`);
   const origin = `https://${HOST || 'site.invalid'}/${path.dirname(rel) === '.' ? '' : `${path.dirname(rel)}/`}`;
   for (const match of html.matchAll(/\s(?:href|src)="([^"]*)"/g)) {
     const value = match[1].replaceAll('&amp;', '&');
@@ -74,7 +80,11 @@ for (const page of pages) {
       problems.push(`${rel}: ${value} resolves to nothing in _site`);
       continue;
     }
-    if (url.hash && file.endsWith('.html') && !idsIn(file).has(decode(url.hash.slice(1)))) {
+    if (
+      url.hash &&
+      file.endsWith('.html') &&
+      !idsIn(file).has(decode(url.hash.slice(1)))
+    ) {
       problems.push(`${rel}: ${value} has no id ${url.hash} on its target`);
     }
   }
@@ -84,7 +94,10 @@ for (const sheet of files.filter((file) => file.endsWith('.css'))) {
   const css = readFileSync(sheet, 'utf8');
   for (const match of css.matchAll(/url\(\s*['"]?(\/[^'")\s]+)['"]?\s*\)/g)) {
     checked += 1;
-    if (!resolveFile(match[1])) problems.push(`${path.relative(SITE, sheet)}: url(${match[1]}) resolves to nothing in _site`);
+    if (!resolveFile(match[1]))
+      problems.push(
+        `${path.relative(SITE, sheet)}: url(${match[1]}) resolves to nothing in _site`,
+      );
   }
 }
 
@@ -93,4 +106,6 @@ if (problems.length) {
   for (const problem of problems) console.error(`  - ${problem}`);
   process.exit(1);
 }
-console.log(`check-links: ${pages.length} page(s), ${checked} internal reference(s), all resolve`);
+console.log(
+  `check-links: ${pages.length} page(s), ${checked} internal reference(s), all resolve`,
+);

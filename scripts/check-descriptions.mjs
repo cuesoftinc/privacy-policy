@@ -54,8 +54,10 @@ for (const file of pages(SITE)) {
     checked += 1;
     const text = decode(match[1]).trim();
     if (!text) problems.push(`${where}: empty`);
-    else if (text.endsWith('…') || text.endsWith('...')) problems.push(`${where}: ends in an ellipsis: "${text}"`);
-    else if (!COMPLETE.test(text)) problems.push(`${where}: does not end at a sentence end: "${text}"`);
+    else if (text.endsWith('…') || text.endsWith('...'))
+      problems.push(`${where}: ends in an ellipsis: "${text}"`);
+    else if (!COMPLETE.test(text))
+      problems.push(`${where}: does not end at a sentence end: "${text}"`);
   }
 }
 if (checked === 0) problems.push('no description found in _site');

@@ -6,6 +6,12 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.3.9] - 2026-10-04
+
+### Fixed
+
+- Repository formatting is enforced in CI.
+
 ## [1.3.8] - 2026-10-03
 
 ### Changed

@@ -43,7 +43,10 @@ function titleCaseErrors(title) {
   const errors = [];
   words.forEach((word, index) => {
     const previous = words[index - 1] ?? '';
-    const opensClause = index === 0 || /[:?!.]$/.test(previous) || !/[\p{L}\p{N}]/u.test(previous);
+    const opensClause =
+      index === 0 ||
+      /[:?!.]$/.test(previous) ||
+      !/[\p{L}\p{N}]/u.test(previous);
     const edge = opensClause || index === words.length - 1;
     const markLead = words[index + 1]?.includes('™') ?? false;
     const parts = word.split(/[-/]/);
@@ -52,7 +55,8 @@ function titleCaseErrors(title) {
       if (!/^\p{L}/u.test(core) || /[.@]/.test(core)) return;
       const lower = core[0] === core[0].toLowerCase();
       if (parts.length === 1 && MINOR.has(core.toLowerCase())) {
-        if (edge ? lower : core !== core.toLowerCase() && !markLead) errors.push(core);
+        if (edge ? lower : core !== core.toLowerCase() && !markLead)
+          errors.push(core);
         return;
       }
       if (lower && !/\p{Lu}/u.test(core.slice(1))) errors.push(core);
@@ -90,8 +94,10 @@ for (const file of pages(SITE)) {
     ['twitter:title', /<meta name="twitter:title" content="([^"]*)"/],
   ]) {
     const match = html.match(pattern);
-    if (match) emitted.push({ where: `${rel} ${label}`, text: decode(match[1]) });
-    else if (label === 'title') emitted.push({ where: `${rel} ${label}`, text: '' });
+    if (match)
+      emitted.push({ where: `${rel} ${label}`, text: decode(match[1]) });
+    else if (label === 'title')
+      emitted.push({ where: `${rel} ${label}`, text: '' });
   }
 }
 
@@ -99,23 +105,33 @@ const manifest = path.join(SITE, 'assets', 'site.webmanifest');
 if (existsSync(manifest)) {
   const data = JSON.parse(readFileSync(manifest, 'utf8'));
   for (const key of ['name', 'short_name'])
-    if (key in data) emitted.push({ where: `assets/site.webmanifest ${key}`, text: String(data[key]) });
+    if (key in data)
+      emitted.push({
+        where: `assets/site.webmanifest ${key}`,
+        text: String(data[key]),
+      });
 }
 
 const llms = path.join(SITE, 'llms.txt');
 if (existsSync(llms)) {
   for (const line of readFileSync(llms, 'utf8').split('\n'))
     if (/^#{1,2} /.test(line))
-      emitted.push({ where: `llms.txt ${line.startsWith('## ') ? 'H2' : 'H1'}`, text: line.replace(/^#+ /, '') });
+      emitted.push({
+        where: `llms.txt ${line.startsWith('## ') ? 'H2' : 'H1'}`,
+        text: line.replace(/^#+ /, ''),
+      });
 }
 
 const problems = [];
-if (!emitted.some((item) => item.where === 'index.html title')) problems.push('index.html: no home page in _site');
-if (!emitted.some((item) => item.where === '404.html title')) problems.push('404.html: no not-found page in _site');
+if (!emitted.some((item) => item.where === 'index.html title'))
+  problems.push('index.html: no home page in _site');
+if (!emitted.some((item) => item.where === '404.html title'))
+  problems.push('404.html: no not-found page in _site');
 for (const { where, text } of emitted) {
   if (!text.trim()) problems.push(`${where}: empty`);
   const errors = titleCaseErrors(text);
-  if (errors.length) problems.push(`${where}: ${errors.join(', ')} in "${text}"`);
+  if (errors.length)
+    problems.push(`${where}: ${errors.join(', ')} in "${text}"`);
 }
 
 if (problems.length) {

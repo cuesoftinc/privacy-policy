@@ -36,13 +36,13 @@ the performance and error monitoring described on
 [their page](../docs-sites/). Only if you press **Accept** does the site
 load them:
 
-| Provider | Purpose | Their policy |
-| --- | --- | --- |
-| Google Analytics | Traffic and journey measurement; building remarketing audiences that are shared with our Google Ads account; and, where you are signed in to Google, age, gender and interest reporting plus cross-device advertising audiences for Google Ads (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
-| LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
-| X (Twitter) | Ad measurement | [x.com/en/privacy](https://x.com/en/privacy) |
+| Provider         | Purpose                                                                                                                                                                                                                                                             | Their policy                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Google Analytics | Traffic and journey measurement; building remarketing audiences that are shared with our Google Ads account; and, where you are signed in to Google, age, gender and interest reporting plus cross-device advertising audiences for Google Ads (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy)                 |
+| Google Ads       | Ad measurement and remarketing                                                                                                                                                                                                                                      | [policies.google.com/privacy](https://policies.google.com/privacy)                 |
+| Meta             | Ad measurement and remarketing                                                                                                                                                                                                                                      | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/)            |
+| LinkedIn         | Ad measurement                                                                                                                                                                                                                                                      | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
+| X (Twitter)      | Ad measurement                                                                                                                                                                                                                                                      | [x.com/en/privacy](https://x.com/en/privacy)                                       |
 
 - **What they receive:** a cookie or device identifier, your IP address,
   the page URLs you visit on this site and the referring URL, plus basic

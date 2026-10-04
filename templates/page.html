@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{doc_title}}</title>
-    <meta name="description" content="{{description}}" />{{robots}}
+    <meta name="description" content="{{description}}" />
+    {{robots}}
     <link rel="canonical" href="{{canonical}}" />
     <meta name="theme-color" content="#325EA6" />
     <meta property="og:site_name" content="{{site}}" />
@@ -30,11 +31,27 @@
       {{jsonld}}
     </script>
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/site.webmanifest" />
-    <link rel="preload" href="/assets/design-system/fonts/Fustat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+    <link
+      rel="preload"
+      href="/assets/design-system/fonts/Fustat-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <link rel="stylesheet" href="/assets/design-system.css" />
     <style>
       .table-wrap {
@@ -48,11 +65,11 @@
         flex: 1 0 auto;
       }
     </style>
+    <!-- prettier-ignore -->
     <script data-cuesoft-theme-prepaint="cuesoft-theme">(function(){try{var d=document.documentElement,t=null;try{t=localStorage.getItem("cuesoft-theme")}catch(e){}var c=t==='dark'||t==='light';var m=window.matchMedia('(prefers-color-scheme: dark)');var k=c?t==='dark':m.matches;if(k)d.classList.add("dark");if(c)d.setAttribute('data-theme',t);else if(m.addEventListener)m.addEventListener('change',function(e){if(!d.hasAttribute('data-theme'))d.classList.toggle("dark",e.matches)})}catch(e){}})()</script>
   </head>
   <body>
-    {{skip}}
-    {{header}}
+    {{skip}} {{header}}
     <main id="main" tabindex="-1">{{shell}}</main>
     <footer>{{legal}}</footer>
     <script>
