@@ -4,16 +4,16 @@ You control your personal data. Depending on your jurisdiction (see the
 [jurisdiction pages](../../jurisdictions/nigeria/)), you have the right
 to:
 
-| Right | What it means |
-| --- | --- |
-| **Access** | A copy of the personal data we hold about you, and what we do with it |
-| **Correction** | Fixing inaccurate or incomplete data |
-| **Deletion** | Erasure of your data where no legal duty requires keeping it |
-| **Restriction** | Pausing processing while a dispute about it is resolved |
-| **Objection** | Objecting to processing based on legitimate interests |
-| **Portability** | Your data in a structured, commonly used, machine-readable format |
+| Right                | What it means                                                                                                                                                                                                                                                                                                                                   |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Access**           | A copy of the personal data we hold about you, and what we do with it                                                                                                                                                                                                                                                                           |
+| **Correction**       | Fixing inaccurate or incomplete data                                                                                                                                                                                                                                                                                                            |
+| **Deletion**         | Erasure of your data where no legal duty requires keeping it                                                                                                                                                                                                                                                                                    |
+| **Restriction**      | Pausing processing while a dispute about it is resolved                                                                                                                                                                                                                                                                                         |
+| **Objection**        | Objecting to processing based on legitimate interests                                                                                                                                                                                                                                                                                           |
+| **Portability**      | Your data in a structured, commonly used, machine-readable format                                                                                                                                                                                                                                                                               |
 | **Withdraw consent** | At any time, without affecting prior lawful processing: use the **Cookie preferences** link in the footer of the site where you accepted, since a choice does not carry between sites. The Spotify player on cuesoft.io is separate: the banner does not govern it, so clear Spotify’s cookies in your browser and simply do not click it again |
-| **Complain** | To your supervisory authority: named per jurisdiction |
+| **Complain**         | To your supervisory authority: named per jurisdiction                                                                                                                                                                                                                                                                                           |
 
 ## How to exercise them
 

@@ -51,13 +51,13 @@ banner. None of them loads, and none of their cookies is set, until you press
 [performance and error monitoring](#performance-and-error-monitoring) below are
 separate and run either way):
 
-| Provider | Purpose | Their policy |
-| --- | --- | --- |
-| Google Analytics | Traffic and journey measurement; building remarketing audiences that are shared with our Google Ads account; and, where you are signed in to Google, age, gender and interest reporting plus cross-device advertising audiences for Google Ads (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Google Ads | Ad measurement and remarketing | [policies.google.com/privacy](https://policies.google.com/privacy) |
-| Meta | Ad measurement and remarketing | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/) |
-| LinkedIn | Ad measurement | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
-| X (Twitter) | Ad measurement | [x.com/en/privacy](https://x.com/en/privacy) |
+| Provider         | Purpose                                                                                                                                                                                                                                                             | Their policy                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Google Analytics | Traffic and journey measurement; building remarketing audiences that are shared with our Google Ads account; and, where you are signed in to Google, age, gender and interest reporting plus cross-device advertising audiences for Google Ads (**Google signals**) | [policies.google.com/privacy](https://policies.google.com/privacy)                 |
+| Google Ads       | Ad measurement and remarketing                                                                                                                                                                                                                                      | [policies.google.com/privacy](https://policies.google.com/privacy)                 |
+| Meta             | Ad measurement and remarketing                                                                                                                                                                                                                                      | [facebook.com/privacy/policy](https://www.facebook.com/privacy/policy/)            |
+| LinkedIn         | Ad measurement                                                                                                                                                                                                                                                      | [linkedin.com/legal/privacy-policy](https://www.linkedin.com/legal/privacy-policy) |
+| X (Twitter)      | Ad measurement                                                                                                                                                                                                                                                      | [x.com/en/privacy](https://x.com/en/privacy)                                       |
 
 - **What they receive:** a cookie or device identifier, your IP address,
   the page URLs you visit on this site and the referring URL, plus basic
@@ -169,12 +169,12 @@ under [service telemetry](#service-telemetry) below.
 
 ### Roles
 
-| Data | Controller | Processor |
-| --- | --- | --- |
-| Licensee data: records, files and people data inside the platform, including the licensee’s customers and storefront shoppers | The licensee | Cuesoft |
-| Account and administration data: named users, roles, authentication records | The licensee | Cuesoft |
-| Relationship data: licensee contacts, contracts, invoices, support correspondence | Cuesoft | |
-| Service telemetry: operational logs and usage metrics needed to run and secure the platform | Cuesoft | |
+| Data                                                                                                                          | Controller   | Processor |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- |
+| Licensee data: records, files and people data inside the platform, including the licensee’s customers and storefront shoppers | The licensee | Cuesoft   |
+| Account and administration data: named users, roles, authentication records                                                   | The licensee | Cuesoft   |
+| Relationship data: licensee contacts, contracts, invoices, support correspondence                                             | Cuesoft      |           |
+| Service telemetry: operational logs and usage metrics needed to run and secure the platform                                   | Cuesoft      |           |
 
 ### What the platform holds
 
@@ -182,12 +182,12 @@ So licensees can describe their deployment accurately in their own privacy
 notices, these are the categories of personal data a Cueprise™ deployment
 stores, depending on which modules the licensee uses:
 
-| Category | Fields |
-| --- | --- |
-| Staff accounts | Name, email, phone, avatar, role and branch, sign-in history; for Google sign-in, the profile Google returns |
-| Business customers | Name, email, phone, tax ID, addresses, credit terms |
-| Storefront shoppers | Name, phone (and optional alternate phone), email, delivery and billing addresses, order notes, order history |
-| Login codes | For WhatsApp one-time codes: the phone number and a cryptographic hash of the code. The code itself is never stored |
+| Category            | Fields                                                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Staff accounts      | Name, email, phone, avatar, role and branch, sign-in history; for Google sign-in, the profile Google returns        |
+| Business customers  | Name, email, phone, tax ID, addresses, credit terms                                                                 |
+| Storefront shoppers | Name, phone (and optional alternate phone), email, delivery and billing addresses, order notes, order history       |
+| Login codes         | For WhatsApp one-time codes: the phone number and a cryptographic hash of the code. The code itself is never stored |
 
 ### Payments
 
@@ -235,13 +235,13 @@ the licensee cannot act on data it does not control.
 These providers process **licensee data** in the licensee-to-Cuesoft
 processing chain:
 
-| Provider | Role in the platform | Personal data it touches |
-| --- | --- | --- |
-| Google Cloud | Hosting, file storage, staff sign-in | Everything the deployment stores; for sign-in, the staff member’s Google profile |
-| Paystack | Online payments | From the platform: payer email, amount, order reference. On Paystack’s own hosted page, the shopper additionally enters card or other payment details, which never enter Cueprise™ and are handled under Paystack’s own policy |
-| Brevo | Transactional email | Recipient name and email |
-| Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp | Recipient phone number and the message body: the one-time code being delivered, or the invitation’s details |
-| Cloudinary | Media storage, where the licensee’s deployment is configured to use it | Uploaded files |
+| Provider                          | Role in the platform                                                   | Personal data it touches                                                                                                                                                                                                       |
+| --------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Google Cloud                      | Hosting, file storage, staff sign-in                                   | Everything the deployment stores; for sign-in, the staff member’s Google profile                                                                                                                                               |
+| Paystack                          | Online payments                                                        | From the platform: payer email, amount, order reference. On Paystack’s own hosted page, the shopper additionally enters card or other payment details, which never enter Cueprise™ and are handled under Paystack’s own policy |
+| Brevo                             | Transactional email                                                    | Recipient name and email                                                                                                                                                                                                       |
+| Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp                 | Recipient phone number and the message body: the one-time code being delivered, or the invitation’s details                                                                                                                    |
+| Cloudinary                        | Media storage, where the licensee’s deployment is configured to use it | Uploaded files                                                                                                                                                                                                                 |
 
 Separately, **Datadog** processes the service telemetry described below.
 Because Cuesoft is the controller of that telemetry, Datadog acts there as

@@ -16,7 +16,9 @@
     "check:og": "node scripts/check-og-card.mjs",
     "check:not-found": "node scripts/check-not-found.mjs",
     "check:titles": "node scripts/check-titles.mjs",
-    "lint": "npm run check:design-system"
+    "lint": "npm run check:design-system",
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check . --ignore-unknown"
   },
   "dependencies": {
     "@cuesoftinc/design-system": "1.46.10",
@@ -26,6 +28,7 @@
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.63.0"
+    "@playwright/test": "^1.63.0",
+    "prettier": "3.9.9"
   }
 }

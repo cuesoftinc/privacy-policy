@@ -52,13 +52,13 @@ those relationships alongside this policy.
 
 ## How this policy is organised
 
-| Section | What it covers |
-| --- | --- |
-| [Collection](collection/all-sites/) | What every marketing site collects, then site by site: cuesoft.io, cueta.cuesoft.io, cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io, storefront.cuesoft.io, cuelearn.cuesoft.io, clients.cuesoft.io, account.cuesoft.io and the documentation sites. |
-| [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller. |
-| [Handling](handling/processors/) | Processors and platforms, international transfers, retention, security and breach notification. |
-| [Rights](rights/your-rights/) | Your rights and how to exercise them, and children. |
-| [Jurisdictions](jurisdictions/eu-uk/) | The detail per regime: Nigeria, EU/EEA and UK, United States. |
+| Section                               | What it covers                                                                                                                                                                                                                                                    |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Collection](collection/all-sites/)   | What every marketing site collects, then site by site: cuesoft.io, cueta.cuesoft.io, cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io, storefront.cuesoft.io, cuelearn.cuesoft.io, clients.cuesoft.io, account.cuesoft.io and the documentation sites. |
+| [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller.                                                                                                                                                                   |
+| [Handling](handling/processors/)      | Processors and platforms, international transfers, retention, security and breach notification.                                                                                                                                                                   |
+| [Rights](rights/your-rights/)         | Your rights and how to exercise them, and children.                                                                                                                                                                                                               |
+| [Jurisdictions](jurisdictions/eu-uk/) | The detail per regime: Nigeria, EU/EEA and UK, United States.                                                                                                                                                                                                     |
 
 ## Changes to this policy
 

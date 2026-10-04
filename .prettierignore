@@ -1,0 +1,14 @@
+node_modules/
+.next/
+coverage/
+playwright-report/
+test-results/
+_site/
+package-lock.json
+**/package-lock.json
+**/bun.lock
+codex-review-*.md
+public/design-system/
+public/mockServiceWorker.js
+next-env.d.ts
+assets/design-system/

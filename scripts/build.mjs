@@ -7,7 +7,15 @@
 //
 //   node scripts/build.mjs      → writes _site/
 import { execFileSync } from 'node:child_process';
-import { cpSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync, existsSync } from 'node:fs';
+import {
+  cpSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+  existsSync,
+} from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createElement as h } from 'react';
@@ -36,7 +44,13 @@ const DESCRIPTION =
   process.env.SITE_DESCRIPTION ||
   'What each Cuesoft website collects, why, and your rights under Nigerian, EU/UK and US law, plus the Cueprise™ Privacy Notice.';
 // Sections in reading order; anything not listed sorts after, alphabetically.
-const SECTION_ORDER = ['collection', 'cueprise', 'handling', 'rights', 'jurisdictions'];
+const SECTION_ORDER = [
+  'collection',
+  'cueprise',
+  'handling',
+  'rights',
+  'jurisdictions',
+];
 // Routes that moved or retired: each key becomes a redirect stub so old
 // bookmarks and inbound links keep landing.
 const REDIRECTS = {};
@@ -87,8 +101,13 @@ const BASE = existsSync(path.join(ROOT, 'CNAME'))
 // workflow as NEXT_PUBLIC_DD_*. A build without both (a fork's pull request, a
 // local run) ships no RUM and says so. The SDK is the exact pin in
 // package.json, copied from node_modules, so pages load no third-party script.
-const PACKAGE = JSON.parse(readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
-const RUM_SDK = path.join(ROOT, 'node_modules/@datadog/browser-rum/bundle/datadog-rum.js');
+const PACKAGE = JSON.parse(
+  readFileSync(path.join(ROOT, 'package.json'), 'utf8'),
+);
+const RUM_SDK = path.join(
+  ROOT,
+  'node_modules/@datadog/browser-rum/bundle/datadog-rum.js',
+);
 const RUM = {
   applicationId: (process.env.NEXT_PUBLIC_DD_APPLICATION_ID ?? '').trim(),
   clientToken: (process.env.NEXT_PUBLIC_DD_CLIENT_TOKEN ?? '').trim(),
@@ -97,7 +116,9 @@ const rumOn = Boolean(RUM.applicationId && RUM.clientToken && BASE);
 if (!rumOn) {
   const note =
     'Datadog RUM is not in this build: NEXT_PUBLIC_DD_APPLICATION_ID and NEXT_PUBLIC_DD_CLIENT_TOKEN are not both set';
-  console.log(process.env.GITHUB_ACTIONS === 'true' ? `::warning::${note}` : note);
+  console.log(
+    process.env.GITHUB_ACTIONS === 'true' ? `::warning::${note}` : note,
+  );
 }
 
 const escapeHtml = (s) =>
@@ -118,7 +139,11 @@ function sentencesOf(text) {
   const sentences = [];
   let start = 0;
   for (const match of text.matchAll(/[.!?]+["')\]’”]*(?=\s(?!\p{Ll})|$)/gu)) {
-    const word = text.slice(start, match.index).split(' ').pop().replace(/^[^\p{L}\p{N}]+/u, '');
+    const word = text
+      .slice(start, match.index)
+      .split(' ')
+      .pop()
+      .replace(/^[^\p{L}\p{N}]+/u, '');
     if (ABBREVIATION.test(word)) continue;
     const end = match.index + match[0].length;
     sentences.push(text.slice(start, end).trim());
@@ -138,7 +163,9 @@ function clipDescription(text) {
     run = next;
   }
   if (run) return run;
-  return sentences.length > 0 && sentences[0].length <= DESCRIPTION_CEILING ? sentences[0] : DESCRIPTION;
+  return sentences.length > 0 && sentences[0].length <= DESCRIPTION_CEILING
+    ? sentences[0]
+    : DESCRIPTION;
 }
 
 // A page describes itself: its first body paragraph, stripped of markdown,
@@ -175,8 +202,24 @@ function findPages(dir = ROOT, rel = '') {
   if (existsSync(path.join(dir, 'README.md'))) pages.push(rel);
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
-    if (['.git', '.github', '_site', 'node_modules', 'templates', 'scripts', 'assets'].includes(entry.name)) continue;
-    pages.push(...findPages(path.join(dir, entry.name), rel ? `${rel}/${entry.name}` : entry.name));
+    if (
+      [
+        '.git',
+        '.github',
+        '_site',
+        'node_modules',
+        'templates',
+        'scripts',
+        'assets',
+      ].includes(entry.name)
+    )
+      continue;
+    pages.push(
+      ...findPages(
+        path.join(dir, entry.name),
+        rel ? `${rel}/${entry.name}` : entry.name,
+      ),
+    );
   }
   return pages;
 }
@@ -198,7 +241,29 @@ const label = (slug) =>
 // Every word is capitalised but these connectives, which stay lower case unless one opens or
 // closes a title or a clause; both parts of a hyphenated compound are capitalised; acronyms,
 // marks and the first word of a trade mark (The CueBlog™) stay as written.
-const MINOR_WORDS = new Set(['a', 'an', 'the', 'and', 'but', 'or', 'nor', 'for', 'so', 'yet', 'as', 'at', 'by', 'in', 'of', 'on', 'to', 'up', 'via', 'per', 'vs']);
+const MINOR_WORDS = new Set([
+  'a',
+  'an',
+  'the',
+  'and',
+  'but',
+  'or',
+  'nor',
+  'for',
+  'so',
+  'yet',
+  'as',
+  'at',
+  'by',
+  'in',
+  'of',
+  'on',
+  'to',
+  'up',
+  'via',
+  'per',
+  'vs',
+]);
 function titleCase(text) {
   const tokens = text.split(/(\s+)/);
   const words = tokens.filter((token) => token && !/^\s+$/.test(token));
@@ -209,19 +274,32 @@ function titleCase(text) {
       index += 1;
       const previous = words[index - 1] ?? '';
       const edge =
-        index === 0 || index === words.length - 1 || /[:?!.]$/.test(previous) || !/[\p{L}\p{N}]/u.test(previous);
+        index === 0 ||
+        index === words.length - 1 ||
+        /[:?!.]$/.test(previous) ||
+        !/[\p{L}\p{N}]/u.test(previous);
       const markLead = words[index + 1]?.includes('™') ?? false;
       const parts = token.split(/([-/])/);
       return parts
         .map((part) => {
-          const [, lead, core, tail] = part.match(/^([^\p{L}\p{N}]*)(.*?)([^\p{L}\p{N}]*)$/su);
+          const [, lead, core, tail] = part.match(
+            /^([^\p{L}\p{N}]*)(.*?)([^\p{L}\p{N}]*)$/su,
+          );
           if (!/^\p{L}/u.test(core) || /[.@]/.test(core)) return part;
           if (parts.length === 1 && MINOR_WORDS.has(core.toLowerCase())) {
             if (!edge && markLead) return part;
-            return lead + (edge ? core[0].toUpperCase() + core.slice(1) : core.toLowerCase()) + tail;
+            return (
+              lead +
+              (edge
+                ? core[0].toUpperCase() + core.slice(1)
+                : core.toLowerCase()) +
+              tail
+            );
           }
           const first = core[0];
-          return first === first.toLowerCase() && !/\p{Lu}/u.test(core.slice(1)) ? lead + first.toUpperCase() + core.slice(1) + tail : part;
+          return first === first.toLowerCase() && !/\p{Lu}/u.test(core.slice(1))
+            ? lead + first.toUpperCase() + core.slice(1) + tail
+            : part;
         })
         .join('');
     })
@@ -232,7 +310,13 @@ function titleCase(text) {
 const meta = new Map(
   pages.map((page) => {
     const markdown = readFileSync(path.join(ROOT, page, 'README.md'), 'utf8');
-    return [page, { markdown, title: titleOf(markdown, page ? label(path.basename(page)) : SITE) }];
+    return [
+      page,
+      {
+        markdown,
+        title: titleOf(markdown, page ? label(path.basename(page)) : SITE),
+      },
+    ];
   }),
 );
 
@@ -263,17 +347,28 @@ function groups() {
     return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib) || a.localeCompare(b);
   });
 
-  return ordered.map((section) => ({ section, pages: sections.get(section).sort() }));
+  return ordered.map((section) => ({
+    section,
+    pages: sections.get(section).sort(),
+  }));
 }
 
 /** The contents down the side: the home page, then one group per section, the page itself marked current. */
 function sectionsFor(current) {
-  const home = { label: meta.get('').title, href: relLink(current, '') || './', current: current === '' };
+  const home = {
+    label: meta.get('').title,
+    href: relLink(current, '') || './',
+    current: current === '',
+  };
   return [
     { links: [home] },
     ...groups().map(({ section, pages: members }) => ({
       heading: label(section),
-      links: members.map((page) => ({ label: meta.get(page).title, href: relLink(current, page), current: page === current })),
+      links: members.map((page) => ({
+        label: meta.get(page).title,
+        href: relLink(current, page),
+        current: page === current,
+      })),
     })),
   ];
 }
@@ -282,7 +377,9 @@ function gitDate(page) {
   try {
     // Argument array, not a shell: page paths never reach an interpreter.
     const file = path.join(ROOT, page, 'README.md');
-    return execFileSync('git', ['log', '-1', '--format=%as', '--', file], { cwd: ROOT })
+    return execFileSync('git', ['log', '-1', '--format=%as', '--', file], {
+      cwd: ROOT,
+    })
       .toString()
       .trim();
   } catch {
@@ -290,7 +387,20 @@ function gitDate(page) {
   }
 }
 
-const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
 
 function britishDate(iso) {
   const [year, month, day] = iso.split('-').map(Number);
@@ -302,10 +412,23 @@ function lastUpdated(page) {
   return date ? `Last updated ${britishDate(date)}.` : '';
 }
 
-const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: '\u00a0' };
+const ENTITIES = {
+  amp: '&',
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  apos: "'",
+  nbsp: '\u00a0',
+};
 const decodeEntities = (text) =>
-  text.replaceAll(/&(?:#(\d+)|#x([0-9a-f]+)|([a-z]+));/gi, (whole, dec, hex, name) =>
-    dec ? String.fromCodePoint(Number(dec)) : hex ? String.fromCodePoint(parseInt(hex, 16)) : (ENTITIES[name] ?? whole),
+  text.replaceAll(
+    /&(?:#(\d+)|#x([0-9a-f]+)|([a-z]+));/gi,
+    (whole, dec, hex, name) =>
+      dec
+        ? String.fromCodePoint(Number(dec))
+        : hex
+          ? String.fromCodePoint(parseInt(hex, 16))
+          : (ENTITIES[name] ?? whole),
   );
 
 // The text of an HTML fragment: everything outside a tag. It is scanned rather
@@ -326,7 +449,9 @@ function plainText(html) {
 // heading renderer gave it. A page with a single heading has nothing to list.
 const MIN_RAIL_HEADINGS = 2;
 function headingsOf(html) {
-  const headings = [...html.matchAll(/<h([23]) id="([^"]+)">([\s\S]*?)<\/h\1>/g)].map(([, depth, id, inner]) => ({
+  const headings = [
+    ...html.matchAll(/<h([23]) id="([^"]+)">([\s\S]*?)<\/h\1>/g),
+  ].map(([, depth, id, inner]) => ({
     label: decodeEntities(plainText(inner)).trim(),
     href: `#${id}`,
     depth: Number(depth),
@@ -355,14 +480,26 @@ marked.use({
  * the chain is resolved here and the font URLs point at the published copy.
  */
 function packageStylesheet() {
-  const entry = fileURLToPath(import.meta.resolve('@cuesoftinc/design-system/styles.css'));
+  const entry = fileURLToPath(
+    import.meta.resolve('@cuesoftinc/design-system/styles.css'),
+  );
   const inline = (file) =>
-    readFileSync(file, 'utf8').replaceAll(/@import\s+['"]([^'"]+)['"]\s*;/g, (_, spec) =>
-      inline(path.resolve(path.dirname(file), spec)),
+    readFileSync(file, 'utf8').replaceAll(
+      /@import\s+['"]([^'"]+)['"]\s*;/g,
+      (_, spec) => inline(path.resolve(path.dirname(file), spec)),
     );
-  const css = inline(entry).replaceAll("url('../assets/fonts/", `url('${ASSETS}/fonts/`);
-  if (/@import/.test(css)) throw new Error('the package stylesheet has an @import the build does not resolve');
-  if (/url\(['"]?\.\.?\//.test(css)) throw new Error('the package stylesheet has a relative url() the build does not publish');
+  const css = inline(entry).replaceAll(
+    "url('../assets/fonts/",
+    `url('${ASSETS}/fonts/`,
+  );
+  if (/@import/.test(css))
+    throw new Error(
+      'the package stylesheet has an @import the build does not resolve',
+    );
+  if (/url\(['"]?\.\.?\//.test(css))
+    throw new Error(
+      'the package stylesheet has a relative url() the build does not publish',
+    );
   return css;
 }
 
@@ -371,13 +508,20 @@ mkdirSync(OUT, { recursive: true });
 cpSync(path.join(ROOT, 'assets'), path.join(OUT, 'assets'), {
   recursive: true,
   filter: (source) => {
-    const rel = path.relative(path.join(ROOT, 'assets'), source).split(path.sep).join('/');
-    return !rel.startsWith('design-system') || PUBLISHED.some((pattern) => pattern.test(rel));
+    const rel = path
+      .relative(path.join(ROOT, 'assets'), source)
+      .split(path.sep)
+      .join('/');
+    return (
+      !rel.startsWith('design-system') ||
+      PUBLISHED.some((pattern) => pattern.test(rel))
+    );
   },
 });
 writeFileSync(path.join(OUT, 'assets/design-system.css'), packageStylesheet());
 if (rumOn) {
-  if (!existsSync(RUM_SDK)) throw new Error('@datadog/browser-rum is not installed; run npm ci');
+  if (!existsSync(RUM_SDK))
+    throw new Error('@datadog/browser-rum is not installed; run npm ci');
   mkdirSync(path.join(OUT, 'assets/vendor'), { recursive: true });
   cpSync(RUM_SDK, path.join(OUT, 'assets/vendor/datadog-rum.js'));
   cpSync(path.join(ROOT, 'templates/rum.js'), path.join(OUT, 'assets/rum.js'));
@@ -396,17 +540,27 @@ const rumTags = rumOn
       '<script src="/assets/rum.js" defer></script>',
     ].join('\n    ')
   : '';
-if (existsSync(path.join(ROOT, 'CNAME'))) cpSync(path.join(ROOT, 'CNAME'), path.join(OUT, 'CNAME'));
+if (existsSync(path.join(ROOT, 'CNAME')))
+  cpSync(path.join(ROOT, 'CNAME'), path.join(OUT, 'CNAME'));
 if (existsSync(path.join(ROOT, 'llms.txt'))) {
   // The family's llms.txt is plain ASCII: marks spelled (TM).
   const plain = (text) => text.replaceAll('™', '(TM)');
-  const listed = [...(pages.includes('') ? [''] : []), ...groups().flatMap(({ pages: members }) => members)];
+  const listed = [
+    ...(pages.includes('') ? [''] : []),
+    ...groups().flatMap(({ pages: members }) => members),
+  ];
   const list = listed
-    .map((page) => `- [${plain(meta.get(page).title)}](${BASE}/${page ? `${page}/` : ''})`)
+    .map(
+      (page) =>
+        `- [${plain(meta.get(page).title)}](${BASE}/${page ? `${page}/` : ''})`,
+    )
     .join('\n');
   writeFileSync(
     path.join(OUT, 'llms.txt'),
-    readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').replace('{{pages}}', () => list),
+    readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').replace(
+      '{{pages}}',
+      () => list,
+    ),
   );
 }
 cpSync(path.join(ROOT, 'assets/favicon.ico'), path.join(OUT, 'favicon.ico'));
@@ -420,31 +574,48 @@ const themeToggle = h(ThemeToggle, {
     'span',
     { className: 'theme-marks' },
     h('span', { 'data-theme-mark': 'moon' }, h(Icon, { name: 'moon' })),
-    h('span', { 'data-theme-mark': 'sun', hidden: true }, h(Icon, { name: 'sun' })),
+    h(
+      'span',
+      { 'data-theme-mark': 'sun', hidden: true },
+      h(Icon, { name: 'sun' }),
+    ),
   ),
 });
 
 // React hoists an image preload for each lockup art ahead of the markup; both
 // arts are already in the page, so the preloads only repeat them.
-const render = (element) => renderToStaticMarkup(element).replace(/^(?:<link rel="preload" as="image"[^>]*\/>)+/, '');
+const render = (element) =>
+  renderToStaticMarkup(element).replace(
+    /^(?:<link rel="preload" as="image"[^>]*\/>)+/,
+    '',
+  );
 
 const header = render(
   h(DocHeader, {
     brand: h(Lockup, { ...LOCKUP, height: 30 }),
     brandHref: 'https://cuesoft.io',
-    links: DOCUMENTS.map((document) => ({ ...document, current: document.href === BASE })),
+    links: DOCUMENTS.map((document) => ({
+      ...document,
+      current: document.href === BASE,
+    })),
     tools: themeToggle,
   }),
 );
 const skip = render(h(SkipLink, { href: '#main' }));
 const legal = render(
-  h(DocLegal, { copyright: { owner: 'Cuesoft Inc.', year: new Date().getFullYear() }, links: LEGAL_LINKS }),
+  h(DocLegal, {
+    copyright: { owner: 'Cuesoft Inc.', year: new Date().getFullYear() },
+    links: LEGAL_LINKS,
+  }),
 );
 
 /** The template with its {{slots}} filled; a slot the build does not fill is an error. */
 const fill = (values) =>
   template.replaceAll(/\{\{(\w+)\}\}/g, (_, key) => {
-    if (!(key in values)) throw new Error(`templates/page.html names {{${key}}}, which the build does not fill`);
+    if (!(key in values))
+      throw new Error(
+        `templates/page.html names {{${key}}}, which the build does not fill`,
+      );
     return values[key];
   });
 
@@ -457,15 +628,22 @@ for (const page of pages) {
   // under it is the shell's date and the opening paragraph is its lede;
   // everything after is the document.
   const heading = parsed.match(/^<h1 id="([^"]*)">([\s\S]*?)<\/h1>\n/);
-  if (!heading) throw new Error(`${page || 'README.md'} does not open with a level-one heading`);
+  if (!heading)
+    throw new Error(
+      `${page || 'README.md'} does not open with a level-one heading`,
+    );
   let rest = parsed.slice(heading[0].length);
-  const effective = rest.match(/^<p><strong>(Effective date:[^<]*)<\/strong><\/p>\n/);
+  const effective = rest.match(
+    /^<p><strong>(Effective date:[^<]*)<\/strong><\/p>\n/,
+  );
   if (effective) rest = rest.slice(effective[0].length);
   // The opening paragraph is the shell's lede, set larger under the title.
   const opening = rest.match(/^<p>([\s\S]*?)<\/p>\n/);
   if (opening) rest = rest.slice(opening[0].length);
   // Tables scroll inside a wrapper instead of widening the page on phones.
-  const body = rest.replaceAll('<table>', '<div class="table-wrap"><table>').replaceAll('</table>', '</table></div>');
+  const body = rest
+    .replaceAll('<table>', '<div class="table-wrap"><table>')
+    .replaceAll('</table>', '</table></div>');
 
   // Crumbs carry the same names the sidebar shows: a page's H1 where the
   // segment is a page, the section label otherwise, and only pages link.
@@ -485,7 +663,8 @@ for (const page of pages) {
             ? { label: text, href: '../'.repeat(parts.length - 1 - index) }
             : { label: text },
       );
-      if (isLast || meta.has(prefix)) crumbList.push({ name: text, item: `${BASE}/${prefix}/` });
+      if (isLast || meta.has(prefix))
+        crumbList.push({ name: text, item: `${BASE}/${prefix}/` });
     });
   }
 
@@ -516,7 +695,11 @@ for (const page of pages) {
         name: title,
         url: canonical,
         isPartOf: { '@type': 'WebSite', name: SITE, url: `${BASE}/` },
-        publisher: { '@type': 'Organization', name: 'Cuesoft', url: 'https://cuesoft.io' },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Cuesoft',
+          url: 'https://cuesoft.io',
+        },
       },
       {
         '@type': 'BreadcrumbList',
@@ -534,7 +717,15 @@ for (const page of pages) {
     // When the page title and site name overlap, the longer one stands alone:
     // never "The Cuesoft Handbook | Cuesoft Handbook". Escaped once for every
     // context it lands in, including meta attributes.
-    doc_title: escapeHtml(titleCase(SITE.includes(title) ? SITE : title.includes(SITE) ? title : `${title} | ${SITE}`)),
+    doc_title: escapeHtml(
+      titleCase(
+        SITE.includes(title)
+          ? SITE
+          : title.includes(SITE)
+            ? title
+            : `${title} | ${SITE}`,
+      ),
+    ),
     site: SITE,
     og_alt: escapeHtml(CARD.alt),
     description: escapeHtml(descriptionOf(markdown)),
@@ -559,7 +750,8 @@ for (const page of pages) {
 // site does not hold. It is the same page around the design system's not-found
 // band: no contents or rails, one way back to the root, kept out of the index.
 {
-  const home = DOCUMENTS.find((document) => document.href === BASE)?.label ?? SITE;
+  const home =
+    DOCUMENTS.find((document) => document.href === BASE)?.label ?? SITE;
   const title = 'Page Not Found';
   const canonical = `${BASE}/404.html`;
   const description = `That page is not here. Go back to the ${SITE} home page.`;
@@ -579,13 +771,21 @@ for (const page of pages) {
         name: title,
         url: canonical,
         isPartOf: { '@type': 'WebSite', name: SITE, url: `${BASE}/` },
-        publisher: { '@type': 'Organization', name: 'Cuesoft', url: 'https://cuesoft.io' },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Cuesoft',
+          url: 'https://cuesoft.io',
+        },
       }),
       robots: '\n    <meta name="robots" content="noindex, follow" />',
       skip,
       header,
       shell: renderToStaticMarkup(
-        h(NotFound, { eyebrow: 'Not found', title: 'That page is not here.', action: { label: `Back to ${home}`, href: '/' } }),
+        h(NotFound, {
+          eyebrow: 'Not found',
+          title: 'That page is not here.',
+          action: { label: `Back to ${home}`, href: '/' },
+        }),
       ),
       legal,
       rum: rumTags,
@@ -604,7 +804,10 @@ writeFileSync(
     })
     .join('\n')}\n</urlset>\n`,
 );
-writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`);
+writeFileSync(
+  path.join(OUT, 'robots.txt'),
+  `User-agent: *\nAllow: /\n\nSitemap: ${BASE}/sitemap.xml\n`,
+);
 
 for (const [from, to] of Object.entries(REDIRECTS)) {
   const target = path.join(OUT, from, 'index.html');
@@ -616,4 +819,6 @@ for (const [from, to] of Object.entries(REDIRECTS)) {
   );
 }
 
-console.log(`built ${pages.length} page(s) and 404.html into _site/ (+${Object.keys(REDIRECTS).length} redirect stub(s))`);
+console.log(
+  `built ${pages.length} page(s) and 404.html into _site/ (+${Object.keys(REDIRECTS).length} redirect stub(s))`,
+);
