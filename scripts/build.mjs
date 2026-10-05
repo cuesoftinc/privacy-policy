@@ -463,9 +463,12 @@ marked.use({
   renderer: {
     heading({ tokens, depth }) {
       const text = this.parser.parseInline(tokens);
-      const id = text
-        .toLowerCase()
-        .replace(/<[^>]+>/g, '')
+      let plain = text.toLowerCase();
+      for (let last; plain !== last;) {
+        last = plain;
+        plain = plain.replace(/<[^>]+>/g, '');
+      }
+      const id = plain
         .replace(/[^a-z0-9 -]/g, '')
         .trim()
         .replace(/\s+/g, '-');

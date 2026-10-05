@@ -6,6 +6,12 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [1.3.10] - 2026-10-05
+
+### Fixed
+
+- Heading anchors strip nested markup completely.
+
 ## [1.3.9] - 2026-10-04
 
 ### Fixed
