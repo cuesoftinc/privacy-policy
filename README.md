@@ -24,7 +24,9 @@ those relationships alongside this policy.
 
 - We collect only what each website needs to do its job: mostly what you
   type into an application or contact form.
-- **No payment data, ever**: our websites take no payments.
+- Only the CueTA™ website takes payment, for enrolment, with Paystack as the
+  card payment provider: see [CueTA™](collection/cueta/#enrolment-and-payment).
+  No other website asks for payment data.
 - **We do not sell personal data.** Our nine websites with advertising tags (CueTA™, CueLABS™,
   CueHIRE™, Cueprise™, Storefront™, Cuelearn™, cuesoft.io, clients.cuesoft.io
   and account.cuesoft.io) use Google Analytics and
