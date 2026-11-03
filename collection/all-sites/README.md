@@ -51,7 +51,7 @@ If you chat with Ace, the messages you type are processed by our AI
 platform provider to generate an answer.
 
 - Conversations live in your browser session and are not linked to an
-  account: there are no accounts on our websites.
+  account.
 - Under our agreement with our AI provider, chat inputs are **not used to
   train AI models**.
 - Please do not submit sensitive personal data through the chat.
@@ -100,5 +100,6 @@ loads and who receives the data: [CueTA™](../cueta/),
 [Cuelearn™](../cuelearn/), [cuesoft.io](../cuesoft/),
 [Client Work](../clients/) and [account.cuesoft.io](../account/). The [documentation sites](../docs-sites/) carry
 none of them, only the cookieless analytics above and the performance and
-error monitoring described on their page. No website ever asks for payment data: see the
-[Terms of Service](https://terms.cuesoft.io).
+error monitoring described on their page. Only the CueTA™ website takes payment, for
+enrolment: see [CueTA™](../cueta/#enrolment-and-payment). No other website asks for
+payment data.

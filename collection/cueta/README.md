@@ -25,6 +25,63 @@ before you submit, and what we store is your answer, not the guess.
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.
 
+## Enrolment and payment
+
+There are two ways into a CueTA™ course. You can apply with the
+application form above, or you can enrol directly from the course page,
+signed in to your Cuesoft account at account.cuesoft.io. Enrolling directly
+is a paid subscription: you choose your plan, check the price, and pay with
+a card saved on your account.
+
+- **What we collect:** your name and email address from your account; the
+  course and plan you chose; the price, with any discount and tax; and the
+  order and invoice records: order number, invoice number, date, total, and
+  whether payment succeeded or failed, with the reason given for a failure
+  (for example declined, insufficient funds, expired card or incorrect
+  security code). For the card on file we keep and show only the card brand,
+  the last four digits, the expiry month and year, and whether it is your
+  default card.
+- **Why:** to take your payment, enrol you in the course, send your
+  receipt, keep your invoices, open a new week of content each week while
+  your subscription is active, and issue your certificate.
+- **The card form:** when you add a card, the signed-in billing page on
+  cueta.cuesoft.io asks for the name on the card, the card number, the
+  expiry date and the security code. They are sent from your browser to the
+  Cuesoft platform that runs your account and courses, and the page empties
+  the number and the security code once the card is saved. We do not send
+  them to the advertising platforms listed below.
+- **Who takes the payment:** **Paystack** is our card payment provider. It
+  processes the card payment for your order under its own security
+  certification and its own privacy notice: see
+  [processors and platforms](../../handling/processors/).
+- **Where:** your account, enrolment, order and invoice records are held on
+  the Cuesoft platform that runs your account and courses.
+- **Legal basis:** performing the contract you enter by enrolling (GDPR
+  Art. 6(1)(b), and the equivalent contractual basis under the NDPA);
+  keeping invoice and tax records is a legal obligation (Art. 6(1)(c)).
+- **Receipt:** we email your receipt to the address on your account.
+- **If payment fails:** your card is not charged for that order, and the
+  page tells you the reason. You can try again, or use a different card, from
+  your account. If a payment on your subscription does not go through, your
+  account stays open for now, new content waits, and your access to your
+  courses can pause until the payment is made: update your card or pay the
+  invoice and it opens again.
+- **Stopping:** you can cancel your subscription from your subscription page at
+  any time. That stops future charges, and your courses stay open until the end
+  of the period you have paid for. You can add another card and make it your
+  default; to have a saved card deleted, use the
+  [rights page](../../rights/your-rights/). Invoice and tax records are kept
+  for as long as the law requires: see
+  [retention](../../handling/retention/).
+- **Certificate:** your certificate is issued once your final payment is
+  made and you have completed the course. Issuing it is described under
+  [processors and platforms](../../handling/processors/).
+- **Advertising platforms:** the only event we send them is the one for an
+  application, described below. No payment event is sent, and we do not send
+  them your card details, name or email address. As on every page, if you
+  accept the banner, they receive the page views described below, which on
+  these pages include the page address.
+
 ## Analytics and advertising tags: opt-in only
 
 All nine Cuesoft websites that carry them (CueTA™, CueLABS™, CueHIRE™,
