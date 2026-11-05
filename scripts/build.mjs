@@ -69,7 +69,7 @@ const DOCUMENTS = [
   { label: 'Terms', href: 'https://terms.cuesoft.io' },
 ];
 const LEGAL_LINKS = [
-  { label: 'cuesoft.io', href: 'https://cuesoft.io' },
+  { label: 'Cuesoft: the company', href: 'https://cuesoft.io' },
   { label: 'CueTA™', href: 'https://cueta.cuesoft.io' },
   { label: 'CueLABS™', href: 'https://cuelabs.cuesoft.io' },
   { label: 'CueHIRE™', href: 'https://cuehire.cuesoft.io' },
