@@ -15,6 +15,12 @@ to:
 | **Withdraw consent** | At any time, without affecting prior lawful processing: use the **Cookie preferences** link in the footer of the site where you accepted, since a choice does not carry between sites. The Spotify player on cuesoft.io is separate: the banner does not govern it, so clear Spotify’s cookies in your browser and simply do not click it again |
 | **Complain**         | To your supervisory authority: named per jurisdiction                                                                                                                                                                                                                                                                                           |
 
+On [account.cuesoft.io](../../collection/account/#your-privacy-settings), the
+**Privacy & Data** page lets you download a copy of your data and ask for your
+account to be deleted without writing to us, and the profile, work history and
+payout pages let you correct what they hold. What that deletion does and does
+not remove is set out on that page; for anything else, use the steps below.
+
 ## How to exercise them
 
 1. Email [hello@cuesoft.io](mailto:hello@cuesoft.io) with what you want

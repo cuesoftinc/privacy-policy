@@ -26,9 +26,12 @@ those relationships alongside this policy.
   type into an application or contact form.
 - The CueTA™ website takes payment for enrolment, with Paystack as the
   card payment provider: see [CueTA™](collection/cueta/#enrolment-and-payment).
-  Card details are also entered on the signed-in parts of
-  [account.cuesoft.io](collection/account/) and [CueHIRE™](collection/cuehire/):
-  see those pages for what is asked. No other website asks for payment data.
+  Cards are also saved on the signed-in Payment Methods page of
+  [account.cuesoft.io](collection/account/#cards), where the card is typed only
+  into Paystack’s own window and Cuesoft never receives the card number or
+  security code, and card details are entered on the signed-in parts of
+  [CueHIRE™](collection/cuehire/): see those pages for what is asked. No other
+  website asks for payment data.
 - **We do not sell personal data.** Our nine websites with advertising tags (CueTA™, CueLABS™,
   CueHIRE™, Cueprise™, Storefront™, Cuelearn™, cuesoft.io, clients.cuesoft.io
   and account.cuesoft.io) use Google Analytics and
@@ -43,8 +46,8 @@ those relationships alongside this policy.
   see [what every site collects](collection/all-sites/#performance-and-error-monitoring).
   **Client Work** at
   [clients.cuesoft.io](collection/clients/) is an informational case-study site
-  and the account site at [account.cuesoft.io](collection/account/) is the
-  sign-in page; each has its own collection notice and loads its tags only
+  and the account site at [account.cuesoft.io](collection/account/) is where you
+  sign up, sign in and keep your account settings; each has its own collection notice and loads its tags only
   after its own consent banner accepts them; the documentation sites carry
   no such tags, only the cookieless analytics and the performance and error
   monitoring described on [their page](collection/docs-sites/).
