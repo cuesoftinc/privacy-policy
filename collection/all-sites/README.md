@@ -101,6 +101,9 @@ loads and who receives the data: [CueTA™](../cueta/),
 [Client Work](../clients/) and [account.cuesoft.io](../account/). The [documentation sites](../docs-sites/) carry
 none of them, only the cookieless analytics above and the performance and
 error monitoring described on their page. The CueTA™ website takes payment for
-enrolment: see [CueTA™](../cueta/#enrolment-and-payment). Card details are also
-entered on the signed-in parts of [account.cuesoft.io](../account/) and
-[CueHIRE™](../cuehire/): see those pages for what is asked. No other website asks for payment data.
+enrolment: see [CueTA™](../cueta/#enrolment-and-payment). Cards are also saved on
+the signed-in Payment Methods page of [account.cuesoft.io](../account/#cards),
+where the card is typed only into Paystack’s own window and Cuesoft never
+receives the card number or security code, and card details are entered on the
+signed-in parts of [CueHIRE™](../cuehire/): see those pages for what is asked.
+No other website asks for payment data.
