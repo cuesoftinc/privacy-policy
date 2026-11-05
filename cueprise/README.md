@@ -38,6 +38,10 @@ controller** of the data the platform holds.
 - **Confirmation:** we email you a receipt, copied to
   [cueprise@cuesoft.io](mailto:cueprise@cuesoft.io): see
   [what every site collects](../collection/all-sites/).
+- **Booking a time directly:** the page also links to a Google Calendar
+  booking page, which opens in a new tab. What you enter there goes to
+  Google, under [Google’s privacy policy](https://policies.google.com/privacy),
+  and not through our form.
 
 Data inside a licensed Cueprise™ deployment is governed by that licence’s
 data terms and by the rest of this notice.
@@ -67,13 +71,13 @@ separate and run either way):
   location is what is kept. Google Analytics keeps this for **14 months**:
   see [retention](../handling/retention/). We do not send your form
   contents to any of them.
-- **One event beyond page views:** when you request a demo, **Meta** is
-  told that it happened, so it can credit the ad you arrived from. Google
+- **One event beyond page views:** when you request a demo, or click the
+  link that books a time directly, **Google Ads, Meta, LinkedIn and X** are
+  told that it happened, so they can credit the ad you arrived from. Google
   Analytics is not: it receives the page views described above and nothing
-  more. The event records the fact of the request and nothing else: not
-  your name, not your email, not your business, and not what you wrote.
-  Google Ads, LinkedIn and X receive page views on this site but are not
-  told about the request.
+  more. The event records the fact of the request or the click and nothing
+  else: not your name, not your email, not your business, and not what you
+  wrote.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account

@@ -40,7 +40,7 @@ click-to-load embed on cuesoft.io) loads only if you click the player.
 ## Communication platforms
 
 Programme coordination happens on **WhatsApp** (CueTA™ cohorts) and
-**Discord** (CueLABS™ interns), and client-representative discussion may
+**Discord** (the CueLABS™ community, which anyone may join), and client-representative discussion may
 happen on WhatsApp under an engagement’s terms.
 
 - Joining a group makes your profile name (and on WhatsApp, your phone

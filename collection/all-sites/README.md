@@ -60,8 +60,8 @@ platform provider to generate an answer.
 
 ## Form acknowledgement email
 
-Submit a form on **CueTA™**, **CueLABS™**, **CueHIRE™** or **Cueprise™** and
-we email you a confirmation. It is copied to the department that will handle it, and
+Submit a form on **CueTA™**, **CueLABS™**, **CueHIRE™**, **Cueprise™**,
+**Storefront™** or **Cuelearn™** and we email you a confirmation. It is copied to the department that will handle it, and
 replies go there too, because the message is sent from an address nobody
 reads.
 
@@ -100,6 +100,7 @@ loads and who receives the data: [CueTA™](../cueta/),
 [Cuelearn™](../cuelearn/), [cuesoft.io](../cuesoft/),
 [Client Work](../clients/) and [account.cuesoft.io](../account/). The [documentation sites](../docs-sites/) carry
 none of them, only the cookieless analytics above and the performance and
-error monitoring described on their page. Only the CueTA™ website takes payment, for
-enrolment: see [CueTA™](../cueta/#enrolment-and-payment). No other website asks for
-payment data.
+error monitoring described on their page. The CueTA™ website takes payment for
+enrolment: see [CueTA™](../cueta/#enrolment-and-payment). Card details are also
+entered on the signed-in parts of [account.cuesoft.io](../account/) and
+[CueHIRE™](../cuehire/): see those pages for what is asked. No other website asks for payment data.
