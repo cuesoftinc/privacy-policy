@@ -6,7 +6,7 @@ The following applies to **cuesoft.io**, **cueta.cuesoft.io**,
 analytics, monitoring and advertising tags sections below also cover
 [clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/).
 
-## Server and security logs
+## Server and Security Logs
 
 Our sites are served through Cloudflare (edge security and delivery) and
 hosted on Google Firebase App Hosting. Standard technical data (IP
@@ -17,7 +17,7 @@ infrastructure logs used for security, abuse prevention and reliability.
   (GDPR Art. 6(1)(f)).
 - **Retention:** no more than 30 days: see [retention](../../handling/retention/).
 
-## Cookieless analytics
+## Cookieless Analytics
 
 On every website, the [documentation sites](../docs-sites/),
 [clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/)
@@ -26,7 +26,7 @@ uses **no cookies**, no persistent identifiers, no fingerprinting and no
 cross-site tracking. It tells us page views and performance, not who you
 are.
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 Every website loads **Datadog**’s browser monitoring: the seven above,
 [clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/). It is operational
@@ -45,7 +45,7 @@ data is kept and the legal basis:
 [Client Work](../clients/#performance-and-error-monitoring) and
 [account.cuesoft.io](../account/#performance-and-error-monitoring).
 
-## Ace, the assistant
+## Ace, the Assistant
 
 If you chat with Ace, the messages you type are processed by our AI
 platform provider to generate an answer.
@@ -58,7 +58,7 @@ platform provider to generate an answer.
 - **Legal basis:** our legitimate interest in providing the assistant you
   choose to use (GDPR Art. 6(1)(f)).
 
-## Form acknowledgement email
+## Form Acknowledgement Email
 
 Submit a form on **CueTA™**, **CueLABS™**, **CueHIRE™**, **Cueprise™**,
 **Storefront™** or **Cuelearn™** and we email you a confirmation. It is copied to the department that will handle it, and

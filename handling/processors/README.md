@@ -1,6 +1,6 @@
 # Processors and Platforms
 
-## Our processors
+## Our Processors
 
 We use a small set of service providers to run the websites and the
 programmes behind them, each bound by its data processing agreement to
@@ -38,7 +38,7 @@ click-to-load embed on cuesoft.io) loads only if you click the player.
 
 **We do not sell personal data to anyone.**
 
-## Communication platforms
+## Communication Platforms
 
 Programme coordination happens on **WhatsApp** (CueTA™ cohorts) and
 **Discord** (the CueLABS™ community, which anyone may join), and client-representative discussion may

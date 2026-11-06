@@ -1,6 +1,6 @@
 # cuehire.cuesoft.io: Talent and Project Management Agency
 
-## Contact form
+## Contact Form
 
 - **What:** name, work email, company, and your brief. We also record the
   country Cloudflare’s edge places you in: derived from your IP address as
@@ -20,7 +20,7 @@
 Engagement data under a signed agreement is governed by that agreement’s
 data terms.
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -88,7 +88,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the

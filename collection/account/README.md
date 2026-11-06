@@ -226,7 +226,7 @@ you save there pay for your CueTA™ subscription or your CueHIRE™ invoices.
 - **Legal basis:** meeting your request to see, take or delete your data (GDPR
   Art. 6(1)(c), and the equivalent legal duty under the NDPA).
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags on its live address, gated
 behind a consent banner. None of them loads, and none of their cookies is
@@ -292,7 +292,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
