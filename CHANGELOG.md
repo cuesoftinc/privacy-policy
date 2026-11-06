@@ -6,6 +6,15 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [Unreleased]
+
+### Added
+
+- Apparule privacy notice for photos, measurements, orders and payments.
+- Expendit privacy notice for books, imports and AI processing.
+- Upstat privacy notice for accounts and cookieless visitor events.
+- Apparule accepts users from 13 with a parent’s agreement.
+
 ## [1.3.10] - 2026-10-05
 
 ### Fixed
