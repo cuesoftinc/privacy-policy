@@ -53,10 +53,12 @@ those relationships alongside this policy.
   after its own consent banner accepts them; the documentation sites carry
   no such tags, only the cookieless analytics and the performance and error
   monitoring described on [their page](collection/docs-sites/).
-- **Apparule** and **Expendit**, our two consumer apps, each have their own
-  notice: [Apparule](apparule/) for body photos, measurements and orders,
-  [Expendit](expendit/) for your books and the AI that can read your
-  statements, only with your consent.
+- **Apparule**, **Expendit** and **Upstat**, our open-source products, each
+  have their own notice: [Apparule](apparule/) for body photos, measurements
+  and orders, [Expendit](expendit/) for your books and the AI that can read
+  your statements, only with your consent, and [Upstat](upstat/) for
+  monitoring and the cookieless visit counts it keeps for the sites that use
+  it.
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don’t type sensitive personal information into a chat box.
 - You can exercise your rights (access, correction, deletion and more)
@@ -71,6 +73,7 @@ those relationships alongside this policy.
 | [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller.                                                                                                                                                                   |
 | [Apparule Privacy Notice](apparule/)  | Our body-measurement and designer marketplace app: photos, measurements, orders and payments.                                                                                                                                                                     |
 | [Expendit Privacy Notice](expendit/)  | Our income, expense and tax app: your books, imported statements and AI processing.                                                                                                                                                                               |
+| [Upstat Privacy Notice](upstat/)      | Our monitoring and status service: account data, and the cookieless events it keeps for the sites that use it.                                                                                                                                                    |
 | [Handling](handling/processors/)      | Processors and platforms, international transfers, retention, security and breach notification.                                                                                                                                                                   |
 | [Rights](rights/your-rights/)         | Your rights and how to exercise them, and children.                                                                                                                                                                                                               |
 | [Jurisdictions](jurisdictions/eu-uk/) | The detail per regime: Nigeria, EU/EEA and UK, United States.                                                                                                                                                                                                     |

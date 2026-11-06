@@ -49,6 +49,7 @@ const SECTION_ORDER = [
   'cueprise',
   'apparule',
   'expendit',
+  'upstat',
   'handling',
   'rights',
   'jurisdictions',
