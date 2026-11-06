@@ -13,8 +13,8 @@ with a parent’s or guardian’s agreement for anyone under 18 (see the
 - If you believe a minor has provided us data, contact
   [hello@cuesoft.io](mailto:hello@cuesoft.io) and we will verify and
   delete it.
-- Apparule asks for a parent’s or guardian’s agreement before the first
-  capture of anyone under 18, which also meets the age-of-consent
+- Apparule requires a parent’s or guardian’s agreement for anyone under
+  18, which also meets the age-of-consent
   provisions of GDPR Art. 8 wherever a member state sets that age between
   13 and 16. Outside Apparule we do not direct services to children, and
   if we learn we hold a minor’s data, deletion is the remedy.

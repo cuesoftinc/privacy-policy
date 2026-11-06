@@ -19,10 +19,9 @@ controller of the data it holds, and this notice does not describe it.
 
 ## Who Can Use Apparule
 
-You can use Apparule from the age of **13**. If you are under 18, a parent
-or guardian must agree to your using it, and to the consent you give for
-your photos below, before your first capture. See
-[children](../rights/children/).
+You can use Apparule from the age of **13**. If you are under 18, you may
+use it only with a parent’s or guardian’s agreement, which also covers the
+consent for your photos below. See [children](../rights/children/).
 
 ## Signing In
 
