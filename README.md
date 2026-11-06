@@ -30,8 +30,10 @@ those relationships alongside this policy.
   [account.cuesoft.io](collection/account/#cards), where the card is typed only
   into Paystack’s own window and Cuesoft never receives the card number or
   security code, and card details are entered on the signed-in parts of
-  [CueHIRE™](collection/cuehire/): see those pages for what is asked. No other
-  website asks for payment data.
+  [CueHIRE™](collection/cuehire/): see those pages for what is asked.
+  Apparule’s orders are paid on Paystack’s own checkout: see the
+  [Apparule notice](apparule/#payments). No other website or product asks
+  for payment data.
 - **We do not sell personal data.** Our nine websites with advertising tags (CueTA™, CueLABS™,
   CueHIRE™, Cueprise™, Storefront™, Cuelearn™, cuesoft.io, clients.cuesoft.io
   and account.cuesoft.io) use Google Analytics and
@@ -51,6 +53,10 @@ those relationships alongside this policy.
   after its own consent banner accepts them; the documentation sites carry
   no such tags, only the cookieless analytics and the performance and error
   monitoring described on [their page](collection/docs-sites/).
+- **Apparule** and **Expendit**, our two consumer apps, each have their own
+  notice: [Apparule](apparule/) for body photos, measurements and orders,
+  [Expendit](expendit/) for your books and the AI that can read your
+  statements, only with your consent.
 - Our AI assistant (Ace) processes what you type to it in order to answer;
   don’t type sensitive personal information into a chat box.
 - You can exercise your rights (access, correction, deletion and more)
@@ -63,6 +69,8 @@ those relationships alongside this policy.
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Collection](collection/all-sites/)   | What every marketing site collects, then site by site: cuesoft.io, cueta.cuesoft.io, cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io, storefront.cuesoft.io, cuelearn.cuesoft.io, clients.cuesoft.io, account.cuesoft.io and the documentation sites. |
 | [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller.                                                                                                                                                                   |
+| [Apparule Privacy Notice](apparule/)  | Our body-measurement and designer marketplace app: photos, measurements, orders and payments.                                                                                                                                                                     |
+| [Expendit Privacy Notice](expendit/)  | Our income, expense and tax app: your books, imported statements and AI processing.                                                                                                                                                                               |
 | [Handling](handling/processors/)      | Processors and platforms, international transfers, retention, security and breach notification.                                                                                                                                                                   |
 | [Rights](rights/your-rights/)         | Your rights and how to exercise them, and children.                                                                                                                                                                                                               |
 | [Jurisdictions](jurisdictions/eu-uk/) | The detail per regime: Nigeria, EU/EEA and UK, United States.                                                                                                                                                                                                     |
