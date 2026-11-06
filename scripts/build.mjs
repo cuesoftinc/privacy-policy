@@ -47,6 +47,8 @@ const DESCRIPTION =
 const SECTION_ORDER = [
   'collection',
   'cueprise',
+  'apparule',
+  'expendit',
   'handling',
   'rights',
   'jurisdictions',
