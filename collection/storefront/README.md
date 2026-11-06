@@ -14,7 +14,7 @@ CueHIRE™ engagement against their own back office instead, that notice does
 not reach it and the engagement’s own data terms govern what we hold and for
 how long.
 
-## Enquiry form
+## Enquiry Form
 
 - **What:** your name, work email, business name, the sector you picked from
   the list, and anything you added in the message box. We also record the
@@ -43,7 +43,7 @@ how long.
   Google, under [Google’s privacy policy](https://policies.google.com/privacy),
   and not through our form.
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -111,7 +111,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the

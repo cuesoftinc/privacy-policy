@@ -39,7 +39,7 @@ not remove is set out on that page; for anything else, use the steps below.
 5. You may use an authorised agent where your law provides for one; we
    verify the agent’s authority and your identity.
 
-## Automated decisions
+## Automated Decisions
 
 We do not make solely automated decisions with legal or similarly
 significant effects. Application decisions across all programmes are made

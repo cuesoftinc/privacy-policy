@@ -1,4 +1,4 @@
-# cuesoft.io: the Corporate Site
+# cuesoft.io: The Corporate Site
 
 - **No forms.** Apart from the opt-in tags described below, the site
   collects nothing you don’t type into [Ace](../all-sites/). If you have
@@ -13,7 +13,7 @@
   your browser never talks to Medium on our site.
 - Everything on [what every site collects](../all-sites/) applies.
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -83,7 +83,7 @@ separate and run either way):
 - The Spotify player above is separate: it loads only on click and is not
   covered by this banner.
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the

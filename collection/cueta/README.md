@@ -1,6 +1,6 @@
 # cueta.cuesoft.io: Cuesoft Talent Academy
 
-## Application form
+## Application Form
 
 - **What:** name, email, phone number, country of residence, the track you
   applied for, your programme intent, and your answer to the mailing-list
@@ -25,7 +25,7 @@ before you submit, and what we store is your answer, not the guess.
 Application decisions are made by humans; we do not make solely automated
 decisions with legal or similarly significant effects.
 
-## Enrolment and payment
+## Enrolment and Payment
 
 There are two ways into a CueTA™ course. You can apply with the
 application form above, or you can enrol directly from the course page,
@@ -82,7 +82,7 @@ a card saved on your account.
   accept the banner, they receive the page views described below, which on
   these pages include the page address.
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 All nine Cuesoft websites that carry them (CueTA™, CueLABS™, CueHIRE™,
 Cueprise™, Storefront™, Cuelearn™, cuesoft.io, clients.cuesoft.io and
@@ -151,7 +151,7 @@ load them:
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
@@ -180,7 +180,7 @@ the errors it hits, so that we can keep the pages working.
   (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
   time.
 
-## Cohort communication
+## Cohort Communication
 
 Enrolled learners are contacted about their cohort via the details they
 provided, including WhatsApp groups for cohort coordination: see
