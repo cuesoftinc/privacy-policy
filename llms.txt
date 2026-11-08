@@ -9,7 +9,8 @@ US law. It covers what each website collects, how the data is handled
 notification), your rights and how to exercise them, and children. Cueprise(TM), Apparule, Expendit and Upstat each have their own privacy notice. The CueTA(TM) website takes card payments for
 enrolment, through Paystack, and the account site at account.cuesoft.io saves
 cards only through Paystack's own window, so Cuesoft never receives a card
-number or security code. Cuesoft does not sell personal data.
+number or security code. Adding a card makes a 50 naira verification payment,
+which Cuesoft's platform refunds. Cuesoft does not sell personal data.
 
 ## Pages
 
