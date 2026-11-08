@@ -17,7 +17,7 @@ Releases before 1.1.0 predate this file.
 
 ### Changed
 
-- Design system updated to 1.50.2.
+- Design system updated to 1.51.0.
 - Headings follow the family case rule.
 - Site pages describe the Account and CueTA forms as built.
 
