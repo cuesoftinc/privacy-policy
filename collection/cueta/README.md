@@ -1,38 +1,21 @@
 # cueta.cuesoft.io: Cuesoft Talent Academy
 
-## Application Form
-
-- **What:** name, email, phone number, country of residence, the track you
-  applied for, your programme intent, and your answer to the mailing-list
-  box.
-- **Why:** to process your application, run your free consultation call
-  and administer enrolment.
-- **Where:** records are stored in Airtable, our forms database.
-- **Legal basis:** steps at your request prior to a contract
-  (GDPR Art. 6(1)(b)), and the equivalent contractual basis under the NDPA.
-  The mailing-list box is the one exception: ticking it is **consent**
-  (GDPR Art. 6(1)(a)). Leave it unticked and your application and its
-  confirmation are unaffected; tick it and you can withdraw at any time by
-  emailing [hello@cuesoft.io](mailto:hello@cuesoft.io).
-- **Confirmation:** we email you a receipt, copied to
-  [cueta@cuesoft.io](mailto:cueta@cuesoft.io): see
-  [what every site collects](../all-sites/).
-
-The country select arrives pre-filled with the country Cloudflare’s edge
-places you in, which is a guess from your IP address. You can change it
-before you submit, and what we store is your answer, not the guess.
-
-Application decisions are made by humans; we do not make solely automated
-decisions with legal or similarly significant effects.
-
 ## Enrolment and Payment
 
-There are two ways into a CueTA™ course. You can apply with the
-application form above, or you can enrol directly from the course page,
-signed in to your Cuesoft account at account.cuesoft.io. Enrolling directly
-is a paid subscription: you choose your plan, check the price, and pay with
-a card saved on your account.
+You enrol in a CueTA™ course from its page on cueta.cuesoft.io. Enrolling is
+a paid subscription. The site has no application form and takes no
+applications. You sign in to your Cuesoft account at account.cuesoft.io,
+check the price, and pay with a card saved on your account.
 
+- **How you enrol:** the site asks the Cuesoft platform that runs your
+  account and courses for a quote, then creates an order, then asks the
+  platform to charge the card you chose. If Paystack has not finished that
+  payment, the site asks the platform to confirm it with the payment
+  reference. The same request sent twice takes one payment.
+- **Course pages:** the price, duration, outline, deliverables and timeline
+  on a course page are read from the platform’s course catalogue, which the
+  site’s server asks for without a sign-in. It holds course information and
+  no personal data.
 - **What we collect:** your name and email address from your account; the
   course and plan you chose; the price, with any discount and tax; and the
   order and invoice records: order number, invoice number, date, total, and
@@ -44,12 +27,14 @@ a card saved on your account.
 - **Why:** to take your payment, enrol you in the course, send your
   receipt, keep your invoices, open a new week of content each week while
   your subscription is active, and issue your certificate.
-- **The card form:** when you add a card, the signed-in billing page on
-  cueta.cuesoft.io asks for the name on the card, the card number, the
-  expiry date and the security code. They are sent from your browser to the
-  Cuesoft platform that runs your account and courses, and the page empties
-  the number and the security code once the card is saved. We do not send
-  them to the advertising platforms listed below.
+- **Adding a card:** the card number, expiry date and security code are typed
+  only into Paystack’s own window, never into cueta.cuesoft.io, which has no
+  field for them. Before the window opens, the platform starts a card
+  verification checkout of 50 naira, and the platform refunds that charge.
+  Paystack’s script loads only when you press Add Card. We do not send the
+  card to the advertising platforms listed below. What the platform asks and
+  keeps about each verification is on the
+  [Cards section of the account page](../account/#cards).
 - **Who takes the payment:** **Paystack** is our card payment provider. It
   processes the card payment for your order under its own security
   certification and its own privacy notice: see
@@ -75,10 +60,14 @@ a card saved on your account.
   [retention](../../handling/retention/).
 - **Certificate:** your certificate is issued once your final payment is
   made and you have completed the course. Issuing it is described under
-  [processors and platforms](../../handling/processors/).
-- **Advertising platforms:** the only event we send them is the one for an
-  application, described below. No payment event is sent, and we do not send
-  them your card details, name or email address. As on every page, if you
+  [processors and platforms](../../handling/processors/). Anyone with a
+  certificate code can check it on the site’s Verify a Certificate page. The
+  page asks the platform about the code and shows the holder’s name, the
+  title, the tier if there is one, the date and whether the certificate is
+  valid or revoked.
+- **Advertising platforms:** the only event we send them is the one for a
+  paid enrolment, described below. We do not send them your card details,
+  name or email address. As on every page, if you
   accept the banner, they receive the page views described below, which on
   these pages include the page address.
 
@@ -109,12 +98,16 @@ load them:
   location is what is kept. Google Analytics keeps
   this for **14 months**: see [retention](../../handling/retention/).
 - **One event beyond page views:**
-  when you submit an application,
+  when an enrolment payment succeeds and the enrolment confirmed page opens,
   **Google Ads, Meta, LinkedIn and X** are told that it happened, so
-  they can credit the ad you arrived from. Google Analytics is not: it
-  receives the page views described above and nothing more. The event
-  records the fact of the application and nothing else: not your name, not
-  your email, not your phone number, and not what you wrote.
+  they can credit the ad you arrived from. Google Ads receives a
+  conversion, Meta receives a Lead event, and LinkedIn and X each receive
+  the conversion event set up for this site. We send it once for each paid
+  order, and only on the live site, only after you press Accept, and never
+  while your browser sends Global Privacy Control. Google Analytics is not
+  told: it receives the page views described above and nothing more. The
+  event records the fact of the enrolment and nothing else: not your name, not
+  your email, not your phone number, not the course and not what you paid.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account
@@ -146,7 +139,7 @@ load them:
   platforms hold what they collected as **independent businesses** under
   their own policies: see
   [processors and platforms](../../handling/processors/).
-- We do **not** send your form contents (email, phone) to these
+- We do **not** send your name, email address or phone number to these
   advertising platforms.
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).

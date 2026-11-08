@@ -60,7 +60,7 @@ platform provider to generate an answer.
 
 ## Form Acknowledgement Email
 
-Submit a form on **CueTA™**, **CueLABS™**, **CueHIRE™**, **Cueprise™**,
+Submit a form on **CueLABS™**, **CueHIRE™**, **Cueprise™**,
 **Storefront™** or **Cuelearn™** and we email you a confirmation. It is copied to the department that will handle it, and
 replies go there too, because the message is sent from an address nobody
 reads.

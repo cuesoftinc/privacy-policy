@@ -59,8 +59,18 @@ hired through CueHIRE™, we set your account up for you.
   page shows but does not let you change. On the work history page, for each
   role: the role, the company, the start date and either an end date or that
   you still work there. The page does not ask for a description of the role.
-  The account bar also shows the email address and, if one is set, the picture
-  address of your account.
+  For staff with a personnel record, the work history page also shows a Current
+  Employment group above your history: your job title, department, manager’s
+  name and start date, as the company’s records hold them. You cannot change
+  them there: the page says to ask your manager. A learner or an applicant has
+  no such record, so the group does not appear. The account bar also shows the
+  email address and, if one is set, the picture address of your account.
+- **Where you edit it:** it depends on how you sign in. If you sign in with the
+  workspace’s single sign-on, you edit your profile and work history on this
+  site. If you sign in with a code, a passkey or Google, this site shows them
+  read-only with a notice, Edit These Details in Your Console, and a link to
+  your console, where you edit them. The same applies to the bank and identity
+  pages.
 - **Why:** to run your account and, for work history, to show your experience
   on your applications. The page’s own words are that CueHIRE™ shows it to a
   client, in your words.
@@ -101,11 +111,19 @@ you save there pay for your CueTA™ subscription or your CueHIRE™ invoices.
   code**. The platform also refuses a card number if one ever reached it, and
   the site’s own tests fail if any request to the site or the platform carries
   one.
-- **What the site sends Paystack:** to open its window, your email address
-  from your profile, an amount of 50 naira (NGN) and the instruction to take a
-  card payment only. 50 naira is the smallest charge Paystack takes, so adding
-  a card makes that payment from it. Neither the site’s code nor the platform’s
-  account code refunds it.
+- **What the platform sends Paystack:** when you press Add Card, the site asks
+  the platform for a card verification checkout. The platform starts it at
+  Paystack with your email address, an amount of 50 naira (NGN) and the
+  instruction to take a card payment only, and gives the site its reference and
+  access code. 50 naira is the smallest charge Paystack takes, so adding a card
+  makes that payment from it.
+- **The refund:** the platform refunds the 50 naira once the card is saved. It
+  refunds it only when the reference was issued to you by the verification
+  checkout, Paystack reports it as a card verification and it is exactly 50
+  naira, and it records the refund once for each reference. If Paystack refuses
+  the refund, the card is still saved and the platform tries the refund again
+  when the same reference is sent again. A paid verification whose card cannot
+  be saved is refunded too.
 - **What the site sends the platform:** one request carrying Paystack’s
   transaction **reference** for that payment, and whether you want the card as
   your default. Nothing else: no card number, security code, expiry, brand,
@@ -116,17 +134,20 @@ you save there pay for your CueTA™ subscription or your CueHIRE™ invoices.
   brand, last four digits, expiry month and expiry year, and whether the card
   can be saved. It keeps those, the name of the gateway, whether the card is
   your default, whether it is active, and when it was added. It keeps no card
-  number and no security code, because it never receives them. The Cards list
+  number and no security code, because it never receives them. For each
+  verification it also keeps the account it was issued to, the reference, the
+  amount and currency, its status, the reference of the refund, the error text
+  if one was recorded, and when it was created and last updated. The Cards list
   and the export show brand, last four digits, expiry and default only (the
   list also shows the status of the card); the authorization code is never
   shown or exported.
 - **Why:** to take the payments you choose to pay by card, and to show you
   which card is which.
 - **Where:** the saved card record is held on the Cuesoft platform that runs
-  your account. The card itself, and the 50 naira payment, are held by
-  Paystack.
+  your account. The card itself, and the 50 naira payment until it is
+  refunded, are held by Paystack.
 - **Who receives it:** **Paystack** receives the card from you in its window,
-  and your email address and the amount from the site; the platform and
+  and your email address and the amount from the platform; the platform and
   Paystack exchange the reference and the authorization code. Paystack
   processes them under its own security certification and its own privacy
   notice: see [processors and platforms](../../handling/processors/). The
