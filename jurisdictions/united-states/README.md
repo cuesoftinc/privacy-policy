@@ -42,7 +42,7 @@ In CCPA/CPRA terms:
   depending on the form you use,
   professional or employment-related and commercial information (role
   interest and availability on CueLABS™, company and project briefs on
-  CueHIRE™, programme intent on CueTA™), all described on the
+  CueHIRE™), all described on the
   [collection pages](../../collection/all-sites/), collected from you
   directly and from your browser. **Purposes:** processing applications
   and enquiries, running and securing the websites, and (opt-in only)
