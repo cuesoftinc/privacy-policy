@@ -1,4 +1,4 @@
-# cuelearn.cuesoft.io: Cuelearn™
+# Cuelearn™ Privacy Notice
 
 Cuelearn™ is the learning platform we sell to institutions: academies,
 schools, universities and training providers. This page covers the
@@ -20,7 +20,7 @@ canvas.cuesoft.io, is not covered by this page.
 - **Legal basis:** our legitimate interest in responding to the business
   enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent
   legitimate-interest basis under the NDPA; you may
-  [object](../../rights/your-rights/) at any time. An agreement that follows
+  [object](../rights/your-rights/) at any time. An agreement that follows
   is between Cuesoft and your institution rather than with you: if you
   enquired as an employee or representative you are usually not a party to
   it, so contract performance cannot become the basis for your own name and
@@ -28,14 +28,14 @@ canvas.cuesoft.io, is not covered by this page.
   processing under it rests on that contract (Art. 6(1)(b)).
 - **Confirmation:** we email you a receipt, copied to
   [cuelearn@cuesoft.io](mailto:cuelearn@cuesoft.io); see
-  [what every site collects](../all-sites/).
+  [what every site collects](../collection/all-sites/).
 
 ## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
 **Accept**. The cookieless Cloudflare measurement described in
-[what every site collects](../all-sites/) and the
+[what every site collects](../collection/all-sites/) and the
 [performance and error monitoring](#performance-and-error-monitoring) below are
 separate and run either way:
 
@@ -53,7 +53,7 @@ separate and run either way:
   Analytics uses the IP address in passing to derive an approximate
   location and then discards it: the address itself is not stored, and the
   location is what is kept. Google Analytics keeps
-  this for **14 months**; see [retention](../../handling/retention/). We
+  this for **14 months**; see [retention](../handling/retention/). We
   do not send your form contents to any of them.
 - **One event beyond page views:** when you send a demo request,
   **Google Ads, Meta, LinkedIn and X** are told that it happened, so they
@@ -85,17 +85,17 @@ separate and run either way:
   cookies already set (you can clear those in your browser). What happens
   to data already collected differs by provider: Google Analytics holds it
   as our **processor**, on our instructions, so the
-  [rights page](../../rights/your-rights/) reaches it. The exception is what
+  [rights page](../rights/your-rights/) reaches it. The exception is what
   Google signals feeds into Google’s own ads personalisation, which Google
   controls rather than us: manage that in your
   [Google account](https://myadcenter.google.com). The four advertising
   platforms hold what they collected as **independent businesses** under
   their own policies; see
-  [processors and platforms](../../handling/processors/).
+  [processors and platforms](../handling/processors/).
 - An opt-out preference signal (**Global Privacy Control**) overrides a
   stored opt-in for as long as your browser sends it.
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
-  the [United States page](../../jurisdictions/united-states/).
+  the [United States page](../jurisdictions/united-states/).
 
 ## Performance and Error Monitoring
 
@@ -119,11 +119,11 @@ the errors it hits, so that we can keep the pages working.
 - **Role and retention:** Datadog acts as our **processor**, on our
   instructions, and keeps the data in the United States for no more than
   **30 days**, under the safeguards on the
-  [transfers page](../../handling/transfers/); see
-  [processors and platforms](../../handling/processors/) and
-  [retention](../../handling/retention/).
+  [transfers page](../handling/transfers/); see
+  [processors and platforms](../handling/processors/) and
+  [retention](../handling/retention/).
 - **Legal basis:** our legitimate interest in keeping the pages working
-  (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
+  (GDPR Art. 6(1)(f)); you may [object](../rights/your-rights/) at any
   time.
 
 ## What this site does not do
@@ -133,5 +133,5 @@ an institution asks for a demo, and Cuelearn™ is licensed under a separate
 written agreement. Apart from the
 [performance and error monitoring](#performance-and-error-monitoring) above, nothing
 loads before you accept, and the cookieless Cloudflare measurement described
-in [what every site collects](../all-sites/) stays outside the consent gate
+in [what every site collects](../collection/all-sites/) stays outside the consent gate
 because it sets no cookie.

@@ -6,7 +6,7 @@ This policy is issued by Cuesoft Inc. and Cuesoft Nigeria Limited, who act as
 joint data controllers for the Cuesoft websites, under Nigerian, EU/UK and
 US law. It covers what each website collects, how the data is handled
 (processors, international transfers, retention, security and breach
-notification), your rights and how to exercise them, and children. Cueprise(TM), Apparule, Expendit and Upstat each have their own privacy notice. The CueTA(TM) website takes card payments for
+notification), your rights and how to exercise them, and children. Cueprise(TM), Apparule, Expendit, Upstat and Cuelearn(TM) each have their own privacy notice. The CueTA(TM) website takes card payments for
 enrolment, through Paystack, and the account site at account.cuesoft.io saves
 cards only through Paystack's own window, so Cuesoft never receives a card
 number or security code. Adding a card makes a 50 naira verification payment,

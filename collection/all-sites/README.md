@@ -40,7 +40,7 @@ data is kept and the legal basis:
 [CueHIRE™](../cuehire/#performance-and-error-monitoring),
 [Cueprise™](../../cueprise/#performance-and-error-monitoring),
 [Storefront™](../storefront/#performance-and-error-monitoring),
-[Cuelearn™](../cuelearn/#performance-and-error-monitoring),
+[Cuelearn™](../../cuelearn/#performance-and-error-monitoring),
 [cuesoft.io](../cuesoft/#performance-and-error-monitoring),
 [Client Work](../clients/#performance-and-error-monitoring) and
 [account.cuesoft.io](../account/#performance-and-error-monitoring).
@@ -97,7 +97,7 @@ cookies, which the banner does not govern: see
 loads and who receives the data: [CueTA™](../cueta/),
 [CueLABS™](../cuelabs/), [CueHIRE™](../cuehire/),
 [Cueprise™](../../cueprise/), [Storefront™](../storefront/),
-[Cuelearn™](../cuelearn/), [cuesoft.io](../cuesoft/),
+[Cuelearn™](../../cuelearn/), [cuesoft.io](../cuesoft/),
 [Client Work](../clients/) and [account.cuesoft.io](../account/). The [documentation sites](../docs-sites/) carry
 none of them, only the cookieless analytics above and the performance and
 error monitoring described on their page. The CueTA™ website takes payment for
