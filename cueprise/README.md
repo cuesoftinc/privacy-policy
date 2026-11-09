@@ -12,9 +12,9 @@ the website, Cuesoft is the controller of what you send us, in the ordinary
 way. Inside a licensed deployment, **the licensee, not Cuesoft, is the data
 controller** of the data the platform holds.
 
-## The Cueprise™ website
+## The Cueprise™ Website
 
-### Demo request form
+### Demo Request Form
 
 - **What:** your name, work email, business name, the trade you picked from
   the list, and anything you added in the message box. We also record the
@@ -38,11 +38,15 @@ controller** of the data the platform holds.
 - **Confirmation:** we email you a receipt, copied to
   [cueprise@cuesoft.io](mailto:cueprise@cuesoft.io): see
   [what every site collects](../collection/all-sites/).
+- **Booking a time directly:** the page also links to a Google Calendar
+  booking page, which opens in a new tab. What you enter there goes to
+  Google, under [Google’s privacy policy](https://policies.google.com/privacy),
+  and not through our form.
 
 Data inside a licensed Cueprise™ deployment is governed by that licence’s
 data terms and by the rest of this notice.
 
-### Analytics and advertising tags: opt-in only
+### Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -67,13 +71,13 @@ separate and run either way):
   location is what is kept. Google Analytics keeps this for **14 months**:
   see [retention](../handling/retention/). We do not send your form
   contents to any of them.
-- **One event beyond page views:** when you request a demo, **Meta** is
-  told that it happened, so it can credit the ad you arrived from. Google
+- **One event beyond page views:** when you request a demo, or click the
+  link that books a time directly, **Google Ads, Meta, LinkedIn and X** are
+  told that it happened, so they can credit the ad you arrived from. Google
   Analytics is not: it receives the page views described above and nothing
-  more. The event records the fact of the request and nothing else: not
-  your name, not your email, not your business, and not what you wrote.
-  Google Ads, LinkedIn and X receive page views on this site but are not
-  told about the request.
+  more. The event records the fact of the request or the click and nothing
+  else: not your name, not your email, not your business, and not what you
+  wrote.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account
@@ -110,7 +114,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../jurisdictions/united-states/).
 
-### Performance and error monitoring
+### Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
@@ -149,7 +153,7 @@ loads before you accept, and the cookieless Cloudflare measurement described
 in [what every site collects](../collection/all-sites/) stays outside the consent gate
 because it sets no cookie.
 
-## The Cueprise™ platform
+## The Cueprise™ Platform
 
 Everything from here describes a licensed deployment rather than the website.
 
@@ -230,7 +234,7 @@ service telemetry described below: rights requests about those come to
 Cuesoft directly at [hello@cuesoft.io](mailto:hello@cuesoft.io), because
 the licensee cannot act on data it does not control.
 
-### Sub-processors
+### Sub-Processors
 
 These providers process **licensee data** in the licensee-to-Cuesoft
 processing chain:
@@ -262,7 +266,7 @@ with legal obligations (Art. 6(1)(c)).
 Cuesoft is also the controller of the **service telemetry** needed to run
 and secure the platform.
 
-#### Service telemetry
+#### Service Telemetry
 
 - **Server-side**: request traces, error reports and operational logs from
   each deployment’s services.
@@ -292,7 +296,7 @@ Relationship data follows the retention page and the agreement. The
 [jurisdiction pages](../jurisdictions/nigeria/) apply to this data as they
 do to website data.
 
-### Security and breach
+### Security and Breach
 
 The platform is operated under the safeguards on the
 [security page](../handling/security/), plus the platform-specific

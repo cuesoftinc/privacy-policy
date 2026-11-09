@@ -4,14 +4,14 @@ For processing subject to Nigerian law, **Cuesoft Nigeria Limited**
 (RC1624434) is the responsible entity under our joint-controller
 arrangement.
 
-## The framework
+## The Framework
 
 Our processing is governed by the **Nigeria Data Protection Act 2023**
 (NDPA) and its subsidiary instruments, including the Nigeria Data
 Protection Commission’s **General Application and Implementation Directive
 (GAID) 2025**.
 
-## Lawful bases
+## Lawful Bases
 
 The NDPA recognises consent, contract, legal obligation, vital interest,
 public interest and legitimate interest as lawful bases (NDPA s. 25). We
@@ -24,7 +24,7 @@ infrastructure, Ace and the websites’ and documentation sites’ performance a
 monitoring on legitimate interest, and website analytics and advertising tags on consent, which you can withdraw
 as easily as you gave it.
 
-## Your rights under the NDPA
+## Your Rights under the NDPA
 
 You hold the rights of a data subject under Part VI of the NDPA,
 including: to be informed (this policy); access; correction; deletion;
@@ -41,7 +41,7 @@ You may lodge a complaint with the **Nigeria Data Protection Commission**:
 resolve your concern first, but you do not need our permission: the right
 is yours.
 
-## Breach notification
+## Breach Notification
 
 Where a qualifying breach occurs, we notify the **NDPC within 72 hours**
 of becoming aware, and notify you without undue delay where the breach is
@@ -54,7 +54,7 @@ Cross-border transfers follow the NDPA’s adequacy and safeguard
 provisions and the NDPC’s implementing instruments: see
 [international transfers](../../handling/transfers/).
 
-## Registration status
+## Registration Status
 
 The NDPC designates a **data controller of major importance** on any one of
 three independent grounds: processing the personal data of more than 200

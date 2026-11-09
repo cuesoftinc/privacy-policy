@@ -14,7 +14,7 @@ CueHIRE™ engagement against their own back office instead, that notice does
 not reach it and the engagement’s own data terms govern what we hold and for
 how long.
 
-## Enquiry form
+## Enquiry Form
 
 - **What:** your name, work email, business name, the sector you picked from
   the list, and anything you added in the message box. We also record the
@@ -38,8 +38,12 @@ how long.
 - **Confirmation:** we email you a receipt, copied to
   [storefront@cuesoft.io](mailto:storefront@cuesoft.io): see
   [what every site collects](../all-sites/).
+- **Booking a time directly:** the page also links to a Google Calendar
+  booking page, which opens in a new tab. What you enter there goes to
+  Google, under [Google’s privacy policy](https://policies.google.com/privacy),
+  and not through our form.
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -65,12 +69,12 @@ separate and run either way):
   this for **14 months**: see [retention](../../handling/retention/). We
   do not send your form contents to any of them.
 - **One event beyond page views:**
-  when you send us a brief,
+  when you send us a brief, or click the link that books a time directly,
   **Google Ads, Meta, LinkedIn and X** are told that it happened, so
   they can credit the ad you arrived from. Google Analytics is not: it
   receives the page views described above and nothing more. The event
-  records the fact of the brief and nothing else: not your name, not
-  your email, not your phone number, and not what you wrote.
+  records the fact of the brief or the click and nothing else: not your
+  name, not your email, not your phone number, and not what you wrote.
 - **If you are signed in to Google:** we have Google signals switched on,
   so where you are signed in to a Google account that has Ads
   Personalisation enabled, Google may connect this visit to that account
@@ -107,7 +111,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the

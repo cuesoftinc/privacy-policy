@@ -17,7 +17,7 @@ reliability.
 - **Retention:** no more than 30 days: see
   [retention](../../handling/retention/).
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags on its live address, gated
 behind a consent banner. None of them loads, and none of their cookies is
@@ -45,8 +45,9 @@ usable in full:
   are no forms on this site, so no form contents reach any of them.
 - **One event beyond page views:**
   when you click through from a case study to the CueHIRE contact page,
-  **Meta** is told that it happened, so it can credit the ad you arrived
-  from. The other platforms receive page views and nothing more. The event
+  **Google Ads, Meta, LinkedIn and X** are told that it happened, so
+  they can credit the ad you arrived from. Google Analytics is not: it
+  receives the page views described above and nothing more. The event
   records the fact of the click and nothing else: not your name, not your
   email, and not your phone number.
 - **Matching switched off:** we turn off Meta’s automatic matching and
@@ -88,7 +89,7 @@ usable in full:
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the

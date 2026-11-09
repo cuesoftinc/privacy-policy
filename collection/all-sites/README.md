@@ -6,7 +6,7 @@ The following applies to **cuesoft.io**, **cueta.cuesoft.io**,
 analytics, monitoring and advertising tags sections below also cover
 [clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/).
 
-## Server and security logs
+## Server and Security Logs
 
 Our sites are served through Cloudflare (edge security and delivery) and
 hosted on Google Firebase App Hosting. Standard technical data (IP
@@ -17,7 +17,7 @@ infrastructure logs used for security, abuse prevention and reliability.
   (GDPR Art. 6(1)(f)).
 - **Retention:** no more than 30 days: see [retention](../../handling/retention/).
 
-## Cookieless analytics
+## Cookieless Analytics
 
 On every website, the [documentation sites](../docs-sites/),
 [clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/)
@@ -26,7 +26,7 @@ uses **no cookies**, no persistent identifiers, no fingerprinting and no
 cross-site tracking. It tells us page views and performance, not who you
 are.
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 Every website loads **Datadog**’s browser monitoring: the seven above,
 [clients.cuesoft.io](../clients/) and [account.cuesoft.io](../account/). It is operational
@@ -45,23 +45,23 @@ data is kept and the legal basis:
 [Client Work](../clients/#performance-and-error-monitoring) and
 [account.cuesoft.io](../account/#performance-and-error-monitoring).
 
-## Ace, the assistant
+## Ace, the Assistant
 
 If you chat with Ace, the messages you type are processed by our AI
 platform provider to generate an answer.
 
 - Conversations live in your browser session and are not linked to an
-  account: there are no accounts on our websites.
+  account.
 - Under our agreement with our AI provider, chat inputs are **not used to
   train AI models**.
 - Please do not submit sensitive personal data through the chat.
 - **Legal basis:** our legitimate interest in providing the assistant you
   choose to use (GDPR Art. 6(1)(f)).
 
-## Form acknowledgement email
+## Form Acknowledgement Email
 
-Submit a form on **CueTA™**, **CueLABS™**, **CueHIRE™** or **Cueprise™** and
-we email you a confirmation. It is copied to the department that will handle it, and
+Submit a form on **CueTA™**, **CueLABS™**, **CueHIRE™**, **Cueprise™**,
+**Storefront™** or **Cuelearn™** and we email you a confirmation. It is copied to the department that will handle it, and
 replies go there too, because the message is sent from an address nobody
 reads.
 
@@ -100,5 +100,10 @@ loads and who receives the data: [CueTA™](../cueta/),
 [Cuelearn™](../cuelearn/), [cuesoft.io](../cuesoft/),
 [Client Work](../clients/) and [account.cuesoft.io](../account/). The [documentation sites](../docs-sites/) carry
 none of them, only the cookieless analytics above and the performance and
-error monitoring described on their page. No website ever asks for payment data: see the
-[Terms of Service](https://terms.cuesoft.io).
+error monitoring described on their page. The CueTA™ website takes payment for
+enrolment: see [CueTA™](../cueta/#enrolment-and-payment). Cards are also saved on
+the signed-in Payment Methods page of [account.cuesoft.io](../account/#cards),
+where the card is typed only into Paystack’s own window and Cuesoft never
+receives the card number or security code, and card details are entered on the
+signed-in parts of [CueHIRE™](../cuehire/): see those pages for what is asked.
+No other website asks for payment data.

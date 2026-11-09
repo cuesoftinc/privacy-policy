@@ -6,7 +6,7 @@ schools, universities and training providers. This page covers the
 ask for a demo. The platform itself, where teachers and learners sign in at
 canvas.cuesoft.io, is not covered by this page.
 
-## Demo request form
+## Demo Request Form
 
 - **What:** your name, work email, the name of your institution, the kind of
   institution you picked from the list (academy, school, university,
@@ -30,7 +30,7 @@ canvas.cuesoft.io, is not covered by this page.
   [cuelearn@cuesoft.io](mailto:cuelearn@cuesoft.io); see
   [what every site collects](../all-sites/).
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -97,7 +97,7 @@ separate and run either way:
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the

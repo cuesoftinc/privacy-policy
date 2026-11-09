@@ -1,13 +1,20 @@
-# cuelabs.cuesoft.io: Open-source Internships
+# cuelabs.cuesoft.io: Open-Source Internships
 
-## Application form
+## Application Form
 
 - **What:** name, email, phone, GitHub username, portfolio link, the
   discipline and duration you applied for, university, course, level,
   country, start availability, your reasons for applying, and the CV you
-  upload.
+  upload, which is optional. We also record when you accepted the terms.
+  The form preselects your country from the one Cloudflare’s edge places
+  you in, as a starting point you can change; nothing is stored until you
+  submit.
 - **Why:** to assess and process internship applications.
-- **Where:** records are stored in Airtable, our forms database.
+- **Where:** the application, with your CV, is saved first in Cuesoft’s own
+  back end (the Cueprise™ service that runs the applicant portal below),
+  which is the record of your application. A copy is then written to
+  Airtable, our forms database, with the CV attached; if that copy fails,
+  your application still stands.
 - **Legal basis:** steps at your request prior to a contract
   (GDPR Art. 6(1)(b)).
 - **Confirmation:** we email you a receipt with your CV attached, copied
@@ -16,7 +23,7 @@
 
 Application decisions are made by humans.
 
-## Public GitHub data
+## Public GitHub Data
 
 The site displays contributors to our open-source products using GitHub’s
 public API: information those contributors have already made public on
@@ -27,12 +34,43 @@ legitimate interest in accurate attribution (GDPR Art. 6(1)(f)). You may
 [hello@cuesoft.io](mailto:hello@cuesoft.io) and we will remove your public
 GitHub activity from our contributor displays.
 
-## Programme communication
+## Applicant Portal and Sign-In
 
-Accepted interns join the CueLABS™ Discord community: see
+After you apply, the site has a signed-in area where you follow your
+application and, once you are a member, your work. You do not sign in on
+this site: sign-in happens on [account.cuesoft.io](../account/), which
+returns you here.
+
+- **What:** what the portal shows you comes from Cuesoft’s back end: your
+  application and its status, your interview time, format and interviewers,
+  your contract and onboarding steps, and, for members, a dashboard of your
+  projects, pull requests and contributions, and a leaderboard. The
+  leaderboard is seen only by members and lists members by name with their
+  commit and merged pull request counts. Members with the right permission can also
+  create and edit projects. On the contract page you confirm that you have
+  signed; the signing link itself is a Google Docs or DocuSign link that
+  Cuesoft emails you, and what you do there is governed by that service’s
+  own policy.
+- **Bank details and KYC:** not entered on this site. The portal sends you
+  to your Cuesoft account on account.cuesoft.io for them: see
+  [that page](../account/).
+- **Cookie:** the portal reads your records with a session cookie that
+  Cuesoft’s back end sets for you (`cueprise_session`, readable only by the
+  server, not by scripts on the page). The site keeps no sign-in token in
+  your browser’s storage.
+- **Why:** to run the programme you applied to or were admitted to.
+- **Legal basis:** steps at your request prior to a contract, and then
+  performance of the participation agreement you sign (GDPR Art. 6(1)(b)).
+
+## Programme Communication
+
+The CueLABS™ Discord community is open to anyone, accepted or not: the site
+links to it from the home page and from your confirmation, and you can join
+and watch how the team works before you apply. What you share there is
+governed by Discord’s own policy: see
 [processors and platforms](../../handling/processors/).
 
-## Analytics and advertising tags: opt-in only
+## Analytics and Advertising Tags: Opt-In Only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -100,7 +138,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and error monitoring
+## Performance and Error Monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
@@ -131,8 +169,10 @@ the errors it hits, so that we can keep the pages working.
 
 ## What this site does not do
 
-No payment data is ever requested: see the
-[Terms of Service](https://terms.cuesoft.io). Apart from the
+This site asks for no card or payment details: see the
+[Terms of Service](https://terms.cuesoft.io). Bank details, which we use only for
+your data allowance or contractor payments, are entered on [account.cuesoft.io](../account/), not here. Apart
+from the
 [performance and error monitoring](#performance-and-error-monitoring) above, nothing
 loads before you accept, and the cookieless Cloudflare measurement described
 in [what every site collects](../all-sites/) stays outside the consent gate

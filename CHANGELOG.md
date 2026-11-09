@@ -6,7 +6,7 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
-## [Unreleased]
+## [1.4.0] - 2026-11-07
 
 ### Added
 
@@ -14,6 +14,16 @@ Releases before 1.1.0 predate this file.
 - Expendit privacy notice for books, imports and AI processing.
 - Upstat privacy notice for accounts and cookieless visitor events.
 - Apparule accepts users from 13 with a parent’s agreement.
+
+### Changed
+
+- Design system updated to 1.49.0.
+- Headings follow the family case rule.
+- Site pages describe the Account and CueTA forms as built.
+
+### Fixed
+
+- The theme loads before first paint with no flash.
 
 ## [1.3.10] - 2026-10-05
 
