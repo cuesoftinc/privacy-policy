@@ -50,13 +50,14 @@ const SECTION_ORDER = [
   'apparule',
   'expendit',
   'upstat',
+  'cuelearn',
   'handling',
   'rights',
   'jurisdictions',
 ];
 // Routes that moved or retired: each key becomes a redirect stub so old
 // bookmarks and inbound links keep landing.
-const REDIRECTS = {};
+const REDIRECTS = { 'collection/cuelearn': 'cuelearn' };
 
 const THEME_KEY = 'cuesoft-theme';
 const ASSETS = '/assets/design-system';
