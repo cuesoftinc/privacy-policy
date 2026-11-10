@@ -39,7 +39,7 @@ from `node_modules` at build time.
 ## Shared files
 
 `scripts/build.mjs` (bar the knob block at its top), `scripts/check-links.mjs`,
-`scripts/check-dashes.mjs`, `scripts/generate-og-image.mjs`, `scripts/check-og-card.mjs`,
+`scripts/check-dashes.mjs`, `scripts/check-og-card.mjs`,
 `scripts/check-not-found.mjs`, `scripts/check-titles.mjs`, `scripts/check-descriptions.mjs`,
 `templates/page.html`, `templates/rum.js`,
 `.github/workflows/pages.yml`, `.npmrc`, `.prettierrc.json`, `.prettierignore` and the browser icons under `assets/`

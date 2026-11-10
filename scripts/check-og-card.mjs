@@ -1,9 +1,20 @@
 import { readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { cardInputs, verifyCard } from './generate-og-image.mjs';
+import { createRequire } from 'node:module';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+
+import CARD from './og-card.config.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
+// The card is drawn by the library's own renderer, the cuesoft-og-card bin.
+const library = dirname(
+  createRequire(import.meta.url).resolve(
+    '@cuesoftinc/design-system/package.json',
+  ),
+);
+const og = await import(pathToFileURL(join(library, 'bin/og-card.mjs')).href);
+const verifyCard = () => og.verifyCard(CARD, join(HERE, '..'));
+const cardInputs = () => og.cardInputs(CARD);
 // Problem prefixes of the three checks that compare the card with the installed package.
 const INSTALLED_CHECKS = [
   'installed ',
