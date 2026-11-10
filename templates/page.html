@@ -54,48 +54,12 @@
       crossorigin
     />
     <link rel="stylesheet" href="/assets/design-system.css" />
-    <style>
-      .table-wrap {
-        overflow-x: auto;
-      }
-      main:has(> .ds-notfound) {
-        display: flex;
-        flex-direction: column;
-      }
-      main > .ds-notfound {
-        flex: 1 0 auto;
-      }
-    </style>
     <!-- prettier-ignore -->
     <script data-cuesoft-theme-prepaint="cuesoft-theme">(function(){try{var d=document.documentElement,t=null;try{t=localStorage.getItem("cuesoft-theme")}catch(e){}var c=t==='dark'||t==='light';var m=window.matchMedia('(prefers-color-scheme: dark)');var k=c?t==='dark':m.matches;if(k)d.classList.add("dark");if(c)d.setAttribute('data-theme',t);else if(m.addEventListener)m.addEventListener('change',function(e){if(!d.hasAttribute('data-theme'))d.classList.toggle("dark",e.matches)});window.__cueThemePrepaint=1}catch(e){}})()</script>
   </head>
   <body>
-    {{skip}} {{header}}
-    <main id="main" tabindex="-1">{{shell}}</main>
+    {{skip}} {{header}} {{main}}
     <footer>{{legal}}</footer>
-    <script>
-      (function () {
-        var button = document.querySelector('.ds-theme-toggle');
-        if (!button) return;
-        var root = document.documentElement;
-        function show() {
-          var dark = root.classList.contains('dark');
-          button.setAttribute('aria-pressed', String(dark));
-          button.querySelector('[data-theme-mark="moon"]').hidden = dark;
-          button.querySelector('[data-theme-mark="sun"]').hidden = !dark;
-        }
-        button.addEventListener('click', function () {
-          var next = root.classList.contains('dark') ? 'light' : 'dark';
-          root.classList.toggle('dark', next === 'dark');
-          root.setAttribute('data-theme', next);
-          try {
-            localStorage.setItem('cuesoft-theme', next);
-          } catch (e) {}
-          show();
-        });
-        show();
-      })();
-    </script>
-    {{rum}}
+    {{theme_toggle}} {{rum}}
   </body>
 </html>

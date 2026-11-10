@@ -104,6 +104,7 @@ error monitoring described on their page. The CueTA™ website takes payment for
 enrolment: see [CueTA™](../cueta/#enrolment-and-payment). Cards are also saved on
 the signed-in Payment Methods page of [account.cuesoft.io](../account/#cards),
 where the card is typed only into Paystack’s own window and Cuesoft never
-receives the card number or security code, and card details are entered on the
-signed-in parts of [CueHIRE™](../cuehire/): see those pages for what is asked.
+receives the card number or security code, and the signed-in portal of
+[CueHIRE™](../cuehire/#paying-an-invoice) pays by card on Paystack’s own pages
+and window: see those pages for what is asked.
 No other website asks for payment data.

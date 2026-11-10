@@ -24,12 +24,14 @@ import {
   DocHeader,
   DocLegal,
   DocShell,
-  Icon,
   Lockup,
   NotFound,
+  PageMain,
   SkipLink,
   ThemeToggle,
+  redirectStubHtml,
   themePrepaintElement,
+  themeToggleElement,
 } from '@cuesoftinc/design-system/corporate';
 import { marked } from 'marked';
 
@@ -620,20 +622,12 @@ cpSync(path.join(ROOT, 'assets/favicon.ico'), path.join(OUT, 'favicon.ico'));
 writeFileSync(path.join(OUT, '.nojekyll'), '');
 
 // The static markup carries no client code, so the theme control ships both
-// marks and the page script shows the one that applies.
+// marks and the library's one toggle script wires it.
 const themeToggle = h(ThemeToggle, {
   storageKey: THEME_KEY,
-  icon: h(
-    'span',
-    { className: 'theme-marks' },
-    h('span', { 'data-theme-mark': 'moon' }, h(Icon, { name: 'moon' })),
-    h(
-      'span',
-      { 'data-theme-mark': 'sun', hidden: true },
-      h(Icon, { name: 'sun' }),
-    ),
-  ),
+  variant: 'static',
 });
+const themeToggleScript = themeToggleElement({ storageKey: THEME_KEY });
 
 // React hoists an image preload for each lockup art ahead of the markup; both
 // arts are already in the page, so the preloads only repeat them.
@@ -693,9 +687,9 @@ for (const page of pages) {
   // The opening paragraph is the shell's lede, set larger under the title.
   const opening = rest.match(/^<p>([\s\S]*?)<\/p>\n/);
   if (opening) rest = rest.slice(opening[0].length);
-  // Tables scroll inside a wrapper instead of widening the page on phones.
+  // Tables scroll inside a block the library's prose styles by the table it holds.
   const body = rest
-    .replaceAll('<table>', '<div class="table-wrap"><table>')
+    .replaceAll('<table>', '<div><table>')
     .replaceAll('</table>', '</table></div>');
 
   // Crumbs carry the same names the sidebar shows: a page's H1 where the
@@ -721,17 +715,21 @@ for (const page of pages) {
     });
   }
 
-  const shell = renderToStaticMarkup(
-    h(DocShell, {
-      breadcrumb: crumbs,
-      title: '@@TITLE@@',
-      effectiveDate: effective ? '@@EFFECTIVE@@' : undefined,
-      lede: opening ? '@@LEDE@@' : undefined,
-      sections: hasSidebar ? sectionsFor(page) : [],
-      onThisPage: headingsOf(body),
-      updated: lastUpdated(page) || undefined,
-      children: '@@BODY@@',
-    }),
+  const main = renderToStaticMarkup(
+    h(
+      PageMain,
+      { grow: true },
+      h(DocShell, {
+        breadcrumb: crumbs,
+        title: '@@TITLE@@',
+        effectiveDate: effective ? '@@EFFECTIVE@@' : undefined,
+        lede: opening ? '@@LEDE@@' : undefined,
+        sections: hasSidebar ? sectionsFor(page) : [],
+        onThisPage: headingsOf(body),
+        updated: lastUpdated(page) || undefined,
+        children: '@@BODY@@',
+      }),
+    ),
   )
     .replace('<h1 ', () => `<h1 id="${heading[1]}" `)
     .replace('@@TITLE@@', () => heading[2])
@@ -789,8 +787,9 @@ for (const page of pages) {
     skip,
     robots: '',
     header,
-    shell,
+    main,
     legal,
+    theme_toggle: themeToggleScript,
     rum: rumTags,
   };
 
@@ -833,14 +832,19 @@ for (const page of pages) {
       robots: '\n    <meta name="robots" content="noindex, follow" />',
       skip,
       header,
-      shell: renderToStaticMarkup(
-        h(NotFound, {
-          eyebrow: 'Not Found',
-          title: 'That page is not here.',
-          action: { label: `Back to ${home}`, href: '/' },
-        }),
+      main: renderToStaticMarkup(
+        h(
+          PageMain,
+          { grow: true },
+          h(NotFound, {
+            eyebrow: 'Not Found',
+            title: 'That page is not here.',
+            action: { label: `Back to ${home}`, href: '/' },
+          }),
+        ),
       ),
       legal,
+      theme_toggle: themeToggleScript,
       rum: rumTags,
     }),
   );
@@ -865,10 +869,15 @@ writeFileSync(
 for (const [from, to] of Object.entries(REDIRECTS)) {
   const target = path.join(OUT, from, 'index.html');
   mkdirSync(path.dirname(target), { recursive: true });
-  const dest = `/${to}/`;
   writeFileSync(
     target,
-    `<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta http-equiv="refresh" content="0; url=${dest}" /><link rel="canonical" href="${dest}" /><title>Moved</title></head><body><p>This page moved to <a href="${dest}">${dest}</a>.</p></body></html>\n`,
+    redirectStubHtml({
+      to: `/${to}/`,
+      title: 'Moved',
+      stylesheet: '/assets/design-system.css',
+      storageKey: THEME_KEY,
+      render: renderToStaticMarkup,
+    }),
   );
 }
 

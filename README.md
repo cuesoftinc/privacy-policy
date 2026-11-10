@@ -29,8 +29,9 @@ those relationships alongside this policy.
   Cards are also saved on the signed-in Payment Methods page of
   [account.cuesoft.io](collection/account/#cards), where the card is typed only
   into Paystack’s own window and Cuesoft never receives the card number or
-  security code, and card details are entered on the signed-in parts of
-  [CueHIRE™](collection/cuehire/): see those pages for what is asked.
+  security code, and the signed-in portal of
+  [CueHIRE™](collection/cuehire/#paying-an-invoice) pays by card on Paystack’s
+  own pages and window: see those pages for what is asked.
   Apparule’s orders are paid on Paystack’s own checkout: see the
   [Apparule notice](apparule/#payments). No other website or product asks
   for payment data.
