@@ -1,6 +1,7 @@
 schemaVersion: 1
 name: privacy-policy
 profile: base
+bypassCeiling: 0
 
 surfaces:
   static-docs: active
