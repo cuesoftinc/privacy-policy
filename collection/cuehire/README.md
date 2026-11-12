@@ -1,6 +1,6 @@
 # cuehire.cuesoft.io: Talent and Project Management Agency
 
-## Contact Form
+## Contact form
 
 - **What:** name, work email, company, your industry, the kind of help you
   want (end-to-end delivery, managed engineers, referral hiring or not sure
@@ -24,7 +24,7 @@
 Engagement data under a signed agreement is governed by that agreement’s
 data terms.
 
-## Analytics and Advertising Tags: Opt-In Only
+## Analytics and advertising tags: opt-in only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -92,7 +92,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and Error Monitoring
+## Performance and error monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the

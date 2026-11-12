@@ -20,7 +20,7 @@ Signed engagements (offers of admission, internship, contractor and client
 agreements, Cueprise™ licences) carry their own data terms, which govern
 those relationships alongside this policy.
 
-## The Short Version
+## The short version
 
 - We collect only what each website needs to do its job: mostly what you
   type into an application or contact form.
@@ -80,7 +80,7 @@ those relationships alongside this policy.
 | [Rights](rights/your-rights/)         | Your rights and how to exercise them, and children.                                                                                                                                                                                                               |
 | [Jurisdictions](jurisdictions/eu-uk/) | The detail per regime: Nigeria, EU/EEA and UK, United States.                                                                                                                                                                                                     |
 
-## Changes to This Policy
+## Changes to this policy
 
 When this policy changes, the effective date above changes with it, and
 material changes are announced on the affected websites. The current
