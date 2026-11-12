@@ -64,7 +64,7 @@ In CCPA/CPRA terms:
   agent’s authority and your identity, as the
   [rights page](../../rights/your-rights/) describes.
 
-## Other State Privacy Laws
+## Other state privacy laws
 
 Residents of states with comprehensive privacy laws (Virginia, Colorado,
 Connecticut, Utah, Texas, Oregon, Montana and others) hold comparable
@@ -78,14 +78,14 @@ every request. Where a state grants an appeal right for refused requests,
 tell us you are appealing and a different reviewer will decide; if we
 still refuse, we will point you to your state attorney general.
 
-## Breach Notification
+## Breach notification
 
 Where a breach affects US residents, we notify affected individuals and,
 where required, state authorities and consumer-reporting agencies, per the
 breach-notification law of each affected resident’s state: see
 [breach notification](../../handling/breach/).
 
-## Do Not Track and Preference Signals
+## Do Not Track and preference signals
 
 By default our sites run no cross-site tracking to disable: the analytics
 and advertising tags on all nine websites that carry them are opt-in, so the state Do Not

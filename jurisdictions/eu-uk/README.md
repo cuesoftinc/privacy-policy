@@ -7,7 +7,7 @@ Limited leads GDPR/UK GDPR compliance** (transparency, rights handling
 and security) and you may nonetheless exercise your rights against
 either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
-## Legal Bases, per Activity
+## Legal bases, per activity
 
 | Processing                                                                   | Legal basis                                                                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 Where we rely on legitimate interests, we have balanced them against your
 rights, and you may [object](../../rights/your-rights/) at any time.
 
-## Your Rights
+## Your rights
 
 You hold every right in Arts. 15 to 21 GDPR: access, rectification, erasure,
 restriction, portability, and objection, including an unconditional right

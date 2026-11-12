@@ -1,6 +1,6 @@
 # cueta.cuesoft.io: Cuesoft Talent Academy
 
-## Enrolment and Payment
+## Enrolment and payment
 
 You enrol in a CueTA™ course from its page on cueta.cuesoft.io. Enrolling is
 a paid subscription. The site has no application form and takes no
@@ -71,7 +71,7 @@ check the price, and pay with a card saved on your account.
   accept the banner, they receive the page views described below, which on
   these pages include the page address.
 
-## Analytics and Advertising Tags: Opt-In Only
+## Analytics and advertising tags: opt-in only
 
 All nine Cuesoft websites that carry them (CueTA™, CueLABS™, CueHIRE™,
 Cueprise™, Storefront™, Cuelearn™, cuesoft.io, clients.cuesoft.io and
@@ -144,7 +144,7 @@ load them:
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and Error Monitoring
+## Performance and error monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
@@ -173,7 +173,7 @@ the errors it hits, so that we can keep the pages working.
   (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
   time.
 
-## Cohort Communication
+## Cohort communication
 
 Enrolled learners are contacted about their cohort via the details they
 provided, including WhatsApp groups for cohort coordination: see

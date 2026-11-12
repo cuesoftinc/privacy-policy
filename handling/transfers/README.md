@@ -3,7 +3,7 @@
 We operate from Nigeria and the United States, and our processors operate
 globally, so your data may be processed outside your country.
 
-## EU/EEA and UK Data
+## EU/EEA and UK data
 
 For personal data subject to the GDPR or UK GDPR, cross-border transfers
 rely on:
@@ -70,7 +70,7 @@ above and a deletion request through the
 You can ask for information about the safeguards applied to a specific
 transfer via [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
-## Nigerian Data
+## Nigerian data
 
 Where the NDPA applies, transfers out of Nigeria follow its adequacy and
 safeguard provisions and the NDPC’s implementing instruments: see the
