@@ -1,6 +1,6 @@
-# cuelabs.cuesoft.io: Open-Source Internships
+# cuelabs.cuesoft.io: Open-source Internships
 
-## Application Form
+## Application form
 
 - **What:** name, email, phone, GitHub username, portfolio link, the
   discipline and duration you applied for, university, course, level,
@@ -23,7 +23,7 @@
 
 Application decisions are made by humans.
 
-## Public GitHub Data
+## Public GitHub data
 
 The site displays contributors to our open-source products using GitHub’s
 public API: information those contributors have already made public on
@@ -34,7 +34,7 @@ legitimate interest in accurate attribution (GDPR Art. 6(1)(f)). You may
 [hello@cuesoft.io](mailto:hello@cuesoft.io) and we will remove your public
 GitHub activity from our contributor displays.
 
-## Applicant Portal and Sign-In
+## Applicant portal and sign-in
 
 After you apply, the site has a signed-in area where you follow your
 application and, once you are a member, your work. You do not sign in on
@@ -62,7 +62,7 @@ returns you here.
 - **Legal basis:** steps at your request prior to a contract, and then
   performance of the participation agreement you sign (GDPR Art. 6(1)(b)).
 
-## Programme Communication
+## Programme communication
 
 The CueLABS™ Discord community is open to anyone, accepted or not: the site
 links to it from the home page and from your confirmation, and you can join
@@ -70,7 +70,7 @@ and watch how the team works before you apply. What you share there is
 governed by Discord’s own policy: see
 [processors and platforms](../../handling/processors/).
 
-## Analytics and Advertising Tags: Opt-In Only
+## Analytics and advertising tags: opt-in only
 
 This site uses analytics and advertising tags, gated behind a consent
 banner. None of them loads, and none of their cookies is set, until you press
@@ -138,7 +138,7 @@ separate and run either way):
 - **Legal basis:** consent (GDPR Art. 6(1)(a)); California treatment is on
   the [United States page](../../jurisdictions/united-states/).
 
-## Performance and Error Monitoring
+## Performance and error monitoring
 
 This site loads **Datadog**’s browser monitoring. It is operational
 telemetry, so it does not wait for the consent banner, and declining the
