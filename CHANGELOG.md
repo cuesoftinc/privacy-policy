@@ -6,6 +6,14 @@ versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Releases before 1.1.0 predate this file.
 
+## [Unreleased]
+
+## [1.4.1] - 2026-11-16
+
+### Changed
+
+- Design system updated to 1.77.0.
+
 ## [1.4.0] - 2026-11-07
 
 ### Added
