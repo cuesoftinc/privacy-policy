@@ -8,6 +8,12 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+## [1.4.2] - 2026-11-16
+
+### Fixed
+
+- Site description names every product's privacy notice.
+
 ## [1.4.1] - 2026-11-16
 
 ### Changed
