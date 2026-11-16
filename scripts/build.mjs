@@ -44,7 +44,7 @@ const OUT = path.join(ROOT, '_site');
 const SITE = process.env.SITE_TITLE || 'Cuesoft Privacy Policy';
 const DESCRIPTION =
   process.env.SITE_DESCRIPTION ||
-  'What each Cuesoft website collects, why, and your rights under Nigerian, EU/UK and US law, plus the Cueprise™ Privacy Notice.';
+  'What each Cuesoft website collects, why, and your rights under Nigerian, EU/UK and US law, plus the Privacy Notices for Cueprise™, Apparule, Expendit, Upstat and Cuelearn™.';
 // Sections in reading order; anything not listed sorts after, alphabetically.
 const SECTION_ORDER = [
   'collection',
