@@ -1,6 +1,6 @@
 # Cueprise™ Privacy Notice
 
-**Effective date: 29 September 2026**
+**Effective date: 18 November 2026**
 
 This notice covers **Cueprise™** in both the places you meet it: the
 website at **cueprise.cuesoft.io**, where you can read about the product and
@@ -162,8 +162,8 @@ Everything from here describes a licensed deployment rather than the website.
 Every licensee gets its **own isolated deployment with its own database**.
 No licensee’s data shares an instance, a database or an encryption
 boundary with any other licensee’s. Deployments are operated by Cuesoft on
-Google Cloud infrastructure unless the licensing agreement provides
-otherwise.
+Google Cloud by default, or on the licensee’s own cloud (AWS, Azure or Google
+Cloud) or on-premise where the licensing agreement says so.
 
 A deployment periodically verifies its licence key against Cuesoft’s
 licensing service. The request payload carries the licence key and nothing
@@ -199,6 +199,31 @@ Card details **never enter Cueprise™**. Online payments happen on
 **Paystack’s** hosted checkout page under Paystack’s own security
 certification; the platform sends Paystack only the payer’s email address,
 the amount and an order reference, and receives back the payment status.
+
+Where a form takes bank details, you pick the bank from Paystack’s list and
+type the account number. The platform sends Paystack the bank and the account
+number to verify them, and Paystack returns the account name for you to
+confirm.
+
+### AI features
+
+Ace, the assistant inside a Cueprise™ deployment, and the picture tools and
+drafted content that come with it, run on Google’s Gemini models on Vertex AI.
+Picture upscaling uses Google’s Imagen.
+
+- **What is sent:** your prompt, the record context needed to answer it, and
+  any pictures you choose to attach or edit.
+- **Training:** none of it is used to train models.
+- **Your confirmation:** Ace takes an action only after you confirm it.
+- **Who is involved:** Google acts as a sub-processor for this, listed in the
+  [table below](#sub-processors).
+
+### Integrations
+
+A licensee can connect QuickBooks, Airtable, Google Ads, Meta and Microsoft
+sign-in to its deployment. The licensee chooses whether to connect each one
+and what it shares, and each provider handles what it receives under its own
+privacy policy.
 
 ### When Cuesoft is the processor
 
@@ -239,13 +264,15 @@ the licensee cannot act on data it does not control.
 These providers process **licensee data** in the licensee-to-Cuesoft
 processing chain:
 
-| Provider                          | Role in the platform                                                   | Personal data it touches                                                                                                                                                                                                       |
-| --------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Google Cloud                      | Hosting, file storage, staff sign-in                                   | Everything the deployment stores; for sign-in, the staff member’s Google profile                                                                                                                                               |
-| Paystack                          | Online payments                                                        | From the platform: payer email, amount, order reference. On Paystack’s own hosted page, the shopper additionally enters card or other payment details, which never enter Cueprise™ and are handled under Paystack’s own policy |
-| Brevo                             | Transactional email                                                    | Recipient name and email                                                                                                                                                                                                       |
-| Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp                 | Recipient phone number and the message body: the one-time code being delivered, or the invitation’s details                                                                                                                    |
-| Cloudinary                        | Media storage, where the licensee’s deployment is configured to use it | Uploaded files                                                                                                                                                                                                                 |
+| Provider                          | Role in the platform                                                   | Personal data it touches                                                                                                                                                                                                                                                                                                   |
+| --------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Google Cloud                      | Hosting, file storage, staff sign-in                                   | Everything the deployment stores; for sign-in, the staff member’s Google profile                                                                                                                                                                                                                                           |
+| Paystack                          | Online payments and bank account verification                          | From the platform: payer email, amount, order reference. On Paystack’s own hosted page, the shopper additionally enters card or other payment details, which never enter Cueprise™ and are handled under Paystack’s own policy. For bank account verification, the bank and account number, with the account name returned |
+| Brevo                             | Transactional email                                                    | Recipient name and email                                                                                                                                                                                                                                                                                                   |
+| Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp                 | Recipient phone number and the message body: the one-time code being delivered, or the invitation’s details                                                                                                                                                                                                                |
+| Cloudinary                        | Media storage, where the licensee’s deployment is configured to use it | Uploaded files                                                                                                                                                                                                                                                                                                             |
+| Google (Gemini on Vertex AI)      | Ace, picture tools and drafted content                                 | Your prompt, the record context needed to answer it, and any pictures you choose                                                                                                                                                                                                                                           |
+| Google Maps Platform              | Address search and location suggestions                                | The text you type in an address field, and your current location if you choose to use it                                                                                                                                                                                                                                   |
 
 Separately, **Datadog** processes the service telemetry described below.
 Because Cuesoft is the controller of that telemetry, Datadog acts there as

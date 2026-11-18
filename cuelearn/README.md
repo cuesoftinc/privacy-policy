@@ -3,8 +3,9 @@
 Cuelearn™ is the learning platform we sell to institutions: academies,
 schools, universities and training providers. This page covers the
 **marketing site** at cuelearn.cuesoft.io, where you can read about it and
-ask for a demo. The platform itself, where teachers and learners sign in at
-canvas.cuesoft.io, is not covered by this page.
+ask for a demo, and, from [The Cuelearn™ platform](#the-cuelearn-platform)
+below, the **platform** itself, where teachers and learners sign in at
+canvas.cuesoft.io.
 
 ## Demo request form
 
@@ -135,3 +136,50 @@ written agreement. Apart from the
 loads before you accept, and the cookieless Cloudflare measurement described
 in [what every site collects](../collection/all-sites/) stays outside the consent gate
 because it sets no cookie.
+
+## The Cuelearn™ platform
+
+Everything from here covers the platform at **canvas.cuesoft.io**, where
+teachers and learners sign in. Everything above covers the marketing site.
+
+### Roles
+
+- **The institution decides who uses it.** The school or institution that
+  licenses Cuelearn™ decides which learners and teachers use the platform.
+  It is responsible for the consent of a parent or guardian for any learner
+  under 18.
+- **Cuesoft processes on the institution's behalf.** The institution is the
+  controller of learner and teacher data, and Cuesoft processes it for the
+  institution, on its instructions, under the data terms of the licensing
+  agreement.
+- **Requests go to your institution.** If you are a learner, a teacher or a
+  parent or guardian, the institution's own privacy notice governs the
+  records about you, and rights requests about them go to the institution.
+  We refer any request we receive to it, and help it answer.
+
+### What is processed
+
+Accounts for learners and teachers, coursework, quizzes and marks.
+
+### AI
+
+AI-drafted lessons, quizzes and marking run on Google Gemini, through Vertex
+AI and the Gemini API. Prompts are not used to train models.
+
+### A teacher's voice
+
+A teacher's cloned voice is made only with that teacher's explicit consent.
+It is deleted when the teacher withdraws that consent.
+
+### Exams
+
+Invigilated exams run on Google Meet. Cameras must be on for the whole
+sitting.
+
+### Parent and guardian reports
+
+Parents and guardians receive weekly reports about their learner.
+
+### Retention
+
+Data on the platform is kept as the institution instructs.

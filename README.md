@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: 2 October 2026**
+**Effective date: 18 November 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
 and the rights you have over it, under Nigerian, EU/UK and US law.
@@ -52,8 +52,9 @@ those relationships alongside this policy.
   and the account site at [account.cuesoft.io](collection/account/) is where you
   sign up, sign in and keep your account settings; each has its own collection notice and loads its tags only
   after its own consent banner accepts them; the documentation sites carry
-  no such tags, only the cookieless analytics and the performance and error
-  monitoring described on [their page](collection/docs-sites/).
+  no advertising tags, and load Google Analytics only after you accept, beside
+  the cookieless analytics and the performance and error monitoring described
+  on [their page](collection/docs-sites/).
 - **Apparule**, **Expendit** and **Upstat**, our open-source products, each
   have their own notice: [Apparule](apparule/) for body photos, measurements
   and orders, [Expendit](expendit/) for your books and the AI that can read
