@@ -142,8 +142,8 @@ the errors it hits, so that we can keep the pages working.
 
 ## What this site does not do
 
-It takes no payment and quotes no price: a storefront is included with a
-Cueprise™ licence, and built as a CueHIRE™ engagement otherwise. Apart from the
+It takes no payment and quotes no price: a storefront is built at no charge,
+and it can connect to Cueprise™ or to a system you already run. Apart from the
 [performance and error monitoring](#performance-and-error-monitoring) above, nothing
 loads before you accept, and the cookieless Cloudflare measurement described
 in [what every site collects](../all-sites/) stays outside the consent gate

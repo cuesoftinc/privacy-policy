@@ -5,8 +5,8 @@ static documentation served via **GitHub Pages**, so GitHub’s
 infrastructure logs apply, per
 [GitHub’s privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
 
-- **No forms**, and none of the analytics and advertising tags described on
-  [what every site collects](../all-sites/).
+- **No forms.** These sites load Google Analytics only after you accept, and
+  carry no advertising tags.
 - **Cookieless analytics.** These sites also use Cloudflare Web Analytics,
   as described on [what every site collects](../all-sites/#cookieless-analytics):
   no cookies, no persistent identifiers, no fingerprinting and no cross-site
