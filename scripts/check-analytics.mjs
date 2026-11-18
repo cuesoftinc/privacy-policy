@@ -30,7 +30,7 @@ const expect = (ok, message) => {
 };
 
 const scriptsOf = (html) =>
-  [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)].map(
+  [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\b[^>]*>/gi)].map(
     ([, attributes, text]) => ({ attributes, text }),
   );
 const googleScripts = (html) =>
@@ -41,7 +41,7 @@ const withoutScripts = (html) => {
   let out = html;
   for (let before = ''; before !== out;) {
     before = out;
-    out = out.replace(/<script\b[\s\S]*?<\/script\s*>/gi, '');
+    out = out.replace(/<script\b[\s\S]*?<\/script\b[^>]*>/gi, '');
   }
   return out;
 };
