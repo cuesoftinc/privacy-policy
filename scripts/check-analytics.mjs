@@ -30,13 +30,21 @@ const expect = (ok, message) => {
 };
 
 const scriptsOf = (html) =>
-  [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)].map(
+  [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)].map(
     ([, attributes, text]) => ({ attributes, text }),
   );
 const googleScripts = (html) =>
   scriptsOf(html).filter(({ attributes, text }) =>
     /googletagmanager|google-analytics|gtag\(/.test(attributes + text),
   );
+const withoutScripts = (html) => {
+  let out = html;
+  for (let before = ''; before !== out;) {
+    before = out;
+    out = out.replace(/<script\b[\s\S]*?<\/script\s*>/gi, '');
+  }
+  return out;
+};
 const count = (html, pattern) => (html.match(pattern) ?? []).length;
 
 // 1. The markup.
@@ -100,7 +108,7 @@ expect(
   'a script tag loads a file before Accept',
 );
 expect(
-  on.body.replace(/<script\b[\s\S]*?<\/script>/g, '').search(/google/i) === -1,
+  withoutScripts(on.body).search(/google/i) === -1,
   'Google is named outside the inline script',
 );
 expect(
