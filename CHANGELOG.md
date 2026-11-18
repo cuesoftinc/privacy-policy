@@ -8,6 +8,24 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+### Added
+
+- Processors list adds Gemini, Maps Platform, WhatsApp Business, Cloudinary and QuickBooks.
+- Cueprise notice gains AI features and integrations sections.
+- Cueprise notice lists Gemini and Maps Platform as sub-processors.
+- Cueprise notice covers Paystack bank account verification.
+- Cuelearn notice covers the platform at canvas.cuesoft.io.
+
+### Changed
+
+- Effective date is 18 November 2026, on the policy and the Cueprise notice.
+- Storefront notice says a storefront is built at no charge.
+- Brevo sign-in code emails cover Cueprise.
+- Cueprise notice says Cuesoft runs it on Google Cloud by default, or on the licensee's own cloud.
+- Children page lets schools enrol Cuelearn learners under 18.
+- CueTA pages say learners, not cohorts.
+- Documentation sites load Google Analytics only after you accept.
+
 ## [1.4.3] - 2026-11-16
 
 ### Changed

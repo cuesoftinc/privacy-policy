@@ -77,9 +77,9 @@ All nine Cuesoft websites that carry them (CueTA™, CueLABS™, CueHIRE™,
 Cueprise™, Storefront™, Cuelearn™, cuesoft.io, clients.cuesoft.io and
 account.cuesoft.io)
 use analytics and advertising tags, and on all of them the tags are gated
-behind a consent banner. The documentation sites carry none of them, only
-the performance and error monitoring described on
-[their page](../docs-sites/). Only if you press **Accept** does the site
+behind a consent banner. The documentation sites carry no advertising tags:
+they load only Google Analytics, after you accept, and the performance and
+error monitoring described on [their page](../docs-sites/). Only if you press **Accept** does the site
 load them:
 
 | Provider         | Purpose                                                                                                                                                                                                                                                             | Their policy                                                                       |
@@ -173,10 +173,10 @@ the errors it hits, so that we can keep the pages working.
   (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
   time.
 
-## Cohort communication
+## Learner communication
 
-Enrolled learners are contacted about their cohort via the details they
-provided, including WhatsApp groups for cohort coordination: see
+Enrolled learners are contacted about their courses via the details they
+provided, including WhatsApp groups for learner coordination: see
 [processors and platforms](../../handling/processors/) for what joining a
 group exposes.
 
