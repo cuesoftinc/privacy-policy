@@ -79,9 +79,7 @@ expect(
   'the bar is not hidden until scripted',
 );
 expect(
-  on.body.includes(
-    'We use cookies for analytics, only if you accept.',
-  ),
+  on.body.includes('We use cookies for analytics, only if you accept.'),
   'the bar does not carry the corporate wording',
 );
 expect(

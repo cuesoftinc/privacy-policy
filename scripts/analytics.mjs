@@ -22,8 +22,7 @@ export const analyticsOn = (measurementId) =>
   typeof measurementId === 'string' && MEASUREMENT_ID.test(measurementId);
 
 // The corporate sites' sentence, their privacy link and their footer control.
-export const MESSAGE =
-  'We use cookies for analytics, only if you accept.';
+export const MESSAGE = 'We use cookies for analytics, only if you accept.';
 export const POLICY = {
   label: 'Privacy policy',
   href: 'https://privacy.cuesoft.io/collection/docs-sites/',
