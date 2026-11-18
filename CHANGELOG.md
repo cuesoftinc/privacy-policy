@@ -25,6 +25,7 @@ Releases before 1.1.0 predate this file.
 - Children page lets schools enrol Cuelearn learners under 18.
 - CueTA pages say learners, not cohorts.
 - Documentation sites load Google Analytics only after you accept.
+- The privacy site asks before loading Google Analytics, and loads it only after you accept.
 
 ## [1.4.3] - 2026-11-16
 
