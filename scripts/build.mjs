@@ -35,6 +35,7 @@ import {
 } from '@cuesoftinc/design-system/corporate';
 import { marked } from 'marked';
 
+import { analyticsOn, consentMarkup, withPreferences } from './analytics.mjs';
 import CARD from './og-card.config.mjs';
 
 const ROOT = path.join(import.meta.dirname, '..');
@@ -45,6 +46,8 @@ const SITE = process.env.SITE_TITLE || 'Cuesoft Privacy Policy';
 const DESCRIPTION =
   process.env.SITE_DESCRIPTION ||
   'What each Cuesoft website collects, why, and your rights under Nigerian, EU/UK and US law, plus the Privacy Notices for Cueprise™, Apparule, Expendit, Upstat and Cuelearn™.';
+// The site's Firebase web app measurementId (G-XXXXXXXXXX). Empty or malformed ships no banner and no GA code.
+const GA_MEASUREMENT_ID = '';
 // Sections in reading order; anything not listed sorts after, alphabetically.
 const SECTION_ORDER = [
   'collection',
@@ -101,6 +104,22 @@ if (!template.includes(themePrepaintElement({ storageKey: THEME_KEY }))) {
 const BASE = existsSync(path.join(ROOT, 'CNAME'))
   ? `https://${readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}`
   : '';
+
+// Google Analytics: behind the consent bar, from this site's one measurement ID. A build
+// without a valid ID ships neither the bar nor the script, and says so.
+const CONSENT_KEY = `cuesoft-consent-${BASE ? new URL(BASE).hostname.split('.')[0] : 'docs'}`;
+const consent = consentMarkup({
+  measurementId: GA_MEASUREMENT_ID,
+  storageKey: CONSENT_KEY,
+});
+if (!analyticsOn(GA_MEASUREMENT_ID)) {
+  const note = `Google Analytics is not in this build: GA_MEASUREMENT_ID is ${GA_MEASUREMENT_ID ? 'not a G- measurement ID' : 'empty'}`;
+  console.log(
+    GA_MEASUREMENT_ID && process.env.GITHUB_ACTIONS === 'true'
+      ? `::warning::${note}`
+      : note,
+  );
+}
 
 // Datadog browser RUM: operational telemetry, on the live host only. The
 // application id and client token are public by design and arrive from the
@@ -649,11 +668,14 @@ const header = render(
   }),
 );
 const skip = render(h(SkipLink, { href: '#main' }));
-const legal = render(
-  h(DocLegal, {
-    copyright: { owner: 'Cuesoft Inc.', year: new Date().getFullYear() },
-    links: LEGAL_LINKS,
-  }),
+const legal = withPreferences(
+  render(
+    h(DocLegal, {
+      copyright: { owner: 'Cuesoft Inc.', year: new Date().getFullYear() },
+      links: LEGAL_LINKS,
+    }),
+  ),
+  GA_MEASUREMENT_ID,
 );
 
 /** The template with its {{slots}} filled; a slot the build does not fill is an error. */
@@ -791,6 +813,8 @@ for (const page of pages) {
     legal,
     theme_toggle: themeToggleScript,
     rum: rumTags,
+    consent_head: consent.head,
+    consent: consent.body,
   };
 
   const target = path.join(OUT, page, 'index.html');
@@ -846,6 +870,8 @@ for (const page of pages) {
       legal,
       theme_toggle: themeToggleScript,
       rum: rumTags,
+      consent_head: consent.head,
+      consent: consent.body,
     }),
   );
 }
