@@ -36,12 +36,24 @@ build reads `NEXT_PUBLIC_DD_APPLICATION_ID` and `NEXT_PUBLIC_DD_CLIENT_TOKEN`
 sends nothing. The script is the exact `@datadog/browser-rum` pin, copied
 from `node_modules` at build time.
 
+## Analytics
+
+Google Analytics 4 loads only after a visitor accepts the cookie bar, and
+never for a browser sending Global Privacy Control. The bar is the design
+system's `ConsentBanner`, with the wording of the corporate sites, and the
+footer's Cookie preferences control brings it back. Set `GA_MEASUREMENT_ID`
+in the knob block of `scripts/build.mjs` to the site's Firebase web app
+`measurementId` (`G-XXXXXXXXXX`). While it is empty or malformed the build
+ships no banner and no analytics code. `scripts/check-analytics.mjs` runs
+after every build and fails on a page that disagrees with that constant.
+
 ## Shared files
 
-`scripts/build.mjs` (bar the knob block at its top), `scripts/check-links.mjs`,
+`scripts/build.mjs` (bar the knob block at its top), `scripts/analytics.mjs`,
+`scripts/check-analytics.mjs`, `scripts/check-links.mjs`,
 `scripts/check-dashes.mjs`,
 `scripts/check-not-found.mjs`, `scripts/check-titles.mjs`, `scripts/check-descriptions.mjs`,
-`templates/page.html`, `templates/rum.js`,
+`templates/page.html`, `templates/consent.js`, `templates/rum.js`,
 `.github/workflows/pages.yml`, `.npmrc`, `.prettierrc.json`, `.prettierignore` and the browser icons under `assets/`
 are identical in handbook, terms and privacy-policy. Change one, change all
 three.
