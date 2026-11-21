@@ -18,6 +18,7 @@ Releases before 1.1.0 predate this file.
 
 ### Changed
 
+- Design system updated to 1.96.0.
 - Effective date is 18 November 2026, on the policy and the Cueprise notice.
 - Storefront notice says a storefront is built at no charge.
 - Brevo sign-in code emails cover Cueprise.
