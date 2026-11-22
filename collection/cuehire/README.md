@@ -273,3 +273,112 @@ typed only on Paystack’s own pages and window (see
 loads before you accept, and the cookieless Cloudflare measurement described
 in [what every site collects](../all-sites/) stays outside the consent gate
 because it sets no cookie.
+
+## What you have to give, and what happens if you do not
+
+- **The contact form:** your first and last name, work email, company,
+  industry, the kind of help you want and your brief are all required, and
+  submitting accepts the privacy policy and terms. If you leave one out, the
+  form does not send and we cannot answer you through it. You can write to
+  [cuehire@cuesoft.io](mailto:cuehire@cuesoft.io) instead. The country we
+  record is taken from your connection, not asked for.
+- **The portal:** it holds what your engagement needs. Talent’s bank details
+  are needed to send pay, and without them we cannot pay by bank transfer.
+  Talent’s hours entries are needed to bill and pay for the work. The name you
+  type to sign a contract records that you accepted it, and a contract left
+  unsigned stays awaiting signature. A client chooses between paying an
+  invoice by card on Paystack and by bank transfer, and what is owed is set by
+  the signed agreement.
+- **Special categories:** neither the form nor the portal asks for health,
+  religion, ethnicity or any other special category of data.
+- **Banner:** if you decline it, the analytics and advertising tags do not
+  load, and the site works identically either way.
+
+## The legal basis for each thing this site does
+
+| What happens                                                     | Legal basis                                                                                                                                             |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The contact form and its confirmation email                      | Legitimate interest in responding to and scoping a business enquiry: GDPR Art. 6(1)(f)                                                                  |
+| The portal, contracts, hours, pay, invoices and payments         | Performing the contract between you or your company and Cuesoft: Art. 6(1)(b); and legitimate interest in running and securing the portal: Art. 6(1)(f) |
+| Recording the name, time and IP address when you sign a contract | Legitimate interest in running and securing the portal, and performing the contract: Art. 6(1)(f) and 6(1)(b)                                           |
+| Server and security logs, cookieless analytics and monitoring    | Legitimate interest: Art. 6(1)(f), as set out above and on [what every site collects](../all-sites/)                                                    |
+| Analytics and advertising tags                                   | Consent: Art. 6(1)(a), withdrawable at any time                                                                                                         |
+
+Under the Nigeria Data Protection Act 2023 (NDPA) the same activities rest on
+the matching bases in s. 25: legitimate interest, contract and consent. See
+[Nigeria](../../jurisdictions/nigeria/#lawful-bases). Where we rely on
+legitimate interests, we have balanced them against your rights, and you may
+[object](../../rights/your-rights/) at any time.
+
+## Who receives it, where it goes and how long it stays
+
+- **Who receives it:** Airtable, which holds form records; Brevo, which sends
+  the confirmation; Cloudflare, which tells us your country; Paystack, for card
+  payments; the Cuesoft platform that runs the portal; and Cuesoft’s staff,
+  who review hours, issue invoices and confirm transfers. A client sees the
+  names and roles of the team placed on its project. Google, Meta, LinkedIn
+  and X receive tag data only if you press **Accept**. Each processor is named
+  on [processors and platforms](../../handling/processors/). We do not sell
+  personal data.
+- **Where it goes:** some of these providers are outside your country, and the
+  safeguards that cover each transfer are on
+  [international transfers](../../handling/transfers/).
+- **How long it stays:** records of inactive enquiries are deleted or
+  anonymised within 24 months of last contact, unless a legal duty requires
+  longer, and portal records are kept while the engagement runs and then as
+  the signed agreement and tax and company law require: see
+  [retention](../../handling/retention/).
+
+## Your rights on this site
+
+You have the rights listed on [your rights](../../rights/your-rights/):
+access, correction, deletion, restriction, objection, portability, withdrawing
+consent and complaint. To use one, email
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and say that it is about CueHIRE™.
+Either Cuesoft entity can act on it, and we reply within one month: see
+[how to exercise them](../../rights/your-rights/#how-to-exercise-them).
+
+- **Without writing to us:** the portal sits on your Cuesoft account, whose
+  [Privacy & Data page](../account/#your-privacy-settings) lets you download
+  your data and ask for your account to be deleted. Talent correct their bank
+  details and work history on the account pages linked above.
+- **What a deletion does not reach:** records we must keep under a signed
+  agreement or tax and company law: see [retention](../../handling/retention/).
+- **Complaints:** you may complain to your supervisory authority at any time:
+  see the [Nigeria](../../jurisdictions/nigeria/),
+  [EU and UK](../../jurisdictions/eu-uk/) and
+  [United States](../../jurisdictions/united-states/) pages.
+- **Engagements:** where a signed agreement sets its own data terms, those
+  terms apply alongside this page.
+
+## Children
+
+CueHIRE™ is for people 18 and older: the form asks you to confirm it when you
+submit, and we do not knowingly collect personal data from anyone under 18.
+If you believe a minor has used it, tell us at
+[hello@cuesoft.io](mailto:hello@cuesoft.io): see
+[children](../../rights/children/).
+
+## Automated decisions
+
+We make no decision about you by solely automated means that has legal or
+similarly significant effects: see
+[automated decisions](../../rights/your-rights/#automated-decisions). Staff
+review every hours entry, verify payout accounts and confirm each bank
+transfer, so those decisions are a person’s.
+
+## Security, cookies and contact
+
+- **Security:** card details stay with Paystack, and the portal answers only
+  for the signed-in person. See [security](../../handling/security/) for how
+  we protect data and [breach notification](../../handling/breach/) for what
+  we do if something goes wrong.
+- **Cookies and similar technologies:** every one this site uses or may set is
+  listed, with how to manage it, in
+  [cookies and similar technologies](../all-sites/#cookies-and-similar-technologies).
+- **Terms:** the [CueHIRE™ terms](https://terms.cuesoft.io/divisions/cuehire/)
+  and the [Terms of Service for the Websites](https://terms.cuesoft.io/websites/)
+  go with this page.
+- **Contact:** [cuehire@cuesoft.io](mailto:cuehire@cuesoft.io) or
+  [hello@cuesoft.io](mailto:hello@cuesoft.io), and the postal addresses and
+  phone numbers on the [main page](../../#contact).

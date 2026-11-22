@@ -15,6 +15,7 @@ npm ci
 npm run build       # writes _site/, then fails on any em dash or a missing 404.html
 npm run lint        # cuesoft-design-check corporate
 npm run check:links # every link, image, font and #fragment in _site resolves
+npm test            # at phone width the site index opens in the On This Page fold-out on every page (needs Chromium: npx playwright install chromium)
 npm run og          # cuesoft-og-card redraws assets/og-card.png; the build fails if the card is out of date
 npm run format:check # Prettier over the whole repository, as CI runs it
 ```

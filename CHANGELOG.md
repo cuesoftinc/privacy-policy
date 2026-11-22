@@ -8,6 +8,11 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+### Changed
+
+- The site index sits in the same place on every phone page.
+- Privacy notices now cover the Cuelearn platform, cookies and lawful bases.
+
 ## [1.4.5] - 2026-11-22
 
 ### Changed

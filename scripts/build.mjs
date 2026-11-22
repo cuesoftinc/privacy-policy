@@ -516,10 +516,10 @@ function plainText(html) {
   return out;
 }
 
-// A page's own headings for the rail beside it: every h2 and h3 with the id the
-// heading renderer gave it. A page with a single heading has nothing to list.
-const MIN_RAIL_HEADINGS = 2;
-function headingsOf(html) {
+// A page's own headings for the On This Page rail: every h2 and h3 with the id the
+// heading renderer gave it. A page with none lists its title, so every page carries
+// the rail and, on a phone, the site index opens in its fold-out on every page.
+function headingsOf(html, title) {
   const headings = [
     ...html.matchAll(/<h([23]) id="([^"]+)">([\s\S]*?)<\/h\1>/g),
   ].map(([, depth, id, inner]) => ({
@@ -527,7 +527,7 @@ function headingsOf(html) {
     href: `#${id}`,
     depth: Number(depth),
   }));
-  return headings.length >= MIN_RAIL_HEADINGS ? headings : [];
+  return headings.length ? headings : [title];
 }
 
 marked.use({
@@ -747,7 +747,11 @@ for (const page of pages) {
         effectiveDate: effective ? '@@EFFECTIVE@@' : undefined,
         lede: opening ? '@@LEDE@@' : undefined,
         sections: hasSidebar ? sectionsFor(page) : [],
-        onThisPage: headingsOf(body),
+        onThisPage: headingsOf(body, {
+          label: decodeEntities(plainText(heading[2])).trim(),
+          href: `#${heading[1]}`,
+          depth: 2,
+        }),
         updated: lastUpdated(page) || undefined,
         children: '@@BODY@@',
       }),

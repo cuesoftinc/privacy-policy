@@ -68,3 +68,72 @@ Whether Cuesoft is designated on any of those grounds is under review. This
 page will state the outcome, and where designation applies it will name our
 registration and our designated data protection officer. Questions in the
 meantime: [hello@cuesoft.io](mailto:hello@cuesoft.io).
+
+## Lawful bases, per activity
+
+| Processing                                                              | Lawful basis under the NDPA (s. 25)                                                                                                     |
+| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Application forms (CueTA™, CueLABS™)                                    | Contract: steps at your request prior to one                                                                                            |
+| CueHIRE™ contact form                                                   | Legitimate interest in responding to and scoping the business enquiry you sent us; contract once an engagement is signed                |
+| Cueprise™, Storefront™ and Cuelearn™ demo and enquiry forms             | Legitimate interest, because the agreement that may follow is with your organisation                                                    |
+| Infrastructure and security logs                                        | Legitimate interest in operating secure websites                                                                                        |
+| Performance and error monitoring (Datadog)                              | Legitimate interest in keeping the pages working                                                                                        |
+| Cookieless aggregate analytics                                          | Legitimate interest in understanding site usage                                                                                         |
+| Ace, the assistant                                                      | Legitimate interest in providing the assistant you choose to use                                                                        |
+| Open and click records in our acknowledgement emails                    | Legitimate interest in knowing our own mail reaches people                                                                              |
+| Analytics and advertising tags, including Google signals                | Consent, withdrawable as easily as it was given                                                                                         |
+| Spotify player on cuesoft.io                                            | Your click                                                                                                                              |
+| Contributor display on CueLABS™ (public GitHub data)                    | Legitimate interest in accurate attribution                                                                                             |
+| Account site: sign-up, sign-in, profile, cards, payout, identity checks | Contract, and steps prior to one; legitimate interest in keeping accounts secure for the device and IP address of a session             |
+| Account site: your export and deletion requests                         | Legal obligation to meet your request                                                                                                   |
+| Account site: notifications                                             | Contract for billing and security emails; consent for learning reminders and offers and events; legitimate interest for product updates |
+| CueTA™ enrolment and payment, and the CueHIRE™ portal and its invoices  | Contract; legal obligation for invoice and tax records                                                                                  |
+| Programme administration under a signed agreement                       | Contract                                                                                                                                |
+| Apparule and Expendit sign-in, orders and books                         | Contract; legal obligation for transaction records                                                                                      |
+| Apparule body photos and measurements, and Expendit’s AI processing     | Consent, which you can withdraw                                                                                                         |
+| Upstat accounts                                                         | Contract                                                                                                                                |
+| Upstat visitor events                                                   | The site owner’s basis, set out in its notice; Upstat acts on the site owner’s instructions                                             |
+| Cueprise™ platform: Licensee data                                       | The Licensee decides; Cuesoft is its processor                                                                                          |
+| Cuelearn™ platform: Institution data                                    | The Institution decides; Cuesoft is its processor                                                                                       |
+| Cueprise™ relationship data and service telemetry                       | Contract, legitimate interest or legal obligation, as the [Cueprise™ notice](../../cueprise/#when-cuesoft-is-the-controller) states     |
+| Personnel records (contractors, interns, staff)                         | As the [personnel privacy notice](https://handbook.cuesoft.io/policies/personnel-privacy/) states                                       |
+
+<!-- TODO(owner): the lawful basis for Cuesoft’s own Cuelearn™ relationship data (Institution contacts, contracts, invoices) and service telemetry, if it differs from Cueprise™’s -->
+
+## Sensitive personal data
+
+The NDPA restricts the processing of sensitive personal data, such as health
+information, biometric and genetic data, race or ethnic origin, religious
+belief and political opinion, unless a stated condition applies, such as the
+data subject’s explicit consent. We do not ask for it on our websites. Where a
+product handles data that may be sensitive, we rely on your explicit consent,
+which you can withdraw: Apparule asks for consent before your first body
+photo, Expendit asks before its AI reads your statements, and a Cuelearn™
+Teacher’s cloned voice is made only with that Teacher’s explicit consent.
+
+<!-- TODO(owner): whether identity documents on account.cuesoft.io, Apparule body photos and measurements, and a Cuelearn™ Teacher’s cloned voice are sensitive personal data under the NDPA, and the condition relied on for each; confirm the NDPA section references with counsel -->
+
+## Children and the NDPA
+
+The NDPA treats a person under 18 as a child and requires the consent of a
+parent or guardian before a child’s personal data is processed. Our services
+are for people 18 and older, with two exceptions: see
+[children](../../rights/children/). On Apparule, a parent’s or guardian’s
+agreement is required for anyone under 18. On the Cuelearn™ platform, the
+Institution that enrols a Learner under 18 is the controller and is
+responsible for the parent’s or guardian’s consent.
+
+## When Cuesoft is the processor
+
+For Institution data on Cuelearn™ and Licensee data on Cueprise™, the
+Institution or Licensee is the data controller under the NDPA, and Cuesoft
+Nigeria Limited acts as its data processor, on its instructions, under the
+data terms of the licensing agreement. We tell the controller of a breach
+without undue delay so it can meet its own duty to the NDPC and to the people
+affected: see [breach notification](../../handling/breach/).
+
+## Terms
+
+The terms that apply in Nigeria, including the governing law and how disputes
+are resolved, are on the
+[Nigeria terms page](https://terms.cuesoft.io/jurisdictions/nigeria/).

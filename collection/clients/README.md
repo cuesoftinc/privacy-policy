@@ -129,3 +129,76 @@ service controls its own processing under its own privacy terms.
 You can exercise the rights described in our
 [Privacy Policy](https://privacy.cuesoft.io), including access, correction,
 deletion and objection, through [hello@cuesoft.io](mailto:hello@cuesoft.io).
+
+## What You Have to Give, and What Happens if You Do Not
+
+Nothing. This site has no account, form, upload or payment, so there is nothing
+you can type or send to us, and you can read every case study and follow every
+link without giving us anything. If you decline the banner, the analytics and
+advertising tags do not load, and the case studies and every link stay usable
+in full.
+
+## The Legal Basis for Each Thing This Site Does
+
+| What happens                                                  | Legal basis                                                          |
+| ------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Server and security logs                                      | Legitimate interest in operating a secure website: GDPR Art. 6(1)(f) |
+| Cookieless aggregate analytics                                | Legitimate interest in understanding site usage: Art. 6(1)(f)        |
+| Performance and error monitoring                              | Legitimate interest in keeping the pages working: Art. 6(1)(f)       |
+| Analytics and advertising tags, including the one click event | Consent: Art. 6(1)(a), withdrawable at any time                      |
+
+Under the Nigeria Data Protection Act 2023 (NDPA) the same activities rest on
+the matching bases in s. 25: legitimate interest where we rely on it above, and
+consent for the tags. See [Nigeria](../../jurisdictions/nigeria/#lawful-bases).
+Where we rely on legitimate interests, we have balanced them against your
+rights, and you may [object](../../rights/your-rights/) at any time.
+
+## Who Receives It, Where It Goes and How Long It Stays
+
+- **Who receives it:** Cloudflare and Google Firebase App Hosting deliver the
+  site; Datadog receives the monitoring data described above; and Google, Meta,
+  LinkedIn and X receive tag data only if you press **Accept**. Each processor
+  is named on [processors and platforms](../../handling/processors/). We do
+  not sell personal data.
+- **Where it goes:** some of these providers are outside your country, and the
+  safeguards that cover each transfer are on
+  [international transfers](../../handling/transfers/).
+- **How long it stays:** server logs and Datadog data no more than 30 days and
+  Google Analytics event data 14 months: see
+  [retention](../../handling/retention/).
+
+## Exercising Your Rights Here
+
+The rights listed on [your rights](../../rights/your-rights/) are access,
+correction, deletion, restriction, objection, portability, withdrawing consent
+and complaint. Email [hello@cuesoft.io](mailto:hello@cuesoft.io) and say that
+it is about clients.cuesoft.io. Either Cuesoft entity can act on it, and we
+reply within one month: see
+[how to exercise them](../../rights/your-rights/#how-to-exercise-them). This
+site holds no account or form record about you, so what we can find is
+limited to what the tags and the logs above collected. You may complain to your
+supervisory authority at any time: see the
+[Nigeria](../../jurisdictions/nigeria/), [EU and UK](../../jurisdictions/eu-uk/)
+and [United States](../../jurisdictions/united-states/) pages.
+
+## Children, Automated Decisions, Security and Cookies
+
+- **Children:** this site is for people 18 and older, and we do not knowingly
+  collect personal data from anyone under 18: see
+  [children](../../rights/children/).
+- **Automated decisions:** we make no decision about you by solely automated
+  means that has legal or similarly significant effects: see
+  [automated decisions](../../rights/your-rights/#automated-decisions).
+- **Security:** see [security](../../handling/security/) for how we protect
+  data and [breach notification](../../handling/breach/) for what we do if
+  something goes wrong.
+- **Cookies and similar technologies:** every one this site uses or may set is
+  listed, with how to manage it, in
+  [cookies and similar technologies](../all-sites/#cookies-and-similar-technologies).
+
+## Terms and Contact
+
+The [Terms of Service for the Websites](https://terms.cuesoft.io/websites/),
+which cover Client Work, go with this page. To reach us, use
+[hello@cuesoft.io](mailto:hello@cuesoft.io) or the addresses and phone numbers
+on the [main page](../../#contact).

@@ -181,3 +181,113 @@ provided, including WhatsApp groups for learner coordination: see
 group exposes.
 
 Everything on [what every site collects](../all-sites/) applies.
+
+## What you have to give, and what happens if you do not
+
+- **To enrol:** you need a Cuesoft account, and you pay with a card saved on
+  it. The name and email address on your account, the course and plan you
+  choose and the card payment are what an enrolment takes. Without them we
+  cannot enrol you or take your payment. You can read the course pages and
+  use the Verify a Certificate page without giving us anything.
+- **Cards:** you choose which card to use. The card number, expiry date and
+  security code go only to Paystack’s window, never to us.
+- **Banner:** if you decline it, the analytics and advertising tags do not
+  load, and the site works identically either way.
+- **Learner communication:** coordinating on WhatsApp is part of how the
+  programme runs. If you need another arrangement, tell us at
+  [hello@cuesoft.io](mailto:hello@cuesoft.io): see
+  [processors and platforms](../../handling/processors/).
+
+## The legal basis for each thing this site does
+
+| What happens                                                                  | Legal basis                                                                                                                       |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Enrolment, payment, order and receipt                                         | Performing the contract you enter by enrolling: GDPR Art. 6(1)(b)                                                                 |
+| Invoice and tax records                                                       | Legal obligation: Art. 6(1)(c)                                                                                                    |
+| Course material and coursework on Google Classroom, and learner communication | Performing the enrolment contract: Art. 6(1)(b)                                                                                   |
+| Issuing your certificate                                                      | Performing the enrolment contract: Art. 6(1)(b)                                                                                   |
+| The public Verify a Certificate page                                          | Legitimate interest in letting a certificate be checked as genuine: Art. 6(1)(f), and you may [object](../../rights/your-rights/) |
+| Server and security logs, cookieless analytics and monitoring                 | Legitimate interest: Art. 6(1)(f), as set out above and on [what every site collects](../all-sites/)                              |
+| Analytics and advertising tags                                                | Consent: Art. 6(1)(a), withdrawable at any time                                                                                   |
+
+<!-- TODO(owner): confirm legitimate interest as the basis for the public Verify a Certificate page -->
+
+Under the Nigeria Data Protection Act 2023 (NDPA) the same activities rest on
+the matching bases in s. 25: contract, legal obligation, legitimate interest
+and consent. See [Nigeria](../../jurisdictions/nigeria/#lawful-bases). Where we
+rely on legitimate interests, we have balanced them against your rights.
+
+## Who receives it, where it goes and how long it stays
+
+- **Who receives it:** Paystack, for card payments; Certifier, which issues
+  your certificate and its public verification page; Google, for Google
+  Classroom; and WhatsApp, for learner groups. Cloudflare, Google Firebase App
+  Hosting and Datadog run and monitor the site, and Google, Meta, LinkedIn and
+  X receive tag data only if you press **Accept**. Each processor is named on
+  [processors and platforms](../../handling/processors/). Within Cuesoft,
+  your records are seen by the staff who run the course and billing. We do
+  not sell personal data.
+- **Where it goes:** some of these providers are outside your country, and the
+  safeguards that cover each transfer are on
+  [international transfers](../../handling/transfers/).
+- **How long it stays:** enrolment, order and invoice records, the
+  learner and programme communication, server logs and monitoring data each
+  have their own period on [retention](../../handling/retention/).
+  <!-- TODO(owner): how long Certifier keeps CueTA™ credentials and the public verification page after issue; the retention page carries the same open item -->
+
+## Your rights on this site
+
+You have the rights listed on [your rights](../../rights/your-rights/):
+access, correction, deletion, restriction, objection, portability, withdrawing
+consent and complaint. To use one, email
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and say that it is about CueTA™.
+Either Cuesoft entity can act on it, and we reply within one month: see
+[how to exercise them](../../rights/your-rights/#how-to-exercise-them).
+
+- **Without writing to us:** because you enrol through your Cuesoft account,
+  its [Privacy & Data page](../account/#your-privacy-settings) lets you
+  download your data and ask for your account to be deleted, and you can
+  correct your details on the profile page. That page says what deleting an
+  account does and does not remove, and it is refused while you have unpaid
+  invoices.
+- **What a deletion does not reach:** invoice and tax records, which we keep
+  for as long as the law requires.
+- **Your certificate:** you may object to the public check of your
+  certificate by writing to us, and we will consider it as
+  [your rights](../../rights/your-rights/) sets out.
+- **Complaints:** you may complain to your supervisory authority at any time:
+  see the [Nigeria](../../jurisdictions/nigeria/),
+  [EU and UK](../../jurisdictions/eu-uk/) and
+  [United States](../../jurisdictions/united-states/) pages.
+
+## Children
+
+CueTA™ is for people 18 and older, and we do not knowingly collect personal
+data from anyone under 18. If you believe a minor has enrolled or given us
+data, tell us at [hello@cuesoft.io](mailto:hello@cuesoft.io): see
+[children](../../rights/children/).
+
+## Automated decisions
+
+We make no decision about you by solely automated means that has legal or
+similarly significant effects: see
+[automated decisions](../../rights/your-rights/#automated-decisions). The
+pause in your access when a payment does not go through is the rule stated
+in the If payment fails item above, applied the same way to every subscription.
+If you think it was applied wrongly, tell us at
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and we will look at it again.
+
+## Security, cookies and contact
+
+- **Security:** card details stay with Paystack. See
+  [security](../../handling/security/) for how we protect data and
+  [breach notification](../../handling/breach/) for what we do if something
+  goes wrong.
+- **Cookies and similar technologies:** every one this site uses or may set is
+  listed, with how to manage it, in
+  [cookies and similar technologies](../all-sites/#cookies-and-similar-technologies).
+- **Terms:** the [CueTA™ terms](https://terms.cuesoft.io/divisions/cueta/) and
+  the [Terms of Service for the Websites](https://terms.cuesoft.io/websites/)
+  go with this page.
+- **Contact:** [hello@cuesoft.io](mailto:hello@cuesoft.io), and the postal
+  addresses and phone numbers on the [main page](../../#contact).

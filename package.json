@@ -18,6 +18,7 @@
     "check:not-found": "node scripts/check-not-found.mjs",
     "check:titles": "node scripts/check-titles.mjs",
     "lint": "npm run check:design-system",
+    "test": "node --test scripts/index-placement.test.mjs",
     "format": "prettier --write . --ignore-unknown",
     "format:check": "prettier --check . --ignore-unknown"
   },
