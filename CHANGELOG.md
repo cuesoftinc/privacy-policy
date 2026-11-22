@@ -8,6 +8,8 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+## [1.4.6] - 2026-11-22
+
 ### Changed
 
 - The site index sits in the same place on every phone page.
