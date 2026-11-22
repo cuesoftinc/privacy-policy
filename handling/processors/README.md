@@ -63,3 +63,34 @@ happen on WhatsApp under an engagement’s terms.
 Sub-processors for the licensed platform are named in the
 [Cueprise™ Privacy Notice](../../cueprise/), and each licensing agreement
 confirms which are active for that deployment.
+
+## Cuelearn™
+
+Sub-processors for the Cuelearn™ platform are named in the
+[Cuelearn™ Privacy Notice](../../cuelearn/#sub-processors), and each
+licensing agreement confirms which are active for that Institution. For
+Institution data, Cuesoft is the processor and the Institution is the
+controller: see
+[when Cuesoft is the processor](../../cuelearn/#when-cuesoft-is-the-processor).
+
+The platform uses these providers, each in the role the table above gives
+it: Google Cloud (Cloud Run and Cloud Storage), Brevo (email), Meta’s
+WhatsApp Business Platform (one-time codes and parents’ and guardians’
+weekly reports), Google (sign-in, Google Meet for live sessions and
+invigilated exams, and Gemini for AI), and Datadog (service telemetry). Where
+an Institution chooses to publish a lesson video to YouTube on its own
+channel, YouTube receives it under that Institution’s choice and Google’s own
+terms. Certificates are registered on Cuesoft’s Cueprise™ platform and can be
+checked by code on a public verification page.
+
+## Transfer safeguards
+
+Every processor named on this page is covered by the safeguards described on
+the [international transfers page](../transfers/): the standard contractual
+clauses in its data processing agreement, or its certification under the
+EU-US Data Privacy Framework where it has one. The advertising platforms are
+not processors, and that page explains how a transfer to them is treated.
+Programme coordination platforms such as WhatsApp and Discord act under their
+own privacy policies.
+
+<!-- TODO(owner): which processors above are certified under the EU-US Data Privacy Framework and the UK Extension, if you want each one named here; no page says -->

@@ -1,6 +1,6 @@
 # Cueprise™ Privacy Notice
 
-**Effective date: 18 November 2026**
+**Effective date: 22 November 2026**
 
 This notice covers **Cueprise™** in both the places you meet it: the
 website at **cueprise.cuesoft.io**, where you can read about the product and
@@ -45,6 +45,31 @@ controller** of the data the platform holds.
 
 Data inside a licensed Cueprise™ deployment is governed by that licence’s
 data terms and by the rest of this notice.
+
+### About the demo request form
+
+- **Required or optional:** your name, work email, business name, the
+  trade you pick and your acceptance of the terms are required, because we
+  cannot reply to you or record the request without them. The message box
+  is optional, and we ask you to keep sensitive personal information out
+  of it. We also record the time you accepted the terms.
+- **Who receives it:** Airtable stores the record and Brevo sends the
+  confirmation email. Both act as our processors: see
+  [processors and platforms](../handling/processors/).
+- **How long we keep it:** records of inactive enquiries are deleted or
+  anonymised within 24 months of last contact, unless a legal duty requires
+  longer: see [retention](../handling/retention/).
+- **Transfers:** these providers may handle your data outside your country,
+  under the safeguards on the
+  [transfers page](../handling/transfers/).
+- **Decisions about you:** we make no decision about you by automated
+  means from a demo request: see
+  [automated decisions](../rights/your-rights/#automated-decisions).
+- **Age:** the site is for organisations and for people 18 and older: see
+  [children](../rights/children/).
+- **Terms:** the [Cueprise™ Terms](https://terms.cuesoft.io/cueprise/) and
+  [Using the Websites](https://terms.cuesoft.io/websites/) go with this
+  notice.
 
 ### Analytics and advertising tags: opt-in only
 
@@ -180,6 +205,45 @@ under [service telemetry](#service-telemetry) below.
 | Relationship data: licensee contacts, contracts, invoices, support correspondence                                             | Cuesoft      |           |
 | Service telemetry: operational logs and usage metrics needed to run and secure the platform                                   | Cuesoft      |           |
 
+### Lawful basis and the licensee’s duties
+
+The [Cueprise™ Terms](https://terms.cuesoft.io/cueprise/) govern how the
+platform may be used. For licensee data, the licensee is the controller,
+so these duties are the licensee’s:
+
+- **A lawful basis for each activity.** The licensee chooses and records
+  the basis for what it does with the data (GDPR Art. 6 and the NDPA s. 25),
+  and Cuesoft does not choose it. The licensee tells its staff, customers
+  and shoppers what it does, in its own privacy notice.
+- **Required or optional.** The licensee decides which details its people
+  must give, and tells them whether each one is required or optional.
+- **Special-category and sensitive data.** Some records can reveal more
+  than they first seem to. A leave record can show a kind of leave such as
+  sick leave, which may reveal health, and notes, files and pictures can
+  hold anything. The licensee decides whether to record such data. It is
+  responsible for the condition that allows it (GDPR Art. 9 and the NDPA’s
+  rules on sensitive personal data). Cuesoft processes it only on the
+  licensee’s instructions, like all other licensee data.
+- **Children.** The platform is built for businesses, their staff and their
+  customers. Cuesoft does not direct it to children. A licensee that
+  collects data about a child is responsible for the parent’s or guardian’s
+  consent: see [children](../rights/children/).
+- **Marketing messages.** The platform adds a customer’s email address and
+  phone number to the licensee’s newsletter and WhatsApp update lists when
+  the customer record is created, and records when each is subscribed or
+  unsubscribed. The licensee is responsible for the legal basis for those
+  messages and for honouring every unsubscribe.
+- **Decisions about people.** Cuesoft makes no decision about any person
+  from licensee data. Where a licensee uses platform results (such as pay
+  calculations, loyalty rules or credit terms) to decide something about
+  its own people or customers, the licensee is responsible for human review
+  and for the rules on automated decisions that apply to it.
+- **Integrations.** The provider behind each integration a licensee
+  connects is the licensee’s own service provider, under the licensee’s own
+  arrangement with it, and is not Cuesoft’s sub-processor.
+
+<!-- TODO(owner): confirm the lawful basis licensees should rely on for the automatic newsletter and WhatsApp subscription of a new customer (the code subscribes the customer when the record is created); direct marketing normally needs consent or a soft opt-in -->
+
 ### What the platform holds
 
 So licensees can describe their deployment accurately in their own privacy
@@ -192,6 +256,22 @@ stores, depending on which modules the licensee uses:
 | Business customers  | Name, email, phone, tax ID, addresses, credit terms                                                                 |
 | Storefront shoppers | Name, phone (and optional alternate phone), email, delivery and billing addresses, order notes, order history       |
 | Login codes         | For WhatsApp one-time codes: the phone number and a cryptographic hash of the code. The code itself is never stored |
+
+### More categories a deployment may hold
+
+Depending on which modules the licensee uses, a deployment also stores:
+
+| Category           | Fields                                                                                                                                                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| People records     | Name, email, phone, job title, department, application, start and end dates, interview details, stage history with reasons, contract link, photo, employee number                                                              |
+| Private details    | Date of birth, home address (with state, country and, where captured, map coordinates), personal phone and email, next of kin’s name, relationship and phone                                                                   |
+| Payout accounts    | Bank name and code, account name and number, sort code, currency and account type                                                                                                                                              |
+| Identity documents | Document type and number, the file, and the review status, reviewer and note                                                                                                                                                   |
+| Work history       | Company, role, dates and description                                                                                                                                                                                           |
+| Leave              | Kind of leave (such as annual, sick or unpaid), dates, days, reason, status, manager, cover and approval trail                                                                                                                 |
+| Payroll            | Pay structures and profiles (basic and gross pay, rent, tax ID, pension PIN and provider, NHF number), pay runs with PAYE, pension, NHF, NSITF and ITF amounts for each person, remittances, and contractor payments and hours |
+| Marketing choices  | For the newsletter: email, name, source, status and the dates of subscribing and unsubscribing. For WhatsApp updates: phone, name, source and the dates of opting in and out                                                   |
+| Loyalty            | Each customer’s points and store credit, and the entries behind them (earned, redeemed, expired, gift card, refund)                                                                                                            |
 
 ### Payments
 
@@ -217,6 +297,16 @@ Picture upscaling uses Google’s Imagen.
 - **Your confirmation:** Ace takes an action only after you confirm it.
 - **Who is involved:** Google acts as a sub-processor for this, listed in the
   [table below](#sub-processors).
+
+### AI output and your responsibilities
+
+AI output can be wrong, so a person should check it before relying on it.
+Ace takes an action only after you confirm it. No AI feature makes a
+decision with legal or similarly significant effect on its own. The
+licensee, as controller, decides whether its staff use these features and
+has the lawful basis for what they send. The
+[Ace terms](https://terms.cuesoft.io/websites/ace/) say more about what Ace
+is and is not.
 
 ### Integrations
 
@@ -323,6 +413,62 @@ Relationship data follows the retention page and the agreement. The
 [jurisdiction pages](../jurisdictions/nigeria/) apply to this data as they
 do to website data.
 
+### Cookies and browser storage in the platform
+
+- **Session cookie:** when you sign in, the platform sets a session cookie
+  that scripts on the page cannot read. It is sent only over HTTPS, only to
+  the same site, and it ends when you sign out. Its lifetime is set in the
+  deployment’s configuration.
+- **Sign-in cookies:** during Google or workspace single sign-on, two
+  short-lived cookies carry the sign-in between pages, for 10 minutes and 5
+  minutes. They are removed when the sign-in finishes.
+- **Browser storage:** the admin application keeps your sign-in tokens, the
+  branch you work in, saved table views, the last currency you chose,
+  point-of-sale settings and a few interface choices in your browser’s local
+  storage, and, only during sign-in, the page to return to and the email
+  you tried in session storage. This stays on your device and is not sent
+  to us as analytics. You can clear it in your browser.
+- **Analytics:** the usage analytics and session-replay sample in the admin
+  application are described under [service telemetry](#service-telemetry).
+- **Storefronts:** cookies and tags a licensee adds to its own storefront
+  are the licensee’s choice, and its own notices cover them. For the
+  cookies on the website, see
+  [cookies and similar technologies](../collection/all-sites/#cookies-and-similar-technologies).
+
+### Retention on the platform
+
+- **Licensee data** is kept as the licensee instructs, under the licensing
+  agreement and applicable law: see [retention](../handling/retention/).
+- **A retention setting.** A deployment has a setting where the licensee
+  chooses how many whole years a business record it has deleted is kept
+  before a daily job removes it. The setting never allows fewer than six
+  years and never more than fifty, and it lists the kinds of record the job
+  removes.
+- **Service telemetry** is kept for 30 days, as set out above.
+- **On termination or expiry**, licensee data is returned or deleted as the
+  agreement provides.
+
+<!-- TODO(owner): how long Cuesoft keeps relationship data (licensee contacts, contracts, invoices and support correspondence) after the licence ends, and the period within which licensee data is deleted after termination; no page gives either -->
+
+### International transfers
+
+Licensee data is held where the deployment runs: on Google Cloud by default,
+or on the licensee’s own cloud or on-premise where the licensing agreement
+says so. The providers in the sub-processor table may process data outside
+the licensee’s country. Cuesoft transfers licensee data only as the
+licensee instructs, under the transfer terms of the licensing agreement and
+the safeguards on the [transfers page](../handling/transfers/#cueprise).
+
+<!-- TODO(owner): the Google Cloud region or regions that host default Cueprise™ deployments, so licensees can state where their data is held -->
+
+### Changes to sub-processors
+
+This notice is updated when a sub-processor is added or replaced, and the
+effective date above changes with it. Each licensee is told of a change in
+the way its licensing agreement provides.
+
+<!-- TODO(owner): the notice period for a new sub-processor and the licensee’s right to object, if the licensing agreement sets them -->
+
 ### Security and breach
 
 The platform is operated under the safeguards on the
@@ -331,6 +477,30 @@ measures stated in each licensing agreement. Security incidents affecting
 licensee data are notified to the affected licensee without undue delay,
 with the detail the licensee needs for its own legal obligations: see
 [breach notification](../handling/breach/).
+
+A sub-processor’s security incident affecting licensee data is treated as
+our own from the moment we learn of it, and we tell the licensee as above.
+Keeping its list of users and their roles current, and its own users’
+credentials safe, is the licensee’s responsibility, as the
+[Cueprise™ Terms](https://terms.cuesoft.io/cueprise/) say.
+
+## Your rights and complaints
+
+- **Data Cuesoft controls** (the demo request form, relationship data and
+  service telemetry): email [hello@cuesoft.io](mailto:hello@cuesoft.io). We
+  answer within one month, and the steps are on
+  [your rights](../rights/your-rights/#how-to-exercise-them).
+- **Data inside a licensee’s deployment:** ask the licensee. If you write to
+  us instead, we refer your request to it and help it answer.
+- **Complaints:** you may complain to your supervisory authority at any
+  time: in Nigeria the Nigeria Data Protection Commission (see the
+  [Nigeria page](../jurisdictions/nigeria/#complaints)), in the EU and UK
+  your data protection authority (see the
+  [EU and UK page](../jurisdictions/eu-uk/#complaints)), and in the United
+  States your state attorney general (see the
+  [United States page](../jurisdictions/united-states/)).
+- **Changes to this notice:** see
+  [changes to this policy](../#changes-to-this-policy).
 
 ## Contact
 

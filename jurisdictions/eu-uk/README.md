@@ -22,6 +22,23 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | Website analytics and advertising tags, including Google signals             | Consent: Art. 6(1)(a), withdrawable at any time                                                                                                                                                                                                             |
 | Contributor display on CueLABS™ (public GitHub data)                         | Legitimate interest in accurate attribution: Art. 6(1)(f), objection honoured on request                                                                                                                                                                    |
 | Programme administration under a signed agreement                            | Contract: Art. 6(1)(b)                                                                                                                                                                                                                                      |
+| CueHIRE™ contact form                                                        | Legitimate interest in responding to and scoping a business enquiry: Art. 6(1)(f). Once an engagement is signed, contract: Art. 6(1)(b)                                                                                                                     |
+| Open and click records in our acknowledgement emails                         | Legitimate interest in knowing our own mail reaches people: Art. 6(1)(f), objection honoured on request                                                                                                                                                     |
+| Spotify player on cuesoft.io                                                 | Your click, which is your consent: Art. 6(1)(a)                                                                                                                                                                                                             |
+| Account site: sign-up, sign-in, profile, cards, payout and identity checks   | Contract and steps prior to one: Art. 6(1)(b). The device and IP address of a session: legitimate interest in keeping accounts secure, Art. 6(1)(f)                                                                                                         |
+| Account site: your export and deletion requests                              | Legal obligation to meet your request: Art. 6(1)(c)                                                                                                                                                                                                         |
+| Account site: notifications                                                  | Billing and security emails, contract: Art. 6(1)(b). Learning reminders and offers and events, consent: Art. 6(1)(a). Product updates, legitimate interest: Art. 6(1)(f)                                                                                    |
+| CueTA™ enrolment and payment, and the CueHIRE™ portal and its invoices       | Contract: Art. 6(1)(b). Invoice and tax records, legal obligation: Art. 6(1)(c)                                                                                                                                                                             |
+| Apparule and Expendit: sign-in, orders and books                             | Contract: Art. 6(1)(b). Transaction records, legal obligation: Art. 6(1)(c). Reviewing reports on Apparule, legitimate interest: Art. 6(1)(f)                                                                                                               |
+| Apparule body photos and measurements, and Expendit’s AI processing          | Consent: Art. 6(1)(a), withdrawable at any time                                                                                                                                                                                                             |
+| Upstat accounts                                                              | Contract: Art. 6(1)(b)                                                                                                                                                                                                                                      |
+| Upstat visitor events                                                        | The site owner’s basis, set out in its notice: Upstat acts as the site owner’s processor                                                                                                                                                                    |
+| Cueprise™ platform: Licensee data                                            | The Licensee is the controller and decides the basis: Cuesoft is its processor (Art. 28)                                                                                                                                                                    |
+| Cuelearn™ platform: Institution data                                         | The Institution is the controller and decides the basis: Cuesoft is its processor (Art. 28)                                                                                                                                                                 |
+| Cueprise™ relationship data and service telemetry                            | Contract, legitimate interest or legal obligation, as the [Cueprise™ notice](../../cueprise/#when-cuesoft-is-the-controller) states                                                                                                                         |
+| Personnel records (contractors, interns, staff)                              | As the [personnel privacy notice](https://handbook.cuesoft.io/policies/personnel-privacy/) states                                                                                                                                                           |
+
+<!-- TODO(owner): the lawful basis for Cuesoft’s own Cuelearn™ relationship data (Institution contacts, contracts, invoices) and service telemetry, if it differs from Cueprise™’s -->
 
 Where we rely on legitimate interests, we have balanced them against your
 rights, and you may [object](../../rights/your-rights/) at any time.
@@ -50,6 +67,8 @@ rely on the exemption in **Article 27(2)** GDPR (and its UK equivalent)
 from appointing an EU/UK representative. You can reach the controllers
 directly at [hello@cuesoft.io](mailto:hello@cuesoft.io); this page will
 name a representative if our processing ever grows past the exemption.
+
+<!-- TODO(owner): confirm the Art. 27(2) exemption still holds now that the Cuelearn™ platform processes Learners’ data, including children’s, and the opt-in advertising tags carry EU/UK visitors; "occasional and low-risk" may no longer be accurate, and a representative may be required -->
 
 ## Transfers
 
@@ -83,3 +102,52 @@ never. The websites and the documentation sites also load Datadog’s
 performance and error monitoring, which the banner does not govern: see
 [what every site collects](../../collection/all-sites/#performance-and-error-monitoring)
 and the [documentation sites](../../collection/docs-sites/).
+
+## When Cuesoft is the processor
+
+For data on the Cuelearn™ platform and on a licensed Cueprise™ deployment, the
+Institution or Licensee is the controller and Cuesoft is its processor under
+Art. 28 GDPR. We process only on its documented instructions, under the data
+terms of the licensing agreement, and we help it answer rights requests and
+meet its security and breach duties: see the
+[Cuelearn™ Privacy Notice](../../cuelearn/#when-cuesoft-is-the-processor), the
+[Cueprise™ Privacy Notice](../../cueprise/#when-cuesoft-is-the-processor) and
+[breach notification](../../handling/breach/).
+
+## Special-category data
+
+We do not ask for special-category data (Art. 9) on our websites. Where a
+product may handle it, we rely on your explicit consent (Art. 9(2)(a)), which
+you can withdraw: Apparule asks before your first body photo, Expendit asks
+before its AI reads your statements, and a Cuelearn™ Teacher’s cloned voice is
+made only with that Teacher’s explicit consent.
+
+<!-- TODO(owner): whether identity documents on account.cuesoft.io, Apparule body photos and measurements, and a Cuelearn™ Teacher’s cloned voice are special-category data, and the Art. 9(2) condition relied on for each -->
+
+## Children
+
+Our services are for people 18 and older, with two exceptions: see
+[children](../../rights/children/). Apparule requires a parent’s or
+guardian’s agreement for anyone under 18, which also meets Art. 8 GDPR where a
+member state sets the age of digital consent between 13 and 16. On the
+Cuelearn™ platform, the Institution that enrols a Learner under 18 is the
+controller and is responsible for the parent’s or guardian’s consent.
+
+## Automated decision-making
+
+We do not make solely automated decisions with legal or similarly significant
+effects (Art. 22): application decisions are made by humans. See
+[automated decisions](../../rights/your-rights/#automated-decisions).
+
+## Data protection officer
+
+<!-- TODO(owner): whether Cuesoft has appointed, or is required under Art. 37 to appoint, a data protection officer; no page says -->
+
+Every data protection question goes to
+[hello@cuesoft.io](mailto:hello@cuesoft.io).
+
+## Terms
+
+The terms that apply in the EU, the EEA and the UK, including the consumer
+protections they keep, are on the
+[EU and UK terms page](https://terms.cuesoft.io/jurisdictions/eu-uk/).

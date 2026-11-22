@@ -177,3 +177,113 @@ from the
 loads before you accept, and the cookieless Cloudflare measurement described
 in [what every site collects](../all-sites/) stays outside the consent gate
 because it sets no cookie.
+
+## What you have to give, and what happens if you do not
+
+- **The application form:** first name, last name, email, phone, GitHub
+  username, university, course, level, country, the discipline and the
+  duration you want are required, and so is ticking that you accept the terms.
+  Your portfolio link, your earliest start date, your reasons for applying and
+  your CV are optional. If you leave a required item out, the form does not
+  send, and without an application we cannot assess you. If you leave the
+  optional items out, your application is assessed without them.
+- **Special categories:** the form has no field for health, religion,
+  ethnicity or any other special category of data, and we ask you not to put
+  any in your reasons or your CV.
+- **The portal:** it shows you what Cuesoft’s back end holds about your
+  application and, later, your work. Bank details, for your data allowance or
+  contractor payments, and identity documents, to finish setting you up, are
+  given on [account.cuesoft.io](../account/); without them we cannot pay you
+  or finish setting you up.
+- **The community:** joining the Discord community is your choice and is not
+  needed to apply.
+- **Banner:** if you decline it, the analytics and advertising tags do not
+  load, and the site works identically either way.
+
+## The legal basis for each thing this site does
+
+| What happens                                                                | Legal basis                                                                                          |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Assessing your application and the confirmation email                       | Steps at your request prior to a contract: GDPR Art. 6(1)(b)                                         |
+| The applicant portal, your contract and your programme records              | Performing the participation agreement you sign: Art. 6(1)(b)                                        |
+| The members’ leaderboard (names with commit and merged pull request counts) | Performing the participation agreement: Art. 6(1)(b)                                                 |
+| Contributor display from public GitHub data                                 | Legitimate interest in accurate attribution: Art. 6(1)(f)                                            |
+| Server and security logs, cookieless analytics and monitoring               | Legitimate interest: Art. 6(1)(f), as set out above and on [what every site collects](../all-sites/) |
+| Analytics and advertising tags                                              | Consent: Art. 6(1)(a), withdrawable at any time                                                      |
+
+Under the Nigeria Data Protection Act 2023 (NDPA) the same activities rest on
+the matching bases in s. 25: contract (including steps before one), legitimate
+interest and consent. See [Nigeria](../../jurisdictions/nigeria/#lawful-bases).
+Where we rely on legitimate interests, we have balanced them against your
+rights.
+
+## Who receives it, where it goes and how long it stays
+
+- **Who receives it:** the Cuesoft back end that runs the portal and holds your
+  application; Airtable, which holds the copy; Brevo, which sends the
+  confirmation; Cloudflare, which tells us your country; and the Cuesoft
+  staff who assess applications and run the programme. Google Docs or
+  DocuSign receives what you do on the contract link we email you, under its
+  own policy, and Discord receives what you share in the community under its
+  own policy. Google, Meta, LinkedIn and X receive tag data only if you press
+  **Accept**. Each processor is named on
+  [processors and platforms](../../handling/processors/). The leaderboard is
+  seen only by members. We do not sell personal data.
+- **Where it goes:** some of these providers are outside your country, and the
+  safeguards that cover each transfer are on
+  [international transfers](../../handling/transfers/).
+- **How long it stays:** records of unsuccessful or inactive applications are
+  deleted or anonymised within 24 months of last contact, unless a legal duty
+  requires longer, and an intern’s personnel record is kept for the engagement
+  and six years after: see [retention](../../handling/retention/).
+  <!-- TODO(owner): a row on the retention page for how long the applicant portal, members’ project, pull request and commit records and the leaderboard are kept -->
+
+## Your rights on this site
+
+You have the rights listed on [your rights](../../rights/your-rights/):
+access, correction, deletion, restriction, objection, portability, withdrawing
+consent and complaint. To use one, email
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and say that it is about CueLABS™.
+Either Cuesoft entity can act on it, and we reply within one month: see
+[how to exercise them](../../rights/your-rights/#how-to-exercise-them). A
+request reaches both the record in our back end and the copy in Airtable.
+
+- **Without writing to us:** sign in to your Cuesoft account, where the
+  [Privacy & Data page](../account/#your-privacy-settings) lets you download
+  your data and ask for your account to be deleted, and the profile, work
+  history and payout pages let you correct what they hold.
+- **Complaints:** you may complain to your supervisory authority at any time:
+  see the [Nigeria](../../jurisdictions/nigeria/),
+  [EU and UK](../../jurisdictions/eu-uk/) and
+  [United States](../../jurisdictions/united-states/) pages.
+
+## Children
+
+CueLABS™ is for people 18 and older: the form asks you to confirm it when you
+submit, and we do not knowingly collect personal data from anyone under 18.
+If you believe a minor has applied, tell us at
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and we will verify and delete it:
+see [children](../../rights/children/).
+
+## Automated decisions
+
+We make no decision about you by solely automated means that has legal or
+similarly significant effects: see
+[automated decisions](../../rights/your-rights/#automated-decisions). Whether
+you are admitted, and every decision about your application, is a person’s.
+
+## Security, cookies and contact
+
+- **Security:** see [security](../../handling/security/) for how we protect
+  data and [breach notification](../../handling/breach/) for what we do if
+  something goes wrong. The portal’s session cookie cannot be read by scripts
+  on the page.
+- **Cookies and similar technologies:** every one this site uses or may set,
+  including `cueprise_session`, is listed, with how to manage it, in
+  [cookies and similar technologies](../all-sites/#cookies-and-similar-technologies).
+- **Terms:** the [CueLABS™ terms](https://terms.cuesoft.io/divisions/cuelabs/)
+  and the [Terms of Service for the Websites](https://terms.cuesoft.io/websites/)
+  go with this page.
+- **Contact:** [cuelabs@cuesoft.io](mailto:cuelabs@cuesoft.io) or
+  [hello@cuesoft.io](mailto:hello@cuesoft.io), and the postal addresses and
+  phone numbers on the [main page](../../#contact).

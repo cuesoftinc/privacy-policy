@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: 18 November 2026**
+**Effective date: 22 November 2026**
 
 This policy explains what personal data the Cuesoft websites collect, why,
 and the rights you have over it, under Nigerian, EU/UK and US law.
@@ -66,20 +66,82 @@ those relationships alongside this policy.
 - You can exercise your rights (access, correction, deletion and more)
   by emailing [hello@cuesoft.io](mailto:hello@cuesoft.io); see
   [your rights](rights/your-rights/).
+- **Cuelearn™ works differently from our websites.** On the Cuelearn™
+  platform, the Institution (the school, academy, university or training
+  provider that licenses it) decides who uses it and is the controller of
+  the data on it. We process that data for the Institution,
+  on its instructions: see the
+  [Cuelearn™ Privacy Notice](cuelearn/#the-cuelearn-platform). The same is
+  true of Cueprise™ and its Licensees: see the
+  [Cueprise™ Privacy Notice](cueprise/).
+- **Children:** our websites, programmes and products are for people 18 and
+  older, with two exceptions: Apparule, and Cuelearn™ Learners enrolled by
+  their school. See [children](rights/children/).
+- **Cookies and similar technologies** are listed in one place, with how
+  to manage each: see
+  [cookies and similar technologies](collection/all-sites/#cookies-and-similar-technologies).
+  We honour Global Privacy Control.
+- **Where your data goes and how long it stays:** see
+  [processors and platforms](handling/processors/),
+  [international transfers](handling/transfers/),
+  [retention](handling/retention/), [security](handling/security/) and
+  [breach notification](handling/breach/).
+- **Complaints:** you may complain to your supervisory authority at any
+  time, and in the United States you may appeal a refused request: see the
+  [Nigeria](jurisdictions/nigeria/), [EU and UK](jurisdictions/eu-uk/) and
+  [United States](jurisdictions/united-states/) pages.
+- **Terms:** this policy goes with our
+  [Terms of Service](https://terms.cuesoft.io/).
 
 ## How this policy is organised
 
-| Section                               | What it covers                                                                                                                                                                                                                                                    |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Collection](collection/all-sites/)   | What every marketing site collects, then site by site: cuesoft.io, cueta.cuesoft.io, cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io, storefront.cuesoft.io, cuelearn.cuesoft.io, clients.cuesoft.io, account.cuesoft.io and the documentation sites. |
-| [Cueprise™ Privacy Notice](cueprise/) | A standalone notice for our licensed enterprise platform, where the licensee is the controller.                                                                                                                                                                   |
-| [Apparule Privacy Notice](apparule/)  | Our body-measurement and designer marketplace app: photos, measurements, orders and payments.                                                                                                                                                                     |
-| [Expendit Privacy Notice](expendit/)  | Our income, expense and tax app: your books, imported statements and AI processing.                                                                                                                                                                               |
-| [Upstat Privacy Notice](upstat/)      | Our monitoring and status service: account data, and the cookieless events it keeps for the sites that use it.                                                                                                                                                    |
-| [Cuelearn™ Privacy Notice](cuelearn/) | Our learning platform for institutions: demo requests on the marketing site.                                                                                                                                                                                      |
-| [Handling](handling/processors/)      | Processors and platforms, international transfers, retention, security and breach notification.                                                                                                                                                                   |
-| [Rights](rights/your-rights/)         | Your rights and how to exercise them, and children.                                                                                                                                                                                                               |
-| [Jurisdictions](jurisdictions/eu-uk/) | The detail per regime: Nigeria, EU/EEA and UK, United States.                                                                                                                                                                                                     |
+| Section                                                                                    | What it covers                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Collection](collection/all-sites/)                                                        | What every marketing site collects, then site by site: cuesoft.io, cueta.cuesoft.io, cuelabs.cuesoft.io, cuehire.cuesoft.io, cueprise.cuesoft.io, storefront.cuesoft.io, cuelearn.cuesoft.io, clients.cuesoft.io, account.cuesoft.io and the documentation sites. |
+| [Cueprise™ Privacy Notice](cueprise/)                                                      | A standalone notice for our licensed enterprise platform, where the licensee is the controller.                                                                                                                                                                   |
+| [Apparule Privacy Notice](apparule/)                                                       | Our body-measurement and designer marketplace app: photos, measurements, orders and payments.                                                                                                                                                                     |
+| [Expendit Privacy Notice](expendit/)                                                       | Our income, expense and tax app: your books, imported statements and AI processing.                                                                                                                                                                               |
+| [Upstat Privacy Notice](upstat/)                                                           | Our monitoring and status service: account data, and the cookieless events it keeps for the sites that use it.                                                                                                                                                    |
+| [Cuelearn™ Privacy Notice](cuelearn/)                                                      | Our learning platform for institutions: demo requests on the marketing site.                                                                                                                                                                                      |
+| [Handling](handling/processors/)                                                           | Processors and platforms, international transfers, retention, security and breach notification.                                                                                                                                                                   |
+| [Rights](rights/your-rights/)                                                              | Your rights and how to exercise them, and children.                                                                                                                                                                                                               |
+| [Jurisdictions](jurisdictions/eu-uk/)                                                      | The detail per regime: Nigeria, EU/EEA and UK, United States.                                                                                                                                                                                                     |
+| [Cookies and similar technologies](collection/all-sites/#cookies-and-similar-technologies) | The cookies and similar technologies the sites use, who sets them, and how to manage them.                                                                                                                                                                        |
+| [Terms of Service](https://terms.cuesoft.io/)                                              | The terms that go with this policy, including the terms for each product.                                                                                                                                                                                         |
+
+## Who is responsible for your data
+
+| Where                                             | Controller       | Processor                                                                 |
+| ------------------------------------------------- | ---------------- | ------------------------------------------------------------------------- |
+| Our websites, forms, applications and accounts    | Cuesoft, jointly | The providers we name on [processors and platforms](handling/processors/) |
+| Licensed Cueprise™ platform (Licensee data)       | The Licensee     | Cuesoft                                                                   |
+| Licensed Cuelearn™ platform (Institution data)    | The Institution  | Cuesoft                                                                   |
+| Cueprise™ relationship data and service telemetry | Cuesoft          | The providers we name on [processors and platforms](handling/processors/) |
+
+Where we are the processor, the controller answers requests about that data
+and we help it do so: see [your rights](rights/your-rights/). Where a signed
+agreement sets data terms, those terms apply to that relationship alongside
+this policy.
+
+## Terms and related policies
+
+These pages are the privacy half of our legal documents. The terms are the
+other half:
+
+- [Terms of Service](https://terms.cuesoft.io/)
+- [Cuelearn™ Terms](https://terms.cuesoft.io/cuelearn/) and
+  [Cueprise™ Terms](https://terms.cuesoft.io/cueprise/)
+- [Apparule Terms](https://terms.cuesoft.io/apparule/),
+  [Expendit Terms](https://terms.cuesoft.io/expendit/) and
+  [Upstat Terms](https://terms.cuesoft.io/upstat/)
+- [Liability](https://terms.cuesoft.io/legal/liability/),
+  [termination](https://terms.cuesoft.io/legal/termination/),
+  [confidentiality](https://terms.cuesoft.io/legal/confidentiality/) and
+  [intellectual property](https://terms.cuesoft.io/legal/intellectual-property/)
+- The company handbook’s
+  [data-protection policy](https://handbook.cuesoft.io/policies/data-protection/),
+  [cybersecurity policy](https://handbook.cuesoft.io/policies/cyber/) and
+  [personnel privacy notice](https://handbook.cuesoft.io/policies/personnel-privacy/)
 
 ## Changes to this policy
 

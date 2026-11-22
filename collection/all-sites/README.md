@@ -108,3 +108,70 @@ receives the card number or security code, and the signed-in portal of
 [CueHIRE™](../cuehire/#paying-an-invoice) pays by card on Paystack’s own pages
 and window: see those pages for what is asked.
 No other website asks for payment data.
+
+## Cookies and similar technologies
+
+This section lists, in one place, the cookies and similar technologies that
+the pages of this policy name. It adds nothing the site pages do not already
+say: each site’s own page has the detail.
+
+| Technology                                                                            | What it does and who sets it                                                                                                                                                                                               | When it is used and for how long                                                                                                                |
+| ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `_dd_s_v2` cookie                                                                     | Datadog’s first-party session cookie: a random session identifier used for performance and error monitoring. See [performance and error monitoring](#performance-and-error-monitoring).                                    | On every website and the documentation sites, whatever you choose in the banner. It lapses after 15 minutes of inactivity, and 4 hours at most. |
+| Your consent choice                                                                   | Remembers whether you accepted or declined the analytics and advertising tags on the site where you chose. A choice does not carry between sites.                                                                          | Until you change it through the **Cookie preferences** link.                                                                                    |
+| Analytics and advertising cookies and device identifiers                              | Set by Google Analytics, Google Ads, Meta, LinkedIn and X, as each site’s page lists.                                                                                                                                      | Only after you press **Accept** on one of the nine websites with these tags, and never while your browser sends Global Privacy Control.         |
+| Cloudflare Web Analytics                                                              | Sets no cookie and stores nothing on your device: see [cookieless analytics](#cookieless-analytics).                                                                                                                       | On every website, whatever you choose.                                                                                                          |
+| Spotify player cookies                                                                | Set by Spotify, under its own policy, if you click the player for The CueShow™ on cuesoft.io.                                                                                                                              | Only after you click. The banner does not govern them.                                                                                          |
+| Theme preference                                                                      | Your light or dark choice, stored in your own browser by the [documentation sites](../docs-sites/) and never sent to us.                                                                                                   | Until you clear your browser’s site data.                                                                                                       |
+| Sign-in session cookie on [account.cuesoft.io](../account/#signing-up-and-signing-in) | The account platform’s own cookie, which scripts on the page cannot read.                                                                                                                                                  | While you are signed in.                                                                                                                        |
+| Google sign-in storage on account.cuesoft.io                                          | A random one-use code and the return address, held in your browser’s session storage.                                                                                                                                      | Only during Google sign-in. The site deletes both when you come back.                                                                           |
+| `cueprise_session` cookie on [cuelabs.cuesoft.io](../cuelabs/)                        | The session cookie that Cuesoft’s back end sets for the signed-in [CueLABS™](../cuelabs/) portal. It can be read only by the server, not by scripts on the page.                                                           | While you are signed in to that portal.                                                                                                         |
+| Session cookies for Apparule, Expendit and Upstat                                     | A cookie that scripts on the page cannot read, which keeps you signed in. Upstat also sets two short-lived cookies used only during sign-in. Upstat sets nothing on the device of a person who visits a site that uses it. | Up to 24 hours. The two Upstat sign-in cookies last 10 minutes and 5 minutes.                                                                   |
+| Sign-in on the Cueprise™ and Cuelearn™ platforms                                      | The session each platform keeps for a signed-in user: see the [Cueprise™](../../cueprise/) and [Cuelearn™](../../cuelearn/#the-cuelearn-platform) notices.                                                                 | While you are signed in.                                                                                                                        |
+| Ace conversation                                                                      | What you type to [Ace](#ace-the-assistant) lives in your browser session.                                                                                                                                                  | Until the session ends.                                                                                                                         |
+| Open and click records in our emails                                                  | Not a cookie: images and links in the [acknowledgement email](#form-acknowledgement-email) that tell Brevo when you open it and click.                                                                                     | Block remote images in your mail client to prevent the open measurement.                                                                        |
+
+<!-- TODO(owner): the name and lifetime of the cookie or storage entry that remembers the consent choice on each site; no page states them -->
+<!-- TODO(owner): the names and lifetimes of the cookies set by Google Analytics, Google Ads, Meta, LinkedIn and X once you accept; the site pages say "a cookie or device identifier" without naming them -->
+<!-- TODO(owner): the name and lifetime of the sign-in session cookie on account.cuesoft.io, and the name and lifetime of the sign-in session cookie on the Cueprise™ and Cuelearn™ platforms -->
+<!-- TODO(owner): the lifetime of the cueprise_session cookie on the CueLABS™ portal, and confirm whether the CueHIRE™ portal sets any cookie of its own beyond the account site’s -->
+
+### Which ones need your consent
+
+The analytics and advertising cookies and identifiers need your consent, and
+the banner on each of the nine websites with these tags is how you give it
+(GDPR Art. 6(1)(a)): see [Cookies and ePrivacy](../../jurisdictions/eu-uk/#cookies-and-eprivacy).
+The Datadog cookie is operational telemetry and does not wait for the banner,
+and the sign-in cookies are what keep you signed in to a service you asked for.
+The Spotify player is covered by your click.
+
+### How to manage them
+
+- **Cookie preferences.** Use the link in the footer of the site where you
+  accepted to withdraw your consent. Withdrawal stops the tags loading from
+  that point on; it does not delete cookies already set, which you can
+  clear in your browser. Each site keeps its own choice.
+- **Global Privacy Control.** If your browser sends it, no analytics or
+  advertising tag loads at all, even if you accepted before. See the
+  [United States page](../../jurisdictions/united-states/).
+- **Your browser.** You can block or delete cookies and site data in your
+  browser settings at any time. Signed-in products need their session
+  cookie to keep you signed in.
+- **Google’s controls.** What Google signals feeds into Google’s own ads
+  personalisation is managed in your Google account, at
+  [myadcenter.google.com](https://myadcenter.google.com) and
+  [Google’s activity controls](https://myaccount.google.com/activitycontrols).
+- **Spotify.** Clear Spotify’s cookies in your browser and do not click the
+  player again.
+- **Deletion and objection.** To have data collected through these
+  technologies deleted, or to object, use the
+  [rights page](../../rights/your-rights/).
+
+If we add or change a cookie, we update this section and the site’s own
+page, and the effective date on the [main page](../../) changes with it.
+
+## Terms
+
+Using the websites is governed by
+[Using the Websites](https://terms.cuesoft.io/websites/) in our Terms of
+Service.

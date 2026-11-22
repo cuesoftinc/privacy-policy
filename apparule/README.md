@@ -1,6 +1,6 @@
 # Apparule Privacy Notice
 
-**Effective date: 6 November 2026**
+**Effective date: 22 November 2026**
 
 This notice covers **Apparule**: the web app at **apparule.cuesoft.io** and
 the Apparule mobile app, where you capture your body measurements from a
@@ -22,6 +22,34 @@ controller of the data it holds, and this notice does not describe it.
 You can use Apparule from the age of **13**. If you are under 18, you may
 use it only with a parent’s or guardian’s agreement, which also covers the
 consent for your photos below. See [children](../rights/children/).
+
+## Under 18s and Parents or Guardians
+
+- **Under 13:** Apparule is not for anyone under 13, and we do not
+  knowingly hold data about anyone that young. If we learn that we do, we
+  verify and delete it.
+- **13 to 17:** a parent or guardian must agree to the
+  [Apparule Terms](https://terms.cuesoft.io/apparule/) on your behalf. That
+  agreement also covers the consent for your photos below.
+- **Rights for a minor:** a parent or guardian can ask for access to,
+  correction of or deletion of a minor’s data at
+  [hello@cuesoft.io](mailto:hello@cuesoft.io), as
+  [exercising rights for a child](../rights/your-rights/#exercising-rights-for-a-child)
+  explains.
+
+<!-- TODO(owner): how Apparule records or checks a parent’s or guardian’s agreement; the code records only the account’s own acceptance of the terms and privacy notice, and has no guardian check -->
+
+## What Is Required and What Is Optional
+
+| Detail                                 | Required?                                                                                             |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Signing in with Google, and a username | Required: without them there is no account                                                            |
+| Display name, city, state and country  | Optional                                                                                              |
+| Photos and height for a capture        | Required for a photo capture, and only after your consent. You can enter measurements by hand instead |
+| Delivery details on an order           | Required to place an order: the designer needs them to deliver                                        |
+| A bank account                         | Required only for a designer who wants to post and be paid                                            |
+| Push notifications                     | Optional: they need your permission on your phone                                                     |
+| Notification settings                  | Optional: you can switch quotes, order status, social activity and payouts on or off                  |
 
 ## Signing In
 
@@ -68,6 +96,14 @@ consent for your photos below. See [children](../rights/children/).
   capture (GDPR Art. 6(1)(a), and consent under NDPA s. 25). You can
   withdraw it by deleting your captures or your account.
 
+## Sensitive Information
+
+A body photo can reveal more about you than a measurement does, so we treat
+photos and measurements as sensitive. We ask for your explicit consent
+before your first capture (GDPR Art. 9(2)(a), and the NDPA’s rules on
+sensitive personal data), use them only to measure you, and show them only
+to you. You can withdraw your consent at any time, as described above.
+
 ## Designers, Posts and Social Features
 
 - **What we collect:** what you post (text and images), your likes,
@@ -83,6 +119,15 @@ consent for your photos below. See [children](../rights/children/).
   reports rests on our legitimate interest in keeping Apparule safe
   (Art. 6(1)(f)).
 
+## Public Posts and Designer Payout Checks
+
+- **Post links:** a post can also be opened by anyone who has its link,
+  whether or not they use Apparule.
+- **Payout checks:** when a designer adds a bank account, Apparule asks
+  Paystack to verify it and to set it up for payouts. Apparule keeps whether
+  the check passed, the reason if it did not, and the details already
+  listed above. A designer must pass the check to post.
+
 ## Orders and Messages
 
 - **What we collect:** the order, its notes and the measurement copy
@@ -92,6 +137,21 @@ consent for your photos below. See [children](../rights/children/).
   closes, and in-app notifications after 90 days. The order record itself
   is kept as a transaction record: see [payments](#payments).
 - **Legal basis:** performing the contract (GDPR Art. 6(1)(b)).
+
+## Delivery Details and Order Records
+
+- **What we collect:** when you place an order you give a delivery
+  recipient’s name, phone number and address (two address lines, city,
+  state and country). An order also holds the designer’s decline reason or
+  tracking reference, and, if you open a dispute, its reason and your
+  description.
+- **Who sees it:** you and the designer on the order, and our support team
+  if a dispute needs it. The designer needs the delivery details to deliver.
+- **Retention:** the delivery details and the measurement copy stay with the
+  order record, which is kept as a transaction record: see
+  [payments](#payments) for how long.
+- **Legal basis:** performing the contract (GDPR Art. 6(1)(b)), and our legal
+  obligation to keep transaction records (Art. 6(1)(c)).
 
 ## Payments
 
@@ -129,6 +189,28 @@ They are kept for no more than **30 days**: see
 - **Legal basis:** our legitimate interest in running a secure, working
   service (GDPR Art. 6(1)(f)); you may [object](../rights/your-rights/).
 
+## Consent Records
+
+Apparule records which version of the terms and of this notice your account
+accepted, and when. We keep it to show what you agreed to. **Legal basis:**
+our legitimate interest in proving that consent (GDPR Art. 6(1)(f)); you
+may [object](../rights/your-rights/).
+
+## On Your Device
+
+- **Web app:** besides the session cookie above, the web app keeps your
+  light or dark choice, whether you have seen the first-save notice and your
+  recent searches in your browser’s local storage, and, only during sign-in,
+  a one-use code in session storage. None of this is sent to us as
+  analytics, and you can clear it in your browser.
+- **Mobile app:** your session token is kept in the phone’s secure storage,
+  and your theme choice, recent searches and which guides you have seen in
+  the app’s own storage. The app asks your permission to use the camera for
+  a capture, and where you attach a picture it lets you choose one from your
+  library.
+- **No tracking software:** Apparule’s apps carry no analytics or
+  advertising software of their own.
+
 ## Where Your Data Is Held
 
 Apparule’s services and files run on **Google Cloud** in the United States
@@ -136,6 +218,44 @@ Apparule’s services and files run on **Google Cloud** in the United States
 for us by **Aiven** in DigitalOcean’s San Francisco region. See
 [processors and platforms](../handling/processors/) and
 [international transfers](../handling/transfers/).
+
+## International Transfers
+
+Your data is held in the United States, as the section above says. If you
+use Apparule from Nigeria, the EU or the UK, that is a transfer out of your
+country, made under the safeguards on the
+[transfers page](../handling/transfers/).
+
+## Security and Breaches
+
+Your photos and measurements are visible only to your own account: the
+database enforces that for each account, and files are served only through
+time-limited signed links. Our safeguards are on the
+[security page](../handling/security/). If a breach affects your data, we
+follow [breach notification](../handling/breach/). Tell us at
+[hello@cuesoft.io](mailto:hello@cuesoft.io) if you think someone else is
+using your account.
+
+## Automatic Steps and Decisions
+
+- **Measurements** are computed automatically from your photos and are
+  estimates. You review them and may correct them before anything relies on
+  them.
+- **Order timers** run automatically, as the
+  [Apparule Terms](https://terms.cuesoft.io/apparule/) set out: a quote
+  expires after 7 days, an order is refunded if the designer has not started
+  within 14 days of payment, and delivery is confirmed 14 days after
+  shipping if you do not confirm it. These follow fixed rules and use no
+  profiling.
+- **Moderation** decisions on reports and accounts are made by our staff,
+  not by software.
+- **Feeds and search** show posts from designers you follow, newest first,
+  and sort search results by the filters you choose. Choosing to see
+  designers near you compares the city, state and country on your profile
+  with those on designers’ profiles.
+- **Your right to a person:** you may ask for any of these to be reviewed
+  by a person at [hello@cuesoft.io](mailto:hello@cuesoft.io). See
+  [automated decisions](../rights/your-rights/#automated-decisions).
 
 ## Your Rights in Apparule
 
@@ -152,3 +272,16 @@ for us by **Aiven** in DigitalOcean’s San Francisco region. See
 
 **We do not sell personal data, and Apparule carries no advertising
 tags.**
+
+## Complaints, Terms and Contact
+
+- **Complaints:** you may complain to your supervisory authority at any
+  time: see the [Nigeria](../jurisdictions/nigeria/#complaints) and
+  [EU and UK](../jurisdictions/eu-uk/#complaints) pages, and the
+  [United States page](../jurisdictions/united-states/).
+- **Requests:** we answer within one month: see
+  [how to exercise your rights](../rights/your-rights/#how-to-exercise-them).
+- **Terms:** the [Apparule Terms](https://terms.cuesoft.io/apparule/) go with
+  this notice.
+- **Changes:** see [changes to this policy](../#changes-to-this-policy).
+- **Contact:** [hello@cuesoft.io](mailto:hello@cuesoft.io).

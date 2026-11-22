@@ -95,3 +95,34 @@ cross-context behavioural advertising and is the "sharing" described in
 the California section above; the **Cookie preferences** link ends it. Global Privacy Control is honoured as a valid
 opt-out that overrides a stored opt-in, as the California section above
 states.
+
+## Where we are a service provider
+
+For data on the Cuelearn™ platform and on a licensed Cueprise™ deployment,
+the Institution or Licensee decides why and how it is used, and Cuesoft
+acts as its service provider (processor), on its instructions, under the
+data terms of the licensing agreement. Requests about that data go to the
+Institution or Licensee, and we help it answer: see the
+[Cuelearn™ Privacy Notice](../../cuelearn/#when-cuesoft-is-the-processor) and
+the [rights page](../../rights/your-rights/#where-we-are-the-processor).
+
+## Children and US privacy law
+
+Our services are for people 18 and older, with two exceptions: see
+[children](../../rights/children/). We do not sell personal information. On
+the Cuelearn™ platform, the Institution that enrols a
+Learner is responsible for the consent of a parent or guardian.
+
+<!-- TODO(owner): whether Cuelearn™ is offered to Institutions whose Learners are under 13 in the United States, and the COPPA basis relied on (a school’s authorisation); no page says -->
+
+## Retention and exercising your rights
+
+How long we keep each kind of data is on the [retention](../../handling/retention/)
+page. You can exercise every right described here, and appeal a refusal, as the
+[rights page](../../rights/your-rights/) explains.
+
+## Terms
+
+The terms that apply in the United States, including the governing law and
+how disputes are resolved, are on the
+[United States terms page](https://terms.cuesoft.io/jurisdictions/united-states/).

@@ -1,6 +1,6 @@
 # Expendit Privacy Notice
 
-**Effective date: 6 November 2026**
+**Effective date: 22 November 2026**
 
 This notice covers **Expendit** at **expendit.cuesoft.io**: the app where
 you record income and expenses, import bank statements and receipts, and
@@ -18,6 +18,22 @@ holds, and this notice does not describe it.
 ## Who Can Use Expendit
 
 Expendit is for people **18 and older**. See [children](../rights/children/).
+
+If we learn that someone under 18 has an account, we verify and delete it.
+The [Expendit Terms](https://terms.cuesoft.io/expendit/) go with this
+notice.
+
+## What Is Required and What Is Optional
+
+| Detail                                                                                                    | Required?                                                                                          |
+| --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Signing in with Google                                                                                    | Required: without it there is no account                                                           |
+| Your transactions, categories and organisation names                                                      | Required for the books to work: you decide what to enter                                           |
+| Company registered address, registration number                                                           | Optional                                                                                           |
+| Tax identification number, state of residence, national identification number, annual rent and deductions | Optional: they only improve the tax estimates and filing drafts, and you can leave any of them out |
+| Uploaded statements and receipts                                                                          | Optional: you can type transactions in yourself                                                    |
+| Consent to AI processing                                                                                  | Optional: without it, images are refused and every other file is read without AI                   |
+| Inviting people to an organisation                                                                        | Optional                                                                                           |
 
 ## Signing In
 
@@ -45,6 +61,18 @@ Expendit is for people **18 and older**. See [children](../rights/children/).
   with the role you give them.
 - **Retention:** until you delete it or your account.
 - **Legal basis:** performing the contract (GDPR Art. 6(1)(b)).
+
+## People You Invite and Other People in Your Data
+
+- **People you invite:** you give us their email address and a role.
+  Expendit sends no email itself: the invitation takes effect when that
+  person signs in with that address. Invite only people who expect it, and
+  tell them how their data is handled.
+- **Other people in your files:** statements and receipts can name payers,
+  payees and other people. We process those names to give you the service
+  you asked for, on our legitimate interest in doing so (GDPR Art. 6(1)(f)),
+  and you may [object](../rights/your-rights/). Only import files you are
+  entitled to share.
 
 ## Importing Statements and Receipts
 
@@ -80,6 +108,31 @@ is read without AI.
 - **Legal basis:** your consent (GDPR Art. 6(1)(a), and consent under NDPA
   s. 25).
 
+## Sensitive Information
+
+Descriptions on transactions can reveal sensitive information, such as a
+payment to a clinic or a place of worship. Expendit does not look for it or
+treat it differently. Where the AI reads such descriptions, it does so only
+with your explicit consent (GDPR Art. 9(2)(a), and the NDPA’s rules on
+sensitive personal data), which you can withdraw as described above. Tax
+identification and national identification numbers are optional.
+
+## Automatic Steps and Decisions
+
+AI readings and category suggestions are proposals. Nothing from an import
+enters your books until you review and confirm it, and a filing draft is
+never filed for you. We make no decision with legal or similarly
+significant effect about you by automated means. AI can be wrong: see
+[automated decisions](../rights/your-rights/#automated-decisions).
+
+## Consent Records
+
+Expendit records which version of the terms and of this notice your account
+accepted, and whether and when you consented to AI processing. We keep
+them with your account to show what you agreed to. **Legal basis:** our
+legitimate interest in proving that consent (GDPR Art. 6(1)(f)); you may
+[object](../rights/your-rights/).
+
 ## Logs and Monitoring
 
 Our servers keep operational logs of each request’s method, address and
@@ -96,6 +149,39 @@ States, and its databases are run for us by **Aiven** in DigitalOcean’s
 San Francisco region. See [processors and platforms](../handling/processors/)
 and [international transfers](../handling/transfers/).
 
+## On Your Device
+
+Expendit keeps your light or dark choice and whether the side menu is
+collapsed in your browser’s local storage, and, only during sign-in, a
+one-use code in session storage. None of this is sent to us as analytics,
+and you can clear it in your browser. The session cookie is described under
+[signing in](#signing-in). Expendit carries no analytics or advertising
+software of its own.
+
+## International Transfers
+
+Your data is held in the United States, as the section above says. If you
+use Expendit from Nigeria, the EU or the UK, that is a transfer out of your
+country, made under the safeguards on the
+[transfers page](../handling/transfers/). The AI runs in the same Google
+Cloud project, in the United States.
+
+## Security and Breaches
+
+Our safeguards are on the [security page](../handling/security/), and each
+organisation’s books are visible only to its members, enforced by the
+database. If a breach affects your data, we follow
+[breach notification](../handling/breach/). Tell us at
+[hello@cuesoft.io](mailto:hello@cuesoft.io) if you think someone else is
+using your account.
+
+## How Long We Keep Things
+
+Your books are kept until you delete them or your account. Uploaded files
+are deleted within an hour, and the import record after 90 days, as
+described above. Consent records stay with your account. Logs are kept for
+no more than 30 days. The full list is on [retention](../handling/retention/).
+
 ## Your Rights in Expendit
 
 Email [hello@cuesoft.io](mailto:hello@cuesoft.io) to get a copy of
@@ -105,3 +191,16 @@ account and its data. Every right, and how to exercise it, is on
 
 **We do not sell personal data, and Expendit carries no advertising
 tags.**
+
+## Complaints, Terms and Contact
+
+- **Complaints:** you may complain to your supervisory authority at any
+  time: see the [Nigeria](../jurisdictions/nigeria/#complaints) and
+  [EU and UK](../jurisdictions/eu-uk/#complaints) pages, and the
+  [United States page](../jurisdictions/united-states/).
+- **Requests:** we answer within one month: see
+  [how to exercise your rights](../rights/your-rights/#how-to-exercise-them).
+- **Terms:** the [Expendit Terms](https://terms.cuesoft.io/expendit/) go with
+  this notice.
+- **Changes:** see [changes to this policy](../#changes-to-this-policy).
+- **Contact:** [hello@cuesoft.io](mailto:hello@cuesoft.io).

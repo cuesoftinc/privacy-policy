@@ -111,3 +111,93 @@ the errors it hits, so that we can keep the pages working.
 - **Legal basis:** our legitimate interest in keeping the pages working
   (GDPR Art. 6(1)(f)); you may [object](../../rights/your-rights/) at any
   time.
+
+## What you have to give, and what happens if you do not
+
+Nothing on this site is required of you. You can read every page without
+giving us anything, and there is no form to fill in. The only thing you can
+hand us is what you type to [Ace](../all-sites/#ace-the-assistant), and whether
+you do is your choice: if you do not chat with Ace, nothing you type is sent to
+our AI platform provider. If you decline the banner, the analytics and
+advertising tags do not load, and the site works identically either way. If you
+never click the Spotify player, nothing from Spotify runs.
+
+## The legal basis for each thing this site does
+
+| What happens                        | Legal basis                                                                    | Where it is explained                                              |
+| ----------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| Server and security logs            | Legitimate interest in operating a secure website: GDPR Art. 6(1)(f)           | [Server and security logs](../all-sites/#server-and-security-logs) |
+| Cookieless aggregate analytics      | Legitimate interest in understanding site usage: Art. 6(1)(f)                  | [Cookieless analytics](../all-sites/#cookieless-analytics)         |
+| Performance and error monitoring    | Legitimate interest in keeping the pages working: Art. 6(1)(f)                 | [Above](#performance-and-error-monitoring)                         |
+| Ace, the assistant                  | Legitimate interest in providing the assistant you choose to use: Art. 6(1)(f) | [Ace, the assistant](../all-sites/#ace-the-assistant)              |
+| Analytics and advertising tags      | Consent: Art. 6(1)(a), withdrawable at any time                                | [Above](#analytics-and-advertising-tags-opt-in-only)               |
+| The Spotify player for The CueShow™ | Your own click on the player: after it, Spotify acts under its own policy      | [Above](#cuesoftio-the-corporate-site)                             |
+
+Under the Nigeria Data Protection Act 2023 (NDPA) the same activities rest on
+the matching bases in s. 25: legitimate interest where we rely on it above, and
+consent for the tags. See [Nigeria](../../jurisdictions/nigeria/#lawful-bases).
+Where we rely on legitimate interests, we have balanced them against your
+rights, and you may [object](../../rights/your-rights/) at any time.
+
+## Who receives it, where it goes and how long it stays
+
+- **Who receives it:** Cloudflare and Google Firebase App Hosting deliver the
+  site; Datadog receives the monitoring data described above; our AI platform
+  provider receives what you type to Ace; and, only if you press **Accept**,
+  Google, Meta, LinkedIn and X receive what the table above says. Spotify
+  receives a request only if you click its player. Every provider we use as a
+  processor is named on [processors and platforms](../../handling/processors/).
+  We do not sell personal data.
+- **Where it goes:** some of these providers are outside your country, and the
+  safeguards that cover each transfer are on
+  [international transfers](../../handling/transfers/).
+- **How long it stays:** server logs and Datadog data no more than 30 days,
+  Google Analytics event data 14 months, and an Ace conversation only for your
+  browser session. The full list is on [retention](../../handling/retention/).
+
+## Your rights on this site
+
+You have the rights listed on [your rights](../../rights/your-rights/):
+access, correction, deletion, restriction, objection, portability, withdrawing
+consent and complaint. To use one, email
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and say that it is about
+cuesoft.io. Either Cuesoft entity can act on it, and we reply within one month:
+see [how to exercise them](../../rights/your-rights/#how-to-exercise-them).
+
+- **Consent:** withdraw it with the **Cookie preferences** link, and with
+  Global Privacy Control, as set out above.
+- **Ace:** a conversation is held in your browser session and is not linked to
+  an account, so ending the session is how you remove it.
+- **Complaints:** you may complain to your supervisory authority at any time:
+  see the [Nigeria](../../jurisdictions/nigeria/),
+  [EU and UK](../../jurisdictions/eu-uk/) and
+  [United States](../../jurisdictions/united-states/) pages.
+
+## Children
+
+This site is for people 18 and older, and we do not knowingly collect personal
+data from anyone under 18. If you believe a minor has used Ace or otherwise
+given us data, tell us at [hello@cuesoft.io](mailto:hello@cuesoft.io): see
+[children](../../rights/children/).
+
+## Automated decisions
+
+We make no decision about you by solely automated means that has legal or
+similarly significant effects: see
+[automated decisions](../../rights/your-rights/#automated-decisions). Ace’s
+answers are generated by AI to answer what you asked, and are not decisions
+about you.
+
+## Security, cookies and contact
+
+- **Security:** see [security](../../handling/security/) for how we protect
+  data and [breach notification](../../handling/breach/) for what we do if
+  something goes wrong.
+- **Cookies and similar technologies:** every one this site uses or may set is
+  listed, with how to manage it, in
+  [cookies and similar technologies](../all-sites/#cookies-and-similar-technologies).
+- **Terms:** the [Terms of Service for the Websites](https://terms.cuesoft.io/websites/)
+  and the [Ace terms](https://terms.cuesoft.io/websites/ace/) go with this
+  page.
+- **Contact:** [hello@cuesoft.io](mailto:hello@cuesoft.io), and the postal
+  addresses and phone numbers on the [main page](../../#contact).

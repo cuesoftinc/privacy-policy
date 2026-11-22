@@ -351,3 +351,125 @@ the consent gate because it sets no cookie. The advertising platforms receive
 page views only: they do not receive what you type on any page above, your
 card details, or any account record. Card entry is described under
 [Cards](#cards) and nowhere else on this site.
+
+## What you have to give, and what happens if you do not
+
+- **To have an account:** your first name, last name and email address, and a
+  way to sign in: a one-time code, Google or a passkey, as you choose. Without
+  an account you cannot use the signed-in parts of CueTA™, CueLABS™ and
+  CueHIRE™, which all sign in here.
+- **On your profile:** your first and last name are required and your phone
+  number is optional, though a one-time code by WhatsApp, where it is offered,
+  needs it.
+- **Payout bank details and identity documents:** you give them only if you
+  have a personnel record with us. We need the bank details to send your
+  payouts and the identity documents to finish setting you up, and without
+  them we cannot do either. A saved card is optional until you pay by card:
+  CueTA™ subscriptions are paid with a saved card.
+- **Notifications and privacy settings:** every choice is yours. You decide
+  on the Notifications page which of the five kinds of email you receive, and
+  you press a button on the Privacy & Data page only if you want an export or
+  a deletion.
+- **Banner:** if you decline it, the analytics and advertising tags do not
+  load, and the site works identically either way.
+
+## The legal basis for each thing this site does
+
+Each section above states its own legal basis. The rest, as set out on
+[what every site collects](../all-sites/):
+
+| What happens                     | Legal basis                                                         |
+| -------------------------------- | ------------------------------------------------------------------- |
+| Server and security logs         | Legitimate interest in operating secure websites: GDPR Art. 6(1)(f) |
+| Cookieless aggregate analytics   | Legitimate interest in understanding site usage: Art. 6(1)(f)       |
+| Performance and error monitoring | Legitimate interest in keeping the pages working: Art. 6(1)(f)      |
+| Analytics and advertising tags   | Consent: Art. 6(1)(a), withdrawable at any time                     |
+
+Under the Nigeria Data Protection Act 2023 (NDPA) every activity on this page
+rests on the matching basis in s. 25: contract (including steps before one),
+legal obligation, legitimate interest or consent, as the section says. See
+[Nigeria](../../jurisdictions/nigeria/#lawful-bases). Where we rely on
+legitimate interests, we have balanced them against your rights, and you may
+[object](../../rights/your-rights/) at any time.
+
+## Who receives it, where it goes and how long it stays
+
+- **Who receives it:** the Cuesoft platform that runs your account; Brevo,
+  which sends your sign-in codes and the emails you choose; Meta’s WhatsApp
+  Business Platform, where a code is sent by WhatsApp; Google, if you sign in
+  with it; and Paystack, when you add a card. The staff who verify payouts
+  and review documents see the sections that are theirs to review, and this
+  site sends your payout details and identity documents nowhere else. Google,
+  Meta, LinkedIn and X receive page views only, and only if you press
+  **Accept**. Each processor is named on
+  [processors and platforms](../../handling/processors/). We do not sell
+  personal data.
+- **Where it goes:** some of these providers are outside your country, and the
+  safeguards that cover each transfer are on
+  [international transfers](../../handling/transfers/).
+- **How long it stays:** account records are kept while your account is open.
+  An export can be downloaded for seven days, and a deletion you ask for takes
+  effect 30 days later so you can cancel. Payout details, identity documents
+  and work history are held with your personnel record. The full list is on
+  [retention](../../handling/retention/).
+
+## Your rights on this site
+
+You have the rights listed on [your rights](../../rights/your-rights/):
+access, correction, deletion, restriction, objection, portability, withdrawing
+consent and complaint. Most you can use yourself, signed in:
+
+- **Access and portability:** the Privacy & Data page downloads your data as a
+  file. It holds your account record, saved cards, notification choices and,
+  for an account with a personnel record, your payout details with the number
+  masked, your identity documents’ type, status, note and date, and your
+  work history. For the identity document files themselves, write to us.
+- **Correction:** the profile, work history and payout pages.
+- **Deletion:** the Privacy & Data page, with the 30 days and the exceptions
+  described under Your Privacy Settings above.
+- **Withdrawing consent and objecting:** switch off learning reminders, offers
+  and events and product updates on the Notifications page, and use the
+  **Cookie preferences** link and Global Privacy Control for the tags.
+- **Anything else:** email [hello@cuesoft.io](mailto:hello@cuesoft.io) and say
+  that it is about the account site. Either Cuesoft entity can act on it, and
+  we reply within one month: see
+  [how to exercise them](../../rights/your-rights/#how-to-exercise-them).
+- **Complaints:** you may complain to your supervisory authority at any time:
+  see the [Nigeria](../../jurisdictions/nigeria/),
+  [EU and UK](../../jurisdictions/eu-uk/) and
+  [United States](../../jurisdictions/united-states/) pages.
+
+## Children
+
+The account site is for people 18 and older: signing in asks you to confirm
+it, and we do not knowingly collect personal data from anyone under 18. If you
+believe a minor holds an account, tell us at
+[hello@cuesoft.io](mailto:hello@cuesoft.io) and we will verify and delete it:
+see [children](../../rights/children/).
+
+## Automated decisions
+
+We make no decision about you by solely automated means that has legal or
+similarly significant effects: see
+[automated decisions](../../rights/your-rights/#automated-decisions). Staff
+verify or reject payout details and review identity documents, so those
+decisions are a person’s. The Your Access page shows what your account can
+open from your account type and licence, and a deletion is refused while you
+own a workspace or have unpaid invoices. If you think either is wrong, tell us
+at [hello@cuesoft.io](mailto:hello@cuesoft.io) and a person will look at it.
+
+## Security, cookies and contact
+
+- **Security:** your Security page lists your sign-in methods and sessions and
+  lets you end any of them. See [security](../../handling/security/) for how
+  we protect data, [breach notification](../../handling/breach/) for what we
+  do if something goes wrong, and
+  [reporting a security problem](../../handling/security/#reporting-a-security-problem).
+- **Cookies and similar technologies:** every one this site uses or may set,
+  including the sign-in cookie and the Google sign-in storage, is listed, with
+  how to manage it, in
+  [cookies and similar technologies](../all-sites/#cookies-and-similar-technologies).
+- **Terms:** the [Terms of Service for the Websites](https://terms.cuesoft.io/websites/),
+  including what they say about your Cuesoft account, go with this page.
+- **Contact:** [hello@cuesoft.io](mailto:hello@cuesoft.io), and the postal
+  addresses and phone numbers on the [main page](../../#contact).

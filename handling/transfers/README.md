@@ -80,3 +80,23 @@ safeguard provisions and the NDPC’s implementing instruments: see the
 
 Transfer terms for licensee data are stated in each licensing agreement:
 see the [Cueprise™ Privacy Notice](../../cueprise/).
+
+## Cuelearn™
+
+Transfer terms for Institution data are stated in each licensing agreement:
+see the [Cuelearn™ Privacy Notice](../../cuelearn/#the-cuelearn-platform).
+Where Cuesoft is the processor, we transfer Institution data only as the
+Institution instructs and under the safeguards on this page.
+
+## The mechanisms at a glance
+
+| Mechanism                                                                       | When it applies                                                            | Where it is explained                                                                      |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| EU Standard Contractual Clauses, with the UK Addendum or IDTA                   | A processor receives EU/EEA or UK data under its data processing agreement | [EU/EEA and UK data](#eueea-and-uk-data) above                                             |
+| EU-US Data Privacy Framework adequacy decision (Art. 45)                        | The recipient is certified and the transfer is inside its certification    | [EU/EEA and UK data](#eueea-and-uk-data) above                                             |
+| UK data bridge and the UK Extension                                             | The UK GDPR applies and the recipient participates in the UK Extension     | [EU/EEA and UK data](#eueea-and-uk-data) above                                             |
+| Intra-group arrangement                                                         | Between Cuesoft Inc. and Cuesoft Nigeria Limited                           | [EU/EEA and UK data](#eueea-and-uk-data) above                                             |
+| Your explicit consent (Art. 49(1)(a))                                           | An advertising platform that is not certified, and only where you opted in | [EU/EEA and UK data](#eueea-and-uk-data) above                                             |
+| NDPA adequacy and safeguard provisions, and the NDPC’s implementing instruments | The NDPA applies to a transfer out of Nigeria                              | [Nigerian data](#nigerian-data) above and the [Nigeria page](../../jurisdictions/nigeria/) |
+
+<!-- TODO(owner): which NDPA transfer basis (adequacy, appropriate safeguards or a derogation) we rely on for each recipient, and whether the NDPC’s instruments require us to register or notify; the pages name the provisions but not the basis used -->

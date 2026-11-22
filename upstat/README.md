@@ -1,6 +1,6 @@
 # Upstat Privacy Notice
 
-**Effective date: 6 November 2026**
+**Effective date: 22 November 2026**
 
 This notice covers **Upstat** at **upstat.cuesoft.io**: the service that
 checks whether your sites and services are up, alerts you when they are
@@ -22,6 +22,10 @@ notice describes how Upstat handles it on the site’s behalf.
 
 Upstat is open-source software. If you run your own copy, you are the
 controller of the data it holds, and this notice does not describe it.
+
+Upstat is for people 18 and older: see [children](../rights/children/). If
+we learn that someone under 18 has an account, we verify and delete it. The
+[Upstat Terms](https://terms.cuesoft.io/upstat/) go with this notice.
 
 ## For Upstat Account Holders
 
@@ -55,6 +59,34 @@ controller of the data it holds, and this notice does not describe it.
   you delete them or your account.
 - **Legal basis:** performing the contract (GDPR Art. 6(1)(b)).
 
+### Required or Optional, and Other People’s Details
+
+- **Required:** signing in with Google. Without it there is no account.
+- **Optional:** everything else: inviting members, monitors, alert channels,
+  status pages and the events a site sends. You decide what to add.
+- **Other people’s details:** the members you invite and the email addresses
+  you add as alert channels belong to other people. Add only people who
+  expect it, and tell them how Upstat handles their data. An invited member
+  takes part by signing in with the invited address.
+- **Lawful basis for those people:** performing the contract with you, and
+  our legitimate interest in delivering the alerts and invitations you ask
+  for (GDPR Art. 6(1)(b) and (f)); they may [object](../rights/your-rights/).
+
+### Logs, Traces and Metrics You Send
+
+An account holder can also send Upstat logs, traces and metrics from their
+own systems, in the OpenTelemetry format. **You are the controller** of what
+you send, and Cuesoft processes it as your processor, only to show it to you.
+Keep personal data out of it, because it is stored as sent.
+
+- **Retention:** logs and metrics are kept for **15 days** and traces for
+  **7 days**. Their one-minute rollups are kept for 90 days and their hourly
+  rollups for 13 months.
+- **Where:** in ClickHouse Cloud, as described under
+  [where your data is held](#where-your-data-is-held).
+
+<!-- TODO(owner): confirm that sending logs, traces and metrics to Upstat is live in production; the code (upstat/api/observability and the Helm chart) ships it, but the retention page and the notice named only visitor events and check results -->
+
 ## For Visitors to Sites That Use Upstat
 
 A site owner can send Upstat events about visits to their site: page
@@ -81,6 +113,22 @@ not identify you.
 - **Site owners:** page addresses, error messages and your own fields are
   stored as you send them. Keep personal data out of them.
 
+## Who Receives Your Data
+
+Upstat uses these providers, each on our instructions and listed on
+[processors and platforms](../handling/processors/): Google Cloud (running
+the service), ClickHouse Cloud (events and check data), Aiven (the other
+databases), Brevo (alert emails), Google’s Vertex AI and Groq (incident
+summaries, with no personal data) and Datadog (monitoring of our own logs).
+Those processors may change: [processors and platforms](../handling/processors/)
+is kept current.
+
+## Decisions About You
+
+Incident summaries written by AI are drafts for a person to read. Upstat
+makes no decision about any person by automated means, and a summary never
+holds anyone’s personal data.
+
 ## Logs and Monitoring
 
 Our servers keep operational logs, and **Datadog** monitors their health
@@ -95,6 +143,30 @@ are run for us by **Aiven** in DigitalOcean’s San Francisco region. See
 [processors and platforms](../handling/processors/) and
 [international transfers](../handling/transfers/).
 
+## On Your Device
+
+Upstat keeps your light or dark choice and your colour-vision setting in
+your browser’s local storage. This stays on your device and is not sent to
+us as analytics. The session cookie is described under
+[signing in](#signing-in-and-your-organisation). Upstat carries no
+advertising software, and sets nothing on the device of a visitor to a site
+that uses it.
+
+## International Transfers
+
+Your data is held in the United States, as the section above says. If you
+use Upstat from Nigeria, the EU or the UK, that is a transfer out of your
+country, made under the safeguards on the
+[transfers page](../handling/transfers/).
+
+## Security and Breaches
+
+Upstat’s own safeguards are on the [security page](../handling/security/).
+Visitor events are built so that they identify nobody. If a breach affects
+your data, we follow [breach notification](../handling/breach/). Where we
+process a site’s visitor events for its owner, we tell the owner without
+undue delay, as the [Upstat Terms](https://terms.cuesoft.io/upstat/) say.
+
 ## Your Rights in Upstat
 
 Account holders: email [hello@cuesoft.io](mailto:hello@cuesoft.io) for a
@@ -104,3 +176,16 @@ about what it measures. Every right, and how to exercise it, is on
 [your rights](../rights/your-rights/).
 
 **We do not sell personal data, and Upstat carries no advertising tags.**
+
+## Complaints, Terms and Contact
+
+- **Complaints:** you may complain to your supervisory authority at any
+  time: see the [Nigeria](../jurisdictions/nigeria/#complaints) and
+  [EU and UK](../jurisdictions/eu-uk/#complaints) pages, and the
+  [United States page](../jurisdictions/united-states/).
+- **Requests:** we answer within one month: see
+  [how to exercise your rights](../rights/your-rights/#how-to-exercise-them).
+- **Terms:** the [Upstat Terms](https://terms.cuesoft.io/upstat/) go with
+  this notice.
+- **Changes:** see [changes to this policy](../#changes-to-this-policy).
+- **Contact:** [hello@cuesoft.io](mailto:hello@cuesoft.io).
