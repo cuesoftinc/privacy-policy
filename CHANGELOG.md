@@ -8,6 +8,8 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+## [1.4.4] - 2026-11-22
+
 ### Added
 
 - Processors list adds Gemini, Maps Platform, WhatsApp Business, Cloudinary and QuickBooks.
@@ -27,6 +29,7 @@ Releases before 1.1.0 predate this file.
 - CueTA pages say learners, not cohorts.
 - Documentation sites load Google Analytics only after you accept.
 - The privacy site asks before loading Google Analytics, and loads it only after you accept.
+- Design system updated to 1.97.0.
 
 ## [1.4.3] - 2026-11-16
 
