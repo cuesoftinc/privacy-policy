@@ -12,7 +12,7 @@ Packages, while this repository is public. Building needs read access to the
 
 ```bash
 npm ci
-npm run build       # writes _site/, then fails on any em dash or a missing 404.html
+npm run build       # writes _site/, then fails on paired dashes around an aside or a missing 404.html
 npm run lint        # cuesoft-design-check corporate
 npm run check:links # every link, image, font and #fragment in _site resolves
 npm test            # at phone width the site index opens in the On This Page fold-out on every page (needs Chromium: npx playwright install chromium)
@@ -25,9 +25,10 @@ a maintainer builds it.
 
 ## Punctuation
 
-No em dashes in the Markdown, the templates or the built pages: write a
-colon, a comma or parentheses. `npm run build` and CI fail on one
-(`scripts/check-dashes.mjs`).
+One em dash may introduce an explanation. Never put two dashes around an
+aside in the Markdown, the templates or the built pages: write commas or
+parentheses. A spaced en dash counts as a dash; an unspaced one in a range
+does not. `npm run build` and CI fail on a pair (`scripts/check-dashes.mjs`).
 
 ## Monitoring
 
