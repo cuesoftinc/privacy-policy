@@ -12,9 +12,9 @@
 - **Why:** to assess and process internship applications.
 - **Where:** the application, with your CV, is saved first in Cuesoft’s own
   back end (the Cueprise™ service that runs the applicant portal below),
-  which is the record of your application. A copy is then written to
-  Airtable, our forms database, with the CV attached; if that copy fails,
-  your application still stands.
+  which is the record of your application. Applications sent before
+  November 2026 may also be held in Airtable, where form records were kept
+  until then.
 - **Legal basis:** steps at your request prior to a contract
   (GDPR Art. 6(1)(b)).
 - **Confirmation:** we email you a receipt with your CV attached, copied
@@ -220,7 +220,8 @@ rights.
 ## Who receives it, where it goes and how long it stays
 
 - **Who receives it:** the Cuesoft back end that runs the portal and holds your
-  application; Airtable, which holds the copy; Brevo, which sends the
+  application; Airtable, which holds applications sent before November 2026;
+  Brevo, which sends the
   confirmation; Cloudflare, which tells us your country; and the Cuesoft
   staff who assess applications and run the programme. Google Docs or
   DocuSign receives what you do on the contract link we email you, under its
@@ -236,7 +237,11 @@ rights.
   deleted or anonymised within 24 months of last contact, unless a legal duty
   requires longer, and an intern’s personnel record is kept for the engagement
   and six years after: see [retention](../../handling/retention/).
-  <!-- TODO(owner): a row on the retention page for how long the applicant portal, members’ project, pull request and commit records and the leaderboard are kept -->
+  Portal records, and the project, pull request and commit records and the
+  leaderboard of members, are kept while the programme runs and until you
+  ask us to delete them. Apart from the unsuccessful or inactive applications
+  above, nothing deletes them automatically. The leaderboard is worked out
+  from those records each time a member opens it.
 
 ## Your rights on this site
 
@@ -246,7 +251,8 @@ consent and complaint. To use one, email
 [hello@cuesoft.io](mailto:hello@cuesoft.io) and say that it is about CueLABS™.
 Either Cuesoft entity can act on it, and we reply within one month: see
 [how to exercise them](../../rights/your-rights/#how-to-exercise-them). A
-request reaches both the record in our back end and the copy in Airtable.
+request reaches both the record in our back end and any earlier copy in
+Airtable.
 
 - **Without writing to us:** sign in to your Cuesoft account, where the
   [Privacy & Data page](../account/#your-privacy-settings) lets you download

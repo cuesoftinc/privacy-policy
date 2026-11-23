@@ -74,18 +74,19 @@ we learn that someone under 18 has an account, we verify and delete it. The
 
 ### Logs, Traces and Metrics You Send
 
-An account holder can also send Upstat logs, traces and metrics from their
-own systems, in the OpenTelemetry format. **You are the controller** of what
-you send, and Cuesoft processes it as your processor, only to show it to you.
-Keep personal data out of it, because it is stored as sent.
+**This feature is not yet offered.** Sending logs, traces and metrics to
+Upstat is not live in production, so nothing is collected through it today.
+What follows applies if we switch it on. An account holder would then be able
+to send Upstat logs, traces and metrics from their own systems, in the
+OpenTelemetry format. **You would be the controller** of what you send, and
+Cuesoft would process it as your processor, only to show it to you. Keep
+personal data out of it, because it would be stored as sent.
 
 - **Retention:** logs and metrics are kept for **15 days** and traces for
   **7 days**. Their one-minute rollups are kept for 90 days and their hourly
   rollups for 13 months.
 - **Where:** in ClickHouse Cloud, as described under
   [where your data is held](#where-your-data-is-held).
-
-<!-- TODO(owner): confirm that sending logs, traces and metrics to Upstat is live in production; the code (upstat/api/observability and the Helm chart) ships it, but the retention page and the notice named only visitor events and check results -->
 
 ## For Visitors to Sites That Use Upstat
 

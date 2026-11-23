@@ -99,4 +99,28 @@ Institution instructs and under the safeguards on this page.
 | Your explicit consent (Art. 49(1)(a))                                           | An advertising platform that is not certified, and only where you opted in | [EU/EEA and UK data](#eueea-and-uk-data) above                                             |
 | NDPA adequacy and safeguard provisions, and the NDPC’s implementing instruments | The NDPA applies to a transfer out of Nigeria                              | [Nigerian data](#nigerian-data) above and the [Nigeria page](../../jurisdictions/nigeria/) |
 
-<!-- TODO(owner): which NDPA transfer basis (adequacy, appropriate safeguards or a derogation) we rely on for each recipient, and whether the NDPC’s instruments require us to register or notify; the pages name the provisions but not the basis used -->
+## The NDPA bases we use
+
+Where the NDPA applies, we send personal data out of Nigeria only on a basis
+the Act sets, and we record the basis for each recipient, as s. 41(2)
+requires:
+
+1. **Contractual clauses.** Our processors, and Cuesoft Inc. under our
+   intra-group arrangement, are bound by contractual clauses that protect
+   your data in ways substantially similar to the NDPA (s. 41(1)(a) and
+   s. 42). This covers every processor on
+   [processors and platforms](../processors/).
+2. **A contract with you.** Some transfers are needed to perform a contract
+   you are party to, or to take steps you asked for before one, such as
+   enrolling, opening an account or paying (s. 43(1)(b)).
+3. **Your consent.** Google Ads, Meta, LinkedIn and X act under their own
+   policies, so the clauses above do not cover them. Your data may then be
+   held in a country whose law does not protect it as the NDPA does, and
+   your rights may be harder to enforce there. They receive data only after
+   you press **Accept** on a site's banner, and you can withdraw that at any
+   time (s. 43(1)(a)).
+
+The Act lets the NDPC require notice of these measures (s. 41(3)). The
+GAID 2025 sets no such filing yet: until the Commission issues a transfer
+instrument, its Article 45 applies the guidance in its Schedule 5. If the
+Commission requires a filing, we will make it.

@@ -24,7 +24,9 @@ controller** of the data the platform holds.
   answer you.
 - **Why:** to reply to your request and arrange the walkthrough you asked
   for.
-- **Where:** records are stored in Airtable, our forms database.
+- **Where:** records are stored as leads on the Cuesoft platform. Requests
+  sent before November 2026 may also be held in Airtable, where form records
+  were kept until then.
 - **Legal basis:** our legitimate interest in responding to the business
   enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent legitimate-
   interest basis under the NDPA: you may
@@ -53,8 +55,9 @@ data terms and by the rest of this notice.
   cannot reply to you or record the request without them. The message box
   is optional, and we ask you to keep sensitive personal information out
   of it. We also record the time you accepted the terms.
-- **Who receives it:** Airtable stores the record and Brevo sends the
-  confirmation email. Both act as our processors: see
+- **Who receives it:** the Cuesoft platform stores the record, Airtable
+  holds requests sent before November 2026, and Brevo sends the
+  confirmation email. Airtable and Brevo act as our processors: see
   [processors and platforms](../handling/processors/).
 - **How long we keep it:** records of inactive enquiries are deleted or
   anonymised within 24 months of last contact, unless a legal duty requires
@@ -229,9 +232,9 @@ so these duties are the licensee’s:
   collects data about a child is responsible for the parent’s or guardian’s
   consent: see [children](../rights/children/).
 - **Marketing messages.** The platform adds a customer’s email address and
-  phone number to the licensee’s newsletter and WhatsApp update lists when
-  the customer record is created, and records when each is subscribed or
-  unsubscribed. The licensee is responsible for the legal basis for those
+  phone number to the licensee’s newsletter and WhatsApp update lists only
+  when the customer ticks the box that asks for them, and records when each
+  is subscribed or unsubscribed. The licensee is responsible for the legal basis for those
   messages and for honouring every unsubscribe.
 - **Decisions about people.** Cuesoft makes no decision about any person
   from licensee data. Where a licensee uses platform results (such as pay
@@ -242,7 +245,12 @@ so these duties are the licensee’s:
   connects is the licensee’s own service provider, under the licensee’s own
   arrangement with it, and is not Cuesoft’s sub-processor.
 
-<!-- TODO(owner): confirm the lawful basis licensees should rely on for the automatic newsletter and WhatsApp subscription of a new customer (the code subscribes the customer when the record is created); direct marketing normally needs consent or a soft opt-in -->
+A new customer is subscribed to newsletters and WhatsApp updates only by
+ticking the box that asks for them: nothing is ticked for them. A person who already has a row, including one who has unsubscribed
+or opted out, is left as they are and is not subscribed again. Newsletter
+emails carry an unsubscribe link and header. A customer can reply STOP,
+UNSUBSCRIBE or STOP ALL to a WhatsApp update to opt out, and START to rejoin,
+and only contacts who have not opted out are messaged.
 
 ### What the platform holds
 
@@ -288,7 +296,8 @@ confirm.
 ### AI features
 
 Ace, the assistant inside a Cueprise™ deployment, and the picture tools and
-drafted content that come with it, run on Google’s Gemini models on Vertex AI.
+drafted content that come with it, run on Google’s Gemini models on Vertex AI,
+with Anthropic’s Claude as the fallback.
 Picture upscaling uses Google’s Imagen.
 
 - **What is sent:** your prompt, the record context needed to answer it, and
@@ -296,6 +305,13 @@ Picture upscaling uses Google’s Imagen.
 - **Training:** none of it is used to train models.
 - **Your confirmation:** Ace takes an action only after you confirm it.
 - **Who is involved:** Google acts as a sub-processor for this, listed in the
+  [table below](#sub-processors).
+- **When Google is busy:** when Vertex AI is busy or unavailable, a text
+  request to Ace or for drafted content may be answered by Anthropic's
+  Claude models instead, through Anthropic's API, and the prompt, the record
+  context and any attached pictures then go to Anthropic. Anthropic says it
+  does not use content sent through its API to train its models and deletes
+  it within 30 days. Picture tools never use it. Anthropic is listed in the
   [table below](#sub-processors).
 
 ### AI output and your responsibilities
@@ -357,11 +373,13 @@ processing chain:
 | Provider                          | Role in the platform                                                   | Personal data it touches                                                                                                                                                                                                                                                                                                   |
 | --------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Google Cloud                      | Hosting, file storage, staff sign-in                                   | Everything the deployment stores; for sign-in, the staff member’s Google profile                                                                                                                                                                                                                                           |
+| Aiven                             | Running the database and the cache                                     | Everything the deployment stores                                                                                                                                                                                                                                                                                           |
 | Paystack                          | Online payments and bank account verification                          | From the platform: payer email, amount, order reference. On Paystack’s own hosted page, the shopper additionally enters card or other payment details, which never enter Cueprise™ and are handled under Paystack’s own policy. For bank account verification, the bank and account number, with the account name returned |
 | Brevo                             | Transactional email                                                    | Recipient name and email                                                                                                                                                                                                                                                                                                   |
 | Meta (WhatsApp Business Platform) | One-time login codes and staff invitations by WhatsApp                 | Recipient phone number and the message body: the one-time code being delivered, or the invitation’s details                                                                                                                                                                                                                |
 | Cloudinary                        | Media storage, where the licensee’s deployment is configured to use it | Uploaded files                                                                                                                                                                                                                                                                                                             |
 | Google (Gemini on Vertex AI)      | Ace, picture tools and drafted content                                 | Your prompt, the record context needed to answer it, and any pictures you choose                                                                                                                                                                                                                                           |
+| Anthropic                         | Ace and drafted content, when Vertex AI is busy or unavailable         | Your prompt, the record context needed to answer it, and any pictures you attach                                                                                                                                                                                                                                           |
 | Google Maps Platform              | Address search and location suggestions                                | The text you type in an address field, and your current location if you choose to use it                                                                                                                                                                                                                                   |
 
 Separately, **Datadog** processes the service telemetry described below.
@@ -445,10 +463,11 @@ do to website data.
   years and never more than fifty, and it lists the kinds of record the job
   removes.
 - **Service telemetry** is kept for 30 days, as set out above.
-- **On termination or expiry**, licensee data is returned or deleted as the
-  agreement provides.
+- **On termination or expiry**, the licensee can ask for an export of its
+  data within **90 days**, and the data is then deleted, unless the
+  agreement says otherwise.
 
-<!-- TODO(owner): how long Cuesoft keeps relationship data (licensee contacts, contracts, invoices and support correspondence) after the licence ends, and the period within which licensee data is deleted after termination; no page gives either -->
+<!-- TODO(owner): how long relationship data (licensee contacts, contracts, invoices and support correspondence) is kept after the licence ends -->
 
 ### International transfers
 
@@ -459,15 +478,17 @@ the licensee’s country. Cuesoft transfers licensee data only as the
 licensee instructs, under the transfer terms of the licensing agreement and
 the safeguards on the [transfers page](../handling/transfers/#cueprise).
 
-<!-- TODO(owner): the Google Cloud region or regions that host default Cueprise™ deployments, so licensees can state where their data is held -->
+Default deployments run on Google Cloud in the us-central1 region (Iowa,
+United States), and their files are kept there, in Cloud Storage. Where the
+deployment’s database and cache are run by Aiven, they are in DigitalOcean’s
+San Francisco region, United States.
 
 ### Changes to sub-processors
 
 This notice is updated when a sub-processor is added or replaced, and the
-effective date above changes with it. Each licensee is told of a change in
-the way its licensing agreement provides.
-
-<!-- TODO(owner): the notice period for a new sub-processor and the licensee’s right to object, if the licensing agreement sets them -->
+effective date above changes with it. Each licensee is told of a new
+sub-processor at least **30 days** before it starts processing licensee
+data, and may object to it within that time.
 
 ### Security and breach
 

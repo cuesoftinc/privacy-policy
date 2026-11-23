@@ -10,9 +10,10 @@
   name, not the address itself. It tells us where an enquiry is coming from
   when we scope a response.
 - **Why:** to respond to your enquiry and scope a potential engagement.
-- **Where:** records are stored in Airtable, our forms database, and the
-  brief is also sent to the Cuesoft platform that runs the signed-in portal
-  below, which holds it so the team can answer it.
+- **Where:** the brief is sent to the Cuesoft platform that runs the
+  signed-in portal below, which holds it so the team can answer it.
+  Enquiries sent before November 2026 may also be held in Airtable, where
+  form records were kept until then.
 - **Legal basis:** our legitimate interest in responding to and scoping
   the business enquiry you sent us (GDPR Art. 6(1)(f)): you may
   [object](../../rights/your-rights/) at any time. Once an engagement is
@@ -312,7 +313,8 @@ legitimate interests, we have balanced them against your rights, and you may
 
 ## Who receives it, where it goes and how long it stays
 
-- **Who receives it:** Airtable, which holds form records; Brevo, which sends
+- **Who receives it:** Airtable, which holds form records sent before
+  November 2026; Brevo, which sends
   the confirmation; Cloudflare, which tells us your country; Paystack, for card
   payments; the Cuesoft platform that runs the portal; and Cuesoft’s staff,
   who review hours, issue invoices and confirm transfers. A client sees the
