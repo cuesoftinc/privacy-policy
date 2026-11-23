@@ -131,10 +131,56 @@ say: each site’s own page has the detail.
 | Ace conversation                                                                      | What you type to [Ace](#ace-the-assistant) lives in your browser session.                                                                                                                                                  | Until the session ends.                                                                                                                         |
 | Open and click records in our emails                                                  | Not a cookie: images and links in the [acknowledgement email](#form-acknowledgement-email) that tell Brevo when you open it and click.                                                                                     | Block remote images in your mail client to prevent the open measurement.                                                                        |
 
-<!-- TODO(owner): the name and lifetime of the cookie or storage entry that remembers the consent choice on each site; no page states them -->
-<!-- TODO(owner): the names and lifetimes of the cookies set by Google Analytics, Google Ads, Meta, LinkedIn and X once you accept; the site pages say "a cookie or device identifier" without naming them -->
-<!-- TODO(owner): the name and lifetime of the sign-in session cookie on account.cuesoft.io, and the name and lifetime of the sign-in session cookie on the Cueprise™ and Cuelearn™ platforms -->
-<!-- TODO(owner): the lifetime of the cueprise_session cookie on the CueLABS™ portal, and confirm whether the CueHIRE™ portal sets any cookie of its own beyond the account site’s -->
+### Names and lifetimes
+
+These are the names and lifetimes of the entries the table above
+describes. A lifetime is how long your browser keeps the entry; you can
+clear any of them sooner in your browser.
+
+**Your consent choice.** Each of the nine websites with these tags keeps
+your choice in your browser’s local storage, under a name of its own:
+`cuesoft-consent`, `cueta-consent`, `cuelabs-consent`, `cuehire-consent`,
+`cueprise-consent`, `cuelearn-consent`, `storefront-consent`,
+`clients-consent` and `account-consent`. Local storage has no expiry, so
+the entry stays until you change your choice through **Cookie
+preferences** or clear the site’s data. If you decline, the site also
+sets a cookie of the same name that lasts one year. That cookie only ever
+records a decline, never an accept.
+
+**Cookies set after you accept.** On the live sites, the tags load Google
+Analytics, Google Ads, and the Meta, LinkedIn and X pixels. The cookies
+below are the ones those tags can set.
+
+| Provider         | Cookie                                                                                                                     | Lifetime                                                                                                                                                             |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Google Analytics | `_ga`, and `_ga_` followed by an identifier of our Analytics property                                                      | 2 years each                                                                                                                                                         |
+| Google Ads       | `_gcl_au`; and `_gcl_aw` after a click on one of our Google ads                                                            | 90 days each                                                                                                                                                         |
+| Meta             | `_fbp`; and `_fbc` after a click on one of our Meta ads                                                                    | 90 days each                                                                                                                                                         |
+| LinkedIn         | `li_fat_id`; `bcookie`; `lidc`; `UserMatchHistory`; `AnalyticsSyncHistory`; `lms_ads`; `lms_analytics`; `li_sugr`; `_guid` | `li_fat_id`, `UserMatchHistory`, `AnalyticsSyncHistory`, `lms_ads` and `lms_analytics`: 30 days. `li_sugr` and `_guid`: 90 days. `bcookie`: 1 year. `lidc`: 24 hours |
+| X                | `_twpid`; and `_twclid` after a click on one of our X ads                                                                  | 390 days each                                                                                                                                                        |
+
+Google, Meta, LinkedIn and X can also set cookies on their own domains
+when their tags run. Their own lists are at
+[business.safety.google/adscookies](https://business.safety.google/adscookies/)
+and [LinkedIn’s cookie table](https://www.linkedin.com/legal/cookie-table).
+Each lifetime is the one the provider states, and the provider can change
+it. Our tags set no custom lifetime.
+
+**Signing in.** The back end that runs each platform sets the cookies below,
+and scripts on the page cannot read them.
+
+| Where                                                                                                                           | Name and kind                                                                                                                                                                                         | Lifetime                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| [account.cuesoft.io](../account/#signing-up-and-signing-in) and the [CueLABS™](../cuelabs/) and [CueHIRE™](../cuehire/) portals | `cueprise_session` cookie                                                                                                                                                                             | 24 hours from sign-in. Nothing extends it, so you sign in again after that                                                                      |
+| Google sign-in on any of these                                                                                                  | Short-lived cookies set by the back end: `cueprise_oauth_state` and `cueprise_oauth_handoff` on Cueprise™ sign-in; `cuelearn_oidc`, `cuelearn_google` and `cuelearn_sso_handoff` on Cuelearn™ sign-in | 10 minutes for `cueprise_oauth_state`, `cuelearn_oidc` and `cuelearn_google`; 5 minutes for `cueprise_oauth_handoff` and `cuelearn_sso_handoff` |
+| The [Cueprise™](../../cueprise/) platform                                                                                       | No session cookie. The platform keeps your sign-in in your browser’s local storage as `cueprise_access_token`, plus a marker, `cueprise_session_seen`, that this browser held a session               | The token stops working after 24 hours. The entries stay in local storage until you sign out or clear the site’s data                           |
+| The [Cuelearn™](../../cuelearn/#the-cuelearn-platform) platform                                                                 | No session cookie. The platform keeps your sign-in in your browser’s local storage as `cuelearn_access_token`                                                                                         | The token stops working after 24 hours. The entry stays in local storage until you sign out or clear the site’s data                            |
+
+**CueHIRE™.** The CueHIRE™ portal sets no sign-in cookie of its own. Its
+sign-in is the account site’s `cueprise_session` cookie above. The portal
+keeps one entry in your browser’s local storage, `cuehire-workspace:`
+followed by your account identifier, which remembers which workspace you
+last chose. It stays until you clear the site’s data.
 
 ### Which ones need your consent
 

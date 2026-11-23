@@ -45,8 +45,12 @@ lawful handling if something goes wrong: see
 - **Processors are bound by contract.** Each of our
   [processors](../processors/) processes data only on our instructions under
   its data processing agreement.
-
-<!-- TODO(owner): which of these we can state, if any: encryption of data at rest, independent security audits or penetration tests, certifications such as ISO 27001 or SOC 2, and backup and recovery arrangements; no document says, so none is claimed here -->
+- **Data is encrypted at rest.** Google Cloud encrypts the data we hold there
+  at rest by default. The databases Aiven runs for us are encrypted at rest,
+  and so are their backups.
+- **Backups.** Aiven takes automatic backups of the databases it runs for us.
+  A file deleted from Google Cloud Storage is kept for 7 more days, then
+  removed for good.
 
 ## What you can do
 
@@ -80,4 +84,11 @@ use GitHub’s **Security, Report a vulnerability** flow, or email
 Do not include production credentials or personal data. We aim to acknowledge
 reports within three business days.
 
-<!-- TODO(owner): the address and acknowledgement time for vulnerability reports about the products and the Cuelearn™ and Cueprise™ platforms; the only published process is the one in this repository’s SECURITY.md -->
+To report a vulnerability in Apparule, Expendit, Upstat or the Cuelearn™ and
+Cueprise™ platforms, email `security@cuesoft.io` with the subject
+`Security vulnerability:` followed by the name of the part (`apparule`,
+`expendit`, `upstat`, `cuelearn`, `cuelearn-client`, `cueprise` or
+`cueprise-client`). Where that part’s repository offers GitHub’s **Security,
+Report a vulnerability** flow, you can use it instead. Do not include
+production credentials or personal data. We aim to acknowledge reports within
+three business days.

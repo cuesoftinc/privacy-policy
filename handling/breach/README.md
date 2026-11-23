@@ -33,7 +33,28 @@ If one of our [processors](../processors/) has a breach that touches personal
 data we are responsible for, we treat it from the moment we learn of it as
 our own: we assess it, contain it and notify as above.
 
-<!-- TODO(owner): the notification period our processors owe us under their data processing agreements -->
+Each processor’s own data processing terms set the period within which it
+must tell us of a breach. Most say “without undue delay” or “promptly” and
+no more. Five name a limit in hours:
+
+| Processor                                         | Period it owes us                                                                    |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Anthropic                                         | Without undue delay, and in any event within 48 hours                                |
+| Certifier                                         | Immediately, and no later than 36 hours after it learns of the breach                |
+| Airtable                                          | Without undue delay, and no later than 72 hours after it substantiates the breach    |
+| Cloudinary                                        | Without undue delay, and in any event within 72 hours                                |
+| Paystack                                          | Without undue delay, and no later than 72 hours after it becomes aware of the breach |
+| Cloudflare                                        | Without undue delay                                                                  |
+| Brevo                                             | Without undue delay                                                                  |
+| Datadog                                           | Without undue delay                                                                  |
+| GitHub                                            | Without undue delay                                                                  |
+| Aiven                                             | Without undue delay                                                                  |
+| Meta (WhatsApp Business)                          | Without undue delay                                                                  |
+| QuickBooks (Intuit)                               | Without undue delay                                                                  |
+| Google (Cloud, Workspace, Firebase and Analytics) | Promptly and without undue delay                                                     |
+| Lark                                              | Promptly                                                                             |
+| ClickHouse                                        | Promptly                                                                             |
+| Groq                                              | Not applicable: it receives no personal data                                         |
 
 ## What we tell you
 

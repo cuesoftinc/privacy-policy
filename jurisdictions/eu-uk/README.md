@@ -11,7 +11,7 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
 | Processing                                                                   | Legal basis                                                                                                                                                                                                                                                 |
 | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Application and contact forms                                                | Steps at your request prior to a contract: Art. 6(1)(b)                                                                                                                                                                                                     |
+| Application forms                                                            | Steps at your request prior to a contract: Art. 6(1)(b)                                                                                                                                                                                                     |
 | Cueprise™ demo requests                                                      | Legitimate interest in answering a business enquiry: Art. 6(1)(f). The licence that may follow is with your organisation, not with you, so contract performance cannot cover your own details: see [cueprise.cuesoft.io](../../cueprise/)                   |
 | Storefront™ enquiries                                                        | Legitimate interest in answering a business enquiry: Art. 6(1)(f). The engagement that may follow is with your organisation, not with you, so contract performance cannot cover your own details: see [storefront.cuesoft.io](../../collection/storefront/) |
 | Cuelearn™ demo requests                                                      | Legitimate interest in answering a business enquiry: Art. 6(1)(f). The agreement that may follow is with your institution, not with you, so contract performance cannot cover your own details: see [cuelearn.cuesoft.io](../../cuelearn/)                  |
@@ -36,9 +36,8 @@ either entity through [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | Cueprise™ platform: Licensee data                                            | The Licensee is the controller and decides the basis: Cuesoft is its processor (Art. 28)                                                                                                                                                                    |
 | Cuelearn™ platform: Institution data                                         | The Institution is the controller and decides the basis: Cuesoft is its processor (Art. 28)                                                                                                                                                                 |
 | Cueprise™ relationship data and service telemetry                            | Contract, legitimate interest or legal obligation, as the [Cueprise™ notice](../../cueprise/#when-cuesoft-is-the-controller) states                                                                                                                         |
+| Cuelearn™ relationship data and service telemetry                            | Contract, legitimate interest or legal obligation, as the [Cuelearn™ notice](../../cuelearn/#when-cuesoft-is-the-controller) states                                                                                                                         |
 | Personnel records (contractors, interns, staff)                              | As the [personnel privacy notice](https://handbook.cuesoft.io/policies/personnel-privacy/) states                                                                                                                                                           |
-
-<!-- TODO(owner): the lawful basis for Cuesoft’s own Cuelearn™ relationship data (Institution contacts, contracts, invoices) and service telemetry, if it differs from Cueprise™’s -->
 
 Where we rely on legitimate interests, we have balanced them against your
 rights, and you may [object](../../rights/your-rights/) at any time.
@@ -62,13 +61,12 @@ We would appreciate the chance to resolve your concern first.
 
 ## Representative
 
-Our processing of EU/UK personal data is occasional and low-risk, and we
-rely on the exemption in **Article 27(2)** GDPR (and its UK equivalent)
-from appointing an EU/UK representative. You can reach the controllers
-directly at [hello@cuesoft.io](mailto:hello@cuesoft.io); this page will
-name a representative if our processing ever grows past the exemption.
+We are appointing a representative in the EU and in the UK under
+**Article 27** GDPR (and its UK equivalent), and this page will give their
+name and address once the appointment is made. You can reach the
+controllers directly at [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
-<!-- TODO(owner): confirm the Art. 27(2) exemption still holds now that the Cuelearn™ platform processes Learners’ data, including children’s, and the opt-in advertising tags carry EU/UK visitors; "occasional and low-risk" may no longer be accurate, and a representative may be required -->
+<!-- TODO(owner): name the appointed EU and UK representative (Art. 27) and give its address -->
 
 ## Transfers
 
@@ -122,7 +120,20 @@ you can withdraw: Apparule asks before your first body photo, Expendit asks
 before its AI reads your statements, and a Cuelearn™ Teacher’s cloned voice is
 made only with that Teacher’s explicit consent.
 
-<!-- TODO(owner): whether identity documents on account.cuesoft.io, Apparule body photos and measurements, and a Cuelearn™ Teacher’s cloned voice are special-category data, and the Art. 9(2) condition relied on for each -->
+Biometric data is special-category data only when it is processed to
+identify a person uniquely (Art. 4(14) and Art. 9(1), and Recital 51 for
+photographs). None of the following is processed that way:
+
+- **Identity documents on account.cuesoft.io:** our staff look at them to
+  confirm who you are. Nothing reads your face or matches it against
+  anything. They rest on contract (Art. 6(1)(b)).
+- **Apparule body photos and measurements:** they are used only to work out
+  your measurements and are never used to recognise who you are. If a photo
+  happens to show something about your health, the explicit consent you
+  give before your first capture covers it (Art. 9(2)(a)).
+- **A Cuelearn™ Teacher’s cloned voice:** it is made to read lessons aloud,
+  not to identify the Teacher, and only with the Teacher’s explicit consent,
+  which also meets Art. 9(2)(a).
 
 ## Children
 
@@ -141,10 +152,9 @@ effects (Art. 22): application decisions are made by humans. See
 
 ## Data protection officer
 
-<!-- TODO(owner): whether Cuesoft has appointed, or is required under Art. 37 to appoint, a data protection officer; no page says -->
-
-Every data protection question goes to
-[hello@cuesoft.io](mailto:hello@cuesoft.io).
+Our data protection officer is one of Cuesoft’s founders. Write to them at
+[privacy@cuesoft.io](mailto:privacy@cuesoft.io). Any data protection
+question can also go to [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
 ## Terms
 

@@ -23,9 +23,11 @@ how long.
   name, not the address itself. It tells us which of our two entities should
   answer you.
 - **Why:** to reply to your enquiry and scope the site you are asking for.
-- **Where:** records are stored in Airtable, our forms database, in the same
-  table as CueHIRE™ enquiries: building a storefront is a CueHIRE
+- **Where:** records are stored as leads on the Cuesoft platform, which
+  also holds CueHIRE™ enquiries: building a storefront is a CueHIRE
   engagement, so it is one pipeline rather than two.
+  Enquiries sent before November 2026 may also be held in Airtable, where
+  form records were kept until then.
 - **Legal basis:** our legitimate interest in responding to the business
   enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent
   legitimate-interest basis under the NDPA: you may
@@ -183,7 +185,8 @@ legitimate interests, we have balanced them against your rights, and you may
 
 ## Who receives it, where it goes and how long it stays
 
-- **Who receives it:** Airtable, which holds the enquiry; Brevo, which sends
+- **Who receives it:** the Cuesoft platform, which holds the enquiry;
+  Airtable, which holds enquiries sent before November 2026; Brevo, which sends
   the confirmation; Cloudflare, which tells us your country; and the Cuesoft
   staff who answer enquiries. Google receives what you enter if you book a
   time on its calendar page, and Google, Meta, LinkedIn and X receive tag data

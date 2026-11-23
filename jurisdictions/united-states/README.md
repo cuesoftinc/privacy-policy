@@ -113,7 +113,11 @@ Our services are for people 18 and older, with two exceptions: see
 the Cuelearn™ platform, the Institution that enrols a
 Learner is responsible for the consent of a parent or guardian.
 
-<!-- TODO(owner): whether Cuelearn™ is offered to Institutions whose Learners are under 13 in the United States, and the COPPA basis relied on (a school’s authorisation); no page says -->
+Cuelearn™ may be licensed to US schools with Learners under 13. For those
+Learners the school authorises the collection on the parent’s behalf, as the
+FTC’s COPPA guidance allows where the data is used only for the school’s
+benefit and for no other commercial purpose, and Cuesoft uses it only to
+provide the platform to the school.
 
 ## Retention and exercising your rights
 

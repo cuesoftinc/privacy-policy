@@ -16,8 +16,11 @@ Inc.** leads for processing subject to US law; and regardless of the
 split, you may exercise your rights against either entity through the
 single contact point [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
+Our data protection officer, one of Cuesoft’s founders, is reached at
+[privacy@cuesoft.io](mailto:privacy@cuesoft.io).
+
 Signed engagements (offers of admission, internship, contractor and client
-agreements, Cueprise™ licences) carry their own data terms, which govern
+agreements, Cueprise™ and Cuelearn™ licences) carry their own data terms, which govern
 those relationships alongside this policy.
 
 ## The short version
@@ -102,7 +105,7 @@ those relationships alongside this policy.
 | [Apparule Privacy Notice](apparule/)                                                       | Our body-measurement and designer marketplace app: photos, measurements, orders and payments.                                                                                                                                                                     |
 | [Expendit Privacy Notice](expendit/)                                                       | Our income, expense and tax app: your books, imported statements and AI processing.                                                                                                                                                                               |
 | [Upstat Privacy Notice](upstat/)                                                           | Our monitoring and status service: account data, and the cookieless events it keeps for the sites that use it.                                                                                                                                                    |
-| [Cuelearn™ Privacy Notice](cuelearn/)                                                      | Our learning platform for institutions: demo requests on the marketing site.                                                                                                                                                                                      |
+| [Cuelearn™ Privacy Notice](cuelearn/)                                                      | Our learning platform for institutions: demo requests on the marketing site, and the licensed platform.                                                                                                                                                           |
 | [Handling](handling/processors/)                                                           | Processors and platforms, international transfers, retention, security and breach notification.                                                                                                                                                                   |
 | [Rights](rights/your-rights/)                                                              | Your rights and how to exercise them, and children.                                                                                                                                                                                                               |
 | [Jurisdictions](jurisdictions/eu-uk/)                                                      | The detail per regime: Nigeria, EU/EEA and UK, United States.                                                                                                                                                                                                     |

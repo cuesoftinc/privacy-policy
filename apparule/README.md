@@ -37,7 +37,11 @@ consent for your photos below. See [children](../rights/children/).
   [exercising rights for a child](../rights/your-rights/#exercising-rights-for-a-child)
   explains.
 
-<!-- TODO(owner): how Apparule records or checks a parent’s or guardian’s agreement; the code records only the account’s own acceptance of the terms and privacy notice, and has no guardian check -->
+Apparule does not ask your age and does not check or record a parent’s or
+guardian’s agreement. Signing in tells you that by continuing you agree to
+the Terms and this notice, and the only consent record the service keeps is
+your own account’s acceptance of each of them, with its version and the
+time. We do not collect a separate record from a parent or guardian.
 
 ## What Is Required and What Is Optional
 

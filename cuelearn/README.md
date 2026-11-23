@@ -17,7 +17,9 @@ canvas.cuesoft.io.
   asked for on the form, and stored as the country name, not the address
   itself.
 - **Why:** to reply to your request and arrange the demo.
-- **Where:** records are stored in Airtable, our forms database.
+- **Where:** records are stored as leads on the Cuesoft platform. Requests
+  sent before November 2026 may also be held in Airtable, where form records
+  were kept until then.
 - **Legal basis:** our legitimate interest in responding to the business
   enquiry you sent us (GDPR Art. 6(1)(f)), and the equivalent
   legitimate-interest basis under the NDPA; you may
@@ -223,12 +225,23 @@ which features the Institution uses:
 | Subscription enrolments | For a course paid by subscription: the plan name, the amount and currency, and the next payment date. Card details never enter the platform                                                          |
 | Files                   | The file itself, its name, type and size                                                                                                                                                             |
 
-<!-- TODO(owner): confirm how long Ace conversations themselves are kept on the platform; the code shows the proposed changes being stored, not the retention of the chat. -->
+Ace conversations are stored on the platform with your account: the messages
+you and Ace exchange, the page you opened Ace from, the changes it proposed
+and the values it suggested for form fields. The platform has no timer that
+deletes them and no screen to delete one, so a conversation stays until the
+account’s records are deleted at the Institution’s instruction.
 
 ### AI
 
 AI-drafted lessons, quizzes and marking run on Google Gemini, through Vertex
 AI and the Gemini API. Prompts are not used to train models.
+
+When Vertex AI is busy or unavailable, a text request, such as a draft, a
+mark or an answer from Ace, may be answered by Anthropic's Claude models
+instead, through Anthropic's API. The prompt and any files it carries then go
+to Anthropic. Anthropic says it does not use content sent through its API to
+train its models and deletes it within 30 days. Voice-overs and pictures
+never use it.
 
 - **What is sent:** the prompt, and the course content or learner answers
   the feature needs: for example a lesson's topic to draft it, or a
@@ -334,10 +347,13 @@ documented instructions**, under the data terms of the licensing agreement:
    and [data-protection](https://handbook.cuesoft.io/policies/data-protection/)
    obligations.
 3. Sub-processors are engaged under contracts that impose the same
-   protections. The table below names them; each licensing agreement
-   confirms which are active and how the Institution is told of changes.
-4. On termination or expiry, Institution data is returned or deleted as the
-   agreement provides.
+   protections. The table below names them, and each licensing agreement
+   confirms which are active. Cuesoft tells the Institution of a new
+   sub-processor at least 30 days before it starts processing Institution
+   data, and the Institution may object within that time.
+4. On termination or expiry, the Institution can ask for an export of its
+   data within 90 days, and the data is then deleted, unless the agreement
+   says otherwise.
 5. Cuesoft assists the Institution with requests from the people the data
    is about, security incidents and impact assessments concerning
    Institution data, as the agreement and applicable law require.
@@ -349,8 +365,10 @@ processing chain:
 
 | Provider                           | Role in the platform                                              | Personal data it touches                                                           |
 | ---------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Google Cloud                       | Hosting, the database, file storage and rendering lesson videos   | Everything the platform stores                                                     |
+| Google Cloud                       | Hosting, file storage and rendering lesson videos                 | Everything the platform stores                                                     |
+| Aiven                              | Running the database and the cache                                | Everything the platform stores                                                     |
 | Google (Gemini, through Vertex AI) | AI-drafted lessons, quizzes and marking, voice-overs and Ace      | The prompt, and the course content or learner answers the feature needs            |
+| Anthropic                          | Answering a text request when Vertex AI is busy or unavailable    | The prompt, and the course content, learner answers or files the request carries   |
 | Google (Meet and Calendar)         | Live classes and invigilated exams, and their invitations         | Invitees' email addresses, and the live video and audio of the people in a session |
 | Google (sign-in)                   | Signing in with a Google account, where the Institution allows it | Your Google account identifier, verified email address and profile picture         |
 | Brevo                              | Email: sign-in codes, notifications and weekly reports            | Recipient name and email, and the message                                          |
@@ -394,7 +412,8 @@ Service telemetry is kept for no more than **30 days**, as the
 [retention page](../handling/retention/) sets for infrastructure and
 security logs.
 
-<!-- TODO(owner): confirm the session-replay sample rate set in production for the platform app (NEXT_PUBLIC_DD_SESSION_REPLAY_SAMPLE_RATE), so the share of sessions recorded can be stated as the Cueprise notice states its own. -->
+No session is recorded as a replay in production today: the sample rate is
+not set there, so it is zero.
 
 ### International transfers
 
@@ -403,7 +422,10 @@ Institution or the learner is. Where they do, the safeguards on the
 [transfers page](../handling/transfers/) apply, and each licensing
 agreement states any further commitment the Institution needs.
 
-<!-- TODO(owner): confirm the Google Cloud region the platform's database and files are kept in, so the notice can name it. -->
+The platform runs on Google Cloud in the us-central1 region (Iowa, United
+States), and its files are kept there, in Cloud Storage. Its database and
+cache are run for us by Aiven, in DigitalOcean’s San Francisco region,
+United States.
 
 ### Children
 
@@ -412,6 +434,10 @@ Learners can be under 18 where their Institution enrols them.
 - The Institution decides whether a child uses the platform, and is
   responsible for the consent of a parent or guardian and for any other
   consent the law of the child's country requires.
+- A Learner under 13 uses the platform only where the Institution
+  authorises it on the parent's or guardian's behalf, as the law of the
+  Learner's country allows (in the United States, under COPPA), or holds
+  that parent's or guardian's consent.
 - Cuesoft processes a child's data only for the Institution, only to
   provide the platform, and never for advertising, marketing or profiling.
 - The platform carries no advertising tags.
@@ -434,14 +460,21 @@ Data on the platform is kept as the institution instructs.
 
 - **While the agreement runs:** Institution data stays until the Institution
   or its users delete it, or the Institution tells us to delete it.
-- **When the agreement ends:** Institution data is returned or deleted as
-  the agreement provides.
+- **When the agreement ends:** the Institution can ask for an export of its
+  data within **90 days**, and the data is then deleted, unless the
+  agreement says otherwise.
 - **A teacher's cloned voice:** deleted when the teacher withdraws consent.
 - **Service telemetry:** no more than **30 days**.
 - **Relationship data:** as the [retention page](../handling/retention/)
   and the agreement provide.
 
-<!-- TODO(owner): confirm how long Institution data is kept after an agreement ends before it is deleted, and how long backups hold it, so the notice can state the periods. -->
+No timer deletes an Institution’s data when its licence ends or expires. An
+expired licence stops sign-in and the use of licensed modules, and Cuesoft
+deletes the data once the 90 days for an export have passed. A file that is
+deleted is kept in storage for 7 more days, then removed for good. The
+database is backed up automatically by its provider, which keeps a single
+backup for disaster recovery, so deleted data stays in it only until the
+next backup replaces it.
 
 ## Contact
 

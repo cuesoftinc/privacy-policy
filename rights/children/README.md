@@ -52,9 +52,25 @@ enrols a Learner (a student the Institution gives access to) under 18:
   Institution, and we refer any request we receive to it: see
   [exercising rights for a child](../your-rights/#exercising-rights-for-a-child).
 
-<!-- TODO(owner): whether Cuelearn™ is offered to Institutions whose Learners are under 13, and the basis relied on for them (for example a school’s authorisation under COPPA); no page says -->
-<!-- TODO(owner): whether Learner data is excluded from advertising, from sale and from AI training, as the Cueprise™ notice states for Licensee data; the Cuelearn™ notice states it only for AI prompts -->
-<!-- TODO(owner): where the weekly parent and guardian reports are sent (the contact details the Institution holds, or ones a parent gives us) -->
+Learners under 13 may use Cuelearn™ where their school authorises it on
+their parent’s or guardian’s behalf, as the law of their country allows (in
+the United States, under COPPA, for the school’s own educational use only).
+Otherwise the school obtains the consent of a parent or guardian.
+
+Learner data is not used for advertising. The Cuelearn™ platform carries no
+advertising tags, and we do not use a Learner’s data for advertising,
+marketing or profiling. It is not sold. It is not used to train AI models:
+Google’s documentation says it will not use data sent to Vertex AI to train
+or fine-tune its models without our prior permission, and the platform never
+gives it. When Vertex AI is busy, a text request may be answered by
+Anthropic's Claude instead, and Anthropic says it does not train on content
+sent through its API.
+
+Each weekly report goes to the parent or guardian linked to the Learner on the
+platform, by email to the address held on that account. Where that parent or
+guardian chose WhatsApp and has verified their number, it goes to the number
+held on their account instead. A parent or guardian can switch the reports
+off or change the channel.
 
 ## Our other websites and programmes
 

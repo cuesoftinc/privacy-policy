@@ -210,7 +210,11 @@ Everything on [what every site collects](../all-sites/) applies.
 | Server and security logs, cookieless analytics and monitoring                 | Legitimate interest: Art. 6(1)(f), as set out above and on [what every site collects](../all-sites/)                              |
 | Analytics and advertising tags                                                | Consent: Art. 6(1)(a), withdrawable at any time                                                                                   |
 
-<!-- TODO(owner): confirm legitimate interest as the basis for the public Verify a Certificate page -->
+The Verify a Certificate page rests on legitimate interest, the basis we use
+for the other public displays on these pages, such as the contributor display
+on [CueLABS™](../cuelabs/). It answers only for a certificate code, and shows
+the holder’s name, the title, the tier if there is one, the date and whether
+the certificate is valid or revoked.
 
 Under the Nigeria Data Protection Act 2023 (NDPA) the same activities rest on
 the matching bases in s. 25: contract, legal obligation, legitimate interest
@@ -233,7 +237,9 @@ rely on legitimate interests, we have balanced them against your rights.
 - **How long it stays:** enrolment, order and invoice records, the
   learner and programme communication, server logs and monitoring data each
   have their own period on [retention](../../handling/retention/).
-  <!-- TODO(owner): how long Certifier keeps CueTA™ credentials and the public verification page after issue; the retention page carries the same open item -->
+  Certifier keeps a credential for as long as our account with it holds it,
+  and states no fixed period. We run no automatic deletion of credentials,
+  so a credential stays until we delete it or our account ends.
 
 ## Your rights on this site
 

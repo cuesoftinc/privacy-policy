@@ -17,7 +17,7 @@ The NDPA recognises consent, contract, legal obligation, vital interest,
 public interest and legitimate interest as lawful bases (NDPA s. 25). We
 state the basis for each collection on the
 [collection pages](../../collection/all-sites/): forms rest on contract
-(steps at your request prior to one), except Cueprise™ demo requests,
+(steps at your request prior to one), except CueHIRE™ enquiries, Cueprise™ demo requests,
 Storefront™ enquiries and Cuelearn™ demo requests, which rest on legitimate interest because the
 agreement that may follow is with your organisation rather than with you;
 infrastructure, Ace and the websites’ and documentation sites’ performance and error
@@ -69,6 +69,9 @@ page will state the outcome, and where designation applies it will name our
 registration and our designated data protection officer. Questions in the
 meantime: [hello@cuesoft.io](mailto:hello@cuesoft.io).
 
+Our data protection officer is one of Cuesoft’s founders, reached at
+[privacy@cuesoft.io](mailto:privacy@cuesoft.io).
+
 ## Lawful bases, per activity
 
 | Processing                                                              | Lawful basis under the NDPA (s. 25)                                                                                                     |
@@ -96,9 +99,8 @@ meantime: [hello@cuesoft.io](mailto:hello@cuesoft.io).
 | Cueprise™ platform: Licensee data                                       | The Licensee decides; Cuesoft is its processor                                                                                          |
 | Cuelearn™ platform: Institution data                                    | The Institution decides; Cuesoft is its processor                                                                                       |
 | Cueprise™ relationship data and service telemetry                       | Contract, legitimate interest or legal obligation, as the [Cueprise™ notice](../../cueprise/#when-cuesoft-is-the-controller) states     |
+| Cuelearn™ relationship data and service telemetry                       | Contract, legitimate interest or legal obligation, as the [Cuelearn™ notice](../../cuelearn/#when-cuesoft-is-the-controller) states     |
 | Personnel records (contractors, interns, staff)                         | As the [personnel privacy notice](https://handbook.cuesoft.io/policies/personnel-privacy/) states                                       |
-
-<!-- TODO(owner): the lawful basis for Cuesoft’s own Cuelearn™ relationship data (Institution contacts, contracts, invoices) and service telemetry, if it differs from Cueprise™’s -->
 
 ## Sensitive personal data
 
@@ -111,7 +113,20 @@ which you can withdraw: Apparule asks for consent before your first body
 photo, Expendit asks before its AI reads your statements, and a Cuelearn™
 Teacher’s cloned voice is made only with that Teacher’s explicit consent.
 
-<!-- TODO(owner): whether identity documents on account.cuesoft.io, Apparule body photos and measurements, and a Cuelearn™ Teacher’s cloned voice are sensitive personal data under the NDPA, and the condition relied on for each; confirm the NDPA section references with counsel -->
+The NDPA counts biometric data as sensitive only when it is processed to
+identify a person uniquely (s. 65). None of the following is processed that
+way:
+
+- **Identity documents on account.cuesoft.io:** our staff look at them to
+  confirm who you are. Nothing reads your face or matches it against
+  anything. They rest on the contract basis in the table above.
+- **Apparule body photos and measurements:** they are used only to work out
+  your measurements and are never used to recognise who you are. If a photo
+  happens to show something about your health, the explicit consent you
+  give before your first capture covers it (s. 30(1)(a)).
+- **A Cuelearn™ Teacher’s cloned voice:** it is made to read lessons aloud,
+  not to identify the Teacher, and only with the Teacher’s explicit consent,
+  which also meets s. 30(1)(a).
 
 ## Children and the NDPA
 
