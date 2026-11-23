@@ -8,6 +8,8 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+## [1.4.7] - 2026-11-23
+
 ### Changed
 
 - Placeholders now state our actual providers, periods and contacts.
