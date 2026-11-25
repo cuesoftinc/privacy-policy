@@ -8,6 +8,11 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+### Changed
+
+- Uses design system 1.105.0.
+- Every icon-only control has a name and a tooltip.
+
 ## [1.4.8] - 2026-11-24
 
 ### Changed
