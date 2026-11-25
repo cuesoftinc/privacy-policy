@@ -8,6 +8,8 @@ Releases before 1.1.0 predate this file.
 
 ## [Unreleased]
 
+## [1.4.10] - 2026-11-25
+
 ### Changed
 
 - Uses design system 1.107.0.
